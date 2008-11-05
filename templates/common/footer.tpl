@@ -23,9 +23,13 @@
 </div><!-- main -->
 </div><!-- body -->
 
+</div><!-- container -->
+
 {get_debug_info}
-{if $enableDebugStats}
+
 <div id="footer">
+<p>Todos los derechos reservados &copy; 2008 - <a href="http://www.unlp.edu.ar" target="_blank">Universidad Nacional de La Plata</a> - Powered by <a href="http://pkp.sfu.ca/?q=ocs" target="_blank">Open Congress Systems</a></p>
+{if $enableDebugStats}
 	<div id="footerContent">
 		<div class="debugStats">
 		{translate key="debug.executionTime"}: {$debugExecutionTime|string_format:"%.4f"}s<br />
@@ -38,9 +42,9 @@
 		{/if}
 		</div>
 	</div><!-- footerContent -->
-</div><!-- footer -->
 {/if}
+</div><!-- footer -->
 
-</div><!-- container -->
+
 </body>
 </html>

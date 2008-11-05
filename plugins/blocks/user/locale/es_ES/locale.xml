@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../locale/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2000-2008 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the en_US (U.S. English) locale.
+  *
+  * $Id: locale.xml,v 1.2 2008/04/04 17:06:51 asmecher Exp $
+  -->
+ 
+<locale name="es_ES" full_name="España Castellano">
+	<message key="plugins.block.user.displayName">Block de Usuario</message>
+	<message key="plugins.block.user.description">Este plugin provee las herramientas de usuario de la barra lateral (por ejemplo login, logout, link al perfil, etc).</message>
+	<message key="plugins.block.user.loggedInAs">Usted ha ingresado como...</message>
+	<message key="plugins.block.user.myConferences">Mis Conferecias</message>
+	<message key="plugins.block.user.myProfile">Mi Perfil</message>
+	<message key="plugins.block.user.logout">Cerrar sesión</message>
+	<message key="plugins.block.user.signOutAsUser">Salir como usuario</message>
+	<message key="plugins.block.user.rememberMe">Recordarme</message>
+</locale>

@@ -177,4 +177,3 @@ class SiteSettingsForm extends Form {
 }
 
 ?>
-

@@ -39,11 +39,21 @@
 	{$additionalHeadData}
 </head>
 <body>
+
 <div id="container">
 
 <div id="header">
+	<div id="rev_logo"><img src="{$baseUrl}/templates/images/unlp.jpg" /></div>
+	<div id="rev_menu">
+	<ul>
+		<li><a href="#">Portal de Congresos</a></li>
+		<li><a href="javascript:openHelp('{if $helpTopicId}{get_help_id key="$helpTopicId" url="true"}{else}{url page="help"}{/if}')">{translate key="navigation.conferenceHelp"}</a></li>
+	</ul>
+	</div>
+	<!--	<div id="rev_banner"><img src="../images/banner.png" /></div>
+	-->
 <div id="headerTitle">
-<h1>
+<div id="banner">
 {if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
 	<img src="{$publicConferenceFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" width="{$displayPageHeaderLogo.width|escape}" height="{$displayPageHeaderLogo.height|escape}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if} />
 {/if}
@@ -52,36 +62,19 @@
 {elseif $displayPageHeaderTitle && is_array($displayPageHeaderTitle)}
 	<img src="{$publicConferenceFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}" width="{$displayPageHeaderTitle.width|escape}" height="{$displayPageHeaderTitle.height|escape}" {if $displayPageHeaderTitle.altText != ''}alt="{$displayPageHeaderTitle.altText|escape}"{else}alt="{translate key="common.pageHeader.altText"}"{/if}/>
 {elseif $displayPageHeaderTitle}
-	{$displayPageHeaderTitle}
+	<h1>{$displayPageHeaderTitle}</h1>
 {elseif $alternatePageHeader}
-	{$alternatePageHeader}
+	<h1>{$alternatePageHeader}</h1>
 {elseif $siteTitle}
-	{$siteTitle}
+	<h1>{$siteTitle}</h1>
 {else}
-	{translate key="common.openConferenceSystems"}
+	<h1>{translate key="common.openConferenceSystems"}</h1>
 {/if}
-</h1>
 </div>
 </div>
+</div> <!-- end #header -->
 
-<div id="body">
-
-{if $leftSidebarCode || $rightSidebarCode}
-	<div id="sidebar">
-		{if $leftSidebarCode}
-			<div id="leftSidebar">
-				{$leftSidebarCode}
-			</div>
-		{/if}
-		{if $rightSidebarCode}
-			<div id="rightSidebar">
-				{$rightSidebarCode}
-			</div>
-		{/if}
-	</div>
-{/if}
-
-<div id="main">
+<!-- menu -->
 <div id="navbar">
 	<ul class="menu">
 		<li><a href="{url conference="index" schedConf="index" op="index"}">{translate key="navigation.home"}</a></li>
@@ -106,6 +99,25 @@
 		{/foreach}
 	</ul>
 </div>
+
+<div id="body">
+
+{if $leftSidebarCode || $rightSidebarCode}
+	<div id="sidebar">
+		{if $leftSidebarCode}
+			<div id="leftSidebar">
+				{$leftSidebarCode}
+			</div>
+		{/if}
+		{if $rightSidebarCode}
+			<div id="rightSidebar">
+				{$rightSidebarCode}
+			</div>
+		{/if}
+	</div>
+{/if}
+
+<div id="main">
 
 <div id="breadcrumb">
 	<a href="{url conference="index" schedConf="index" page="index"}">{translate key="navigation.home"}</a> &gt;

@@ -15,31 +15,21 @@
 
 
 #headerTitle {
-	text-align: center;
-	width: 100%;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
 }
-
-#body {
-	width: 100%;
-}
-
 #rightSidebar {
 	float: right;
-	width: 14%;
-	padding: 1em 0em 1em 0em;
-	font-size: 0.65em;
-	height: 100%;
-	margin-right: 10%;
-	margin-left: 2%;
-	overflow: hidden;
+	width: 194px;
+	margin: 0px;
+	padding: 0px 0px 0px 10px;
+	font-size: 10px;
+	border-left: 1px solid #f5f9f3;
+	clear: right;
 }
-
-* html #rightSidebar { margin-right: 5%; }
-
 #main {
+	width: 553px;
 	float: left;
-	width: 63%;
-	margin-left: 10%;
-	display: inline;
-	overflow: hidden;
+	padding: 0px;
 }

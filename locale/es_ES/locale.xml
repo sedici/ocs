@@ -169,6 +169,9 @@
 	<message key="form.submit">Proceda</message>
 	<message key="form.send">Envíe</message>
 	<message key="form.resubmit">Reenvie</message>
+	<message key="form.formLanguage">Lenguaje del formulario</message>
+	<message key="form.formLanguage.description">Para ingresar la información a continuación en lenguajes adicionales, primero seleccione el lenguaje.</message>
+	
 
 	<!-- Common Email Messages -->
 	<message key="email.email">Email</message>
@@ -233,8 +236,8 @@
 	<message key="navigation.previousStep">Paso anterior</message>
 	<message key="navigation.nextStep">Siguiente paso</message>
 	<message key="navigation.stepNumber"> Paso {$step}</message>
-	<message key="navigation.previousPage">&lt;&lt;</message>
-	<message key="navigation.nextPage">&gt;&gt;</message>
+	<message key="navigation.previousPage">&lt;</message>
+	<message key="navigation.nextPage">&gt;</message>
 	<message key="navigation.items">{$from} - {$to} de {$total} Artículos</message>
 	<message key="navigation.fontSize">Tamaño de letra</message>
 
@@ -883,6 +886,7 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="manager.statistics.reports.daysToPublication">Días pendientes para la publicación</message>
 
 	<!-- Plugin Management -->
+	<message key="manager.plugins.description">Esta página le permite al Administrador del Congreso revisar y potencialmente configurar los plugins que están actualmente instalados. Los plugins están divididos en categorías de acuerdo a su función. Las categorías están listadas debajo, y dentro de cada categoría, se lista el conjunto actual de sus plugins.</message>
 	<message key="manager.plugins.pluginManagement">Gestión de Plugins</message>
 	<message key="manager.plugins.sitePlugin">Este sitio usa plugins. Sólo el administrador de la web puede modificar este plugin.</message>
 	<message key="manager.plugins.action">Acción:</message>
