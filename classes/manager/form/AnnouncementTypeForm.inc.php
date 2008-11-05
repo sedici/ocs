@@ -1,0 +1,113 @@
+<?php
+
+/**
+ * @file AnnouncementTypeForm.inc.php
+ *
+ * Copyright (c) 2000-2008 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @class AnnouncementTypeForm
+ * @ingroup manager_form
+ * @see AnnouncementType
+ *
+ * @brief Form for conference manager to create/edit announcement types.
+ */
+
+//$Id: AnnouncementTypeForm.inc.php,v 1.9 2008/07/02 16:55:22 asmecher Exp $
+
+import('form.Form');
+
+class AnnouncementTypeForm extends Form {
+	/** @var typeId int the ID of the announcement type being edited */
+	var $typeId;
+
+	/**
+	 * Constructor
+	 * @param typeId int leave as default for new announcement type
+	 */
+	function AnnouncementTypeForm($typeId = null) {
+		$this->typeId = isset($typeId) ? (int) $typeId : null;
+
+		parent::Form('manager/announcement/announcementTypeForm.tpl');
+
+		// Type name is provided
+		$this->addCheck(new FormValidatorLocale($this, 'name', 'required', 'manager.announcementTypes.form.typeNameRequired'));
+
+		$this->addCheck(new FormValidatorPost($this));
+	}
+
+	/**
+	 * Get a list of localized field names for this form
+	 * @return array
+	 */
+	function getLocaleFieldNames() {
+		$announcementTypeDao =& DAORegistry::getDAO('AnnouncementTypeDAO');
+		return $announcementTypeDao->getLocaleFieldNames();
+	}
+
+	/**
+	 * Display the form.
+	 */
+	function display() {
+		$templateMgr = &TemplateManager::getManager();
+		$templateMgr->assign('typeId', $this->typeId);
+		$templateMgr->assign('helpTopicId', 'conference.generalManagement.announcements');
+
+		parent::display();
+	}
+
+	/**
+	 * Initialize form data from current announcement type.
+	 */
+	function initData() {
+		if (isset($this->typeId)) {
+			$announcementTypeDao = &DAORegistry::getDAO('AnnouncementTypeDAO');
+			$announcementType = &$announcementTypeDao->getAnnouncementType($this->typeId);
+
+			if ($announcementType != null) {
+				$this->_data = array(
+					'name' => $announcementType->getName(null) // Localized
+				);
+
+			} else {
+				$this->typeId = null;
+			}
+		}
+	}
+
+	/**
+	 * Assign form data to user-submitted data.
+	 */
+	function readInputData() {
+		$this->readUserVars(array('name'));
+
+	}
+
+	/**
+	 * Save announcement type. 
+	 */
+	function execute() {
+		$announcementTypeDao = &DAORegistry::getDAO('AnnouncementTypeDAO');
+		$conference = &Request::getConference();
+
+		if (isset($this->typeId)) {
+			$announcementType = &$announcementTypeDao->getAnnouncementType($this->typeId);
+		}
+
+		if (!isset($announcementType)) {
+			$announcementType = &new AnnouncementType();
+		}
+
+		$announcementType->setConferenceId($conference->getConferenceId());
+		$announcementType->setName($this->getData('name'), null); // Localized
+
+		// Update or insert announcement type
+		if ($announcementType->getTypeId() != null) {
+			$announcementTypeDao->updateAnnouncementType($announcementType);
+		} else {
+			$announcementTypeDao->insertAnnouncementType($announcementType);
+		}
+	}
+}
+
+?>

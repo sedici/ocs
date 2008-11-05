@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  * conferenceSettings.xml
+  *
+  * Copyright (c) 2000-2008 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Default conference settings.
+  *
+  * $Id: conferenceSettings.xml,v 1.12 2008/05/05 18:25:15 asmecher Exp $
+  -->
+
+<!DOCTYPE conference_settings [
+	<!ELEMENT conference_settings (setting+)>
+	<!ELEMENT setting (name, value)>
+	<!ATTLIST setting type (int|string|object|bool) #REQUIRED>
+	<!ATTLIST setting locale (0|1) #REQUIRED>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT value (#PCDATA | array)*>
+	<!ELEMENT element (#PCDATA | array)*>
+	<!ATTLIST element key CDATA #IMPLIED>
+	<!ELEMENT array (element+)>
+]>
+
+<conference_settings>
+	<setting type="int" locale="0">
+		<name>numPageLinks</name>
+		<value>10</value>
+	</setting>
+	<setting type="int" locale="0">
+		<name>itemsPerPage</name>
+		<value>25</value>
+	</setting>
+	<setting type="string" locale="1">
+		<name>copyrightNotice</name>
+		<value>{translate key="default.conferenceSettings.copyrightNotice"}</value>
+	</setting>
+	<setting type="string" locale="1">
+		<name>privacyStatement</name>
+		<value>{translate key="default.conferenceSettings.privacyStatement"}</value>
+	</setting>
+	<setting type="string" locale="1">
+		<name>presenterSelfArchivePolicy</name>
+		<value>{translate key="default.conferenceSettings.presenterSelfArchivePolicy"}</value>
+	</setting>
+	<setting type="string" locale="1">
+		<name>readerInformation</name>
+		<value>{translate key="default.conferenceSettings.forReaders"}</value>
+	</setting>
+	<setting type="string" locale="1">
+		<name>presenterInformation</name>
+		<value>{translate key="default.conferenceSettings.forPresenters"}</value>
+	</setting>
+	<setting type="string" locale="1">
+		<name>lockssLicense</name>
+		<value>{translate key="default.conferenceSettings.lockssLicense"}</value>
+	</setting>
+
+	<setting type="object" locale="0">
+		<name>supportedLocales</name>
+		<value>
+			<array>
+				<element>{$primaryLocale}</element>
+			</array>
+		</value>
+	</setting>
+
+	<setting type="bool" locale="0">
+		<name>rtAbstract</name>
+		<value>true</value>
+	</setting>
+	<setting type="bool" locale="0">
+		<name>rtCaptureCite</name>
+		<value>true</value>
+	</setting>
+	<setting type="bool" locale="0">
+		<name>rtViewMetadata</name>
+		<value>true</value>
+	</setting>
+	<setting type="bool" locale="0">
+		<name>rtSupplementaryFiles</name>
+		<value>true</value>
+	</setting>
+	<setting type="bool" locale="0">
+		<name>rtPrinterFriendly</name>
+		<value>true</value>
+	</setting>
+	<setting type="bool" locale="0">
+		<name>rtPresenterBio</name>
+		<value>true</value>
+	</setting>
+	<setting type="bool" locale="0">
+		<name>rtDefineTerms</name>
+		<value>true</value>
+	</setting>
+	<setting type="bool" locale="0">
+		<name>rtAddComment</name>
+		<value>true</value>
+	</setting>
+	<setting type="bool" locale="0">
+		<name>rtEmailPresenter</name>
+		<value>true</value>
+	</setting>
+	<setting type="bool" locale="0">
+		<name>rtEmailOthers</name>
+		<value>true</value>
+	</setting>
+</conference_settings>

@@ -1,0 +1,16 @@
+{**
+ * block.tpl
+ *
+ * Copyright (c) 2000-2008 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Common site sidebar menu -- font size selector.
+ *
+ * $Id: block.tpl,v 1.4 2008/07/01 00:06:47 michael Exp $
+ *}
+<div class="block" id="sidebarFontSize">
+	<span class="blockTitle">{translate key="plugins.block.fontSize.title"}</span>
+	<a href="#" onclick="setFontSize('{translate|escape:"jsparam" key="plugins.block.fontSize.small"}');" class="icon">{icon path="$fontIconPath/" name="font_small"}</a>&nbsp;
+	<a href="#" onclick="setFontSize('{translate|escape:"jsparam" key="plugins.block.fontSize.medium"}');" class="icon">{icon path="$fontIconPath/" name="font_medium"}</a>&nbsp;
+	<a href="#" onclick="setFontSize('{translate|escape:"jsparam" key="plugins.block.fontSize.large"}');" class="icon">{icon path="$fontIconPath/" name="font_large"}</a>
+</div>

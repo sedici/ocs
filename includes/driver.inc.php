@@ -1,0 +1,105 @@
+<?php
+
+/**
+ * driver.inc.php
+ *
+ * Copyright (c) 2000-2008 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Core system initialization code.
+ * This file is loaded before any others.
+ * Any system-wide imports or initialization code should be placed here. 
+ */
+
+//$Id: driver.inc.php,v 1.6.2.1 2008/08/18 18:28:45 asmecher Exp $
+
+
+/**
+ * Basic initialization (pre-classloading).
+ */
+
+// Useful for debugging purposes -- may want to disable for release version?
+error_reporting(E_ALL);
+
+// Update include path
+define('ENV_SEPARATOR', strtolower(substr(PHP_OS, 0, 3)) == 'win' ? ';' : ':');
+if (!defined('DIRECTORY_SEPARATOR')) {
+	// Older versions of PHP do not define this
+	define('DIRECTORY_SEPARATOR', strtolower(substr(PHP_OS, 0, 3)) == 'win' ? '\\' : '/');
+}
+define('BASE_SYS_DIR', dirname(dirname(__FILE__)));
+ini_set('include_path', '.'
+	. ENV_SEPARATOR . BASE_SYS_DIR . '/includes'
+	. ENV_SEPARATOR . BASE_SYS_DIR . '/classes'
+	. ENV_SEPARATOR . BASE_SYS_DIR . '/pages'
+	. ENV_SEPARATOR . BASE_SYS_DIR . '/lib'
+	. ENV_SEPARATOR . BASE_SYS_DIR . '/lib/smarty'
+	. ENV_SEPARATOR . ini_get('include_path')
+);
+
+define('REALLY_BIG_NUMBER', 10000);
+
+// Seed random number generator
+mt_srand(((double) microtime()) * 1000000);
+
+// System-wide functions
+require('functions.inc.php');
+
+
+/**
+ * System class imports.
+ * Only classes used system-wide should be included here.
+ */
+import('core.Core');
+import('core.Request');
+import('core.DataObject');
+import('core.Handler');
+import('core.String');
+import('core.Registry');
+import('core.ArrayItemIterator');
+import('core.VirtualArrayIterator');
+
+import('config.Config');
+
+import('db.DBConnection');
+import('db.DAO');
+import('db.DAOResultFactory');
+import('db.DBRowIterator');
+import('db.XMLDAO');
+import('db.DAORegistry');
+
+import('i18n.Locale');
+import('i18n.TimeZone');
+
+import('security.Validation');
+import('session.SessionManager');
+import('template.TemplateManager');
+
+//import('submission.common.Action');
+
+import('help.Help');
+
+import('plugins.PluginRegistry');
+import('plugins.HookRegistry');
+
+/**
+ * System initialization (post-classloading).
+ */
+
+// Is this a pre-fetch that we want to prevent?
+if (isset($_SERVER['HTTP_X_MOZ']) && $_SERVER['HTTP_X_MOZ'] == 'prefetch') {
+	header('HTTP/1.0 403 Forbidden');
+	echo '403: Forbidden<br><br>Pre-fetching not allowed.';
+	exit;
+}
+
+// Initialize string wrapper library
+String::init();
+
+// Load the main locale file
+Locale::initialize();
+
+// Load the generic plugins
+PluginRegistry::loadCategory('generic');
+
+?>

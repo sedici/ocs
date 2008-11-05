@@ -1,0 +1,27 @@
+{**
+ * citation.tpl
+ *
+ * Copyright (c) 2000-2008 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Reference Manager citation format generator
+ *
+ * $Id: citation.tpl,v 1.5 2008/04/04 17:06:51 asmecher Exp $
+ *}
+{if $galleyId}
+{url|assign:"paperUrl" page="paper" op="view" path=$paperId|to_array:$galleyId}
+{else}
+{url|assign:"paperUrl" page="paper" op="view" path=$paperId}
+{/if}
+TY  - JOUR
+{foreach from=$paper->getPresenters() item=presenter}
+AU  - {$presenter->getFullName(true)|escape}
+{/foreach}
+PY  - {$paper->getDatePublished()|date_format:"%Y"}
+TI  - {$paper->getPaperTitle()|strip_tags}
+JF  - {$conference->getConferenceTitle()|escape}; {$schedConf->getSchedConfIdentification()|escape}
+Y2  - {$paper->getDatePublished()|date_format:"%Y"}
+KW  - {$paper->getPaperSubject()|replace:';':','|escape}
+N2  - {$paper->getPaperAbstract()|strip_tags|replace:"\n":" "|replace:"\r":" "}
+UR  - {$paperUrl}
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "../../../topic.dtd">
+
+<!--
+  * 000028.xml
+  *
+  * Copyright (c) 2000-2008 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Editorial Process - Author's Role - Review - Peer Review
+  *
+  * $Id: 000028.xml,v 1.8 2008/05/22 14:58:40 asmecher Exp $
+  -->
+
+<topic id="editorial/topic/000028" locale="en_US" title="Peer Review" toc="editorial/toc/000017" key="editorial.authorsRole.review.peerReview">
+	<section>
+		<![CDATA[<p>The initiated date and last modified date regarding review are recorded here. Versions of the submission produced and used during the peer review process - Review Version, Director Version and Author version -- are also listed.</p>]]>
+	</section>
+</topic>

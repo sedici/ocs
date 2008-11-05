@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE data SYSTEM "../dtd/xmldata.dtd">
+
+<!--
+  * email_templates.xml
+  *
+  * Copyright (c) 2000-2008 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Email templates XML file.
+  *
+  * $Id: email_templates.xml,v 1.14 2008/04/04 17:06:48 asmecher Exp $
+  -->
+
+<data>
+	<table name="email_templates_default">
+
+		<!--
+		  *
+		  * General
+		  *
+		  -->
+		<row>
+			<field name="email_key">PASSWORD_RESET_CONFIRM</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+		</row>
+		<row>
+			<field name="email_key">PASSWORD_RESET</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+		</row>
+		<row>
+			<field name="email_key">USER_REGISTER</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+		</row>
+		<row>
+			<field name="email_key">USER_VALIDATE</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+		</row>
+		<!--row>
+			<field name="email_key">LOCKSS_EXISTING_ARCHIVE</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+		</row>
+		<row>
+			<field name="email_key">LOCKSS_NEW_ARCHIVE</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+		</row-->
+
+
+		<!--
+		  *
+		  * Submission-related
+		  *
+		  -->
+		<row>
+			<field name="email_key">SUBMISSION_ACK</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">1</field>
+			<field name="to_role_id">4096<!-- Presenter --></field>
+		</row>
+		<row>
+			<field name="email_key">SUBMISSION_UPLOAD_ACK</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">1</field>
+			<field name="to_role_id">4096<!-- Presenter --></field>
+		</row>
+		<row>
+			<field name="email_key">SUBMISSION_UNSUITABLE</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">1</field>
+			<field name="to_role_id">4096<!-- Presenter --></field>
+			<field name="from_role_id">128<!-- Track Director --></field>
+		</row>
+		<row>
+			<field name="email_key">SUBMISSION_COMMENT</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+		</row>
+		<row>
+			<field name="email_key">SUBMISSION_DECISION_REVIEWERS</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+			<field name="from_role_id">128<!-- Track Director --></field>
+			<field name="to_role_id">256<!-- Reviewer --></field>
+		</row>
+
+		<!--
+		  *
+		  * Director
+		  *
+		  -->
+		<row>
+			<field name="email_key">DIRECTOR_ASSIGN</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">1</field>
+			<field name="from_role_id">64<!-- Director --></field>
+			<field name="to_role_id">128<!-- Track Director --></field>
+		</row>
+
+
+		<!--
+		  *
+		  * Peer Review
+		  *
+		  -->
+		<row>
+			<field name="email_key">REVIEW_CANCEL</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">1</field>
+			<field name="from_role_id">128<!-- Track Director --></field>
+			<field name="to_role_id">256<!-- Reviewer --></field>
+		</row>
+		<row>
+			<field name="email_key">REVIEW_REQUEST</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">1</field>
+			<field name="from_role_id">128<!-- Track Director --></field>
+			<field name="to_role_id">256<!-- Reviewer --></field>
+		</row>
+		<row>
+			<field name="email_key">REVIEW_REQUEST_ONECLICK</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">1</field>
+			<field name="from_role_id">128<!-- Track Director --></field>
+			<field name="to_role_id">256<!-- Reviewer --></field>
+		</row>
+		<row>
+			<field name="email_key">REVIEW_CONFIRM</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">1</field>
+			<field name="from_role_id">256<!-- Reviewer --></field>
+			<field name="to_role_id">128<!-- Track Director --></field>
+		</row>
+		<row>
+			<field name="email_key">REVIEW_CONFIRM_ACK</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">1</field>
+			<field name="to_role_id">256<!-- Reviewer --></field>
+			<field name="from_role_id">128<!-- Track Director --></field>
+		</row>
+		<row>
+			<field name="email_key">REVIEW_DECLINE</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">1</field>
+			<field name="from_role_id">256<!-- Reviewer --></field>
+			<field name="to_role_id">128<!-- Track Director --></field>
+		</row>
+		<row>
+			<field name="email_key">REVIEW_COMPLETE</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">1</field>
+			<field name="from_role_id">256<!-- Reviewer --></field>
+			<field name="to_role_id">128<!-- Track Director --></field>
+		</row>
+		<row>
+			<field name="email_key">REVIEW_ACK</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">1</field>
+			<field name="from_role_id">128<!-- Track Director --></field>
+			<field name="to_role_id">256<!-- Reviewer --></field>
+		</row>
+		<row>
+			<field name="email_key">REVIEW_REMIND</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+			<field name="from_role_id">128<!-- Track Director --></field>
+			<field name="to_role_id">256<!-- Reviewer --></field>
+		</row>
+		<row>
+			<field name="email_key">REVIEW_REMIND_AUTO</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+			<field name="to_role_id">256<!-- Reviewer --></field>
+		</row>
+		<row>
+			<field name="email_key">REVIEW_REMIND_ONECLICK</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+			<field name="from_role_id">128<!-- Track Director --></field>
+			<field name="to_role_id">256<!-- Reviewer --></field>
+		</row>
+		<row>
+			<field name="email_key">REVIEW_REMIND_AUTO_ONECLICK</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+			<field name="to_role_id">256<!-- Reviewer --></field>
+		</row>
+
+
+		<!--
+		  *
+		  * Director Review
+		  *
+		  -->
+		<row>
+			<field name="email_key">SUBMISSION_ABSTRACT_ACCEPT</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+			<field name="from_role_id">128<!-- Track Director --></field>
+			<field name="to_role_id">4096<!-- Presenter --></field>
+		</row>
+		<row>
+			<field name="email_key">SUBMISSION_ABSTRACT_DECLINE</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+			<field name="from_role_id">128<!-- Track Director --></field>
+			<field name="to_role_id">4096<!-- Presenter --></field>
+		</row>
+		<row>
+			<field name="email_key">SUBMISSION_ABSTRACT_REVISE</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+			<field name="from_role_id">128<!-- Track Director --></field>
+			<field name="to_role_id">4096<!-- Presenter --></field>
+		</row>
+		<row>
+			<field name="email_key">SUBMISSION_PAPER_ACCEPT</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+			<field name="from_role_id">128<!-- Track Director --></field>
+			<field name="to_role_id">4096<!-- Presenter --></field>
+		</row>
+		<row>
+			<field name="email_key">SUBMISSION_PAPER_DECLINE</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+			<field name="from_role_id">128<!-- Track Director --></field>
+			<field name="to_role_id">4096<!-- Presenter --></field>
+		</row>
+		<row>
+			<field name="email_key">SUBMISSION_PAPER_REVISE</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+			<field name="from_role_id">128<!-- Track Director --></field>
+			<field name="to_role_id">4096<!-- Presenter --></field>
+		</row>
+
+
+		<!--
+		  *
+		  * Registrations
+		  *
+		  -->
+		<row>
+			<field name="email_key">REGISTRATION_NOTIFY</field>
+			<field name="can_edit">1</field>
+			<field name="can_disable">0</field>
+			<field name="to_role_id">32768</field>
+		</row>
+	</table>
+</data>

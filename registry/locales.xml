@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  * locales.xml
+  *
+  * Copyright (c) 2000-2008 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Locales registry file.
+  *
+  * This file lists all locales available to the system.
+  * (i.e., existing under the locales/ directory)
+  *
+  * $Id: locales.xml,v 1.13 2008/06/19 00:12:17 asmecher Exp $
+  -->
+
+<!DOCTYPE locales [
+	<!ELEMENT locales (locale+)>
+	<!ELEMENT locale EMPTY>
+		<!ATTLIST locale
+			key CDATA #REQUIRED
+			name CDATA #REQUIRED
+			stylesheet CDATA #IMPLIED>
+]>
+
+<locales>
+	<locale key="ca_ES" name="Català (Espanya)"/>
+	<locale key="de_DE" name="Deutsch"/>
+	<locale key="es_ES" name="España Castellano"/>
+	<locale key="en_US" name="English"/>
+	<locale key="fr_CA" name="Français (Canada)"/>
+	<locale key="fr_FR" name="Français (France)"/>
+	<locale key="it_IT" name="Italiano"/>
+	<locale key="pt_BR" name="Português (Brasil)"/>
+	<locale key="zh_TW" name="正體中文"/>
+</locales>
