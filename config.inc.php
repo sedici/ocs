@@ -80,10 +80,10 @@ disable_path_info = Off
 [database]
 
 driver = mysql
-host = localhost
+host = 163.10.34.143
 username = root
-password = root
-name = ocs
+password = plisDontHack
+name = ocsunlp
 
 ; Enable persistent connections (recommended)
 persistent = On
@@ -194,11 +194,11 @@ allowed_html = "<a> <em> <strong> <cite> <code> <ul> <ol> <li> <dl> <dt> <dd> <b
 [email]
 
 ; Use SMTP for sending mail instead of mail()
-; smtp = On
+ smtp = On
 
 ; SMTP server settings
-; smtp_server = mail.example.com
-; smtp_port = 25
+ smtp_server = sedici.unlp.edu.ar
+ smtp_port = 25
 
 ; Enable SMTP authentication
 ; Supported mechanisms: PLAIN, LOGIN, CRAM-MD5, and DIGEST-MD5

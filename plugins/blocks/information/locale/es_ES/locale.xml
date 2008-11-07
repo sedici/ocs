@@ -13,7 +13,7 @@
   -->
  
 <locale name="es_ES" full_name="España Castellano">
-	<message key="plugins.block.navigation.displayName">Bloque de Navegaci&oacute;n</message>
-	<message key="plugins.block.navigation.description">Este plugin provee links de navegación en la barra lateral.</message>
-	<message key="plugins.block.navigation.conferenceContent">Contenido del Congreso</message>
+	<message key="plugins.block.information.displayName">Bloque de Información</message>
+	<message key="plugins.block.information.description">Este plugin provee links de información en la barra lateral.</message>
+	<message key="plugins.block.information.link">Información</message>
 </locale>

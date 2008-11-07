@@ -172,7 +172,7 @@
 	<message key="common.pageHeaderLogo.altText">Logo del Encabezado de Página</message>
 	<message key="common.homePageHeader.altText">Imagen del Encabezado de la Página Principal</message>
 	<message key="common.homePageHeaderLogo.altText">Logo del Encabezado de la Página Principal</message>
-	<message key="common.conferenceHomepageImage.altText">Imagen de la Página de Inicio de la Conferencia</message>
+	<message key="common.conferenceHomepageImage.altText">Imagen de la Página de Inicio del Congreso</message>
 	
 	<!-- Common Form Messages -->
 	<message key="form.errorsOccurred">Ha ocurrido un error mientras se procesaba este formulario</message>
@@ -235,7 +235,7 @@
 	<message key="navigation.otherConferences">Otros eventos</message>
 	<message key="navigation.myProfile">Mi perfil</message>
 	<message key="navigation.myConferences">Mi evento</message>
-	<message key="navigation.conferenceContent">Contenido de la Conferencia/Congreso</message>
+	<message key="navigation.conferenceContent">Contenido del Congreso</message>
 	<message key="navigation.browse">Listar</message>
 	<message key="navigation.browseByConference">Por evento</message>
 	<message key="navigation.browseByPresenter">Por autor</message>
@@ -381,7 +381,7 @@
 	<message key="submission.paperType.panel">Presentación colectiva (panel)</message>
 
 	<message key="submission.titleAndAbstract">Título y Resumen</message>
-	<message key="submission.indexing">Indización</message>
+	<message key="submission.indexing">Indexación</message>
 	<message key="submission.restrictions">Restricciones</message>
 	<message key="submission.supportingAgencies">Entidades organizadoras</message>
 	<message key="submission.saveMetadata">Guardar Metadatos</message>
@@ -455,6 +455,7 @@
 	<message key="schedConf.cfp">Call for papers</message>
 	<message key="schedConf.discussion">Discusión</message>
 	<message key="schedConf.registration">Registro</message>
+	<message key="schedConf.accommodation">Acomodaciones</message>
 	<message key="schedConf.supporters">Organizadores y socios</message>
 	<message key="schedConf.timeline">Plazo</message>
 	<message key="schedConf.schedule">Calendario de eventos</message>
@@ -475,7 +476,7 @@
 	<message key="schedConf.registration.alreadyRegistered">Usted ya está inscrito, aunque el pago todavía no se ha recibido. Si hay algún error o desea cambiar su inscripción, póngase en contacto con la persona indicada en "Acerca de".</message>
 	<message key="schedConf.registration.alreadyRegisteredAndPaid">Usted ya está registrado en esta Conferencia/Congreso y su inscripción ha sido abonada. Si hay algún error o desea cambiar su inscripción, póngase en contacto con la persona indicada en "Acerca de".</message>
 	<message key="schedConf.registration.noPaymentMethodAvailable">Su inscripción se ha registrado. Si procede, contactaremos con usted en relación con el pago.</message>
-	<message key="schedConf.registration.conferenceFees">Tasas de la Conferencia/Congreso</message>
+	<message key="schedConf.registration.conferenceFees">Tasas del Congreso</message>
 	<message key="schedConf.registration.type">Tipos de Inscripción</message>
 	<message key="schedConf.registration.cost">Importe</message>
 	<message key="schedConf.registration.noneAvailable">No hay tipos de inscripción disponibles.</message>
@@ -503,11 +504,15 @@
 	<message key="user.password">Clave</message>
 	<message key="user.sendPassword">Confirmación</message>
 	<message key="user.sendPassword.description">Envíeme un correo de confirmación que incluya nombre de usuario y contraseña</message>
+	<message key="user.salutation">Salutación</message>
 	<message key="user.name">Nombre</message>
 	<message key="user.firstName">Primer nombre</message>
 	<message key="user.middleName">Segundo nombre</message>
 	<message key="user.initials">Iniciales</message>
-	<message key="user.initialsExample">Pepe Martínez López= PML</message>
+	<message key="user.initialsExample">Juan Pedro Martinez = JPM</message>
+	<message key="user.gender">Sexo</message>
+	<message key="user.masculine">M</message>
+	<message key="user.feminine">F</message>
 	<message key="user.lastName">Apellidos</message>
 	<message key="user.title">Títulación</message>
 	<message key="user.signature">Firma</message>
@@ -607,8 +612,8 @@
 	<message key="submission.event.reviewer.reviewFile">Se ha actualizado el fichero de la recensión</message>
 
 	<!-- Conference events -->
-	<message key="conference.event.general.configuration">Configuración de la Conferencia/Congreso modificada</message>
-	<message key="conference.event.general.deadline">El plazo de la Conferencia/Congreso ha finalizado</message>
+	<message key="conference.event.general.configuration">Configuración del Congreso modificada</message>
+	<message key="conference.event.general.deadline">El plazo del Congreso ha finalizado</message>
 
 	<!--
 	 *
@@ -671,7 +676,7 @@
 	<message key="admin.settings.form.minPasswordLengthRequired">Debe introducir una contraseña con una longitud mínima de 4 caracteres.</message>
 	<message key="admin.settings.passwordCharacters">caracteres</message>
 	<message key="admin.settings.siteLanguage">Idioma</message>
-	<message key="admin.settings.oaiRegistration">Registrar la web para  indización (Metadata Harvesting)</message>
+	<message key="admin.settings.oaiRegistration">Registrar la web para indexación (Metadata Harvesting)</message>
 	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[Para que el contenido de todas las Conferencias/Congresos estén indizados dentro de un sistema distribuido de bases de datos de investigación, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">registre</a> su URL en el <a href="http://pkp.sfu.ca/harvester/" target="_blank">recolector de metadatos del Public Knowledge Project</a>. Esta herramienta captura los metadatos  indizados en esta Conferencia/Congreso, lo que permite relizar una búsqueda precisa y colectiva entre los proveedores de datos que cumplen con <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">el protocolo de recolección de metadatos de la Open Archives Initiative</a>.
 <br /><br />
 <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">Haga clic aquí</a> e introduzca <span class="highlight">{$siteUrl}</span> bajo <strong>la URL</strong>, y <span class="highlight">{$oaiUrl}</span> bajo <strong>Base URL para Archivos OAI</strong>.
@@ -760,20 +765,20 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="admin.conferences.confirmDelete">¿Está seguro de que quiere suprimir definitivamente esta Conferencia/Congreso y todo su contenido?</message>
 	<message key="admin.conferences.create">Crear Conferencia/Congreso</message>
 	<message key="admin.conferences.createInstructions">Usted será inscrito automáticamente como el gestor de esta Conferencia/Congreso. Después de la creación de una nueva Conferencia/Congreso, entre en calidad de gestor para continuar con su configuración y su inscripción de usuario.</message>
-	<message key="admin.conferences.urlWillBe">La URL de la Conferencia/Congreso será {$sampleUrl}</message>
+	<message key="admin.conferences.urlWillBe">La URL del Congreso será {$sampleUrl}</message>
 	<message key="admin.conferences.form.titleRequired">El título es obligatorio.</message>
 	<message key="admin.conferences.form.pathRequired">La ruta es obligatoria.</message>
 	<message key="admin.conferences.form.pathAlphaNumeric">La ruta sólo puede contener caracteres alfanuméricos, guiones bajos y guiones, y debe comenzar y terminar con caracteres alfanuméricos.</message>
 	<message key="admin.conferences.form.pathExists">La ruta seleccionada ya está en uso por otra Conferencia/Congreso.</message>
 	<message key="admin.conferences.enableConferenceInstructions">Active la Conferencia/Congreso para que se publique en la web</message>
-	<message key="admin.conferences.conferenceDescription">Descripción de la Conferencia/Congreso</message>
-	<message key="admin.conferences.conferenceDescriptionInstructions">La descripción de la Conferencia/Congreso identifica la Conferencia/Congreso. Aparece en la pagina principal de la Conferencia/Congreso, así como en todas sus páginas.</message>
+	<message key="admin.conferences.conferenceDescription">Descripción del Congreso</message>
+	<message key="admin.conferences.conferenceDescriptionInstructions">La descripción del Congreso identifica la Conferencia/Congreso. Aparece en la pagina principal del Congreso, así como en todas sus páginas.</message>
 	<message key="admin.conferences.importOCS1">Importar desde OCS 1</message>
 	<message key="admin.conferences.importOCS1.editMigratedConference">Editar la Conferencia/Congreso migrada</message>
 	<message key="admin.conferences.importOCS1.conflict.desc">Algunas cuentas de los usuarios contenían información. OCS 1.x permite múltiples cuentas de usuario que compartan la misma dirección de correo electrónico, mientras que OCS 2.x no. En la siguiente lista, a la segunda de las cuentas mostrada se le ha asignado una cuenta de correo electrónico de carácter temporal. Estas deben corregirse a mano, ya sea mediante la asignación de otra cuenta de correo electrónico, o mediante la fusión de las cuentas.</message>
 	<message key="admin.conferences.importOCS1.errors.desc">Se han encontrado los siguientes errores al migrar de OCS 1.x a OCS 2.x.</message>
 	<message key="admin.conferences.importOCS1.conflict">{$firstUsername} ({$firstName}) y {$secondUsername} ({$secondName})</message>
-	<message key="admin.conferences.importOCS1Instructions"><![CDATA[Consulte el documento de ACTUALIZACION distribuido con  el OCS con información detallada sobre la migración de datos de OCS 1 al OCS 2. Tenga en cuenta que este proceso NO crea una Conferencia/Congreso completamente configurada en OCS 2 ; sólo se importarán determinados elementos (por ejemplo documentos). <strong>Todos los usuarios importados  tendrán que restablecer sus contraseñas. Es importante que el Director de la Conferencia/Congreso revise toda la información antes de activar la importación del sitio web.</strong>]]></message>
+	<message key="admin.conferences.importOCS1Instructions"><![CDATA[Consulte el documento de ACTUALIZACION distribuido con  el OCS con información detallada sobre la migración de datos de OCS 1 al OCS 2. Tenga en cuenta que este proceso NO crea una Conferencia/Congreso completamente configurada en OCS 2 ; sólo se importarán determinados elementos (por ejemplo documentos). <strong>Todos los usuarios importados  tendrán que restablecer sus contraseñas. Es importante que el Director del Congreso revise toda la información antes de activar la importación del sitio web.</strong>]]></message>
 	<message key="admin.conference.pathImportInstructions">Ruta existente para la Conferencia/Congreso o ruta a crear (p.e., "ocs").</message>
 	<message key="admin.conference.importPath">Ruta a OCS 1</message>
 	<message key="admin.conference.importPathInstructions">Ruta completa al sistema de ficheros donde se instaló OCS  1 (p.e., "/var/www/ocs").</message>
@@ -807,15 +812,15 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<!-- Scheduled Conference Management -->
 	<message key="manager.schedConfs">Conferencias/Congresos programados</message>
 	<message key="manager.schedConfSetup">Puesta en marcha</message>
-	<message key="manager.schedConfManagement">Gestión de la Conferencia/Congreso</message>
+	<message key="manager.schedConfManagement">Gestión del Congreso</message>
 	<message key="manager.schedConfs.schedulingAConference">Programar la Conferencia/Congreso</message>
 	<message key="manager.schedConfs.noneCreated">No se han creado eventos.</message>
 	<message key="manager.schedConfs.confirmDelete">¿Está seguro de que quiere borrar permanentemente esta Conferencia y todos su contenidos?</message>
 	<message key="manager.schedConfs.scheduledConference">Conferencia/Congreso programada</message>
 	<message key="manager.schedConfs.create">Crear una Conferencia/Congreso</message>
-	<message key="manager.schedConfs.form.createInstructions">El modelo de conferencia programada se crea introduciendo el título (por ejemplo, si es una conferencia anual, el nombre de la conferencia más el año) y la ruta URL. Usted se convertira en el director de la Conferencia/Congreso Director y podrá designar a otros directores, quienes podrán gestionar los detalles de este evento, comenzando con el calendario de la conferencia/congreso.</message>
+	<message key="manager.schedConfs.form.createInstructions">El modelo de conferencia programada se crea introduciendo el título (por ejemplo, si es una conferencia anual, el nombre de la conferencia más el año) y la ruta URL. Usted se convertira en el director del Congreso Director y podrá designar a otros directores, quienes podrán gestionar los detalles de este evento, comenzando con el calendario de la conferencia/congreso.</message>
 	<message key="manager.schedConfs.form.urlWillBe">La URL del evento será {$sampleUrl}</message>
-	<message key="manager.schedConfs.form.title">Título de la Conferencia/Congreso</message>
+	<message key="manager.schedConfs.form.title">Título del Congreso</message>
 	<message key="manager.schedConfs.form.acronym">Acrónimo</message>
 	<message key="manager.schedConfs.form.titleRequired">El título es obligatorio.</message>
 	<message key="manager.schedConfs.form.acronymRequired">Es obligatorio el acrónimo.</message>
@@ -824,14 +829,14 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="manager.schedConfs.form.pathAlphaNumeric">La ruta sólo puede contener caracteres alfanuméricos, guiones bajos y guiones, y debe comenzar y terminar con caracteres alfanuméricos.</message>
 
 	<!-- Program settings -->
-	<message key="manager.program.form.description">Cuando el programa de la Conferencia/Congreso esté listo para los usuarios, depositarlo aquí o introducirlo como texto plano.</message>
+	<message key="manager.program.form.description">Cuando el programa del Congreso esté listo para los usuarios, depositarlo aquí o introducirlo como texto plano.</message>
 	<message key="manager.program.form.programFile">Fichero del programa</message>
 	<message key="manager.program.form.programFile.description">Si el programa está disponible en un fichero, cargarlo aquí.</message>
 	<message key="manager.program.form.programText">Programa en texto plano</message>
-	<message key="manager.program.form.programText.description">Introduzca el texto del programa de la Conferencia/Congreso.</message>
+	<message key="manager.program.form.programText.description">Introduzca el texto del programa del Congreso.</message>
 
 	<!-- Conference Management -->
-	<message key="manager.conferenceSiteManagement">Gestión de la Conferencia/Congreso</message>
+	<message key="manager.conferenceSiteManagement">Gestión del Congreso</message>
 	<message key="manager.websiteManagement">Gestión del sitio web</message>
 	<message key="manager.currentConferences">Conferencias/Congresos activos</message>
 	<message key="manager.emails"> Plantillas de correo</message>
@@ -841,7 +846,7 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="manager.filesBrowser">Ficheros examinados</message>
 	<message key="manager.groups">Equipo organizador</message>
 	<message key="manager.managementPages">Gestión General</message>
-	<message key="manager.managementPages.description"><![CDATA[<ol><li>Empiece con la gestión del sitio web.</li><li>Use la opción de Conferencias Programadas para crear una nueva Conferencia.</li><li>Vaya a la configuración de la Conferencia/Congreso para enviar convocatorias de documentos, inscripción, etc. y use los plazos para fijar las fechas de las publicaciones, presentaciones, etc.</li></ol>]]></message>
+	<message key="manager.managementPages.description"><![CDATA[<ol><li>Empiece con la gestión del sitio web.</li><li>Use la opción de Conferencias Programadas para crear una nueva Conferencia.</li><li>Vaya a la configuración del Congreso para enviar convocatorias de documentos, inscripción, etc. y use los plazos para fijar las fechas de las publicaciones, presentaciones, etc.</li></ol>]]></message>
 	<message key="manager.program">Programa</message>
 	<message key="manager.plugins">Plugins del sistema</message>
 	<message key="manager.users">Usuarios</message>
@@ -853,7 +858,7 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="manager.announcementTypes">Tipos de anuncio</message>
 
 	<!-- Statistics & Reports -->
-	<message key="manager.statistics.statistics">Estadísticas de la Conferencia/Congreso</message>
+	<message key="manager.statistics.statistics">Estadísticas del Congreso</message>
 	<message key="manager.statistics.statistics.description">OCS calcula las siguientes estadísticas para cada Conferencia/Congreso. Los "días para revisar" se calculan a partir de la fecha de envío (o del inicio de la evaluación) hasta la fecha de la toma de decisión del director, mientras que los "días para publicar" se calculan desde que el trabajo se acepta hasta  hasta su publicación.</message>
 	<message key="manager.statistics.statistics.makePublic">Examina elementos para poner a disposición de los lectores en "Acerca de esta Conferencia/Congreso".</message>
 	<message key="manager.statistics.statistics.selectTracks">Seleccionar los tramos para el cálculo de las estadísticas sobre la evaluación de los trabajos de esta Conferencia.</message>
@@ -880,8 +885,8 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="manager.statistics.reports.dateFrom">De</message>
 	<message key="manager.statistics.reports.dateTo">Hasta</message>
 	<message key="manager.statistics.reports.reportType">Tipo de Informe</message>
-	<message key="manager.statistics.reports.type.conference">Informe de la Conferencia/Congreso</message>
-	<message key="manager.statistics.reports.type.schedConf">Informe de la Conferencia/Congreso programada</message>
+	<message key="manager.statistics.reports.type.conference">Informe del Congreso</message>
+	<message key="manager.statistics.reports.type.schedConf">Informe del Congreso programada</message>
 	<message key="manager.statistics.reports.type.director">Informe del Director</message>
 	<message key="manager.statistics.reports.type.reviewer">Informe del Recensor</message>
 	<message key="manager.statistics.reports.type.track">Informe</message>
@@ -937,7 +942,7 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	     *** Generic setup locale keys
 	     ***
 	-->
-	<message key="manager.setup.conferenceTitle">Título de la Conferencia/Congreso</message>
+	<message key="manager.setup.conferenceTitle">Título del Congreso</message>
 	<message key="manager.setup.homepageImageInvalid">Formato de la imagen la página principal no válido.Los formatos permitidos son .gif, .jpg, or .png.</message>
 	<message key="manager.setup.homeTitleImageInvalid">Formato de imagen no válido para la cabecera de página. Los formatos permitidos son .gif, .jpg, or .png.</message>
 	<message key="manager.setup.homeHeaderImageInvalid">Formato de imagen no válido para el logo de la cabecera de página de inicio. Los formatos permitidos son .gif, .jpg, or .png.</message>
@@ -959,7 +964,7 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 			<p>¡Casi Hecho!</p>
 			<p>Se ha creado una Conferencia, que puede tratarse de única conferencia, una conferencia anual, o una serie de conferencias programadas, todas pueden ser administradas desde este sitio. Para programar una Conferencia específica, vaya a <a href="{$schedConfSetupUrl}">Conferencia/Congresos programados</a>. Puede acceder a esta página en cualquier momento a través de la página de Gestión de Conferencia/Congreso.</p>
 			<p>Puede volver a esas seis páginas en cualquier momento siguiendo los enlaces "Inicio > Gestor Conferencia/Congreso > Puesta en Marcha".</p>
-			<p>Puede administrar las conferencias programadas en "Usuario > Gestor de la Conferencia/Congreso > Puesta en Marcha"</p>
+			<p>Puede administrar las conferencias programadas en "Usuario > Gestor del Congreso > Puesta en Marcha"</p>
 			]]></message>
 
 	<message key="manager.setup.htmlSetupInstructions"><![CDATA[Si usa HTML en la configuración de las cajas de texto de (tamaño de fuente, negrita, color, etc.), observe que el texto que "muestra" es tratado automáticamente como <tt>&lt;br&gt;</tt>.]]></message>
@@ -973,41 +978,41 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="manager.setup.aboutConference">Acerca de esta Conferencia/Congreso</message>
 	<message key="manager.setup.additionalContent">Contenidos adicionales de esta Web</message>
 	<message key="manager.setup.layout">Cabeceras, Pies, Listas y Barra de Navegación</message>
-	<message key="manager.setup.styleSheet">Hoja de estilo de la Conferencia/Congreso</message>
+	<message key="manager.setup.styleSheet">Hoja de estilo del Congreso</message>
 	<message key="manager.setup.loggingAndAuditing">Control de accesos (logs)</message>
 	<message key="manager.setup.indexing">Conferencia/Congreso Indizado </message>
 
 	<message key="manager.setup.aboutConference.title">Paso 1. Acerca de esta Conferencia/Congreso</message>
 	<message key="manager.setup.additionalContent.title">Paso 2. Contenido adicional del sitio web</message>
 	<message key="manager.setup.layout.title">Paso 3. Cabeceras del sitio web, Pies de página, Listas y Barra de Navegación</message>
-	<message key="manager.setup.styleSheet.title">Paso 4. Hoja de Estilo de la Conferencia/Congreso</message>
+	<message key="manager.setup.style.title">Paso 4. Hoja de Estilo del Congreso</message>
 	<message key="manager.setup.loggingAndAuditing.title">Paso 5. Control de Accesos</message>
-	<message key="manager.setup.indexing.title">Paso 6. Indización de la Conferencia/Congreso</message>
+	<message key="manager.setup.indexing.title">Paso 6. Indexación del Congreso</message>
 
 	<message key="manager.setup.aboutConference.brief">Acerca de</message>
 	<message key="manager.setup.additionalContent.brief">Contenido adicional </message>
 	<message key="manager.setup.layout.brief">Cabeceras, Pies, etc.</message>
-	<message key="manager.setup.styleSheet.brief">Hoja de Estilo</message>
+	<message key="manager.setup.style.brief">Hoja de Estilo</message>
 	<message key="manager.setup.loggingAndAuditing.brief">Accesos &amp; Control</message>
-	<message key="manager.setup.indexing.brief">Indización</message>
+	<message key="manager.setup.indexing.brief">Indexación</message>
 
-	<message key="manager.setup.aboutConference.description">Descripción de la Conferencia/Congreso, contacto principal, nota sobre el copyright, etc.</message>
+	<message key="manager.setup.aboutConference.description">Descripción del Congreso, contacto principal, nota sobre el copyright, etc.</message>
 	<message key="manager.setup.additionalContent.description">Contenido de la página de inicio, información sobre el usuario  y anuncios</message>
 	<message key="manager.setup.layout.description">Títulos, logos, cabeceras, pies, etc.</message>
-	<message key="manager.setup.styleSheet.description">Hojas de estilos CSS para las páginas de la Conferencia/Congreso</message>
+	<message key="manager.setup.style.description">Hojas de estilos CSS para las páginas del Congreso</message>
 	<message key="manager.setup.loggingAndAuditing.description">Logs de email, logs de eventos, etc.</message>
 	<message key="manager.setup.indexing.description">Motores de búsqueda y recolección de metadatos</message>
 
-	<message key="manager.setup.stepsToConferenceSite">Seis Pasos para creación de la web de la Conferencia/Congreso</message>
+	<message key="manager.setup.stepsToConferenceSite">Seis Pasos para creación de la web del Congreso</message>
 
 	<!-- Conference setup page 1 -->
-	<message key="manager.setup.aboutConference.conferenceDescription">Descripción de la Conferencia/Congreso</message>
+	<message key="manager.setup.aboutConference.conferenceDescription">Descripción del Congreso</message>
 	<message key="manager.setup.aboutConference.conferenceDescription.description">Esta descripción perfila el tema y enfoque general de las conferencias programadas en este sitio.</message>
 	<message key="manager.setup.aboutConference.principalContact">Contacto Principal de la web de las Conferencia/Congreso</message>
 	<message key="manager.setup.aboutConference.copyrightNotice">Nota sobre el Copyright</message>
 	<message key="manager.setup.aboutConference.copyrightNotice.description"><![CDATA[El texto sobre el Copyright aparecerá también en los metadatos que acompañan al material enviado a la conferencia como una declaración de que los autores aceptan los términos de copyright al someterlo a la conferencia. The Public Knowledge Project recomienda el uso de la licencias <a href="http://creativecommons.org">Creative Commons</a> y facilita un ejemplo de licencia más abajo.]]></message>
 	<message key="manager.setup.aboutConference.copyrightNoticeAgree">Exigir a los autores que confirmen estar de acuerdo con la Nota de Copyright como parte del proceso de envío.</message>
-	<message key="manager.setup.aboutConference.postCreativeCommons">Poner el logotipo de la licencia Creative Commons en la página web de la Conferencia/Congreso.</message>
+	<message key="manager.setup.aboutConference.postCreativeCommons">Poner el logotipo de la licencia Creative Commons en la página web del Congreso.</message>
 	<message key="manager.setup.aboutConference.archiveAccessPolicy">Fichero que contiene la política de acceso</message>
 	<message key="manager.setup.aboutConference.archiveAccessPolicy.description">Se ha guardado la siguiente configuración para el control de acceso a la Conferencia/Congreso creada. Ver sección 2.4 para opciones adicionales.</message>
 	<message key="manager.setup.aboutConference.privacyStatement">Declaración de privacidad</message>
@@ -1032,26 +1037,26 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="manager.setup.additionalContent.information.forReaders">Para Lectores</message>
 	<message key="manager.setup.additionalContent.information.forPresenters">Para Autores</message>
 	<message key="manager.setup.additionalContent.announcements">Anuncios</message>
-	<message key="manager.setup.additionalContent.announcementsDescription">Los anuncios pueden publicarse para informar a los lectores de la Conferencia sobre las últimas noticias y eventos. Los anuncios se publicarán en la página de Anuncios.</message>
-	<message key="manager.setup.additionalContent.enableAnnouncements">Posibilitar que los gestores de la Conferencia/Congreso añadir anuncios.</message>
+	<message key="manager.setup.additionalContent.announcementsDescription">Los anuncios pueden publicarse para informar a los lectores del Congreso sobre las últimas noticias y eventos. Los anuncios se publicarán en la página de Anuncios.</message>
+	<message key="manager.setup.additionalContent.enableAnnouncements">Posibilitar que los gestores del Congreso añadir anuncios.</message>
 	<message key="manager.setup.additionalContent.enableAnnouncementsHomepage1">Mostrar</message>
-	<message key="manager.setup.additionalContent.enableAnnouncementsHomepage2">de los anuncios más recientes publicados en la página de inicio de la Conferencia.</message>
+	<message key="manager.setup.additionalContent.enableAnnouncementsHomepage2">de los anuncios más recientes publicados en la página de inicio del Congreso.</message>
 	<message key="manager.setup.additionalContent.announcementsIntroduction">Información Adicional</message>
 	<message key="manager.setup.additionalContent.announcementsIntroductionDescription">Introducir cualquier información adicional dirigida a los lectores  en la página de Anuncios.</message>
-	<message key="manager.setup.additionalContent.archiveAccess">Acceso a las Presentaciones de la Conferencia/Congreso</message>
-	<message key="manager.setup.additionalContent.archiveAccess.description">La fecha en al que se permite el acceso a las presentaciones se encuentra en la programación de la Conferencia/Congreso, mientras que el acceso a conferencias archivadas se controla desde las opciones del gestor de  Conferencia/Congreso.</message>
+	<message key="manager.setup.additionalContent.archiveAccess">Acceso a las Presentaciones del Congreso</message>
+	<message key="manager.setup.additionalContent.archiveAccess.description">La fecha en al que se permite el acceso a las presentaciones se encuentra en la programación del Congreso, mientras que el acceso a conferencias archivadas se controla desde las opciones del gestor de  Conferencia/Congreso.</message>
 	<message key="manager.setup.additionalContent.archiveAccess.open">Acceso abierto a todos los visitantes del sitio web.</message>
 	<message key="manager.setup.additionalContent.archiveAccess.accountRequired">Es obligatorio que los visitantes se registren.</message>
 	<message key="manager.setup.additionalContent.archiveAccess.registrationRequired">Es obligatorio registrarse para asistir a la Conferencia.</message>
 
 	<!-- Conference setup page 3 -->
-	<message key="manager.setup.layout.homepageTitle">Título de la página de inicio de la Conferencia/Congreso</message>
+	<message key="manager.setup.layout.homepageTitle">Título de la página de inicio del Congreso</message>
 	<message key="manager.setup.layout.useTextTitle">Texto del Título</message>
 	<message key="manager.setup.layout.useImageTitle">Imagen del título</message>
-	<message key="manager.setup.layout.homepageHeader">Cabecera de la página de inicio de la Conferencia/Congreso</message>
-	<message key="manager.setup.layout.homepageHeader.description">Puede cargarse una versión gráfica del título  y logo de la página de inicio de la Conferencia (en formato .gif, .jpg, or .png file), que reemplazará a la versión textual en caso de que existiera.</message>
-	<message key="manager.setup.layout.conferenceTitle">Título de la Conferencia/Congreso</message>
-	<message key="manager.setup.layout.conferenceLogo">Logo de la Conferencia/Congreso</message>
+	<message key="manager.setup.layout.homepageHeader">Cabecera de la página de inicio del Congreso</message>
+	<message key="manager.setup.layout.homepageHeader.description">Puede cargarse una versión gráfica del título  y logo de la página de inicio del Congreso (en formato .gif, .jpg, or .png file), que reemplazará a la versión textual en caso de que existiera.</message>
+	<message key="manager.setup.layout.conferenceTitle">Título del Congreso</message>
+	<message key="manager.setup.layout.conferenceLogo">Logo del Congreso</message>
 	<message key="manager.setup.layout.lists">Listas</message>
 	<message key="manager.setup.layout.lists.description">Introducir el número máximo de elementos (por ejemplo, envíos, usuarios, o asignación de la edición) que pueden aparecer de una lista por página, y el número de hipervínculos que pueden mostrarse por página.</message>
 	<message key="manager.setup.layout.itemsPerPage">Elementos por página</message>
@@ -1072,8 +1077,12 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="manager.setup.layout.conferencePageFooterDescription">Este es el pie de página de su conferencia. Para cambiar o actualizar el pie de la página, pegue el código HTML en la siguiente casilla. Como ejemplos, podrían ser otra barra de navegación, un contador de visitas, etc. Este pie aparecerá en todas las páginas.</message>
 
 	<!-- Conference setup page 4 -->
-	<message key="manager.setup.styleSheet.conferenceStyleSheet.description">Por defecto, las conferencias y esta web utiliza una hoja de estilo común (localizada en el subdirectorio "estilos"). Esta hoja de estilo puede sustituirse por otra hoja propia de la conferencia del tipo CCS.</message>
-	<message key="manager.setup.styleSheet.useConferenceStyleSheet">Hoja de estilo de la Conferencia/Congreso</message>
+	<message key="manager.setup.style.conferenceTheme">Tema del Congreso</message>
+	<message key="manager.setup.style.conferenceStyleSheet.description">Por defecto, las conferencias y esta web utilizan una hoja de estilo común (localizada en el subdirectorio "styles"). Esta hoja de estilo pueden ser sobrescritos eligiendo un "Tema" o subiendo una plantilla CSS específico del Congreso.</message>
+	<message key="manager.setup.style.useConferenceStyleSheet">Hoja de estilo del Congreso</message>
+	<message key="manager.setup.layout.leftSidebar">Columna Izquierda</message>
+	<message key="manager.setup.layout.unselected">Deseleccionado</message>
+	<message key="manager.setup.layout.rightSidebar">Columna Derecha</message>
 
 	<!-- Conference setup page 5 -->
 	<message key="manager.setup.loggingAndAuditing.pageDescription">Mantener un control de accesos (logs) de las siguientes acciones y del  material de todas las conferencias.</message>
@@ -1082,11 +1091,11 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="manager.setup.loggingAndAuditing.conferenceEventLogging">Accesos a la Conferencia/Congreso.</message>
 
 	<!-- Conference setup page 6 -->
-	<message key="manager.setup.indexing.searchEngineIndexing">Indización para el Motor de Búsqueda</message>
+	<message key="manager.setup.indexing.searchEngineIndexing">Indexación para el Motor de Búsqueda</message>
 	<message key="manager.setup.indexing.searchEngineIndexing.description">Facilite una breve descripción de la conferencia y las palabras clave que la definan (separadas por punto y coma) para los buscadores web que localicen este evento.</message>
 	<message key="manager.setup.indexing.customTags">Etiquetas</message>
 	<message key="manager.setup.indexing.customTagsDescription">Etiquetas HTML para insertar en la cabecera de cada página (p.e., META etiquetas).</message>
-	<message key="manager.setup.indexing.registerConferenceForIndexing">Registrar la  Conferencia/Congreso para su Indización (Recolección de Metadatos)</message>
+	<message key="manager.setup.indexing.registerConferenceForIndexing">Registrar la  Conferencia/Congreso para su Indexación (Recolección de Metadatos)</message>
 	<message key="manager.setup.indexing.registerConferenceForIndexing.description"><![CDATA[Para que los contenidos de esta conferencia se indicen dentro de un sistema distribuido de base de datos, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">registre</a> la URL de su conferencia en el <a href="http://pkp.sfu.ca/harvester/" target="_blank">recolector</a> de metadatos del Public Knowledge Project. Este servicio recolecta los metadatos  de cada artículo indizado en esta conferencia, permite una búsqueda entre los sitios que cumplen con el <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Protocolo de Recolección de metadatos OAI (PMH-OAI)</a>.
 <br /><br />
 Observe que si el administrador del sistema ya ha regisrado este sitio en el recolector PKP, su conferencia se indizará automáticamente si necesidad de que la registre de nuevo.
@@ -1106,7 +1115,7 @@ Observe que si el administrador del sistema ya ha regisrado este sitio en el rec
 	<message key="manager.schedConfSetup.review">Evaluación</message>
 
 	<message key="manager.schedConfSetup.details.pageDescription">Descripción, localización, contactos, emails y patrocinadores.</message>
-	<message key="manager.schedConfSetup.submissions.pageDescription">Proceso de envío y tipos de trabajos, solicitud de originales, instrucciones para autores, indización e identificación.</message>
+	<message key="manager.schedConfSetup.submissions.pageDescription">Proceso de envío y tipos de trabajos, solicitud de originales, instrucciones para autores, indexación e identificación.</message>
 	<message key="manager.schedConfSetup.review.pageDescription">Políticas respecto al proceso de evaluación, instrucciones para autores y acceso.</message>
 
 	<message key="manager.schedConfSetup.details.title">Paso 1. Detalles</message>
@@ -1114,13 +1123,13 @@ Observe que si el administrador del sistema ya ha regisrado este sitio en el rec
 	<message key="manager.schedConfSetup.review.title">Paso 3. Recensión</message>
 
 	<!-- Scheduled Conference Setup Paso 1 -->
-	<message key="manager.schedConfSetup.details.description">Descripción de la Conferencia/Congreso programada</message>
+	<message key="manager.schedConfSetup.details.description">Descripción del Congreso programada</message>
 	<message key="manager.schedConfSetup.details.introduction.description">Breve descripción de la conferencia que puede usarse para publicitar el evento.</message>
 	<message key="manager.schedConfSetup.details.overview.description">Resumen de los temas, disciplina y enfoque de la conferencia.</message>
-	<message key="manager.schedConfSetup.details.location">Lugar de celebración de la Conferencia/Congreso</message>
+	<message key="manager.schedConfSetup.details.location">Lugar de celebración del Congreso</message>
 	<message key="manager.schedConfSetup.details.location.nameOf">Nombre del lugar de celebración</message>
 	<message key="manager.schedConfSetup.details.location.city">Ciudad</message>
-	<message key="manager.schedConfSetup.details.principalContact">Contacto Principal de la Conferencia/Congreso</message>
+	<message key="manager.schedConfSetup.details.principalContact">Contacto Principal del Congreso</message>
 	<message key="manager.schedConfSetup.details.technicalSupportContact">Contacto técnico</message>
 	<message key="manager.schedConfSetup.details.technicalSupportContact.description">Esta persona aparecerá en la página de la conferencia como persona de contacto para autores y recensores,  debería tener experiencia en el manejo del sistema desde la perspectiva de todos los roles existentes. Ya que este sistema de conferencias necesita muy poca asistencia técnica, esta persona tan sólo tendría una dedicación parcial. Pueden haber ocasiones, por ejemplo, en que autores y recensores tengan problemas con las instrucciones para autores, formatos de ficheros, también deberá asegurar que regularmente se hacen copias de seguridad de la conferencia en el servidor.</message>
 	<message key="manager.schedConfSetup.details.emails">Identificación del Email</message>
@@ -1160,7 +1169,7 @@ Observe que si el administrador del sistema ya ha regisrado este sitio en el rec
 	<message key="manager.schedConfSetup.submissions.submissionLayout.toggle">Formatos autorizados (PDF, HTML, etc.) por el director de envíos de originales.</message>
 	<message key="manager.schedConfSetup.notifications">Acuse de recibo del envío</message>
 	<message key="manager.schedConfSetup.submissions.notifications.description">Las copias del mensaje de acuse de recibo al remitente deben mandarse a:</message>
-	<message key="manager.schedConfSetup.submissions.notifications.copyPrimaryContact">Principal Contacto de la Conferencia/Congreso.</message>
+	<message key="manager.schedConfSetup.submissions.notifications.copyPrimaryContact">Principal Contacto del Congreso.</message>
 	<message key="manager.schedConfSetup.submissions.notifications.copySpecifiedAddress">Esta dirección de correo electrónico</message>
 	<message key="manager.schedConfSetup.submissions.notifications.submissionAckDisabled"><![CDATA[<strong>Nota:</strong> la opción de acuse de recibo por email está actualmente inactiva. Para usar esta opción, habilite SUBMISSION_ACK email en <a class="action" href="{$preparedEmailsUrl}">Plantillas de correo</a>.]]></message>
 	<message key="manager.schedConfSetup.submissions.callForPapers">Call for papers (CFP)</message>
@@ -1171,8 +1180,8 @@ Observe que si el administrador del sistema ya ha regisrado este sitio en el rec
 	<message key="manager.schedConfSetup.submissions.preparationChecklist">Lista de requisitos para la preparación de envíos</message>
 	<message key="manager.schedConfSetup.submissions.preparationChecklist.description">Cuando se envía un trabajo a la conferencia, los autores deben comprobar que los originales satisfacen la Lista de requisitos para la preparación de trabajos. Esta Lista también aparecerá en las instrucciones para autores. La lista puede editarse. El autor debe tener en cuenta todos los puntos de la lista antes de que se acepte el trabajo.</message>
 	<message key="manager.schedConfSetup.submissions.addChecklistItem">Añadir un elemento a la lista de requisitos</message>
-	<message key="manager.schedConfSetup.submissions.forPresentersToIndexTheirWork">Indización de los envíos</message>
-	<message key="manager.schedConfSetup.submissions.forPresentersToIndexTheirWorkDescription"><![CDATA[OCS se adhiere a la  <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative (OAI)</a> y cumple con el Protocolo para la Recolección de Metadatos OAI-PMH. Los autores utilizarán una plantilla similar para facilitar los metadatos de los trabajos enviados. El gestor de la Conferencia/Congreso seleccionará las categorías para la indización  y mostrará ejemplos que sirvan de ayuda a los autores para indexar su trabajo, los términos elegidos se separarán mediante punto y coma (p.e., term1; term2). Los ejemplos irán precedidos de  "p.e.," o  "Por ejemplo,".]]></message>
+	<message key="manager.schedConfSetup.submissions.forPresentersToIndexTheirWork">Indexación de los envíos</message>
+	<message key="manager.schedConfSetup.submissions.forPresentersToIndexTheirWorkDescription"><![CDATA[OCS se adhiere a la  <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative (OAI)</a> y cumple con el Protocolo para la Recolección de Metadatos OAI-PMH. Los autores utilizarán una plantilla similar para facilitar los metadatos de los trabajos enviados. El gestor del Congreso seleccionará las categorías para la indexación  y mostrará ejemplos que sirvan de ayuda a los autores para indexar su trabajo, los términos elegidos se separarán mediante punto y coma (p.e., term1; term2). Los ejemplos irán precedidos de  "p.e.," o  "Por ejemplo,".]]></message>
 	<message key="manager.schedConfSetup.submissions.discipline">Disciplina y subdisciplinas</message>
 	<message key="manager.schedConfSetup.submissions.disciplineDescription">Es útil cuando la conferencia trata temas multidisciplinares o los autores envían artículos multidisciplinares.</message>
 	<message key="manager.schedConfSetup.submissions.disciplineProvideExamples">Facilite ejemplos de disciplinas académicas relevantes para esta conferencia</message>
@@ -1195,7 +1204,7 @@ Nombre del sistema de clasificación]]></message>
 	<message key="manager.schedConfSetup.submissions.typeMethodApproach">Tipo (Método/Aproximación)</message>
 	<message key="manager.schedConfSetup.submissions.typeProvideExamples">Facilite ejemplos de términos relacionados con la metodología de trabajo ene este campo</message>
 	<message key="manager.schedConfSetup.submissions.typeExamples">(p.e., Cuasi-Experimental; Análisis Literario; Encuesta/Entrevista)</message>
-	<message key="manager.schedConfSetup.submissions.publicIdentifier">Contenido de la Conferencia/Congreso</message>
+	<message key="manager.schedConfSetup.submissions.publicIdentifier">Contenido del Congreso</message>
 	<message key="manager.schedConfSetup.submissions.uniqueIdentifierDescription">Los documentos pueden etiquetarse con un número de identificación o una cadena de caracteres  si al conferencia utiliza un sistema de registro tal como el Digital Object Identifier System (DOI).</message>
 	<message key="manager.schedConfSetup.submissions.enablePublicPaperId">Se añadirán identificadores a las presentaciones aceptadas.</message>
 	<message key="manager.schedConfSetup.submissions.enablePublicSuppFileId">Se añadirán identificadores a los ficheros suplementarios de las presentaciones aceptadas.</message>
@@ -1226,7 +1235,7 @@ Nombre del sistema de clasificación]]></message>
 	<message key="manager.languages.alternateLocale2">Interfaz #2</message>
 	<message key="manager.languages.alternateLocaleInstructions">Este sistema permite opcionalmente añadir cierta información en dos idiomas más. Para utilizar esta opción, seleccionar una o dos interfaces entre las alternativas del menú.</message>
 	<message key="manager.languages.alternativeLanguageOptions">Opciones de idioma</message>
-	<message key="manager.languages.conferenceTitleAltLanguages">La imagen para el nombre, la cabecera de la página, etc. se cargarán en cada uno de los idiomas oficiales de la Conferencia.</message>
+	<message key="manager.languages.conferenceTitleAltLanguages">La imagen para el nombre, la cabecera de la página, etc. se cargarán en cada uno de los idiomas oficiales del Congreso.</message>
 	<message key="manager.languages.noneAvailable">Disculpe, no hay idiomas adicionales. Contacte con el administrador del sistema si desea utilizar otros idiomas en este eventos.</message>
 
 	<!-- Track Management -->
@@ -1244,19 +1253,19 @@ Nombre del sistema de clasificación]]></message>
 	<message key="manager.tracks.submissionsToThisTrack">Los envíos hechos a esta sección</message>
 	<message key="manager.tracks.submissionNotReviewed">Indicar que la sección no se evaluará por pares</message>
 	<message key="manager.tracks.peerReviewed">Evaluado por pares</message>
-	<message key="manager.tracks.directorRestriction">Los trabajos sólo pueden enviarse a los  Directores de la Conferencia o a los Directores de sección.</message>
+	<message key="manager.tracks.directorRestriction">Los trabajos sólo pueden enviarse a los  Directores del Congreso o a los Directores de sección.</message>
 	<message key="manager.tracks.hideAbout">Omitir esta sección de las Políticas de Sección</message>
 	<message key="manager.tracks.readingTools">Herramientas de Lectura</message>
 	<message key="manager.tracks.indexed">Indizado</message>
 	<message key="manager.tracks.open">Abrir trabajos enviados</message>
 	<message key="manager.tracks.policy">Política de la Sección</message>
-	<message key="manager.tracks.identifyType">Describir los envíos a esta sección de la Conferencia como</message>
+	<message key="manager.tracks.identifyType">Describir los envíos a esta sección del Congreso como</message>
 	<message key="manager.tracks.identifyTypeExamples">(Por ejemplo,"Resumen evaluado por pares", "Trabajo no evaluado", "Presentación invitada", etc.)</message>
 	<message key="manager.tracks.abstractsDisabled">No se requiere resumen para hacer el envío.</message>
 
 	<!-- Timeline management -->
-	<message key="manager.timeline">Calendario de la Conferencia/Congreso</message>
-	<message key="manager.timeline.conferenceTimeline">Calendario de la Conferencia/Congreso</message>
+	<message key="manager.timeline">Calendario del Congreso</message>
+	<message key="manager.timeline.conferenceTimeline">Calendario del Congreso</message>
 	<message key="manager.timeline.overrideDates">Anular el mensaje(s) de error</message>
 	<message key="manager.timeline.description">Las fechas que se indican se utilizarán para esta conferencia, y pueden verse en la página web pulsando en el menú "Calendario de la conferencia" situado en la parte inferior de la página. </message>
 
@@ -1283,7 +1292,7 @@ Nombre del sistema de clasificación]]></message>
 	<message key="manager.timeline.websitePosting">Puesta en la Web</message>
 	<message key="manager.timeline.postPresentations">Presentaciones aceptadas</message>
 	<message key="manager.timeline.postAbstracts">Resúmenes aceptados</message>
-	<message key="manager.timeline.postTimeline">Calendario de la Conferencia/Congreso (incluido en la información sobre la conferencia)</message>
+	<message key="manager.timeline.postTimeline">Calendario del Congreso (incluido en la información sobre la conferencia)</message>
 	<message key="manager.timeline.postPapers">Trabajos aceptados</message>
 	<message key="manager.timeline.delayOpenAccess">Embargo para el acceso abierto hasta</message>
 	<message key="manager.timeline.closeComments">Se ha terminado el plazo para comentarios (activar las Herramientas de Lectura)</message>
@@ -1312,7 +1321,7 @@ Nombre del sistema de clasificación]]></message>
 	<message key="manager.groups.form.groupTitleRequired">El nombre del equipo es obligatorio.</message>
 
 	<message key="manager.groups.enableBoard.description"><![CDATA[Para el <a href="{$aboutOrganizingTeamUrl}">Comité Organizador</a> en Acerca de esta Conferencia/Congreso:]]></message>
-	<message key="manager.groups.enableBoard">El gestor de la Conferencia/Congreso creará las asignaciones del equipo organizador, y añadirá las personas apropiadas en cada una de ellas.</message>
+	<message key="manager.groups.enableBoard">El gestor del Congreso creará las asignaciones del equipo organizador, y añadirá las personas apropiadas en cada una de ellas.</message>
 	<message key="manager.groups.disableBoard">El sistema generará una lista de personas  con los roles que se les haya asignado(Director, Recensor, etc.)</message>
 
 	<message key="manager.groups.membership">Miembros</message>
@@ -1763,7 +1772,7 @@ En activo significa cuantas recensiones están actualmente en marcha.]]></messag
 
 	<!-- Paper Submission Step 1 -->
 	<message key="presenter.submit.howToSubmit"><![CDATA[Los autores envían trabajos a esta conferencia a través de esta web mediante un proceso por pasos  en el que se deposita el material oportuno (algunos eventos permiten al autor depositar tambien ficheros suplementarios, tales como  hojas de datos). Si encuentra dificultad durante el proceso y necesita ayuda,  contacte con <a href="mailto:{$supportEmail}">{$supportName}</a> por email o teléfono {$supportPhone}.]]></message>
-	<message key="presenter.submit.conferenceTrack">Secciones de la Conferencia</message>
+	<message key="presenter.submit.conferenceTrack">Secciones del Congreso</message>
 	<message key="presenter.submit.conferenceTrackDescription"><![CDATA[Seleccione la sección apropiada para el envío de su trabajo (see <a href="{$aboutUrl}" target="_new">Política de la sección</a>).]]></message>
 	<message key="presenter.submit.selectTrack">Por favor, seleccione la sección...</message>
 
@@ -1772,14 +1781,14 @@ En activo significa cuantas recensiones están actualmente en marcha.]]></messag
 	<message key="presenter.submit.verifyChecklist">Debe asegurarse antes de continuar de que su trabajo cumple con todos los puntos que se indican en la lista de requisitos.</message>
 	<message key="presenter.submit.copyrightNoticeAgree">Los autores están de acuerdo con los términos de copyright, que se aplicarán al trabajo si se acepta y cuando se publique  en esta Conferencia (pueden añadirse comentarios en la ventana de abajo).</message>
 	<message key="presenter.submit.copyrightNoticeAgreeRequired">Debe aceptar los términos de copyright antes de continuar.</message>
-	<message key="presenter.submit.commentsForDirector">Comentarios al director de la Conferencia </message>
+	<message key="presenter.submit.commentsForDirector">Comentarios al director del Congreso </message>
 	<message key="presenter.submit.comments">Introduzca el texto (optional)</message>
 	<message key="presenter.submit.form.trackRequired">Por favor, seleccione la sección adecuada de la conferencia para el env�o de su trabajo.</message>
 	<message key="presenter.submit.form.abstractRequired">Por favor, introduzca el resumen de su trabajo.</message>
 
 	<!-- Paper Submission Step 2 -->
 	<message key="presenter.submit.metadataDescription">Esta Conferencia recopila los metadatos de cada trabajo, de acuerdo con los estándares de la Open Archives Initiative, que permiten la identificación objetos digitales. Esto permite  una búsqueda selectiva uy precisa en bases de datos OAI, lo que aumenta la probabilidad de que los lectores encuentren  trabajos como este. El Comité organizador debe insistir en que los metadatos  conviene  enviarlos antes de iniciarse el proceso editorial de manejo de originales</message>
-	<message key="presenter.submit.privacyStatement">Declaración de privacidad de la Conferencia</message>
+	<message key="presenter.submit.privacyStatement">Declaración de privacidad del Congreso</message>
 	<message key="presenter.submit.presentersDescription">Para envíos con más de un  autor, ordene los nombres tal y como deban aparecer en la referencia bibliográfica.</message>
 	<message key="presenter.submit.reorderPresenterName">Reordenar el nombre del autor</message>
 	<message key="presenter.submit.reorderInstructions">Utilice las flechas para cambiar el orden en que deben aparecer el nombre de los autores del trabajo.</message>
@@ -1861,7 +1870,7 @@ Para depositar un trabajo en esta conferencia, siga los siguientes pasos.
 	<message key="presenter.submit.filesSummary">Resumen del fichero</message>
 	<message key="presenter.submit.finishSubmission">Finalizar el envío</message>
 	<message key="presenter.submit.submissionComplete">Envío terminado. Gracias por remitir su trabajo a {$conferenceTitle}.</message>
-	<message key="presenter.submit.expedite"><![CDATA[Si este trabajo está formalmente listo para publicarse, sin que precise mayor revisión o edición de formato, puede enviarse directamente a la página de Actas de la Conferencia <a href="{$expediteUrl}" class="action">Pulsando aquí</a>. (Nota: Sólo los directores de la conferencia  tienen esta opción para sus envíos).]]></message>
+	<message key="presenter.submit.expedite"><![CDATA[Si este trabajo está formalmente listo para publicarse, sin que precise mayor revisión o edición de formato, puede enviarse directamente a la página de Actas del Congreso <a href="{$expediteUrl}" class="action">Pulsando aquí</a>. (Nota: Sólo los directores de la conferencia  tienen esta opción para sus envíos).]]></message>
 
 	<!-- Used in submission review / editing -->
 	<message key="presenter.paper.uploadPresenterVersion">Versión depositada por el autor</message>
@@ -2359,7 +2368,7 @@ Su servidor actualmente soporta mbstring: <strong>{$supportsMBString}</strong>]]
 	<message key="rt.admin.settings.disableRelatedItems">Desactivar Temas Relacionados</message>
 	<message key="rt.admin.settings.bibFormat">Formato de la bibliografía</message>
 	<message key="rt.admin.settings.captureCite">Cómo citar un trabajo (proporciona los detalles bibliográficos de la fuente original).</message>
-	<message key="rt.admin.settings.viewMetadata">Metadatos para la indización (muestra los metadatos del para la indización dados por el autor y el sistema).</message>
+	<message key="rt.admin.settings.viewMetadata">Metadatos para la indexación (muestra los metadatos del para la indexación dados por el autor y el sistema).</message>
 	<message key="rt.admin.settings.supplementaryFiles">Ficheros suplementarios (muestra una lista de los ficheros adjuntos con el envío).</message>
 	<message key="rt.admin.settings.printerFriendly">Versión para imprimir (Muestra una versión del artículo para su impresión).</message>
 	<message key="rt.admin.settings.presenterBio">Acerca del autor (Muestra una breve descripción proporcionada por el autor de su curriculum).</message>
@@ -2386,7 +2395,7 @@ Su servidor actualmente soporta mbstring: <strong>{$supportsMBString}</strong>]]
 	<message key="rt.admin.contexts.options">Opciones</message>
 	<message key="rt.admin.contexts.options.citedBy">Utilizar el nombre del autor como término por defecto para la Búsqueda y describir el contexto  como búsqueda de citas a ese trabajo.</message>
 	<message key="rt.admin.contexts.options.authorTerms">Utilizar los nombres de los autores como términos de búsqueda por defecto para encontrar otros trabajos publicados por dichos autores (p.e., para un contexto de "Otros Trabajos")</message>
-	<message key="rt.admin.contexts.options.geoTerms">Usar datos de indización geográficos como términos de búsqueda por defecto.</message>
+	<message key="rt.admin.contexts.options.geoTerms">Usar datos de indexación geográficos como términos de búsqueda por defecto.</message>
 	<message key="rt.admin.contexts.options.defineTerms"><![CDATA[Usar la palabra resaltada por el lector como término de búsqueda por defecto o déjelo en blanco si no se han especificado para este artículo (p.e., dentro del contexto "Definición de términos"). La opción "Definición de términos" debe habilitarse en <a href="{$settingsUrl}">Opciones RST</a> para poder, mediante in doble click sobre las palabras, abrir su contexto.]]></message>
 
 	<!-- RT Searches -->
@@ -2471,7 +2480,7 @@ La validacion de URLs  puede fallar si requieren el envío de datos.]]></message
 	<message key="rt.metadata.pkp.copyright">Copyright y permisos</message>
 
 	<message key="rt.suppFiles">Ficheros suplementarios</message>
-	<message key="rt.suppFiles.viewMetadata">Metadatos para la indización</message>
+	<message key="rt.suppFiles.viewMetadata">Metadatos para la indexación</message>
 	<message key="rt.suppFiles.download">Descarga</message>
 
 	<message key="rt.captureCite">Como citar el artículo</message>
@@ -2557,8 +2566,8 @@ La validacion de URLs  puede fallar si requieren el envío de datos.]]></message
 {$conferenceName}
 {$conferenceUrl}
 ]]></message>
-	<message key="default.conferenceSettings.forReaders"><![CDATA[Recomendamos a los lectores que acepten el servicio de alerta de  los trabajos que se depositan en esa conferencia. Recomendamos que lea <a href="{$aboutUrl}">Acerca de la Conferencia"</a> la página sobre las políticas de la conferencia, y visite la <a href="{$conferenceUrl}">Página de Inicio</a> para ver las conferencias que se aproximan.]]></message>
-	<message key="default.conferenceSettings.forPresenters"><![CDATA[¿Está interesado en hacer un envío a esta conferencia? Recomendamos que lea <a href="{$aboutUrl}">Acerca de la Conferencia"</a> la página sobre las políticas de la conferencia, y viste la <a href="{$conferenceUrl}">Página de Inicio</a> para ver las conferencias que se aproximan.]]></message>
+	<message key="default.conferenceSettings.forReaders"><![CDATA[Recomendamos a los lectores que acepten el servicio de alerta de  los trabajos que se depositan en esa conferencia. Recomendamos que lea <a href="{$aboutUrl}">Acerca del Congreso"</a> la página sobre las políticas de la conferencia, y visite la <a href="{$conferenceUrl}">Página de Inicio</a> para ver las conferencias que se aproximan.]]></message>
+	<message key="default.conferenceSettings.forPresenters"><![CDATA[¿Está interesado en hacer un envío a esta conferencia? Recomendamos que lea <a href="{$aboutUrl}">Acerca del Congreso"</a> la página sobre las políticas de la conferencia, y viste la <a href="{$conferenceUrl}">Página de Inicio</a> para ver las conferencias que se aproximan.]]></message>
 	<message key="default.conferenceSettings.lockssLicense"><![CDATA[Esta conferencia uliliza el sistema LOCKSS para crear un sistema de archivos distribuidos entre las bibliotecas participantes, y permite a esas bibliotecas crear ficheros permanentes de la conferencia con fines de preservación y restablecimiento. <a href="http://lockss.stanford.edu/">Más....</a>]]></message>
 
 	<message key="default.schedConfSettings.emailSignature"><![CDATA[________________________________________________________________________
