@@ -159,7 +159,21 @@
 		<br/>
 		Este <span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" rel="dc:type">trabajo</span> se distribuye con la licencia <a rel="license" target="_new" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0  License</a>.
 	]]></message>
-
+	<message key="common.captchaField">Validación</message>
+	<message key="common.captchaField.altText">Imagen de validación</message>
+	<message key="common.captchaField.description">Por favor ingrese las letras como aparecen en la imagen superior.</message>
+	<message key="common.captchaField.badCaptcha">Los caracteres que ingresó no concuerdan con los caracteres en la imagen. Por favor revise los caracteres e intente de nuevo.</message>
+	<message key="common.suggest">Sugerir</message>
+	<message key="common.sortBy">Ordenar Por...</message>
+	<message key="common.altText">Texto Alternativo</message>
+	<message key="common.altTextInstructions">Por favor provea un texto alternativo para esta imagen, para asegurar accesibilidad a aquellos usuarios con navegadores en modo texto o dispositivos asistenciales.</message>
+	<message key="common.sitePageHeader.altText">Imagen del Encabezado del Sitio</message>
+	<message key="common.pageHeader.altText">Imagen del Encabezado de Página</message>
+	<message key="common.pageHeaderLogo.altText">Logo del Encabezado de Página</message>
+	<message key="common.homePageHeader.altText">Imagen del Encabezado de la Página Principal</message>
+	<message key="common.homePageHeaderLogo.altText">Logo del Encabezado de la Página Principal</message>
+	<message key="common.conferenceHomepageImage.altText">Imagen de la Página de Inicio de la Conferencia</message>
+	
 	<!-- Common Form Messages -->
 	<message key="form.errorsOccurred">Ha ocurrido un error mientras se procesaba este formulario</message>
 	<message key="form.saveToUpload">Pulse para depositar su fichero.</message>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../locale/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2000-2008 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the en_US (U.S. English) locale.
+  *
+  * $Id: locale.xml,v 1.3 2008/07/01 00:06:47 michael Exp $
+  -->
+ 
+<locale name="es_ES" full_name="España Castellano">
+	<message key="plugins.block.fontSize.displayName">Tamaño de fuente</message>
+	<message key="plugins.block.fontSize.description">This plugin provides sidebar font sizer.</message>
+	<message key="plugins.block.fontSize.title">Tamaño de fuente</message>
+	<message key="plugins.block.fontSize.small">Pequeño</message>
+	<message key="plugins.block.fontSize.medium">Mediano</message>
+	<message key="plugins.block.fontSize.large">Grande</message>
+</locale>
