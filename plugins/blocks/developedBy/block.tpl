@@ -8,6 +8,6 @@
  *
  * $Id: block.tpl,v 1.4 2008/04/22 23:57:26 asmecher Exp $
  *}
-<div class="block" id="sidebarDevelopedBy">
+<!--<div class="block" id="sidebarDevelopedBy">
 	<a class="blockTitle" href="http://pkp.sfu.ca/ocs/" id="developedBy">{translate key="common.openConferenceSystems"}</a>
-</div>	
+</div> -->	
