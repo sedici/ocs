@@ -6,37 +6,37 @@
  * Copyright (c) 2008 Gisele Jaquenod
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class UNLPAzulThemePlugin
+ * @class UNLPVerAmThemePlugin
  * @ingroup plugins_themes_UNLPAzul
  *
- * @brief "UNLPAzul" theme plugin
+ * @brief "UNLPVerAm" theme plugin
  */
 
-// $Id: UNLPAzulThemePlugin.inc.php,v 1.6 2008/11/04 10:16:14 asmecher Exp $
+// $Id: UNLPVerAmThemePlugin.inc.php,v 1.6 2008/11/04 10:16:14 asmecher Exp $
 
 
 import('classes.plugins.ThemePlugin');
 
-class UNLPAzulThemePlugin extends ThemePlugin {
+class UNLPVerAmThemePlugin extends ThemePlugin {
 	/**
 	 * Get the name of this plugin. The name must be unique within
 	 * its category.
 	 * @return String name of plugin
 	 */
 	function getName() {
-		return 'UNLPAzulThemePlugin';
+		return 'UNLPVerAmThemePlugin';
 	}
 
 	function getDisplayName() {
-		return 'Estilo UNLP Azul';
+		return 'Estilo UNLP Verde Amarillento';
 	}
 
 	function getDescription() {
-		return 'UNLP azul layout';
+		return 'Tema verde amarillento UNLP';
 	}
 
 	function getStylesheetFilename() {
-		return 'UNLPAzul.css';
+		return 'UNLPVerAm.css';
 	}
 
 	function getLocaleFilename($locale) {

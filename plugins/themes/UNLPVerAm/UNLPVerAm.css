@@ -12,16 +12,17 @@
 body {
 }
 #sidebar div.block span.blockTitle {
-	background: url(images/side_h2_azul.png) no-repeat;
+	background: url(images/side_h2_veram.png) no-repeat;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	letter-spacing: 0px;
+	color: #333;
 }
 #main a:link, #main a:active, #main a:visited {
 	color: #333333;
 	text-decoration: none;
 }
 #main a:hover {
-	color: #3366CC;
+	color: #939834;
 	text-decoration: underline!important;
 }
 
@@ -30,7 +31,7 @@ body {
 #main h2 {
 	font-size: 24px;
 	font-family: Georgia, "Times New Roman", Times, serif;
-	color: #3366CC;
+	color: #939834;
 }
 #main h3 {
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -41,19 +42,19 @@ body {
 	font-size: 15px;
 	letter-spacing: 0px;
 	padding: 5px 0px;
-	color: #3366CC;
+	color: #939834;
 	text-transform: none;
 	background: none;
 	border-top: 1px dotted #E8E8E8;
-	border-bottom: 1px dotted #3366CC;
+	border-bottom: 1px dotted #939834;
 }
 #sidebar div.block span.blockSubtitle {
 	border-top: 1px solid #E5E5E5;
-	border-bottom: 1px dotted #3366CC;
+	border-bottom: 1px dotted #939834;
 }
 #leftSidebar ul li, #rightSidebar ul li, #sidebar ul li {
-	background-color: #EAEAEA;
+	background-color: #EAF0C6;
 }
 #leftSidebar ul li:hover, #rightSidebar ul li:hover, #sidebar ul li:hover {
-	background-color: #DBDBDB;
+	background-color: #DDE7A5;
 }
