@@ -60,7 +60,7 @@
 	<message key="common.order">Orden</message>
 	<message key="common.back">Atrás</message>
 	<message key="common.title">Título</message>
-	<message key="common.upload">Depositar</message>
+	<message key="common.upload">Subir</message>
 	<message key="common.download">Descargar</message>
 	<message key="common.replaceFile">Reemplazar  fichero</message>
 	<message key="common.subject">Materia</message>
@@ -78,7 +78,7 @@
 	<message key="common.status">Estatus</message>
 	<message key="common.remove">Eliminar</message>
 	<message key="common.file">Fichero</message>
-	<message key="common.uploadedFile">Depositar fichero</message>
+	<message key="common.uploadedFile">Subir fichero</message>
 	<message key="common.fileName">Nombre del fichero</message>
 	<message key="common.dateSubmitted">Fecha de envío</message>
 	<message key="common.dateRequested">Fecha de solicitud</message>
@@ -334,7 +334,7 @@
 	<message key="submission.submissionManuscript">Envío del manuscrito</message>
 	<message key="submission.metadata">Adjuntar los metadatos</message>
 	<message key="submission.originalFile">Fichero original</message>
-	<message key="submission.uploadFile">Depositar el fichero</message>
+	<message key="submission.uploadFile">Subir el fichero</message>
 	<message key="submission.addSuppFile">Añadir ficheros suplementarios</message>
 	<message key="submission.submitter">Remitente</message>
 	<message key="submission.changeTrack">Cambiar a</message>
@@ -414,7 +414,7 @@
 	<message key="submission.galley">Galerada</message>
 	<message key="trackDirector.galley.replaceGalley">Reemplazar fichero</message>
 	<message key="submission.emailLog">Email Log</message>
-	<message key="submission.uploadFileTo">Depositar el fechero en</message>
+	<message key="submission.uploadFileTo">Subir el fechero en</message>
 	<message key="submission.abstract">Resumen</message>
 	<message key="submission.paper">Trabajo</message>
 
@@ -1606,7 +1606,7 @@ Opcionalmente usted puede proporcionar al usuario la razón para la inhabilitaci
 	<!-- Used by director in submission review / editing -->
 	<message key="director.paper.sendToArchive">Guardar este envío</message>
 	<message key="director.paper.designateReviewVersion"> Designar al fichero original Versión Revisada</message>
-	<message key="director.paper.uploadReviewVersion">Depositar la versión corregida que será la Versión Revisada</message>
+	<message key="director.paper.uploadReviewVersion">Subir la versión corregida que será la Versión Revisada</message>
 	<message key="director.paper.uploadDirectorVersion">Actualizar Director de la Versión</message>
 	<message key="director.paper.stageDisabled">No es posible hacer esta recensión. El resumen no está completo o el autor todavía no ha depositado el trabajo para recensión.</message>
 	<message key="director.paper.showSuppFile">mandar el fichero a los revisores</message>
@@ -1631,7 +1631,7 @@ La última, es la fecha correspondiente a aquella recensión que se ha compromet
 En activo significa cuantas recensiones están actualmente en marcha.]]></message>
 		<message key="director.paper.replaceReviewer">Reemplazar el recensor</message>
 	<message key="director.paper.directorToEnter">El Director que hace alguna recomiendación o comentario al recensor</message>
-	<message key="director.paper.uploadReviewForReviewer">Depositar la recensión</message>
+	<message key="director.paper.uploadReviewForReviewer">Subir la recensión</message>
 	<message key="director.paper.peerReviewOptions">Opciones  de la recensión</message>
 	<message key="director.paper.decision">Decisión</message>
 	<message key="director.paper.recordDecision">Guardar Decisión</message>
@@ -1714,7 +1714,7 @@ En activo significa cuantas recensiones están actualmente en marcha.]]></messag
 	<message key="reviewer.paper.recommendation">Recomendación</message>
 	<message key="reviewer.paper.submitReview">Enviar la recensión al Director</message>
 	<message key="reviewer.paper.reviewerComments">Comentarios</message>
-	<message key="reviewer.paper.uploadedFile">Depositar ficheros</message>
+	<message key="reviewer.paper.uploadedFile">Subir ficheros</message>
 	<message key="reviewer.paper.reviewersAnnotatedVersion">Versión depositada por el recensor</message>
 	<message key="reviewer.paper.reviewersAnnotatedVersionDescription">(Si quiere hacer anotaciones en el fichero, para el director, guárdelo en su disco duro y utilice Browse/Upload.)</message>
 	<message key="reviewer.paper.schedule.request">Pregunta del Director</message>
@@ -1751,15 +1751,15 @@ En activo significa cuantas recensiones están actualmente en marcha.]]></messag
 	<message key="presenter.submit.startHereLink">Primer paso del proceso de envío</message>
 	<message key="presenter.submit.step1">Paso 1. Comenzar el envío</message>
 	<message key="presenter.submit.step2">Paso 2. Introduzca los metadatos del trabajo</message>
-	<message key="presenter.submit.step3">Paso 3. Depositar el fichero del trabajo</message>
-	<message key="presenter.submit.step4">Paso 4. Depositar un fichero adicional</message>
-	<message key="presenter.submit.step4a">Paso 4a. Depositar un fichero adicional</message>
+	<message key="presenter.submit.step3">Paso 3. Subir el fichero del trabajo</message>
+	<message key="presenter.submit.step4">Paso 4. Subir un fichero adicional</message>
+	<message key="presenter.submit.step4a">Paso 4a. Subir un fichero adicional</message>
 	<message key="presenter.submit.step5">Paso 5. Confirmación</message>
 	<message key="presenter.submit.step5SkipSupp">Paso 4. Confirmación</message>
 	<message key="presenter.submit.start">1. Inicio</message>
 	<message key="presenter.submit.metadata">2. Introducir metadatos</message>
-	<message key="presenter.submit.upload">3. Depositar el original</message>
-	<message key="presenter.submit.supplementaryFiles">4. Depositar ficheros adicionales</message>
+	<message key="presenter.submit.upload">3. Subir el original</message>
+	<message key="presenter.submit.supplementaryFiles">4. Subir ficheros adicionales</message>
 	<message key="presenter.submit.confirmation">5. Confirmación</message>
 	<message key="presenter.submit.confirmationSkipSupp">4. Confirmación</message>
 	<message key="presenter.submit.cancelSubmission">Puede completar este envío más tarde seleccionando "Activar Envío" desde el menú Autor.</message>
@@ -1813,13 +1813,13 @@ Para depositar un trabajo en esta conferencia, siga los siguientes pasos.
 <li>Pulse listar (o seleccionar fichero) que abre una ventana  para localizar los ficheros en el disco duro de su ordenador.</li>
 <li>Localice el fichero que desea enviar y márquelo.</li>
 <li>Pulse Abrir en la ventana de selección  de ficheros, que muestra el nombre del fichero.</li>
-<li>Pulse Depositar, lo que permite subir el fichero al servidor de la conferencia y  renombrarlo siguiendo los criterios de la conferencia.</li>
+<li>Pulse Subir, lo que permite subir el fichero al servidor de la conferencia y  renombrarlo siguiendo los criterios de la conferencia.</li>
 <li>Cuando haya terminado, pulse Guardar y Continuar.</li>
 </ol>
 
  El fichero puede visualizarse pulsando sobre el nombre del fichero. Puede depositarse un fichero nuevo o revisado, así se borra el anterior. Los ficheros adicionales pueden depositarse usando la opción Ficheros Suplementarios (próximo paso). Si tiene problemas con el depósito, contacte por correo electrónico o por teléfono con <a href="mailto:{$supportEmail}">{$supportName}</a> {$supportPhone}. ]]></message>
 	<message key="presenter.submit.submissionFile">Fichero del envío</message>
-	<message key="presenter.submit.uploadSubmissionFile">Depositar el fichero</message>
+	<message key="presenter.submit.uploadSubmissionFile">Subir el fichero</message>
 	<message key="presenter.submit.replaceSubmissionFile">Reemplazar el fichero de envío</message>
 	<message key="presenter.submit.noSubmissionFile">No se han depositado ficheros.</message>
 	<message key="presenter.submit.noSubmissionConfirm">¿Está seguro de que quiere continuar sin el depósito de ficheros?</message>
@@ -1829,7 +1829,7 @@ Para depositar un trabajo en esta conferencia, siga los siguientes pasos.
 	<message key="presenter.submit.noSupplementaryFiles">No se han añadido ficheros adicionales a este envío.</message>
 	<message key="presenter.submit.backToSupplementaryFiles">Volver a los ficheros adicionales</message>
 	<message key="presenter.submit.confirmDeleteSuppFile">¿Está seguro de que quiere eliminar este fichero adicional?</message>
-	<message key="presenter.submit.uploadSuppFile">Depositar el fichero adicional</message>
+	<message key="presenter.submit.uploadSuppFile">Subir el fichero adicional</message>
 
 	<!-- Paper Submission Step 4a: Supplementary Files -->
 	<message key="presenter.submit.addSupplementaryFile">Añadir un fichero adicional</message>
@@ -1884,7 +1884,7 @@ Para depositar un trabajo en esta conferencia, siga los siguientes pasos.
 	<message key="submission.layout.supplementaryFiles">Recensión de los ficheros adicionales</message>
 	<message key="submission.layout.galleyLabelRequired">Se necesita una etiqueta de galerada.</message>
 	<message key="submission.layout.confirmDeleteGalley">¿Está seguro de que quiere borrar permanentemente esta galerada?</message>
-	<message key="submission.layout.newSupplementaryFile">Depositar nuevo fichero adicional</message>
+	<message key="submission.layout.newSupplementaryFile">Subir nuevo fichero adicional</message>
 	<message key="submission.layout.confirmDeleteSupplementaryFile">¿Está seguro de que quiere borrar permanentemente este fichero adicional?</message>
 	<message key="submission.layout.editGalley">Editar el formato de galerada</message>
 	<message key="submission.layout.addGalley">Añadir el formato de galerada</message>

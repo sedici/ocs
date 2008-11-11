@@ -1,0 +1,59 @@
+/**
+ * UNLPRojo.css
+ *
+ * Copyright (c) 2008 Gisele Jaquenod
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * OJS red theme stylesheet.
+ *
+ * $Id: UNLPRojo.css,v 1.5 2008/06/11 20:58:49 asmecher Exp $
+ */
+
+body {
+}
+#sidebar div.block span.blockTitle {
+	background: url(images/side_h2_red.png) no-repeat;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 0px;
+}
+#main a:link, #main a:active, #main a:visited {
+	color: #333333;
+	text-decoration: none;
+}
+#main a:hover {
+	color: #3366CC;
+	text-decoration: underline!important;
+}
+
+/* Headings */
+
+#main h2 {
+	font-size: 24px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #3366CC;
+}
+#main h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#content h3 {
+	margin: 5px 0px;
+	font-weight: bold;
+	font-size: 15px;
+	letter-spacing: 0px;
+	padding: 5px 0px;
+	color: #3366CC;
+	text-transform: none;
+	background: none;
+	border-top: 1px dotted #E8E8E8;
+	border-bottom: 1px dotted #3366CC;
+}
+#sidebar div.block span.blockSubtitle {
+	border-top: 1px solid #E5E5E5;
+	border-bottom: 1px dotted #3366CC;
+}
+#leftSidebar ul li, #rightSidebar ul li, #sidebar ul li {
+	background-color: #EAEAEA;
+}
+#leftSidebar ul li:hover, #rightSidebar ul li:hover, #sidebar ul li:hover {
+	background-color: #DBDBDB;
+}
