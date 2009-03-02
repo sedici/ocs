@@ -77,7 +77,7 @@
 <!-- menu -->
 <div id="navbar">
 	<ul class="menu">
-		<li><a href="{url conference="index" schedConf="index" op="index"}">{translate key="navigation.home"}</a></li>
+		<li><a href="{url schedConf="index"}">{translate key="navigation.home"}</a></li>
 		<li><a href="{url page="about"}">{translate key="navigation.about"}</a></li>
 		{if $isUserLoggedIn}
 			<li><a href="{url page="user"}">{translate key="navigation.userHome"}</a></li>
