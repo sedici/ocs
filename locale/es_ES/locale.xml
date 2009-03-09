@@ -259,15 +259,15 @@
 	<message key="common.queue.long.submissionsUnassigned">Sin asignar</message>
 	<message key="common.queue.short.submissionsUnassigned">Sin asignar</message>
 	<message key="common.queue.long.submissionsInReview">Comunicación en recensión</message>
-	<message key="common.queue.short.submissionsInReview">En recensión</message>
+	<message key="common.queue.short.submissionsInReview">En revisión</message>
 	<message key="common.queue.long.submissionsAccepted">Presentaciones</message>
 	<message key="common.queue.short.submissionsAccepted">Presentaciones</message>
 	<message key="common.queue.long.submissionsArchives">Archivos</message>
 	<message key="common.queue.short.submissionsArchives">ficheros</message>
-	<message key="common.queue.long.active">Activar envíos</message>
-	<message key="common.queue.short.active">Activar</message>
-	<message key="common.queue.long.completed">Archivar</message>
-	<message key="common.queue.short.completed">Archivar</message>
+	<message key="common.queue.long.active">Envios activos</message>
+	<message key="common.queue.short.active">Activos</message>
+	<message key="common.queue.long.completed">Envios archivados</message>
+	<message key="common.queue.short.completed">Archivados</message>
 
 	<!--
 	 *
@@ -1050,6 +1050,7 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="manager.setup.aboutConference">Acerca de esta Conferencia/Congreso</message>
 	<message key="manager.setup.additionalContent">Contenidos adicionales de esta Web</message>
 	<message key="manager.setup.layout">Cabeceras, Pies, Listas y Barra de Navegación</message>
+	<message key="manager.setup.style">Estilo de la conferencia</message>
 	<message key="manager.setup.styleSheet">Hoja de estilo del Congreso</message>
 	<message key="manager.setup.loggingAndAuditing">Control de accesos (logs)</message>
 	<message key="manager.setup.indexing">Conferencia/Congreso Indizado </message>
@@ -1225,6 +1226,8 @@ Observe que si el administrador del sistema ya ha regisrado este sitio en el rec
 	<message key="manager.schedConfSetup.details.supportEmailRequired">Es obligatorio el email del organizador.</message>
 
 	<!-- Scheduled Conference Setup Paso 2 -->
+	
+	<message key="manager.schedConfSetup.submissions.previewAbstracts">Previsualizar resumen una vez que las revisión de resumenes ha sido completada</message>
 	<message key="manager.schedConfSetup.submissions.submissionProcess">Proceso de Envío</message>
 	<message key="manager.schedConfSetup.submissions.description"><![CDATA[Los autores pueden enviar resúmenes (Breve descripción de la ponencia propuesta) y/o ponencias largas (p.e., artículos, diapositivas en PowerPoint, etc.) para una determinada conferencia. Los envíos pueden ser para un solo trabajo (con uno o más autores) y/o para una sesión múltiple, enviados por el moderador de la sesión. Además, los autores pueden incluir ficheros suplementarios (p.e. hojas de datos, bibliografía, trabajos relacionados) junto con los resúmenes y/o ponencias.]]></message>
 	<message key="manager.schedConfSetup.submissions.submissionMaterials">Material de Envío</message>
@@ -1298,7 +1301,10 @@ Nombre del sistema de clasificación]]></message>
 	<message key="manager.schedConfSetup.review.remindForSubmit1">Quienes no hayan enviado la recensión</message>
 	<message key="manager.schedConfSetup.review.remindForSubmit2">días después del plazo establecido.</message>
 	<message key="manager.schedConfSetup.review.onQuality">Los directores pueden evaluar a los recensores en una escala de 5 puntos.</message>
-
+	<message key="manager.schedConfSetup.review.automatedRemindersDisabled"><![CDATA[<strong>Nota:</strong> Para activar estas opciones, el administrador del sitio deberá habilitar la opción <tt>scheduled_tasks</tt>  en el archivo de configuración de OCS. Configuración del servidor adicional puede ser requerida para soportar esta funcionalidad (la cual podría no ser posible en todos los servidores), como se indica en la documentación de OCS.]]></message>
+	<message key="manager.schedConfSetup.review.directorDecision">Decisión del Director</message>
+	<message key="manager.schedConfSetup.review.notifyAllPresentersOnDecision">Cuando se utiliza el email Notificar Autor, incluir la direcciónde email de todos los co-autores para envíos de múltiples autores, y no solo la del usuario que realizó el envio.</message>
+	
 	<!-- Languages -->
 	<message key="manager.languages.languageInstructions"><![CDATA[OCS está disponible en varios idiomas. También puede operar parcialmente como un sistema multilingüe, facilitando a los usuarios poder cambiar de idioma en cada página, y permitiendo la introducción de ciertos datos en otros dos idiomas.<br /><br/>Si en la  lista de idiomas, no aparece el que necesita, pregunte al administrador de su sistema para que lo instale desde la interfaz del administrador. Consulte la documentación de OCS para la instalación de interfaces en nuevos idiomas.]]></message>
 	<message key="manager.languages.primaryLocaleInstructions">Este será el idioma por defecto de la conferencia.</message>
@@ -1347,7 +1353,7 @@ Nombre del sistema de clasificación]]></message>
 	
 	<message key="manager.timeline.website">Website</message>
 	<message key="manager.timeline.schedConfAppearsOn">Se creó (como Conferencia/Congreso)</message>
-	<message key="manager.timeline.schedConfArchivedOn">Cambió a la Conferencia/Congreso </message>
+	<message key="manager.timeline.schedConfArchivedOn">Archivar Conferencia/Congreso </message>
 
 	<message key="manager.timeline.submissions">Envíos</message>
 	<message key="manager.timeline.openRegPresenter">Apertura del plazo de inscripción</message>
@@ -1356,9 +1362,9 @@ Nombre del sistema de clasificación]]></message>
 	<message key="manager.timeline.submissionsOpen">Trabajos aceptados</message>
 	<message key="manager.timeline.submissionsClosed">Cierre del envío de originales</message>
 
-	<message key="manager.timeline.reviews">Recensión</message>
-	<message key="manager.timeline.openRegReviewer">Apertura de la inscripción de recensores</message>
-	<message key="manager.timeline.closeRegReviewer">Cierre de la inscripción de recensores</message>
+	<message key="manager.timeline.reviews">Revisión</message>
+	<message key="manager.timeline.openRegReviewer">Apertura de la inscripción de revisores</message>
+	<message key="manager.timeline.closeRegReviewer">Cierre de la inscripción de revisores</message>
 	<message key="manager.timeline.closeReviewProcess">Cierre del proceso de evaluación</message>
 	
 	<message key="manager.timeline.websitePosting">Puesta en la Web</message>
@@ -1403,6 +1409,8 @@ Nombre del sistema de clasificación]]></message>
 	<message key="manager.groups.membership.noUsers">Usuario no encontrado.</message>
 
 	<!-- People Management -->
+	<message key="manager.people.allEnrolledUsers">Todos los usuarios registrados</message>
+	<message key="manager.people.allSiteUsers">Registrar un usuario del Sitio a esta Conferencia</message>
 	<message key="manager.people.allUsers">Todos los usuarios</message>
 	<message key="manager.people.allConferences">Todos las Conferencias</message>
 	<message key="manager.people.editUser">Editar Usuario</message>
@@ -1689,8 +1697,8 @@ Opcionalmente usted puede proporcionar al usuario la razón para la inhabilitaci
 	<message key="director.paper.addReviewer">Añadir Recensor</message>
 	<message key="director.paper.toReviewer">Para el Recensor</message>
 	<message key="director.paper.notifyReviewer">Notificar al Recensor</message>
-	<message key="director.paper.initiateReview">Iniciar la Recensión</message>
-	<message key="director.paper.cancelReview">Cancelar la solicitud de Recensión</message>
+	<message key="director.paper.initiateReview">Iniciar la Revisión</message>
+	<message key="director.paper.cancelReview">Cancelar la solicitud de Revisión</message>
 	<message key="director.paper.clearReview">Limpiar Recensor</message>
 	<message key="director.paper.enterRecommendation">Introducir la Recomendación</message>
 	<message key="director.paper.enterReviewerRecommendation">Introducir la recomendación del recensor</message>
@@ -1791,7 +1799,7 @@ En activo significa cuantas recensiones están actualmente en marcha.]]></messag
 	<message key="reviewer.paper.reviewersAnnotatedVersionDescription">(Si quiere hacer anotaciones en el fichero, para el director, guárdelo en su disco duro y utilice Browse/Upload.)</message>
 	<message key="reviewer.paper.schedule.request">Pregunta del Director</message>
 	<message key="reviewer.paper.schedule.response">Su respuesta</message>
-	<message key="reviewer.paper.schedule.submitted">Recensión enviada</message>
+	<message key="reviewer.paper.schedule.submitted">Revisión enviada</message>
 	<message key="reviewer.paper.schedule.due">Plazo para la recensión</message>
 	<message key="reviewer.paper.decision.accept">Se ha aceptado el original</message>
 	<message key="reviewer.paper.decision.pendingRevisions">Se revisará de nuevo</message>
@@ -1847,7 +1855,7 @@ En activo significa cuantas recensiones están actualmente en marcha.]]></messag
 	<message key="presenter.submit.conferenceTrack">Secciones del Congreso</message>
 	<message key="presenter.submit.conferenceTrackDescription"><![CDATA[Seleccione la sección apropiada para el envío de su trabajo (see <a href="{$aboutUrl}" target="_new">Política de la sección</a>).]]></message>
 	<message key="presenter.submit.selectTrack">Por favor, seleccione la sección...</message>
-
+	<message key="presenter.submit.howToSubmitNoPhone"><![CDATA[¿Encuentra problemas? Contacte a <a href="mailto:{$supportEmail}">{$supportName}</a> para asistencia.]]></message>
 	<message key="presenter.submit.submissionChecklist">Lista de requisitos para el envío de originales</message>
 	<message key="presenter.submit.submissionChecklistDescription">Indicar que el trabajo está preparado para el envío marcando la siguiente lista lo que corresponda (pueden añadirse comentarios en la ventana de abajo).</message>
 	<message key="presenter.submit.verifyChecklist">Debe asegurarse antes de continuar de que su trabajo cumple con todos los puntos que se indican en la lista de requisitos.</message>
@@ -1953,7 +1961,7 @@ Para depositar un trabajo en esta conferencia, siga los siguientes pasos.
 	<message key="submission.layout.galleys">Galeradas</message>
 	<message key="submission.layout.newGalley">Crear nueva galerada</message>
 	<message key="submission.layout.initialGalleyCreation">Creación de la primera galerada</message>
-	<message key="submission.layout.supplementaryFiles">Recensión de los ficheros adicionales</message>
+	<message key="submission.layout.supplementaryFiles">Revisión de los ficheros adicionales</message>
 	<message key="submission.layout.galleyLabelRequired">Se necesita una etiqueta de galerada.</message>
 	<message key="submission.layout.confirmDeleteGalley">¿Está seguro de que quiere borrar permanentemente esta galerada?</message>
 	<message key="submission.layout.newSupplementaryFile">Subir nuevo fichero adicional</message>
@@ -1999,7 +2007,7 @@ Para depositar un trabajo en esta conferencia, siga los siguientes pasos.
 
 	<!-- Submission Comments -->
 	<message key="submission.comments.comments">Comentarios</message>
-	<message key="submission.comments.review">Recensión</message>
+	<message key="submission.comments.review">Revisión</message>
 	<message key="submission.comments.directorPresenterCorrespondence">Director/Autor para la correspondencia</message>
 	<message key="submission.comments.corrections">Correcciones</message>
 	<message key="submission.comments.noComments">Sin comentarios</message>
@@ -2013,11 +2021,11 @@ Para depositar un trabajo en esta conferencia, siga los siguientes pasos.
 	<message key="submission.comments.editComment">Editar Comentario</message>
 	<message key="submission.comments.confirmDelete">¿Está seguro de querer borrar este comentario?</message>
 	<message key="submission.comments.importPeerReviews">Importar las recensiones</message>
-	<message key="submission.comments.blindCcReviewers">Después del envío, haga una copia de la decisión editorial, sin cabeceras ni nombres, para mandársela a los recensores.</message>
+	<message key="submission.comments.blindCcReviewers">Después del envío, haga una copia de la decisión editorial, sin cabeceras ni nombres, para mandársela a los revisores.</message>
 	<message key="submission.comments.importPeerReviews.reviewerLetter">Recensor {$reviewerLetter}:</message>
 	<message key="submission.comments.forPresenterDirector">Para el autor y el director</message>
 	<message key="submission.comments.forDirector">Para el director</message>
-	<message key="submission.comments.sendDecisionToReviewers">Enviar a los recensores la decisión editorial</message>
+	<message key="submission.comments.sendDecisionToReviewers">Enviar a los revisores la decisión editorial</message>
 	<message key="submission.comments.saveAndEmailPresenter">Guardar y enviar un correo electrónico al autor</message>
 	<message key="submission.comments.saveAndEmailDirector">Guardar y enviar un correo electrónico al Director</message>
 
@@ -2374,13 +2382,13 @@ Su servidor actualmente soporta mbstring: <strong>{$supportsMBString}</strong>]]
 	<message key="log.review.reviewerRated">{$reviewerName} ha aceptado para el paso {$stage} la revisión del envío {$paperId}.</message>
 	<message key="log.review.reviewDueDateSet">La fecha para el paso {$stage} de revisión del trabajo {$paperId} por {$reviewerName} se ha puesto en  {$dueDate}.</message>
 	<message key="log.review.reviewRecommendationSet">La recomendación para {$stage} la revisión del trabajo {$paperId} realizada por {$reviewerName} está hecha.</message>
-	<message key="log.review.reviewRecommendationSetByProxy">La recomendación hecha de {$stage} la revisión del trabajo {$paperId} se ha enviado al director, {$directorName}, de parte del recensor, {$reviewerName}.</message>
+	<message key="log.review.reviewRecommendationSetByProxy">La recomendación hecha de {$stage} la revisión del trabajo {$paperId} se ha enviado al director, {$directorName}, de parte del revisor, {$reviewerName}.</message>
 	<message key="log.review.resubmit">El trabajo {$paperId} se ha enviado de nuevo para revisión.</message>
 	<message key="log.review.reviewDeclined">{$reviewerName} ha declinado la invitación {$stage} a revisar el trabajo {$paperId}.</message>
 	<message key="log.review.reviewAccepted">{$reviewerName} ha  aceptado {$stage} la revisión del trabajo {$paperId}.</message>
 	<message key="log.review.reviewAcceptedByProxy">{$userName} ha aceptado {$stage} la recensión del trabajo {$paperId} en nombre de {$reviewerName}.</message>
-	<message key="log.review.reviewFileByProxy">El Director, {$userName}, ha depositado el fichero de recensión {$stage} del trabajo {$paperId} en nombre del recensor, {$reviewerName}.</message>
-	<message key="log.review.reviewerFile">Se ha depositado un fichero de un recensor.</message>
+	<message key="log.review.reviewFileByProxy">El Director, {$userName}, ha depositado el fichero de recensión {$stage} del trabajo {$paperId} en nombre del revisor, {$reviewerName}.</message>
+	<message key="log.review.reviewerFile">Se ha depositado un fichero de un revisor.</message>
 	<message key="log.director.decision">La decisión sobre la publicación ({$decision}) del trabajo {$paperId} la registró {$directorName}.</message>
 	<message key="log.director.publish">El trabajo se ha publicado.</message>
 
