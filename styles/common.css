@@ -532,3 +532,9 @@ div.progressbar {
 	color: #333;
 	text-decoration: none;
 }
+
+/* User Login */
+
+#sidebarUser table {
+	width: 170px!important;
+}
