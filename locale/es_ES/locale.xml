@@ -547,7 +547,7 @@
 	<message key="user.role.manager">Gestor del evento</message>
 	<message key="user.role.director">Director</message>
 	<message key="user.role.trackDirector">Director de al sección</message>
-	<message key="user.role.reviewer">Recensor</message>
+	<message key="user.role.reviewer">Revisor</message>
 	<message key="user.role.presenter">Autor</message>
 	<message key="user.role.reader">Lector</message>
 
@@ -600,17 +600,17 @@
 	<message key="submission.event.director.submissionArchived">Envío archivado</message>
 	<message key="submission.event.director.submissionRestored">Envío recuperado del archivo</message>
 
-	<message key="submission.event.reviewer.reviewerAssigned">Recensor asignado al envío</message>
-	<message key="submission.event.reviewer.reviewerUnassigned">No se ha asignado recensor desde el envío</message>
-	<message key="submission.event.reviewer.reviewInitiated">Se ha iniciado la designación de recensor</message>
-	<message key="submission.event.reviewer.reviewCancelled">Se ha anulado el recensor asignado</message>
-	<message key="submission.event.reviewer.reviewReinitiated">Se reinicia la asignación de recensor</message>
-	<message key="submission.event.reviewer.reviewAccepted">El recensor acepta la revisión</message>
-	<message key="submission.event.reviewer.reviewAcceptedByProxy">Se acepta la revisión en nombre del recensor</message>
+	<message key="submission.event.reviewer.reviewerAssigned">Revisor asignado al envío</message>
+	<message key="submission.event.reviewer.reviewerUnassigned">No se ha asignado revisor desde el envío</message>
+	<message key="submission.event.reviewer.reviewInitiated">Se ha iniciado la designación de revisor</message>
+	<message key="submission.event.reviewer.reviewCancelled">Se ha anulado el revisor asignado</message>
+	<message key="submission.event.reviewer.reviewReinitiated">Se reinicia la asignación de revisor</message>
+	<message key="submission.event.reviewer.reviewAccepted">El revisor acepta la revisión</message>
+	<message key="submission.event.reviewer.reviewAcceptedByProxy">Se acepta la revisión en nombre del revisor</message>
 	<message key="submission.event.reviewer.reviewDeclined">No se acepta hacer la revisión del trabajo</message>
-	<message key="submission.event.reviewer.reviewRevision">El fichero con los comentarios del recensor se ha actualizado</message>
+	<message key="submission.event.reviewer.reviewRevision">El fichero con los comentarios del revisor se ha actualizado</message>
 	<message key="submission.event.reviewer.reviewRecommendation">Archivo con la recomendación de la revisión</message>
-	<message key="submission.event.reviewer.reviewerRated">Se ha enviado la valoración del recensor</message>
+	<message key="submission.event.reviewer.reviewerRated">Se ha enviado la valoración del revisor</message>
 	<message key="submission.event.reviewer.reviewDueDate">Fecha de revisión modificada</message>
 	<message key="submission.event.reviewer.reviewResubmitted">Revisión reenviada</message>
 	<message key="submission.event.reviewer.reviewFile">Se ha actualizado el fichero de la revisión</message>
@@ -703,7 +703,7 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="admin.languages.primaryLocaleInstructions">Este será el idioma por defecto para todo el sitio y las Conferencias que aloje.</message>
 	<message key="admin.languages.supportedLocalesInstructions">Seleccione las interfaces de idiomas que podrán usarse en este sitio. Los idiomas seleccionados estarán disponibles para su uso por todas las Conferencias/Congresos, y también aparecen en el menú "Idioma" en cada página del sitio (se puede cambiar en las páginas de cada Conferencia/Congreso). Si no selecciona múltiples interfaces, no aparecerá el menú para cambiar de idioma y la configuración de idioma no estará disponible en la Conferencia/Congreso.</message>
 	<message key="admin.languages.languageOptions">Opciones de idiomas</message>
-	<message key="admin.languages.profileLocales">Cuando se asignen los roles (gestores, directores, recensores, etc.), deben indicarse los idiomas de trabajo de cada persona en sus perfiles para facilitar el trabajo de los directores de las Conferencia.</message>
+	<message key="admin.languages.profileLocales">Cuando se asignen los roles (gestores, directores, revisores, etc.), deben indicarse los idiomas de trabajo de cada persona en sus perfiles para facilitar el trabajo de los directores de las Conferencia.</message>
 	<message key="admin.languages.installedLocales">Idiomas instalados</message>
 	<message key="admin.languages.reload">Recargar interfaces de idiomas</message>
 	<message key="admin.languages.confirmReload">¿Está seguro de recargar este idioma? Esto borrará cualquier personalización realizada para este lugar como las plantillas de correo electrónico.</message>
@@ -918,7 +918,7 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="manager.statistics">Estadísticas e informes</message>
 	<message key="manager.readingTools">Herramientas para la lectura</message>
 	<message key="manager.people">Gente</message>
-	<message key="manager.filesBrowser">Archivos examinados</message>
+	<message key="manager.filesBrowser">Examinar Archivos</message>
 	<message key="manager.groups">Equipo organizador</message>
 	<message key="manager.managementPages">Gestión General</message>
 	<message key="manager.managementPages.description"><![CDATA[<ol><li>Empiece con la gestión del sitio web.</li><li>Use la opción de Conferencias Programadas para crear una nueva Conferencia.</li><li>Vaya a la configuración del Congreso para enviar convocatorias de documentos, inscripción, etc. y use los plazos para fijar las fechas de las publicaciones, presentaciones, etc.</li></ol>]]></message>
@@ -944,9 +944,9 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="manager.statistics.statistics.count.accept">Aceptados (%):</message>
 	<message key="manager.statistics.statistics.count.decline">Rechazados (%):</message>
 	<message key="manager.statistics.statistics.count.value">{$count} ({$percentage}%)</message>
-	<message key="manager.statistics.statistics.reviewers">Recensores:</message>
+	<message key="manager.statistics.statistics.reviewers">Revisores:</message>
 	<message key="manager.statistics.statistics.reviewerCount">No. Asignado:</message>
-	<message key="manager.statistics.statistics.reviewsPerReviewer">No. de Recensores:</message>
+	<message key="manager.statistics.statistics.reviewsPerReviewer">No. de Revisores:</message>
 	<message key="manager.statistics.statistics.daysPerReview">Días hasta la revisión:</message>
 	<message key="manager.statistics.statistics.reviewerScore">Puntuación del director:</message>
 	<message key="manager.statistics.statistics.daysToPublication">Días hasta la publicación:</message>
@@ -957,14 +957,14 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="manager.statistics.statistics.note">Nota: El porcentaje de los trabajos enviados de nuevo después de su corrección puede que no sume el 100%, ya que los artículos reenviados pueden ser aceptados, rechazados o estar en proceso de evaluación.</message>
 
 	<message key="manager.statistics.reports">Generador de informes</message>
-	<message key="manager.statistics.reports.description">OCS genera informes que facilitan el seguimiento de los detalles relacionados con el estado de los trabajos presentados a la Conferencia/Congreso desde el punto de vista de las presentaciones, directores y recensores en un periodo de tiempo. Los informes se generan en formato CSV, que requieren una de hoja de cálculo.</message>
+	<message key="manager.statistics.reports.description">OCS genera informes que facilitan el seguimiento de los detalles relacionados con el estado de los trabajos presentados a la Conferencia/Congreso desde el punto de vista de las presentaciones, directores y revisores en un periodo de tiempo. Los informes se generan en formato CSV, que requieren una de hoja de cálculo.</message>
 	<message key="manager.statistics.reports.dateFrom">De</message>
 	<message key="manager.statistics.reports.dateTo">Hasta</message>
 	<message key="manager.statistics.reports.reportType">Tipo de Informe</message>
 	<message key="manager.statistics.reports.type.conference">Informe del Congreso</message>
 	<message key="manager.statistics.reports.type.schedConf">Informe del Congreso programada</message>
 	<message key="manager.statistics.reports.type.director">Informe del Director</message>
-	<message key="manager.statistics.reports.type.reviewer">Informe del Recensor</message>
+	<message key="manager.statistics.reports.type.reviewer">Informe del Revisor</message>
 	<message key="manager.statistics.reports.type.track">Informe</message>
 	<message key="manager.statistics.reports.generate">Generar informe</message>
 	<message key="manager.statistics.reports.status">Estado (Acceptado, rechazado, otro)</message>
@@ -972,7 +972,7 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="manager.statistics.reports.presenter">Autor #{$num}</message>
 	<message key="manager.statistics.reports.affiliation">Afiliación #{$num}</message>
 	<message key="manager.statistics.reports.country">País #{$num}</message>
-	<message key="manager.statistics.reports.reviewer">Recensor #{$num}</message>
+	<message key="manager.statistics.reports.reviewer">Revisor #{$num}</message>
 	<message key="manager.statistics.reports.director">Director #{$num}</message>
 	<message key="manager.statistics.reports.score">Resultado #{$num}</message>
 	<message key="manager.statistics.reports.singleScore">Resultado</message>
@@ -1104,6 +1104,11 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="manager.setup.aboutConference.comments.allowAnonymous">Se permiten los comentarios Anónimos.</message>
 
 	<!-- Conference setup page 2 -->
+	<message key="manager.setup.additionalContent.redirect">Redirección Automática a Congreso Programado</message>
+	<message key="manager.setup.additionalContent.schedConfRedirect">Redireccionar</message>
+	<message key="manager.setup.additionalContent.redirect.noSchedConfRedirect">No redireccionar</message>
+	<message key="manager.setup.additionalContent.redirect.invalidSchedConf">Un Congreso inválido fue seleccionado para el redireccionamiento. Por favor revise el calendario del Congreso elegido e intente de nuevo.</message>
+	<message key="manager.setup.additionalContent.redirect.description">Eligiendo debajo un Congreso Programado, es posible redireccionar a usuarios que visiten la página del Congreso a ese Congreso específico. Esto es útil, por ejemplo, si este Congreso sólo tiene un Congreso Programado.</message>	
 	<message key="manager.setup.additionalContent.homepage">Página de inicio</message>
 	<message key="manager.setup.additionalContent.homepageImage">Imagen de la Página de Inicio</message>
 	<message key="manager.setup.additionalContent.homepageImage.description"></message>
@@ -1208,7 +1213,7 @@ Observe que si el administrador del sistema ya ha regisrado este sitio en el rec
 	<message key="manager.schedConfSetup.details.location.city">Ciudad</message>
 	<message key="manager.schedConfSetup.details.principalContact">Contacto Principal del Congreso</message>
 	<message key="manager.schedConfSetup.details.technicalSupportContact">Contacto técnico</message>
-	<message key="manager.schedConfSetup.details.technicalSupportContact.description">Esta persona aparecerá en la página de la conferencia como persona de contacto para autores y recensores,  debería tener experiencia en el manejo del sistema desde la perspectiva de todos los roles existentes. Ya que este sistema de conferencias necesita muy poca asistencia técnica, esta persona tan sólo tendría una dedicación parcial. Pueden haber ocasiones, por ejemplo, en que autores y recensores tengan problemas con las instrucciones para autores, formatos de ficheros, también deberá asegurar que regularmente se hacen copias de seguridad de la conferencia en el servidor.</message>
+	<message key="manager.schedConfSetup.details.technicalSupportContact.description">Esta persona aparecerá en la página de la conferencia como persona de contacto para autores y revisores,  debería tener experiencia en el manejo del sistema desde la perspectiva de todos los roles existentes. Ya que este sistema de conferencias necesita muy poca asistencia técnica, esta persona tan sólo tendría una dedicación parcial. Pueden haber ocasiones, por ejemplo, en que autores y revisores tengan problemas con las instrucciones para autores, formatos de ficheros, también deberá asegurar que regularmente se hacen copias de seguridad de la conferencia en el servidor.</message>
 	<message key="manager.schedConfSetup.details.emails">Identificación del Email</message>
 	<message key="manager.schedConfSetup.details.emailSignature">Firma</message>
 	<message key="manager.schedConfSetup.details.emailSignature.description">Los emails automáticos que envía el sistema en nombre de la organización tendrán la siguiente firma que aparecerá al final del cuerpo del mensaje. El cuerpo de los mensajes pueden editarse en el menú de Gestión de la conferencia.</message>
@@ -1290,21 +1295,21 @@ Nombre del sistema de clasificación]]></message>
 
 	<!-- Scheduled Conference Setup Paso 3 -->
 	<message key="manager.schedConfSetup.review.reviewPolicy">Política de evaluación de originales</message>
-	<message key="manager.schedConfSetup.review.reviewDescription">Describa la política  de evaluación de los originales y cómo se llevará a cabo el proceso de la misma, incluyendo el número de recensores que habitualmente se emplean en una revisión, los criterios que deben seguir los evaluadores, el tiempo medio en el que se hará la revisión, y los criterios para la selección de recensores. Esto aparecerá en "Acerca de" esta Conferencia/Congreso.</message>
+	<message key="manager.schedConfSetup.review.reviewDescription">Describa la política  de evaluación de los originales y cómo se llevará a cabo el proceso de la misma, incluyendo el número de revisores que habitualmente se emplean en una revisión, los criterios que deben seguir los evaluadores, el tiempo medio en el que se hará la revisión, y los criterios para la selección de revisores. Esto aparecerá en "Acerca de" esta Conferencia/Congreso.</message>
 	<message key="manager.schedConfSetup.review.peerReview">Revisión por pares (Peer Review)</message>
-	<message key="manager.schedConfSetup.review.reviewGuidelinesDescription">las instrucciones para recensores facilitan a los evaluadores el juicio a la hora de aceptar un trabajo para la conferencia, así como cualquier indicación especial para la preparación  de una revisión efectiva.</message>
+	<message key="manager.schedConfSetup.review.reviewGuidelinesDescription">las instrucciones para revisores facilitan a los evaluadores el juicio a la hora de aceptar un trabajo para la conferencia, así como cualquier indicación especial para la preparación  de una revisión efectiva.</message>
 	<message key="manager.schedConfSetup.review.numWeeksPerReview1">Se permiten</message>
 	<message key="manager.schedConfSetup.review.numWeeksPerReview2">Semanas para hacer la revisión.</message>
 	<message key="manager.schedConfSetup.review.restrictReviewerFileAccess">Los evaluadores sólo tendrán acceso a los ficheros después de que hayan aceptado hacer la revisión.</message>
-	<message key="manager.schedConfSetup.review.reviewerAccessKeysEnabled">Activar mediante un click el acceso para el recensor.</message>
-	<message key="manager.schedConfSetup.review.reviewerAccessKeysEnabled.description"><![CDATA[<strong>Nota:</strong> Con esta opción, con la que los evaluadores no necesitan acceder al sitio web, los directores no pueden, por motivos de seguridad, modificar direcciones de correo electrónico o añadir "copia a, CC" o "copia oculta, BCC" antes de enviar la consulta a los recensores.]]></message>
-	<message key="manager.schedConfSetup.review.reviewerReminders">Recordatorios para el  recensor</message>
-	<message key="manager.schedConfSetup.review.automatedReminders">Automatizar los correos recordatorios para los recensores</message>
+	<message key="manager.schedConfSetup.review.reviewerAccessKeysEnabled">Activar mediante un click el acceso para el revisor.</message>
+	<message key="manager.schedConfSetup.review.reviewerAccessKeysEnabled.description"><![CDATA[<strong>Nota:</strong> Con esta opción, con la que los evaluadores no necesitan acceder al sitio web, los directores no pueden, por motivos de seguridad, modificar direcciones de correo electrónico o añadir "copia a, CC" o "copia oculta, BCC" antes de enviar la consulta a los revisores.]]></message>
+	<message key="manager.schedConfSetup.review.reviewerReminders">Recordatorios para el  revisor</message>
+	<message key="manager.schedConfSetup.review.automatedReminders">Automatizar los correos recordatorios para los revisores</message>
 	<message key="manager.schedConfSetup.review.remindForInvite1">A quien no haya respondido a una solicitud de revisión</message>
 	<message key="manager.schedConfSetup.review.remindForInvite2">Días.</message>
 	<message key="manager.schedConfSetup.review.remindForSubmit1">Quienes no hayan enviado la revisión</message>
 	<message key="manager.schedConfSetup.review.remindForSubmit2">días después del plazo establecido.</message>
-	<message key="manager.schedConfSetup.review.onQuality">Los directores pueden evaluar a los recensores en una escala de 5 puntos.</message>
+	<message key="manager.schedConfSetup.review.onQuality">Los directores pueden evaluar a los revisores en una escala de 5 puntos.</message>
 	<message key="manager.schedConfSetup.review.automatedRemindersDisabled"><![CDATA[<strong>Nota:</strong> Para activar estas opciones, el administrador del sitio deberá habilitar la opción <tt>scheduled_tasks</tt>  en el archivo de configuración de OCS. Configuración del servidor adicional puede ser requerida para soportar esta funcionalidad (la cual podría no ser posible en todos los servidores), como se indica en la documentación de OCS.]]></message>
 	<message key="manager.schedConfSetup.review.directorDecision">Decisión del Director</message>
 	<message key="manager.schedConfSetup.review.notifyAllPresentersOnDecision">Cuando se utiliza el email Notificar Autor, incluir la direcciónde email de todos los co-autores para envíos de múltiples autores, y no solo la del usuario que realizó el envio.</message>
@@ -1351,43 +1356,44 @@ Nombre del sistema de clasificación]]></message>
 	<message key="manager.timeline.overrideDates">Anular el mensaje(s) de error</message>
 	<message key="manager.timeline.description">Las fechas que se indican se utilizarán para esta conferencia, y pueden verse en la página web pulsando en el menú "Calendario de la conferencia" situado en la parte inferior de la página. </message>
 
-	<message key="manager.timeline.conference">Conferencia/Congreso</message>
-	<message key="manager.timeline.schedConfStartsOn">Primer día de la conferencia</message>
-	<message key="manager.timeline.schedConfEndsOn">Último día de la conferencia</message>
+	<message key="manager.timeline.conference">Congreso</message>
+	<message key="manager.timeline.schedConfStartsOn">Primer día del congreso</message>
+	<message key="manager.timeline.schedConfEndsOn">Último día del congreso</message>
 	
 	<message key="manager.timeline.website">Website</message>
-	<message key="manager.timeline.schedConfAppearsOn">Se creó (como Conferencia/Congreso)</message>
-	<message key="manager.timeline.schedConfArchivedOn">Archivar Conferencia/Congreso </message>
+	<message key="manager.timeline.schedConfAppearsOn">Publicar (como Congreso actual)</message>
+	<message key="manager.timeline.schedConfArchivedOn">Mover al Archivo de Congresos</message>
 
 	<message key="manager.timeline.submissions">Envíos</message>
-	<message key="manager.timeline.openRegPresenter">Apertura del plazo de inscripción</message>
-	<message key="manager.timeline.closeRegPresenter">Cierre del plazo de inscripción</message>
+	<message key="manager.timeline.openRegPresenter">Apertura de la inscripcción de Autores</message>
+	<message key="manager.timeline.closeRegPresenter">Cierre de la inscripcción de Autores</message>
 	<message key="manager.timeline.showCFP">Call for papers</message>
 	<message key="manager.timeline.submissionsOpen">Trabajos aceptados</message>
-	<message key="manager.timeline.submissionsClosed">Cierre del envío de originales</message>
+	<message key="manager.timeline.submissionsClosed">Cierre del envío de trabajos</message>
 
-	<message key="manager.timeline.reviews">Revisión</message>
-	<message key="manager.timeline.openRegReviewer">Apertura de la inscripción de revisores</message>
-	<message key="manager.timeline.closeRegReviewer">Cierre de la inscripción de revisores</message>
+	<message key="manager.timeline.reviews">Revisiones</message>
+	<message key="manager.timeline.openRegReviewer">Apertura de la inscripción de Revisores</message>
+	<message key="manager.timeline.closeRegReviewer">Cierre de la inscripción de Revisores</message>
 	<message key="manager.timeline.closeReviewProcess">Cierre del proceso de evaluación</message>
-	
-	<message key="manager.timeline.websitePosting">Puesta en la Web</message>
-	<message key="manager.timeline.postPresentations">Presentaciones aceptadas</message>
+
+	<message key="manager.timeline.websitePosting">Publicación en el Sitio</message>
+	<message key="manager.timeline.postPresentations">Presentaciones/resúmenes aceptados</message>
 	<message key="manager.timeline.postAbstracts">Resúmenes aceptados</message>
-	<message key="manager.timeline.postTimeline">Calendario del Congreso (incluido en la información sobre la conferencia)</message>
+	<message key="manager.timeline.postTimeline">Calendario del Congreso (incluido en la información del Congreso)</message>
 	<message key="manager.timeline.postPapers">Trabajos aceptados</message>
-	<message key="manager.timeline.delayOpenAccess">Embargo para el acceso abierto hasta</message>
-	<message key="manager.timeline.closeComments">Se ha terminado el plazo para comentarios (activar las Herramientas de Lectura)</message>
-	<message key="manager.timeline.closeComments.plain">Cierre de  comentarios</message>
-	<message key="manager.timeline.form.conferenceEndDateBeforeConferenceStart">La fecha de finalización de la conferencia debe ser después de la fecha en que comience la conferencia.</message>
-	<message key="manager.timeline.form.siteEndDateBeforeConferenceStart">La web de conferencia no debe archivarse antes de que empiece la conferencia.</message>
-	<message key="manager.timeline.form.conferenceStartDateBeforeSubmissionsClose">La conferencia no puede empezar antes de que se cierre el plazo de envío de originales.</message>
+	<message key="manager.timeline.postSchedule">Calendario</message>
+	<message key="manager.timeline.delayOpenAccess">Demorar el acceso abierto hasta</message>
+	<message key="manager.timeline.closeComments">Cerrar comentarios (activar Herramientas de Lectura)</message>
+	<message key="manager.timeline.closeComments.plain">Cerrar comentarios</message>
+	<message key="manager.timeline.form.conferenceEndDateBeforeConferenceStart">La fecha de finalización del Congreso debe ser posterior a la fecha de comienzo.</message>
+	<message key="manager.timeline.form.siteEndDateBeforeConferenceStart">El sitio del Congreso no puede ser archivado antes de que comience el Congreso.</message>
+	<message key="manager.timeline.form.conferenceStartDateBeforeSubmissionsClose">El Congreso no puede comenzar hasta que no cierre el plazo de envío de originales.</message>
 	<message key="manager.timeline.form.siteEndDateBeforeSiteStart">La fecha que figura como "Puesta en la Web" debe ser antes de la fecha de  "Archivar la Conferencia".</message>
-	<message key="manager.timeline.form.conferenceStartBeforeSiteStart">La fecha que figura com "Puesta en la web" debe ser antes de la fecha de inicio de la conferencia.</message>
-	<message key="manager.timeline.form.siteEndBeforeLastDay">La fecha de "Archivar la Conferencia" debe ser después del último día de la conferencia.</message>
-	<message key="manager.timeline.form.regPresenterCloseDateBeforeRegPresenterOpenDate">La fecha de inicio de inscripción de autores debe ser antes de la fecha de cierre de la misma.</message>
-	<message key="manager.timeline.form.regReviewerCloseDateBeforeRegReviewerOpenDate">La fecha de inicio de inscripción de los evaluadores debe ser antes del cierre de la misma.</message>
-	<message key="manager.timeline.form.submissionsCloseBeforeCFP">"Call for papers" debe hacerse antes de que se cierre el plazo de envío de originales.</message>
+	<message key="manager.timeline.form.conferenceStartBeforeSiteStart">La fecha en que "Publicar" el sitio debe ser previa al inicio del Congreso.</message>
+	<message key="manager.timeline.form.siteEndBeforeLastDay">La fecha de "Archivar el Congreso" debe ser posterior al último día del Congreso.</message>
+	<message key="manager.timeline.form.regPresenterCloseDateBeforeRegPresenterOpenDate">La fecha de inicio de inscripción de autores debe ser anterior a la fecha de cierre de la misma.</message>
+	<message key="manager.timeline.form.regReviewerCloseDateBeforeRegReviewerOpenDate">La fecha de inicio de inscripción de los evaluadores debe ser anterior al cierre de la misma.</message>
+	<message key="manager.timeline.form.submissionsCloseBeforeCFP">El "Call for papers" debe ser publicado antes del cierre del plazo de envío de originales.</message>
 
 	<!-- Import/Export -->
 	<message key="manager.importExport">Importar/Exportar Datos</message>
@@ -1404,7 +1410,7 @@ Nombre del sistema de clasificación]]></message>
 
 	<message key="manager.groups.enableBoard.description"><![CDATA[Para el <a href="{$aboutOrganizingTeamUrl}">Comité Organizador</a> en Acerca de esta Conferencia/Congreso:]]></message>
 	<message key="manager.groups.enableBoard">El gestor del Congreso creará las asignaciones del equipo organizador, y añadirá las personas apropiadas en cada una de ellas.</message>
-	<message key="manager.groups.disableBoard">El sistema generará una lista de personas  con los roles que se les haya asignado(Director, Recensor, etc.)</message>
+	<message key="manager.groups.disableBoard">El sistema generará una lista de personas  con los roles que se les haya asignado(Director, Revisor, etc.)</message>
 
 	<message key="manager.groups.membership">Miembros</message>
 	<message key="manager.groups.membership.confirmDelete">¿Está seguro de que quiere borrar este miembro del grupo?</message>
@@ -1468,7 +1474,7 @@ Opcionalmente usted puede proporcionar al usuario la razón para la inhabilitaci
 	<message key="manager.people.signOutAsUser">Salir Como usuario</message>
 	<message key="manager.people.signInAs">Acceder como</message>
 	<message key="manager.people.syncUsers">Sincronizar los roles de usuario</message>
-	<message key="manager.people.syncUserDescription">La sincronización de de tareas involucrará a todos los usuarios con el mismo rol  en la conferencia. Esta función permite a un conjunto de usuarios (p.e. Recensores) que se sincronicen entre conferencias.</message>
+	<message key="manager.people.syncUserDescription">La sincronización de de tareas involucrará a todos los usuarios con el mismo rol  en la conferencia. Esta función permite a un conjunto de usuarios (p.e. Revisores) que se sincronicen entre conferencias.</message>
 	<message key="manager.people.enrollSync">Sincronizar roles</message>
 	<message key="manager.people.enrollSyncRole">Sincronizar rol</message>
 	<message key="manager.people.enrollSyncConference">Con la Conferencia</message>
@@ -1680,7 +1686,7 @@ Opcionalmente usted puede proporcionar al usuario la razón para la inhabilitaci
 	<message key="director.submissionReview.confirmDecision">¿Está seguro de que quiere mantener esta decisión?</message>
 	<message key="director.submissionReview.confirmToLayout">¿Se ha comunicado al autor esta decisión?  Si no, pulse Cancelar y utilice la herramienta Notificar al Autor antes de darle formato al trabajo.</message>
 	<message key="director.submissionReview.confirmToArchive">¿Se ha comunicado al autor esta decisión?  Si no, pulse Cancelar y utilice la herramienta Notificar al Autor antes de achivar el trabajo.</message>
-	<message key="director.submissionReview.notes">El plazo indica el número de semanas dado para la revisión o (-) las semanas de demora. Se rellena cuando un recensor acepta hacer la revisión.</message>
+	<message key="director.submissionReview.notes">El plazo indica el número de semanas dado para la revisión o (-) las semanas de demora. Se rellena cuando un revisor acepta hacer la revisión.</message>
 	<message key="director.notifyUsers">Notificar a los Usuarios</message>
 	<message key="director.notifyUsers.allUsers">Enviar este mensaje a todos los usuarios suscritos a esta conferencia ({$count} users)</message>
 	<message key="director.notifyUsers.interestedUsers">Enviar este mensaje a todos los usuarios suscritos a esta conferencia que deseen recibir actualizaciones ({$count} users)</message>
@@ -1702,26 +1708,26 @@ Opcionalmente usted puede proporcionar al usuario la razón para la inhabilitaci
 	<message key="director.paper.stageDisabled">No es posible hacer esta revisión. El resumen no está completo o el autor todavía no ha depositado el trabajo para revisión.</message>
 	<message key="director.paper.showSuppFile">mandar el fichero a los revisores</message>
 	<message key="director.paper.clear">Limpiar</message>
-	<message key="director.paper.clearReviewer">Limpiar Recensor</message>
+	<message key="director.paper.clearReviewer">Limpiar Revisor</message>
 	<message key="director.paper.changeTrack">Cambiar Sección</message>
 	<message key="director.paper.setDueDate">Fijar fecha de vencimiento</message>
-	<message key="director.paper.addReviewer">Añadir Recensor</message>
-	<message key="director.paper.toReviewer">Para el Recensor</message>
-	<message key="director.paper.notifyReviewer">Notificar al Recensor</message>
+	<message key="director.paper.addReviewer">Añadir Revisor</message>
+	<message key="director.paper.toReviewer">Para el Revisor</message>
+	<message key="director.paper.notifyReviewer">Notificar al Revisor</message>
 	<message key="director.paper.initiateReview">Iniciar la Revisión</message>
 	<message key="director.paper.cancelReview">Cancelar la solicitud de Revisión</message>
-	<message key="director.paper.clearReview">Limpiar Recensor</message>
+	<message key="director.paper.clearReview">Limpiar Revisor</message>
 	<message key="director.paper.enterRecommendation">Introducir la Recomendación</message>
-	<message key="director.paper.enterReviewerRecommendation">Introducir la recomendación del recensor</message>
+	<message key="director.paper.enterReviewerRecommendation">Introducir la recomendación del revisor</message>
 	<message key="director.paper.recommendation">Recomendación</message>
-	<message key="director.paper.selectReviewer">Seleccionar el recensor</message>
-	<message key="director.paper.selectReviewerNotes"><![CDATA[El nombre enlaza con el perfil del recensor.<br/>
+	<message key="director.paper.selectReviewer">Seleccionar el revisor</message>
+	<message key="director.paper.selectReviewerNotes"><![CDATA[El nombre enlaza con el perfil del revisor.<br/>
 Calificación superior a 5 (Excelente).<br/>
 Las semanas se refieren al periodo medio de tiempo para hacer la revisión.<br/>
 La última, es la fecha correspondiente a aquella revisión que se ha comprometido a hacer mas recientemente.<br/>
 En activo significa cuantas revisiones están actualmente en marcha.]]></message>
-		<message key="director.paper.replaceReviewer">Reemplazar el recensor</message>
-	<message key="director.paper.directorToEnter">El Director que hace alguna recomiendación o comentario al recensor</message>
+		<message key="director.paper.replaceReviewer">Reemplazar el revisor</message>
+	<message key="director.paper.directorToEnter">El Director que hace alguna recomiendación o comentario al revisor</message>
 	<message key="director.paper.uploadReviewForReviewer">Subir la revisión</message>
 	<message key="director.paper.peerReviewOptions">Opciones  de la revisión</message>
 	<message key="director.paper.decision">Decisión</message>
@@ -1730,13 +1736,13 @@ En activo significa cuantas revisiones están actualmente en marcha.]]></message
 	<message key="director.paper.cannotRecordYet">Antes de que se pueda guardar una decisión, el envío debe asignarse a un director de sección. La versión de la recesión, por defecto, se convierte en la version del Director.</message>
 	<message key="director.paper.cannotRecordTooLate">El trabajo ya ha se ha evaluado. Ya no se puede cambiar la decisión sobre el mismo.</message>
 	<message key="director.paper.designateDueDate">Dar un plazo</message>
-	<message key="director.paper.designateDueDateDescription">Para cambiar la fecha asignada a este recensor, introduzca otra o borre la fecha e introduzca el número de semanas que se dan para hacer la revisión.</message>
+	<message key="director.paper.designateDueDateDescription">Para cambiar la fecha asignada a este revisor, introduzca otra o borre la fecha e introduzca el número de semanas que se dan para hacer la revisión.</message>
 	<message key="director.paper.todaysDate">La fecha de hoy</message>
 	<message key="director.paper.requestedByDate">Fecha de revisión</message>
 	<message key="director.paper.dueDateFormat">Formato: YYYY-MM-DD</message>
 	<message key="director.paper.numberOfWeeks">Número de semanas</message>
 	<message key="director.paper.showPresenter">Permitir al autor visualizar el fichero</message>
-	<message key="director.paper.rateReviewer">Puntuación del recensor</message>
+	<message key="director.paper.rateReviewer">Puntuación del revisor</message>
 	<message key="director.paper.reviewerRating.veryGood">5 Alta</message>
 	<message key="director.paper.reviewerRating.good">4 Buena</message>
 	<message key="director.paper.reviewerRating.average">3 Media</message>
@@ -1777,16 +1783,16 @@ En activo significa cuantas revisiones están actualmente en marcha.]]></message
 	<message key="trackDirector.presenter.confirmRenotify">Notificar al autor que debe reiniciar la asignación de evaluadores. ¿Está seguro de que quiere hacer esto?</message>
 
 	<message key="trackDirector.regrets.breadcrumb">Renuncias</message>
-	<message key="trackDirector.regrets.title">#{$paperId} Renuncias de recensores &amp; Cancelaciones</message>
+	<message key="trackDirector.regrets.title">#{$paperId} Renuncias de revisores &amp; Cancelaciones</message>
 	<message key="trackDirector.regrets">Renuncias</message>
 	<message key="trackDirector.regrets.link">Ver las renuncias, Cancelaciones</message>
 	<message key="trackDirector.regrets.reviewStage">Etapa de revisión (Peer Review){$stage}</message>
 	<message key="trackDirector.regrets.decisionStage">Etapa de la decisión del Director {$stage}</message>
-	<message key="trackDirector.regrets.regretsAndCancels">Renuncia del Recensor &amp; Cancelaciones</message>
+	<message key="trackDirector.regrets.regretsAndCancels">Renuncia del Revisor &amp; Cancelaciones</message>
 	<message key="trackDirector.regrets.regret">Renuncia</message>
 	<message key="trackDirector.regrets.result">Resultado</message>
-	<message key="trackDirector.review.enrollReviewer">Emplear a un usuario ya existente como recensor</message>
-	<message key="trackDirector.review.createReviewer">Introducir nuevo recensor</message>
+	<message key="trackDirector.review.enrollReviewer">Emplear a un usuario ya existente como revisor</message>
+	<message key="trackDirector.review.createReviewer">Introducir nuevo revisor</message>
 
 	<!-- Reviewer -->
 	<message key="reviewer.completedReviews">Hecho</message>
@@ -1808,7 +1814,7 @@ En activo significa cuantas revisiones están actualmente en marcha.]]></message
 	<message key="reviewer.paper.submitReview">Enviar la revisión al Director</message>
 	<message key="reviewer.paper.reviewerComments">Comentarios</message>
 	<message key="reviewer.paper.uploadedFile">Subir ficheros</message>
-	<message key="reviewer.paper.reviewersAnnotatedVersion">Versión depositada por el recensor</message>
+	<message key="reviewer.paper.reviewersAnnotatedVersion">Versión depositada por el revisor</message>
 	<message key="reviewer.paper.reviewersAnnotatedVersionDescription">(Si quiere hacer anotaciones en el fichero, para el director, guárdelo en su disco duro y utilice Browse/Upload.)</message>
 	<message key="reviewer.paper.schedule.request">Pregunta del Director</message>
 	<message key="reviewer.paper.schedule.response">Su respuesta</message>
@@ -1823,7 +1829,7 @@ En activo significa cuantas revisiones están actualmente en marcha.]]></message
 	<message key="reviewer.paper.submissionToBeReviewed">Original para revisar</message>
 	<message key="reviewer.paper.reviewSchedule">Plazo para la revisión</message>
 	<message key="reviewer.paper.reviewSteps">Pasos de la revisión</message>
-	<message key="reviewer.paper.reviewerGuidelines">Instrucciones para los recensores</message>
+	<message key="reviewer.paper.reviewerGuidelines">Instrucciones para los revisores</message>
 	<message key="reviewer.paper.notifyEditorA">Notificar al director del envío</message>
 	<message key="reviewer.paper.notifyEditorB">si aceptará o no realizar la revisión.</message>
 	<message key="reviewer.paper.consultGuidelines">Si realizará la revisión, consulte las Instrucciones para Revisores debajo.</message>
@@ -1918,7 +1924,7 @@ Para depositar un trabajo en esta conferencia, siga los siguientes pasos.
 	<message key="presenter.submit.noSubmissionConfirm">¿Está seguro de que quiere continuar sin el depósito de ficheros?</message>
 
 	<!-- Paper Submission Step 4 -->
-	<message key="presenter.submit.supplementaryFilesInstructions">Este paso opcional en el proceso de envío permite a los autores añadir ficheros que mejoren la contribución del trabajo enviado. Los ficheros adicionales pueden incluir (a) instumentos de la investigación, (b) hojas de datos,(c) otros documentos que de otra manera los lectores no tendrían acceso, o (d) figuras o tablas que se puedan integrar en el texto. El autor indiza estos ficheros, identifica su realización con el envío, asi como su autoría. Los ficheros adicionales pueden depositarse en cualquier formato y estarán disponibles para los lectores en su formato original. Estos pueden compartirse con los recensores, si no comprometen la evaluación "a ciegas".</message>
+	<message key="presenter.submit.supplementaryFilesInstructions">Este paso opcional en el proceso de envío permite a los autores añadir ficheros que mejoren la contribución del trabajo enviado. Los ficheros adicionales pueden incluir (a) instumentos de la investigación, (b) hojas de datos,(c) otros documentos que de otra manera los lectores no tendrían acceso, o (d) figuras o tablas que se puedan integrar en el texto. El autor indiza estos ficheros, identifica su realización con el envío, asi como su autoría. Los ficheros adicionales pueden depositarse en cualquier formato y estarán disponibles para los lectores en su formato original. Estos pueden compartirse con los revisores, si no comprometen la evaluación "a ciegas".</message>
 	<message key="presenter.submit.noSupplementaryFiles">No se han añadido ficheros adicionales a este envío.</message>
 	<message key="presenter.submit.backToSupplementaryFiles">Volver a los ficheros adicionales</message>
 	<message key="presenter.submit.confirmDeleteSuppFile">¿Está seguro de que quiere eliminar este fichero adicional?</message>
@@ -1940,7 +1946,7 @@ Para depositar un trabajo en esta conferencia, siga los siguientes pasos.
 	<message key="presenter.submit.suppFile.sourceText">Texto</message>
 	<message key="presenter.submit.suppFile.briefDescription">Brebe descripción</message>
 	<message key="presenter.submit.suppFile.contributorOrSponsor">Patrocinador</message>
-	<message key="presenter.submit.suppFile.availableToPeers">Facilitar los ficheros a los recensores (sin metadatos), ya que no comprometen la evaluación.</message>
+	<message key="presenter.submit.suppFile.availableToPeers">Facilitar los ficheros a los revisores (sin metadatos), ya que no comprometen la evaluación.</message>
 	<message key="presenter.submit.suppFile.publisherDescription">Usar sólo con material publicado formalmente.</message>
 	<message key="presenter.submit.suppFile.dateDescription">Fecha en la que se tomaron los datos o fecha de la experimentación.</message>
 	<message key="presenter.submit.suppFile.sourceDescription">Nombre del estudio u otro punto de origen.</message>
@@ -2035,7 +2041,7 @@ Para depositar un trabajo en esta conferencia, siga los siguientes pasos.
 	<message key="submission.comments.confirmDelete">¿Está seguro de querer borrar este comentario?</message>
 	<message key="submission.comments.importPeerReviews">Importar las revisiones</message>
 	<message key="submission.comments.blindCcReviewers">Después del envío, haga una copia de la decisión editorial, sin cabeceras ni nombres, para mandársela a los revisores.</message>
-	<message key="submission.comments.importPeerReviews.reviewerLetter">Recensor {$reviewerLetter}:</message>
+	<message key="submission.comments.importPeerReviews.reviewerLetter">Revisor {$reviewerLetter}:</message>
 	<message key="submission.comments.forPresenterDirector">Para el autor y el director</message>
 	<message key="submission.comments.forDirector">Para el director</message>
 	<message key="submission.comments.sendDecisionToReviewers">Enviar a los revisores la decisión editorial</message>
