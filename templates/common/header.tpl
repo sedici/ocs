@@ -43,7 +43,7 @@
 <div id="container">
 
 <div id="header">
-	<div id="rev_logo"><img src="{$baseUrl}/templates/images/unlp.jpg" /></div>
+	<div id="rev_logo"><a href="http://www.unlp.edu.ar"><img src="{$baseUrl}/templates/images/unlp.jpg" border=0/></a></div>
 	<div id="rev_menu">
 	<ul>
 		<li><a href="#">Portal de Congresos</a></li>
