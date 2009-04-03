@@ -50,6 +50,7 @@ class TranslatorAction {
 			if (!empty($localeFile)) $localeFiles[] = $localeFile;
 			unset($plugin);
 		}
+		//$localeFiles[]="help/es_ES";
 		return $localeFiles;
 	}
 
