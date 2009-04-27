@@ -118,7 +118,7 @@
 
 <tr valign="top">
 	<td class="label">{fieldLabel name="affiliation" key="user.affiliation"}</td>
-	<td class="value"><input type="text" id="affiliation" name="affiliation" value="{$affiliation|escape}" size="30" maxlength="255" class="textField" /></td>
+	<td class="value"><input type="text" id="affiliation" name="affiliation" value="{$affiliation|escape}" size="30" class="textField" /></td>
 </tr>
 
 <tr valign="top">

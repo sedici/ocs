@@ -80,7 +80,7 @@ function movePresenter(dir, presenterIndex) {
 </tr>
 <tr valign="top">
 	<td width="20%" class="label">{fieldLabel name="presenters-$presenterIndex-affiliation" key="user.affiliation"}</td>
-	<td width="80%" class="value"><input type="text" class="textField" name="presenters[{$presenterIndex|escape}][affiliation]" id="presenters-{$presenterIndex|escape}-affiliation" value="{$presenter.affiliation|escape}" size="30" maxlength="255"/></td>
+	<td width="80%" class="value"><input type="text" class="textField" name="presenters[{$presenterIndex|escape}][affiliation]" id="presenters-{$presenterIndex|escape}-affiliation" value="{$presenter.affiliation|escape}" size="30" /></td>
 </tr>
 <tr valign="top">
 	<td width="20%" class="label">{fieldLabel name="presenters-$presenterIndex-country" key="common.country"}</td>
@@ -205,7 +205,34 @@ function movePresenter(dir, presenterIndex) {
 {if $collectAbstracts}
 <tr valign="top">
 	<td width="20%" class="label">{fieldLabel name="abstract" key="paper.abstract" required="true"}</td>
-	<td width="80%" class="value"><textarea name="abstract[{$formLocale|escape}]" id="abstract" class="textArea" rows="15" cols="60">{$abstract[$formLocale]|escape}</textarea></td>
+	<td width="80%" class="value">
+    {if ($maxlength)}
+	{literal}
+		<script type="text/javascript">
+		function wordcount(text) {
+			text.split(" ");  
+			return splitted.length;
+		}
+
+		/***********************************************
+		* Textarea Maxlength script- © Dynamic Drive (www.dynamicdrive.com)
+		* This notice must stay intact for legal use.
+		* Visit http://www.dynamicdrive.com/ for full source code
+		***********************************************/
+
+		function ismaxlength(obj){
+		mlength=obj.getAttribute? parseInt(obj.getAttribute("maxlength")) : ""
+		if (obj.getAttribute && wordcount(obj.value)>mlength)
+		obj.value=obj.value.substring(0,obj.value - 1);
+		}
+
+		</script>
+	{/literal}
+		<textarea name="abstract[{$formLocale|escape}]" id="abstract" class="textArea" rows="15" cols="60" maxlength="{$maxlegth}" onkeyup="return ismaxlength(this)">
+	{else}
+		<textarea name="abstract[{$formLocale|escape}]" id="abstract" class="textArea" rows="15" cols="60">
+    {/if}
+{$abstract[$formLocale]|escape}</textarea></td>
 </tr>
 {/if}{* $collectAbstracts *}
 

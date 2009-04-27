@@ -142,13 +142,13 @@ function movePresenter(dir, presenterIndex) {
 	</tr>
 	<tr valign="top">
 		<td class="label">{fieldLabel name="presenters-0-affiliation" key="user.affiliation"}</td>
-		<td class="value"><input type="text" id="presenters-0-affiliation" name="presenters[0][affiliation]" size="30" maxlength="255" class="textField" /></td>
+		<td class="value"><input type="text" id="presenters-0-affiliation" name="presenters[0][affiliation]" size="30" class="textField" /></td>
 	</tr>
 	<tr valign="top">
 		<td class="label">{fieldLabel name="presenters-0-email" required="true" key="user.email"}</td>
 		<td class="value"><input type="text" name="presenters[0][email]" id="presenters-0-email" size="30" maxlength="90" class="textField" /></td>
 	</tr>
-	<tr valign="top">
+	<tr valign="top"> 
 		<td class="label">{fieldLabel name="presenters-0-url" key="user.url"}</td>
 		<td class="value"><input type="text" name="presenters[0][url]" id="presenters-0-url" size="30" maxlength="90" class="textField" /></td>
 	</tr>

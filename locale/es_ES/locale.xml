@@ -75,7 +75,7 @@
 	<message key="common.source">Fuente</message>
 	<message key="common.language">Idioma</message>
 	<message key="common.id">ID</message>
-	<message key="common.status">Estatus</message>
+	<message key="common.status">Estado</message>
 	<message key="common.remove">Eliminar</message>
 	<message key="common.file">Archivo</message>
 	<message key="common.uploadedFile">Subir fichero</message>
@@ -143,7 +143,7 @@
 	<message key="common.close">Cerrar</message>
 	<message key="common.closeWindow">Cerrar ventana</message>
 	<message key="common.initiate">Iniciar</message>
-	<message key="common.complete">Completar</message>
+	<message key="common.complete">Finalizar</message>
 	<message key="common.options">Opciones</message>
 	<message key="common.plugin">Plugin</message>
 	<message key="common.default">Por defecto</message>
@@ -313,6 +313,11 @@
 	<message key="paper.details">Detalles</message>
 	<message key="paper.location">Lugar</message>
 	<message key="paper.time">Tiempo</message>
+	<message key="paper.comments.trackDefault">Por defecto</message>
+	<message key="paper.comments.disable">Desactivado</message>
+	<message key="paper.comments.enable">Activado</message>
+	<message key="paper.fontSize">Tamaño de fuente</message>
+
 
 	<!-- Submission Tracking - Common -->
 	<message key="submission.fromTime">De</message>
@@ -338,6 +343,7 @@
 	<message key="submission.addSuppFile">Añadir ficheros suplementarios</message>
 	<message key="submission.submitter">Remitente</message>
 	<message key="submission.changeTrack">Cambiar a</message>
+	<message key="submission.changeComments">Cambiar a</message>
 	<message key="submission.initiated">Iniciado</message>
 	<message key="submission.lastModified">Última modificación</message>
 	<message key="submission.ask">Preguntar</message>
@@ -349,7 +355,7 @@
 	<message key="submission.rejected">Rechazado</message>
 	<message key="submission.acceptance">Conforme a la revisión</message>
 	<message key="submission.due">Previsto</message>
-	<message key="submission.complete">Completar</message>
+	<message key="submission.complete">Finalizar</message>
 	<message key="submission.complete.description">Añadir el trabajo  a la lista de comunicaciones aceptadas.</message>
 	<message key="submission.acknowledge">Acusar recibo</message>
 	<message key="submission.done">Hecho</message>
@@ -369,7 +375,7 @@
 	<message key="submission.presenterVersion">Versión del autor</message>
 	<message key="submission.layout">Formato</message>
 	<message key="submission.layout.description">este paso es opcional y sirve para aplicar una palntilla a los trabajos enviados o cambiar los formatos de los ficheros antes o después de que los manuscritos se pasen a Presentaciones.</message>
-	<message key="submission.complete">Completar</message>
+	<message key="submission.complete">Finalizar</message>
 	<message key="submission.files">Archivos</message>
 	<message key="submission.viewMetadata">Ver metadatos</message>
 	<message key="submission.editMetadata">Editar metadatos</message>
@@ -450,7 +456,7 @@
 	<message key="schedConf.schedConf">Relación de eventos programados</message>
 	<message key="schedConf.contents">Información del evento</message>
 	<message key="schedConf.overview">Descripción</message>
-	<message key="schedConf.trackPolicies">Track Políticas</message>
+	<message key="schedConf.trackPolicies">Políticas de Secciones</message>
 	<message key="schedConf.schedule">Agenda</message>
 	<message key="schedConf.program">Programa</message>
 	<message key="schedConf.cfp">Call for papers</message>
@@ -475,6 +481,7 @@
 	<message key="schedConf.accommodation.title">Acomodaciones</message>
 	<message key="schedConf.trackPolicies.title">Políticas</message>
 	
+	<message key="schedConf.scheduler.locations">Ubicaciones del Congreso</message>
 
 	<!-- User self-registration form -->
 	<message key="schedConf.registration.alreadyRegistered">Usted ya está inscrito, aunque el pago todavía no se ha recibido. Si hay algún error o desea cambiar su inscripción, póngase en contacto con la persona indicada en "Acerca de".</message>
@@ -508,7 +515,7 @@
 	<message key="user.password">Clave</message>
 	<message key="user.sendPassword">Confirmación</message>
 	<message key="user.sendPassword.description">Envíeme un correo de confirmación que incluya nombre de usuario y contraseña</message>
-	<message key="user.salutation">Salutación</message>
+	<message key="user.salutation">Título (Sr/Sra; Dr; Lic)</message>
 	<message key="user.name">Nombre</message>
 	<message key="user.firstName">Primer nombre</message>
 	<message key="user.middleName">Segundo nombre</message>
@@ -520,11 +527,11 @@
 	<message key="user.lastName">Apellidos</message>
 	<message key="user.title">Títulación</message>
 	<message key="user.signature">Firma</message>
-	<message key="user.affiliation">Afiliación</message>
-	<message key="user.affiliations">Afiliaciones</message>
+	<message key="user.affiliation">Institución</message>
+	<message key="user.affiliations">Instituciones</message>
 	<message key="user.email">Email</message>
 	<message key="user.url">URL</message>
-	<message key="user.url.description">Esto aparecerá como un hipervínculo URL en la parte inferior de la biografía del "Acerca del autor" y en la página "Grupo de trabajo".</message>
+	<message key="user.url.description">Esto aparecerá como un enlace en la parte inferior de la biografía del "Acerca del autor" y en la página "Grupo de trabajo".</message>
 	<message key="user.phone">Teléfono</message>
 	<message key="user.fax">Fax</message>
 	<message key="user.interests">Temas de interés</message>
@@ -536,7 +543,7 @@
 	<message key="user.dateLastLogin">Último acceso</message>
 	<message key="user.createAccountForOtherConferences">Crear una cuenta para otros eventos</message>
 	<message key="user.roles">Roles</message>
-	<message key="user.changePassword">Cambiar Password</message>
+	<message key="user.changePassword">Cambiar clave</message>
 	<message key="user.editMyProfile">Editar Mi Perfil</message>
 	<message key="user.changeMyPassword">Cambiar mi clave</message>
 	<message key="user.myConferences">Mis eventos</message>
@@ -675,6 +682,7 @@
 	<message key="admin.settings.contactName">Nombre del contacto principal</message>
 	<message key="admin.settings.contactEmail">Email del contacto principal</message>
 	<message key="admin.settings.minPasswordLength">Longitud mínima de la clave</message>
+	<message key="admin.settings.siteStyleSheet">Hoja de estilos del sitio</message>
 	<message key="admin.settings.form.contactNameRequired">El nombre del contacto principal es obligatorio.</message>
 	<message key="admin.settings.form.contactEmailRequired">El email del contacto principal es obligatorio.</message>
 	<message key="admin.settings.form.minPasswordLengthRequired">Debe introducir una contraseña con una longitud mínima de 4 caracteres.</message>
@@ -970,7 +978,7 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="manager.statistics.reports.status">Estado (Acceptado, rechazado, otro)</message>
 	<message key="manager.statistics.reports.dateDecided">Fecha de decisión</message>
 	<message key="manager.statistics.reports.presenter">Autor #{$num}</message>
-	<message key="manager.statistics.reports.affiliation">Afiliación #{$num}</message>
+	<message key="manager.statistics.reports.affiliation">Institución #{$num}</message>
 	<message key="manager.statistics.reports.country">País #{$num}</message>
 	<message key="manager.statistics.reports.reviewer">Revisor #{$num}</message>
 	<message key="manager.statistics.reports.director">Director #{$num}</message>
@@ -1056,6 +1064,8 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 			<p>Puede administrar las conferencias programadas en "Usuario > Gestor del Congreso > Puesta en Marcha"</p>
 			]]></message>
 
+	<message key="manager.setup.finalSchedConfStepSavedNotes"><![CDATA[<p>Un congreso programado ha sido configurado. Puede continuar con la gestión del Congreso haciendo clic <a href="{$conferenceManagementUrl}">aquí</a>.</p>]]></message>
+
 	<message key="manager.setup.htmlSetupInstructions"><![CDATA[Si usa HTML en la configuración de las cajas de texto de (tamaño de fuente, negrita, color, etc.), observe que el texto que "muestra" es tratado automáticamente como <tt>&lt;br&gt;</tt>.]]></message>
 
 	<!--
@@ -1067,7 +1077,7 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="manager.setup.aboutConference">Acerca de esta Conferencia/Congreso</message>
 	<message key="manager.setup.additionalContent">Contenidos adicionales de esta Web</message>
 	<message key="manager.setup.layout">Cabeceras, Pies, Listas y Barra de Navegación</message>
-	<message key="manager.setup.style">Estilo de la conferencia</message>
+	<message key="manager.setup.style">Estilo del congreso</message>
 	<message key="manager.setup.styleSheet">Hoja de estilo del Congreso</message>
 	<message key="manager.setup.loggingAndAuditing">Control de accesos (logs)</message>
 	<message key="manager.setup.indexing">Conferencia/Congreso Indizado </message>
@@ -1113,7 +1123,7 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 	<message key="manager.setup.aboutConference.restrictPaperAccess">Para poder acceder a los resúmenes y presentaciones de la conferencia debe crearse una cuenta para su lectura.</message>
 	<message key="manager.setup.aboutConference.comments">Comentarios de los lectores</message>
 	<message key="manager.setup.aboutConference.comments.enable">Se permite hacer comentarios sobre las presentaciones archivadas</message>
-	<message key="manager.setup.aboutConference.comments.requireRegistro">Sólo los usuarios con cuentas pueden comentar las presentaciones archivadas.</message>
+	<message key="manager.setup.aboutConference.comments.requireRegistration">Sólo los usuarios con cuentas pueden comentar las presentaciones archivadas.</message>
 	<message key="manager.setup.aboutConference.comments.allowAnonymous">Se permiten los comentarios Anónimos.</message>
 
 	<!-- Conference setup page 2 -->
@@ -1355,6 +1365,7 @@ Nombre del sistema de clasificación]]></message>
 	<message key="manager.tracks.peerReviewed">Evaluado por pares</message>
 	<message key="manager.tracks.directorRestriction">Los trabajos sólo pueden enviarse a los  Directores del Congreso o a los Directores de sección.</message>
 	<message key="manager.tracks.hideAbout">Omitir esta sección de las Políticas de Sección</message>
+	<message key="manager.tracks.disableComments">Deshabilitar comentarios de los lectores para esta sección.</message>
 	<message key="manager.tracks.readingTools">Herramientas de Lectura</message>
 	<message key="manager.tracks.indexed">Indizado</message>
 	<message key="manager.tracks.open">Abrir trabajos enviados</message>
@@ -1363,7 +1374,7 @@ Nombre del sistema de clasificación]]></message>
 	<message key="manager.tracks.identifyTypeExamples">(Por ejemplo,"Resumen evaluado por pares", "Trabajo no evaluado", "Presentación invitada", etc.)</message>
 	<message key="manager.tracks.abstractsDisabled">No se requiere resumen para hacer el envío.</message>
 
-	<!-- Timeline management -->
+
 	<message key="manager.timeline">Calendario del Congreso</message>
 	<message key="manager.timeline.conferenceTimeline">Calendario del Congreso</message>
 	<message key="manager.timeline.overrideDates">Anular el mensaje(s) de error</message>
@@ -1373,7 +1384,7 @@ Nombre del sistema de clasificación]]></message>
 	<message key="manager.timeline.schedConfStartsOn">Primer día del congreso</message>
 	<message key="manager.timeline.schedConfEndsOn">Último día del congreso</message>
 	
-	<message key="manager.timeline.website">Website</message>
+	<message key="manager.timeline.website">Sitio web</message>
 	<message key="manager.timeline.schedConfAppearsOn">Publicar (como Congreso actual)</message>
 	<message key="manager.timeline.schedConfArchivedOn">Mover al Archivo de Congresos</message>
 
@@ -1721,7 +1732,7 @@ Opcionalmente usted puede proporcionar al usuario la razón para la inhabilitaci
 	<message key="director.paper.stageDisabled">No es posible hacer esta revisión. El resumen no está completo o el autor todavía no ha depositado el trabajo para revisión.</message>
 	<message key="director.paper.showSuppFile">mandar el fichero a los revisores</message>
 	<message key="director.paper.clear">Limpiar</message>
-	<message key="director.paper.clearReviewer">Limpiar Revisor</message>
+	<message key="director.paper.clearReviewer">Eliminar Revisor</message>
 	<message key="director.paper.changeTrack">Cambiar Sección</message>
 	<message key="director.paper.setDueDate">Fijar fecha de vencimiento</message>
 	<message key="director.paper.addReviewer">Añadir Revisor</message>
@@ -1729,7 +1740,7 @@ Opcionalmente usted puede proporcionar al usuario la razón para la inhabilitaci
 	<message key="director.paper.notifyReviewer">Notificar al Revisor</message>
 	<message key="director.paper.initiateReview">Iniciar la Revisión</message>
 	<message key="director.paper.cancelReview">Cancelar la solicitud de Revisión</message>
-	<message key="director.paper.clearReview">Limpiar Revisor</message>
+	<message key="director.paper.clearReview">Eliminar Revisor</message>
 	<message key="director.paper.enterRecommendation">Introducir la Recomendación</message>
 	<message key="director.paper.enterReviewerRecommendation">Introducir la recomendación del revisor</message>
 	<message key="director.paper.recommendation">Recomendación</message>
@@ -1771,11 +1782,11 @@ En activo significa cuantas revisiones están actualmente en marcha.]]></message
 	<message key="director.paper.selectDirector">Seleccionar {$roleName}</message>
 	<message key="director.paper.selectDecision">Seleccionar  decisión</message>
 	<message key="director.paper.decision.invitePresentation">Pedir  que se haga una Presentación</message>
-	<message key="director.paper.decision.accept">Acceptar el envío</message>
+	<message key="director.paper.decision.accept">Aceptar el envío</message>
 	<message key="director.paper.decision.pendingRevisions">Se precisa una revisión</message>
 	<message key="director.paper.decision.decline">Rechazar el envío</message>
 	<message key="director.paper.moveToLayout">Ir a maquetación</message>
-	<message key="director.paper.createGalley">Este fichero esta preparado para su publicación.</message>
+	<message key="director.paper.createGalley">Este archivo esta preparado para su publicación.</message>
 	<message key="director.paper.completeReview">Marcar revisión completada</message>
 
 	<message key="director.paper.scheduleSubmission">Enviar</message>
@@ -1784,7 +1795,7 @@ En activo significa cuantas revisiones están actualmente en marcha.]]></message
 	<message key="director.submissions.submitMMDD">Enviar MM-DD</message>
 	<message key="director.submissions.activeAssignments">Activar asignación</message>
 	<message key="director.submissions.invite">Invitar</message>
-	<message key="director.submissions.accept">Acceptar</message>
+	<message key="director.submissions.accept">Aceptar</message>
 	<message key="director.submissions.noSubmissions">No hay envíos</message>
 	<message key="director.submissions.lastAssigned">Lo más tardar</message>
 	<message key="director.submissions.averageTime">Semanas</message>
@@ -1858,7 +1869,7 @@ En activo significa cuantas revisiones están actualmente en marcha.]]></message
 
 	<!-- Presenter -->
 	<message key="presenter.submit">Nuevo envío</message>
-	<message key="presenter.track">Activar envíos</message>
+	<message key="presenter.track">Envíos activos </message>
 	<message key="presenter.submit.startHere">Empiece aquí a enviar su trabajo.</message>
 	<message key="presenter.submit.startHereLink">Primer paso del proceso de envío</message>
 	<message key="presenter.submit.step1">Paso 1. Comenzar el envío</message>
@@ -1874,12 +1885,12 @@ En activo significa cuantas revisiones están actualmente en marcha.]]></message
 	<message key="presenter.submit.supplementaryFiles">4. Subir archivios adicionales</message>
 	<message key="presenter.submit.confirmation">5. Confirmación</message>
 	<message key="presenter.submit.confirmationSkipSupp">4. Confirmación</message>
-	<message key="presenter.submit.cancelSubmission">Puede completar este envío más tarde seleccionando "Activar Envío" desde el menú Autor.</message>
+	<message key="presenter.submit.cancelSubmission">Puede finalizar este envío más tarde seleccionando "Envíos Activos" desde el menú Autor.</message>
 	<message key="presenter.submit.notAcceptingYet">El envío de originales a esta conferencia todavía no se ha abierto.</message>
 	<message key="presenter.submit.submissionDeadlinePassed">El envío de originales se ha cerrado {$closedDate}.</message>
 
 <message key="presenter.submissions.confirmDelete">¿Está seguro de que quiere borrar el envío incompleto?</message>
-	<message key="presenter.submissions.viewStatus">Ver estatus del trabajo</message>
+	<message key="presenter.submissions.viewStatus">Ver estado del trabajo</message>
 	<message key="presenter.submissions.noSubmissions">No hay envíos.</message>
 
 	<!-- Paper Submission Step 1 -->
@@ -2225,7 +2236,7 @@ Para depositar un trabajo en esta conferencia, siga los siguientes pasos.
 	<message key="about.onlineSubmissions.login">Vaya a la página de acceso</message>
 	<message key="about.onlineSubmissions.needAccount">¿Necesita un nombre de Usuario/Password?</message>
 	<message key="about.onlineSubmissions.registration">Vaya a la página de registro</message>
-	<message key="about.onlineSubmissions.registrationRequired">Se necesita estar registrado y clave de acceso para el envío online de trabajos y poder consultar el estatus de los mismos.</message>
+	<message key="about.onlineSubmissions.registrationRequired">Se necesita estar registrado y clave de acceso para el envío online de trabajos y poder consultar el estado de los mismos.</message>
 	<message key="about.presenterGuidelines">Instrucciones para autores</message>
 	<message key="about.submissionPreparationChecklist">Lista de requisitos para los envíos online </message>
 	<message key="about.copyrightNotice">Términos sobre el Copyright</message>
@@ -2460,7 +2471,7 @@ Su servidor actualmente soporta mbstring: <strong>{$supportsMBString}</strong>]]
 	<!-- Reading Tools entries -->
 	<message key="rt.readingTools">Herramientas de Lectura</message>
 
-	<message key="rt.admin.status">Estatus</message>
+	<message key="rt.admin.status">Estado</message>
 	<message key="rt.admin.configuration">Configuración</message>
 	<message key="rt.admin.management">Gestión</message>
 
@@ -2488,6 +2499,7 @@ Su servidor actualmente soporta mbstring: <strong>{$supportsMBString}</strong>]]
 	<message key="rt.admin.settings.addComment">Añadir comentario (permite a los lectores enviar comentarios, que el Director puede borrar. Esta opción debe activarse en el paso 2 de la Configuración "Comentarios de Lectores").</message>
 	<message key="rt.admin.settings.emailPresenter">Email del autor (lleva a una plantilla de correo con el mail del autor).</message>
 	<message key="rt.admin.settings.emailOthers">Enviar a un colega (lleva a una plantilla de email con un enlace al artículo).</message>
+	<message key="rt.admin.settings.findingReferences">Buscar Referencias</message>
 
 	<!-- RT Versions -->
 	<message key="rt.admin.versions.restoreVersions">Restaurar las versiones por defecto</message>
@@ -2572,7 +2584,7 @@ La validacion de URLs  puede fallar si requieren el envío de datos.]]></message
 	<message key="rt.metadata.dublinCore.rights">Derechos</message>
 
 	<message key="rt.metadata.pkp.title">Título del documento</message>
-	<message key="rt.metadata.pkp.primaryPresenter">Nombre del autor, afiliación, país</message>
+	<message key="rt.metadata.pkp.primaryPresenter">Nombre del autor, institución, país</message>
 	<message key="rt.metadata.pkp.discipline">Disciplina(s)</message>
 	<message key="rt.metadata.pkp.subject">Palabras clave</message>
 	<message key="rt.metadata.pkp.subjectClass">Clasificación por materias</message>
@@ -2581,7 +2593,7 @@ La validacion de URLs  puede fallar si requieren el envío de datos.]]></message
 	<message key="rt.metadata.pkp.sponsors">Patrocinadores</message>
 	<message key="rt.metadata.pkp.date">(YYYY-MM-DD)</message>
 	<message key="rt.metadata.pkp.type">Tipo</message>
-	<message key="rt.metadata.pkp.genre">Estatus &amp; genero</message>
+	<message key="rt.metadata.pkp.genre">Estado &amp; genero</message>
 	<message key="rt.metadata.pkp.peerReviewed">Trabajo revisado (Peer-reviewed)</message>
 	<message key="rt.metadata.pkp.format">Formato del fichero</message>
 	<message key="rt.metadata.pkp.uri">URI (Universal Resource Indicator)</message>

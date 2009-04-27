@@ -167,6 +167,7 @@ class SubmitHandler extends PresenterHandler {
 
 				$templateMgr = &TemplateManager::getManager();
 				$templateMgr->assign_by_ref('conference', $conference);
+
 				// If this is a director and there is a
 				// submission file, paper can be expedited.
 				if (Validation::isDirector($conference->getConferenceId()) && $paper->getSubmissionFileId()) {
@@ -174,7 +175,9 @@ class SubmitHandler extends PresenterHandler {
 				}
 				$templateMgr->assign('paperId', $paperId);
 				$templateMgr->assign('helpTopicId','submission.index');
+				!!!!!!!!!!!!!!!!!!!!!!!!!!!$templageMgr->assign('maxlength',200);
 				$templateMgr->display('presenter/submit/complete.tpl');
+
 			} elseif ($step == 3 && !$schedConf->getSetting('acceptSupplementaryReviewMaterials')) {
 				Request::redirect(null, null, null, 'submit', 5, array('paperId' => $paperId));
 			} else {
