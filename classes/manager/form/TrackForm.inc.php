@@ -28,13 +28,19 @@ class TrackForm extends Form {
 	 * @param $trackId int omit for a new track
 	 */
 	function TrackForm($trackId = null) {
+		$this->settings = array(
+			'abstractLimit' => 'int'
+		);
 		parent::Form('manager/tracks/trackForm.tpl');
-
+		
 		$this->trackId = $trackId;
 
 		// Validation checks for this form
 		$this->addCheck(new FormValidatorLocale($this, 'title', 'required', 'manager.tracks.form.titleRequired'));
 		$this->addCheck(new FormValidatorLocale($this, 'abbrev', 'required', 'manager.tracks.form.abbrevRequired'));
+		$this->addCheck(new FormValidator($this, 'abstractLimit', 'required', 'manager.tracks.form.abstractLimitRequired'));
+		
+		$this->addCheck(new FormValidatorCustom($this, 'abstractLimit', 'required', 'manager.tracks.form.abstractLimitNumeric', create_function('$abstractLimit', 'return (is_numeric($abstractLimit) && $abstractLimit >= 0);')));
 		$this->addCheck(new FormValidatorPost($this));
 	}
 
@@ -115,6 +121,7 @@ class TrackForm extends Form {
 					'identifyType' => $track->getIdentifyType(null), // Localized
 					'directorRestriction' => $track->getDirectorRestricted(),
 					'policy' => $track->getPolicy(null), // Localized
+					'abstractLimit' => $track->getAbstractLimit(null),
 					'hideAbout' => $track->getHideAbout(),
 					'disableComments' => $track->getDisableComments(),
 				);
@@ -126,7 +133,7 @@ class TrackForm extends Form {
 	 * Assign form data to user-submitted data.
 	 */
 	function readInputData() {
-		$this->readUserVars(array('title', 'abbrev', 'metaNotReviewed', 'identifyType', 'directorRestriction', 'policy', 'hideAbout', 'disableComments'));
+		$this->readUserVars(array('title', 'abbrev', 'metaNotReviewed', 'identifyType', 'directorRestriction', 'policy', 'hideAbout', 'disableComments' , 'abstractLimit'));
 	}
 
 	/**
@@ -153,6 +160,7 @@ class TrackForm extends Form {
 		$track->setIdentifyType($this->getData('identifyType'), null); // Localized
 		$track->setDirectorRestricted($this->getData('directorRestriction') ? 1 : 0);
 		$track->setPolicy($this->getData('policy'), null); // Localized
+		$track->setAbstractLimit($this->getData('abstractLimit'), null);// Localized
 		$track->setHideAbout($this->getData('hideAbout'));
 		$track->setDisableComments($this->getData('disableComments') ? 1 : 0);
 

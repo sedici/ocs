@@ -1359,6 +1359,8 @@ Nombre del sistema de clasificación]]></message>
 	<message key="manager.tracks.unassignDirector">No se ha asignado Director</message>
 	<message key="manager.tracks.form.titleRequired">Es obligatorio un nombre para la sección.</message>
 	<message key="manager.tracks.form.abbrevRequired">Es obligatorio una abreviatura para esta sección</message>
+	<message key="manager.tracks.form.abstractLimitRequired">Es obligatorio un limite para los abstract para esta sección</message>
+	<message key="manager.tracks.form.abstractLimitNumeric">El limite para los abstract para esta sección debe ser un valor numérico positivo</message>	
 	<message key="manager.tracks.trackDirectorInstructions">Seleccionar de los Directores de sección disponibles y  "Asignar Director" a esta sección.</message>
 	<message key="manager.tracks.submissionsToThisTrack">Los envíos hechos a esta sección</message>
 	<message key="manager.tracks.submissionNotReviewed">Indicar que la sección no se evaluará por pares</message>
@@ -1370,6 +1372,7 @@ Nombre del sistema de clasificación]]></message>
 	<message key="manager.tracks.indexed">Indizado</message>
 	<message key="manager.tracks.open">Abrir trabajos enviados</message>
 	<message key="manager.tracks.policy">Política de la Sección</message>
+	<message key="manager.tracks.abstractLimit">Límite de los Abstract de la Sección</message>
 	<message key="manager.tracks.identifyType">Describir los envíos a esta sección del Congreso como</message>
 	<message key="manager.tracks.identifyTypeExamples">(Por ejemplo,"Resumen evaluado por pares", "Trabajo no evaluado", "Presentación invitada", etc.)</message>
 	<message key="manager.tracks.abstractsDisabled">No se requiere resumen para hacer el envío.</message>

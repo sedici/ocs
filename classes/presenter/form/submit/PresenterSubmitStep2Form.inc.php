@@ -30,6 +30,7 @@ class PresenterSubmitStep2Form extends PresenterSubmitForm {
 
 		$schedConf =& Request::getSchedConf();
 		$reviewMode = $paper->getReviewMode();
+		
 		if ($reviewMode != REVIEW_MODE_PRESENTATIONS_ALONE) {
 			$this->addCheck(new FormValidatorLocale($this, 'abstract', 'required', 'presenter.submit.form.abstractRequired'));
 		}
@@ -144,6 +145,15 @@ class PresenterSubmitStep2Form extends PresenterSubmitForm {
 		$schedConf =& Request::getSchedConf();
 		$reviewMode = $this->paper->getReviewMode();
 		$templateMgr->assign('collectAbstracts', $reviewMode != REVIEW_MODE_PRESENTATIONS_ALONE);
+		
+		
+		
+		$trackDao = &DAORegistry::getDAO('TrackDAO');
+		$track = $trackDao->getTrack($this->paper->getTrackId());
+		$abstractLimit = $track->getAbstractLimit();
+	
+		
+		$templateMgr->assign('maxlength', $abstractLimit);
 		parent::display();
 	}
 

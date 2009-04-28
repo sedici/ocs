@@ -42,6 +42,7 @@ class PresenterSubmitForm extends Form {
 		parent::Form(sprintf('presenter/submit/step%d.tpl', $step));
 
 		$this->addCheck(new FormValidatorPost($this));
+		;
 
 		$this->step = $step;
 		$this->paper = $paper;
@@ -52,6 +53,7 @@ class PresenterSubmitForm extends Form {
 	 * Display the form.
 	 */
 	function display() {
+		
 		$templateMgr = &TemplateManager::getManager();
 		$templateMgr->assign('paperId', $this->paperId);
 		$templateMgr->assign('submitStep', $this->step);
@@ -71,11 +73,15 @@ class PresenterSubmitForm extends Form {
 		$schedConf = &Request::getSchedConf();
 		$settingsDao = &DAORegistry::getDAO('SchedConfSettingsDAO');
 
+	    
 		// Determine which submission steps should be shown
 
 		$progress = isset($this->paper) ? $this->paper->getCurrentStage() : REVIEW_STAGE_ABSTRACT;
 		$reviewMode = isset($this->paper)?$this->paper->getReviewMode():$schedConf->getSetting('reviewMode');
 
+	
+		
+		
 		$showAbstractSteps = $progress == REVIEW_STAGE_ABSTRACT || $reviewMode != REVIEW_MODE_BOTH_SEQUENTIAL;
 		$showPaperSteps = $progress == REVIEW_STAGE_PRESENTATION || $reviewMode == REVIEW_MODE_BOTH_SIMULTANEOUS;
 

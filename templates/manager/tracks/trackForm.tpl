@@ -122,6 +122,10 @@
 	<td class="value"><textarea name="policy[{$formLocale|escape}]" rows="4" cols="40" id="policy" class="textArea">{$policy[$formLocale]|escape}</textarea></td>
 </tr>
 <tr valign="top">
+	<td class="label">{fieldLabel name="abstractLimit" required="true" key="manager.tracks.abstractLimit"}</td>
+	<td class="value"><input type="text" name="abstractLimit" value="{$abstractLimit|escape}" size="5" maxlength="10" id="abstractLimit" class="textField" /></td>
+</tr> 
+<tr valign="top">
 	<td rowspan="2" class="label">{fieldLabel suppressId="true" key="submission.indexing"}</td>
 	<td class="value">
 		{fieldLabel name="identifyType" key="manager.tracks.identifyType"} <input type="text" name="identifyType[{$formLocale|escape}]" id="identifyType" value="{$identifyType[$formLocale]|escape}" size="20" maxlength="60" class="textField" />

@@ -140,6 +140,7 @@ class TrackDAO extends DAO {
 	 * @return Track
 	 */
 	function &_returnTrackFromRow(&$row) {
+		
 		$track = &new Track();
 		$track->setTrackId($row['track_id']);
 		$track->setSchedConfId($row['sched_conf_id']);
@@ -147,6 +148,7 @@ class TrackDAO extends DAO {
 		$track->setMetaReviewed($row['meta_reviewed']);
 		$track->setDirectorRestricted($row['director_restricted']);
 		$track->setHideAbout($row['hide_about']);
+		$track->setAbstractLimit($row['abstract_limit']);
 		$track->setDisableComments($row['disable_comments']);
 
 		$this->getDataObjectSettings('track_settings', 'track_id', $row['track_id'], $track);
@@ -182,16 +184,17 @@ class TrackDAO extends DAO {
 	function insertTrack(&$track) {
 		$this->update(
 			'INSERT INTO tracks
-				(sched_conf_id, seq, meta_reviewed, director_restricted, hide_about, disable_comments)
+				(sched_conf_id, seq, meta_reviewed, director_restricted, hide_about, disable_comments, abstract_limit)
 				VALUES
-				(?, ?, ?, ?, ?, ?)',
+				(?, ?, ?, ?, ?, ? , ?)',
 			array(
 				(int) $track->getSchedConfId(),
 				(int) $track->getSequence(),
 				$track->getMetaReviewed() ? 1 : 0,
 				$track->getDirectorRestricted() ? 1 : 0,
 				$track->getHideAbout() ? 1 : 0,
-				$track->getDisableComments() ? 1 : 0
+				$track->getDisableComments() ? 1 : 0,
+				(int) $track->getAbstractLimit()
 			)
 		);
 
@@ -212,7 +215,8 @@ class TrackDAO extends DAO {
 					meta_reviewed = ?,
 					director_restricted = ?,
 					hide_about = ?,
-					disable_comments = ?
+					disable_comments = ?,
+					abstract_limit = ? 
 				WHERE track_id = ?',
 			array(
 				(int) $track->getSequence(),
@@ -220,6 +224,7 @@ class TrackDAO extends DAO {
 				$track->getDirectorRestricted()?1:0,
 				$track->getHideAbout()?1:0,
 				$track->getDisableComments()?1:0,
+				$track->getAbstractLimit(),
 				(int) $track->getTrackId()
 			)
 		);

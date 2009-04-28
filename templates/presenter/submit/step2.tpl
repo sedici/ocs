@@ -206,11 +206,12 @@ function movePresenter(dir, presenterIndex) {
 <tr valign="top">
 	<td width="20%" class="label">{fieldLabel name="abstract" key="paper.abstract" required="true"}</td>
 	<td width="80%" class="value">
+
     {if ($maxlength)}
 	{literal}
 		<script type="text/javascript">
 		function wordcount(text) {
-			text.split(" ");  
+			var splitted= text.split(" ");  
 			return splitted.length;
 		}
 
@@ -221,14 +222,15 @@ function movePresenter(dir, presenterIndex) {
 		***********************************************/
 
 		function ismaxlength(obj){
-		mlength=obj.getAttribute? parseInt(obj.getAttribute("maxlength")) : ""
+		var mlength=obj.getAttribute? parseInt(obj.getAttribute("maxlength")) : ""
 		if (obj.getAttribute && wordcount(obj.value)>mlength)
-		obj.value=obj.value.substring(0,obj.value - 1);
+		obj.value=obj.value.substring(0,obj.value.length - 1);
+		
 		}
 
 		</script>
 	{/literal}
-		<textarea name="abstract[{$formLocale|escape}]" id="abstract" class="textArea" rows="15" cols="60" maxlength="{$maxlegth}" onkeyup="return ismaxlength(this)">
+		<textarea name="abstract[{$formLocale|escape}]" id="abstract" class="textArea" rows="15" cols="60" maxlength="{$maxlength}" onkeyup="return ismaxlength(this)">
 	{else}
 		<textarea name="abstract[{$formLocale|escape}]" id="abstract" class="textArea" rows="15" cols="60">
     {/if}

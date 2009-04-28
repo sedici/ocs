@@ -244,6 +244,25 @@ class Track extends DataObject {
 	function setPolicy($policy, $locale) {
 		return $this->setData('policy', $policy, $locale);
 	}
+	
+	
+	/**
+	 * Get abstractLimit.
+	 * @param $locale string
+	 * @return integer
+	 */
+	function getAbstractLimit() {
+		return $this->getData('abstractLimit');
+	}
+
+	/**
+	 * Set abstractLimit.
+	 * @param $abstractLimit integer
+	 * @param $locale string
+	 */
+	function setAbstractLimit($abstractLimit) {
+		return $this->setData('abstractLimit', $abstractLimit);
+	}
 }
 
 ?>
