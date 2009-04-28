@@ -1930,6 +1930,7 @@ En activo significa cuantas revisiones están actualmente en marcha.]]></message
 	<message key="presenter.submit.form.presenterRequired">Se requiere al menos un autor.</message>
 	<message key="presenter.submit.form.presenterRequiredFields">Es necesario el nombre, apellido y correo electrónico de cada uno de los autores.</message>
 	<message key="presenter.submit.form.titleRequired">Por favor, introduzca el título de su trabajo.</message>
+	<message key="presenter.submit.form.abstractMaxLength">La cantidad de palabras del abstract es superior al limite permitido en la seccion.</message>
 
 	<!-- Paper Submission Step 3 -->
 	<message key="presenter.submit.uploadInstructions"><![CDATA[

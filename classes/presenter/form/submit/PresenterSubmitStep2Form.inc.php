@@ -21,13 +21,22 @@ class PresenterSubmitStep2Form extends PresenterSubmitForm {
 	 * Constructor.
 	 */
 	function PresenterSubmitStep2Form($paper) {
+		$trackDao = &DAORegistry::getDAO('TrackDAO');
+		$track = &$trackDao->getTrack($paper->getTrackId());
+		
+		$abstractLimit = $track->getAbstractLimit();
+		
 		parent::PresenterSubmitForm($paper, 2);
 
 		// Validation checks for this form
 		$this->addCheck(new FormValidatorCustom($this, 'presenters', 'required', 'presenter.submit.form.presenterRequired', create_function('$presenters', 'return count($presenters) > 0;')));
 		$this->addCheck(new FormValidatorArray($this, 'presenters', 'required', 'presenter.submit.form.presenterRequiredFields', array('firstName', 'lastName', 'email')));
 		$this->addCheck(new FormValidatorLocale($this, 'title', 'required', 'presenter.submit.form.titleRequired'));
-
+		
+		$site = &Request::getSite();		
+		$locale = $site->getPrimaryLocale();
+		if ($abstractLimit > 0)
+			$this->addCheck(new FormValidatorCustom($this, 'abstract', 'required', 'presenter.submit.form.abstractMaxLength', create_function('$abstract , $locale', 'return  sizeof(split(" " , $abstract[$locale])) >= '.$abstractLimit.';') , array($locale)));
 		$schedConf =& Request::getSchedConf();
 		$reviewMode = $paper->getReviewMode();
 		
