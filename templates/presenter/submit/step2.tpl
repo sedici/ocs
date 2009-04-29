@@ -211,10 +211,13 @@ function movePresenter(dir, presenterIndex) {
 	{literal}
 		<script type="text/javascript">
 		function wordcount(text) {
-			var splitted= text.split(" ");  
+			var splitted= textToArray(text);  
 			return splitted.length;
 		}
 
+		function textToArray(text) {
+		 return text.split(" ");
+		}
 		/***********************************************
 		* Textarea Maxlength script- © Dynamic Drive (www.dynamicdrive.com)
 		* This notice must stay intact for legal use.
@@ -222,16 +225,19 @@ function movePresenter(dir, presenterIndex) {
 		***********************************************/
 
 		function ismaxlength(obj){
+		var p = textToArray(obj.value);
+		var s = "";
 		var mlength=obj.getAttribute? parseInt(obj.getAttribute("maxlength")) : ""
-		if (obj.getAttribute && wordcount(obj.value)>mlength)
-		obj.value=obj.value.substring(0,obj.value.length - 1);
-		
+		if (obj.getAttribute && wordcount(obj.value)>mlength){ 
+					for (var i=0; i< mlength; i++)	s = s+p[i]+" ";
+				    obj.value = s;
+				}
 		}
 
 		</script>
 	{/literal}
 		<textarea name="abstract[{$formLocale|escape}]" id="abstract" class="textArea" rows="15" cols="60" maxlength="{$maxlength}" onkeyup="return ismaxlength(this)">
-	{else}
+		{else}
 		<textarea name="abstract[{$formLocale|escape}]" id="abstract" class="textArea" rows="15" cols="60">
     {/if}
 {$abstract[$formLocale]|escape}</textarea></td>
