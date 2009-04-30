@@ -41,7 +41,7 @@ class TrackForm extends Form {
 		$this->addCheck(new FormValidator($this, 'abstractLimit', 'required', 'manager.tracks.form.abstractLimitRequired'));
 		
 		$this->addCheck(new FormValidatorCustom($this, 'abstractLimit', 'required', 'manager.tracks.form.abstractLimitNumeric', create_function('$abstractLimit', 'return (is_numeric($abstractLimit) && $abstractLimit >= 0);')));
-		$this->addCheck(new FormValidatorPost($this));
+		$this->addCheck(new FormValidatorPost($this)); 
 	}
 
 	/**
