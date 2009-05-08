@@ -15,11 +15,34 @@
 //$Id: PresenterSubmitStep2Form.inc.php,v 1.18 2008/07/02 16:55:23 asmecher Exp $
 
 import("presenter.form.submit.PresenterSubmitForm");
+	function stripHTMLTags($text) {
+			$inicio =strpos ($text, "<" );
+			$fin=0;		
+			if ($inicio === false) 
+				return $text;
+			else {
+				$fin = strpos ($text, ">" , $inicio); 
+				if ($inicio === false) 
+					return $text;
+				else
+					return ( stripHTMLTags(substr($text , 0 , $inicio) .substr($text , $fin+1))) ;
+			}
+		}
 
+		//remueve todos los &nbsp;
+	function removeNBSP($text) {		
+			$pos = strpos ($text, "&nbsp;" );			
+			if ($pos  === false) 
+				return $text;
+			else {
+				 return removeNBSP(substr($text,0,$pos) . substr($text ,$pos+6));;
+			}
+		}
 class PresenterSubmitStep2Form extends PresenterSubmitForm {
 	/**
 	 * Constructor.
 	 */
+
 	function PresenterSubmitStep2Form($paper) {
 		$trackDao = &DAORegistry::getDAO('TrackDAO');
 		$track = &$trackDao->getTrack($paper->getTrackId());
@@ -35,15 +58,27 @@ class PresenterSubmitStep2Form extends PresenterSubmitForm {
 		
 		$site = &Request::getSite();		
 		$locale = $site->getPrimaryLocale();
-		if ($abstractLimit > 0)
-			$this->addCheck(new FormValidatorCustom($this, 'abstract', 'required', 'presenter.submit.form.abstractMaxLength', create_function('$abstract , $locale', 'return  sizeof(split(" " , $abstract[$locale])) >= '.$abstractLimit.';') , array($locale)));
+		
 		$schedConf =& Request::getSchedConf();
 		$reviewMode = $paper->getReviewMode();
-		
 		if ($reviewMode != REVIEW_MODE_PRESENTATIONS_ALONE) {
 			$this->addCheck(new FormValidatorLocale($this, 'abstract', 'required', 'presenter.submit.form.abstractRequired'));
+				
+			if (PluginRegistry::getPlugin ("generic", "TinyMCEPlugin")->getEnabled()) {
+				
+				if ($abstractLimit > 0)
+					$this->addCheck(new FormValidatorCustom($this, 'abstract', 'required', 'presenter.submit.form.abstractMaxLength', create_function('$abstract , $locale', 'return  sizeof(split(" " , removeNBSP(stripHTMLTags($abstract[$locale])))) <= '.$abstractLimit.';') , array($locale)));
+			
+			} else{
+		
+			if ($abstractLimit > 0)
+				$this->addCheck(new FormValidatorCustom($this, 'abstract', 'required', 'presenter.submit.form.abstractMaxLength', create_function('$abstract , $locale', ' return  sizeof(split(" " , str_replace("  ", "" , $abstract[$locale]))) <= '.$abstractLimit.';') , array($locale)));
+			}
+		
+			
 		}
 	}
+
 
 	/**
 	 * Initialize form data from current paper.

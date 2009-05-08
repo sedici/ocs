@@ -210,6 +210,7 @@ function movePresenter(dir, presenterIndex) {
     {if ($maxlength)}
 	{literal}
 		<script type="text/javascript">
+		var maxlength  = {/literal}{$maxlength}{literal};
 		function wordcount(text) {
 			var splitted= textToArray(text);  
 			return splitted.length;
@@ -239,8 +240,64 @@ function movePresenter(dir, presenterIndex) {
 		<textarea name="abstract[{$formLocale|escape}]" id="abstract" class="textArea" rows="15" cols="60" maxlength="{$maxlength}" onkeyup="return ismaxlength(this)">
 		{else}
 		<textarea name="abstract[{$formLocale|escape}]" id="abstract" class="textArea" rows="15" cols="60">
-    {/if}
+		{/if}
 {$abstract[$formLocale]|escape}</textarea></td>
+
+	{literal}
+		<script type="text/javascript">	
+	
+		//remueve todo el codigo html
+		function stripHTMLTags(text) {
+			var inicio = text.indexOf("<" ,0);
+			var fin=0;		
+			if (inicio == -1)
+				return text;
+			else {
+				fin = text.indexOf(">",inicio);
+				if (fin == -1)
+					return text
+				else
+					return ( stripHTMLTags(text.substring(0,inicio) + text.substring(fin+1) ) ) ;
+			}
+		}
+
+		//remueve todos los &nbsp;
+		function removeNBSP(text) {
+			var pos = text.indexOf("&nbsp;");
+			if (pos == -1)
+				return text;
+			else 
+				return  removeNBSP(text.substring(0,pos) + text.substring(pos+6));
+		}
+
+		//calcula la longitud del editor con id editorid
+		function tinyMCE_editorLength(editorid) {		
+			tinyMCE.triggerSave();
+			var content = tinyMCE.get(editorid).getContent({format : "raw"});
+			var clean = removeNBSP(stripHTMLTags(content));			
+			return (wordcount(clean)  > maxlength) 
+		}
+
+
+		window.onload = function() {
+			var editorid = "abstract";
+			addOnKey(editorid);
+		}
+ 
+  		function addOnKey(editorid) {
+			tinyMCE.triggerSave();
+			var ed = tinyMCE.get(editorid);
+			ed.onSubmit.add( function(ed,e) {
+			return false;	
+		    	length = tinyMCE_editorLength(editorid);	
+		    	return false;	   
+					
+			
+			});		  
+  		}
+	</script>
+	{/literal}
+
 </tr>
 {/if}{* $collectAbstracts *}
 
