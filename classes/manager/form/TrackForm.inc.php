@@ -38,8 +38,7 @@ class TrackForm extends Form {
 		// Validation checks for this form
 		$this->addCheck(new FormValidatorLocale($this, 'title', 'required', 'manager.tracks.form.titleRequired'));
 		$this->addCheck(new FormValidatorLocale($this, 'abbrev', 'required', 'manager.tracks.form.abbrevRequired'));
-		$this->addCheck(new FormValidator($this, 'abstractLimit', 'required', 'manager.tracks.form.abstractLimitRequired'));
-		
+		$this->addCheck(new FormValidator($this, 'abstractLimit', 'required', 'manager.tracks.form.abstractLimitRequired'));		
 		$this->addCheck(new FormValidatorCustom($this, 'abstractLimit', 'required', 'manager.tracks.form.abstractLimitNumeric', create_function('$abstractLimit', 'return (is_numeric($abstractLimit) && $abstractLimit >= 0);')));
 		$this->addCheck(new FormValidatorPost($this)); 
 	}

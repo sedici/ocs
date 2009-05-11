@@ -16,21 +16,19 @@
 
 import("presenter.form.submit.PresenterSubmitForm");
 	function stripHTMLTags($text) {
-			$inicio =strpos ($text, "<" );
-			$fin=0;		
-			if ($inicio === false) 
+			$ini =strpos ($text, "<" );
+			$end=0;		
+			if ($ini === false) 
 				return $text;
 			else {
-				$fin = strpos ($text, ">" , $inicio); 
-				if ($inicio === false) 
+				$end = strpos ($text, ">" , $ini); 
+				if ($ini === false) 
 					return $text;
 				else
-					return ( stripHTMLTags(substr($text , 0 , $inicio) .substr($text , $fin+1))) ;
+					return ( stripHTMLTags(substr($text , 0 , $ini) .substr($text , $end+1))) ;
 			}
 		}
-
-		//remueve todos los &nbsp;
-	function removeNBSP($text) {		
+ 	function removeNBSP($text) {		
 			$pos = strpos ($text, "&nbsp;" );			
 			if ($pos  === false) 
 				return $text;
