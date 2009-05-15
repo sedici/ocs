@@ -258,7 +258,6 @@ class Track extends DataObject {
 	/**
 	 * Set abstractLimit.
 	 * @param $abstractLimit integer
-	 * @param $locale string
 	 */
 	function setAbstractLimit($abstractLimit) {
 		return $this->setData('abstractLimit', $abstractLimit);

@@ -65,13 +65,12 @@ class PresenterSubmitStep2Form extends PresenterSubmitForm {
 			if (PluginRegistry::getPlugin ("generic", "TinyMCEPlugin")->getEnabled()) {
 				
 				if ($abstractLimit > 0)
-					$this->addCheck(new FormValidatorCustom($this, 'abstract', 'required', 'presenter.submit.form.abstractMaxLength', create_function('$abstract , $locale', 'return  sizeof(split(" " , removeNBSP(stripHTMLTags($abstract[$locale])))) <= '.$abstractLimit.';') , array($locale)));
-			
-			} else{
-		
-			if ($abstractLimit > 0)
-				$this->addCheck(new FormValidatorCustom($this, 'abstract', 'required', 'presenter.submit.form.abstractMaxLength', create_function('$abstract , $locale', ' return  sizeof(split(" " , str_replace("  ", "" , $abstract[$locale]))) <= '.$abstractLimit.';') , array($locale)));
-			}
+ 					$this->addCheck(new FormValidatorCustom($this, 'abstract', 'required', 'presenter.submit.form.abstractMaxLength', create_function('$abstract , $locale', 'return  sizeof(split(" " , trim(removeNBSP(stripHTMLTags($abstract[$locale]))))) <= '.$abstractLimit.';') , array($locale)));
+ 			
+ 			} else{ 		
+ 				if ($abstractLimit > 0)
+ 					$this->addCheck(new FormValidatorCustom($this, 'abstract', 'required', 'presenter.submit.form.abstractMaxLength', create_function('$abstract , $locale', ' return  sizeof(split(" " , str_replace("  ", "" , trim($abstract[$locale])))) <= '.$abstractLimit.';') , array($locale)));
+ 			}
 		
 			
 		}

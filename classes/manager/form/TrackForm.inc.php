@@ -120,7 +120,7 @@ class TrackForm extends Form {
 					'identifyType' => $track->getIdentifyType(null), // Localized
 					'directorRestriction' => $track->getDirectorRestricted(),
 					'policy' => $track->getPolicy(null), // Localized
-					'abstractLimit' => $track->getAbstractLimit(null),
+					'abstractLimit' => $track->getAbstractLimit(),
 					'hideAbout' => $track->getHideAbout(),
 					'disableComments' => $track->getDisableComments(),
 				);
@@ -159,7 +159,7 @@ class TrackForm extends Form {
 		$track->setIdentifyType($this->getData('identifyType'), null); // Localized
 		$track->setDirectorRestricted($this->getData('directorRestriction') ? 1 : 0);
 		$track->setPolicy($this->getData('policy'), null); // Localized
-		$track->setAbstractLimit($this->getData('abstractLimit'), null);// Localized
+		$track->setAbstractLimit($this->getData('abstractLimit'));// Localized
 		$track->setHideAbout($this->getData('hideAbout'));
 		$track->setDisableComments($this->getData('disableComments') ? 1 : 0);
 
