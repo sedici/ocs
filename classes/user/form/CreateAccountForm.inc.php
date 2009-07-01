@@ -149,7 +149,7 @@ class CreateAccountForm extends Form {
 			'affiliation', 'email', 'userUrl', 'phone', 'fax', 'signature',
 			'mailingAddress', 'biography', 'interests', 'userLocales',
 			'createAsReader', 'openAccessNotification', 'createAsPresenter',
-			'createAsReviewer', 'existingUser', 'sendPassword'
+			'createAsReviewer', 'existingUser', 'sendPassword', 'document'
 		);
 		if ($this->captchaEnabled) {
 			$userVars[] = 'captchaId';
@@ -243,6 +243,7 @@ class CreateAccountForm extends Form {
 			$user->setInterests($this->getData('interests'), null); // Localized
 			$user->setDateRegistered(Core::getCurrentDate());
 			$user->setCountry($this->getData('country'));
+			$user->setDocument($this->getData('document'));
 
 			$site = &Request::getSite();
 			$availableLocales = $site->getSupportedLocales();

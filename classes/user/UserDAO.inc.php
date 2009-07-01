@@ -153,6 +153,7 @@ class UserDAO extends DAO {
 		$user->setDisabled($row['disabled']);
 		$user->setDisabledReason($row['disabled_reason']);
 		$user->setAuthId($row['auth_id']);
+		$user->setDocument($row['document']);
 
 		if ($callHook) HookRegistry::call('UserDAO::_returnUserFromRow', array(&$user, &$row));
 
@@ -172,9 +173,9 @@ class UserDAO extends DAO {
 		}
 		$this->update(
 			sprintf('INSERT INTO users
-				(username, password, salutation, first_name, middle_name, initials, last_name, gender, affiliation, email, url, phone, fax, mailing_address, country, time_zone, locales, date_last_email, date_registered, date_validated, date_last_login, must_change_password, disabled, disabled_reason, auth_id)
+				(username, password, salutation, first_name, middle_name, initials, last_name, gender, affiliation, email, url, phone, fax, mailing_address, country, time_zone, locales, date_last_email, date_registered, date_validated, date_last_login, must_change_password, disabled, disabled_reason, auth_id, document)
 				VALUES
-				(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, %s, %s, %s, %s, ?, ?, ?, ?)',
+				(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, %s, %s, %s, %s, ?, ?, ?, ?, ?)',
 				$this->datetimeToDB($user->getDateLastEmail()), $this->datetimeToDB($user->getDateRegistered()), $this->datetimeToDB($user->getDateValidated()), $this->datetimeToDB($user->getDateLastLogin())),
 			array(
 				$user->getUsername(),
@@ -197,7 +198,8 @@ class UserDAO extends DAO {
 				$user->getMustChangePassword(),
 				$user->getDisabled() ? 1 : 0,
 				$user->getDisabledReason(),
-				$user->getAuthId()
+				$user->getAuthId(),
+				$user->getDocument()
 			)
 		);
 
@@ -253,7 +255,8 @@ class UserDAO extends DAO {
 					must_change_password = ?,
 					disabled = ?,
 					disabled_reason = ?,
-					auth_id = ?
+					auth_id = ?,  
+					document = ?
 				WHERE user_id = ?',
 				$this->datetimeToDB($user->getDateLastEmail()), $this->datetimeToDB($user->getDateValidated()), $this->datetimeToDB($user->getDateLastLogin())),
 			array(
@@ -278,6 +281,7 @@ class UserDAO extends DAO {
 				$user->getDisabled()?1:0,
 				$user->getDisabledReason(),
 				$user->getAuthId(),
+				$user->getDocument(),
 				$user->getUserId()
 			)
 		);

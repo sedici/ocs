@@ -548,6 +548,7 @@
 	<message key="user.changeMyPassword">Cambiar mi clave</message>
 	<message key="user.myConferences">Mis eventos</message>
 	<message key="user.myAccount">Mi Cuenta</message>
+	<message key="user.document">Documento</message>
 
 	<!-- Roles -->
 	<message key="user.role.siteAdmin">Administrador web</message>

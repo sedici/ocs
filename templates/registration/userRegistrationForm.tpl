@@ -120,6 +120,10 @@
 			<td width="80%" class="value">{$user->getFullName()|escape}</td>
 		</tr>
 		<tr valign="top">
+			<td width="20%" class="label">{translate key="user.document"}</td>
+			<td width="80%" class="value">{$user->getDocument()|escape}</td>
+		</tr>
+		<tr valign="top">
 			<td class="label">{translate key="user.email"}</td>
 			<td class="value">{$user->getEmail()|escape}</td>
 		</tr>

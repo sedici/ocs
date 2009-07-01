@@ -125,7 +125,8 @@ class ProfileForm extends Form {
 			'userLocales' => $user->getLocales(),
 			'isPresenter' => Validation::isPresenter(),
 			'isReader' => Validation::isReader(),
-			'isReviewer' => Validation::isReviewer()
+			'isReviewer' => Validation::isReviewer(),
+			'document' => $user->getDocument()
 		);
 
 
@@ -156,7 +157,8 @@ class ProfileForm extends Form {
 			'userLocales',
 			'readerRole',
 			'presenterRole',
-			'reviewerRole'
+			'reviewerRole',
+			'document'
 		));
 
 		if ($this->getData('userLocales') == null || !is_array($this->getData('userLocales'))) {
@@ -187,6 +189,7 @@ class ProfileForm extends Form {
 		$user->setTimeZone($this->getData('timeZone'));
 		$user->setBiography($this->getData('biography'), null); // Localized
 		$user->setInterests($this->getData('interests'), null); // Localized
+		$user->setDocument($this->getData('document'));
 
 		$site = &Request::getSite();
 		$availableLocales = $site->getSupportedLocales();

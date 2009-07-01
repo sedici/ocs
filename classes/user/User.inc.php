@@ -434,7 +434,7 @@ class User extends DataObject {
 	function getDateValidated() {
 		return $this->getData('dateValidated');
 	}
-
+	
 	/**
 	 * Set date user email was validated with the site.
 	 * @param $dateValidated datestamp (YYYY-MM-DD HH:MM:SS)
@@ -521,6 +521,18 @@ class User extends DataObject {
 	 */
 	function setAuthId($authId) {
 		return $this->setData('authId', $authId);
+	}
+	
+	/** 
+	 * Set the DNI/LC/LC/Passport for this user
+	 * @param $document string
+	 */
+	function setDocument($document) {
+		return $this->setData('document', $document);
+	}
+
+	function getDocument() {
+		return $this->getData('document');
 	}
 
 	/**

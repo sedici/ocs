@@ -117,6 +117,11 @@
 </tr>
 
 <tr valign="top">
+	<td class="label">{fieldLabel name="document" key="user.document"}</td>
+    <td class="value"><input type="text" id="document" name="document" value="{$document|escape}" size="5" maxlength="12" class="textField" />&nbsp;&nbsp;(DNI/LE/LC/Pasaporte)</td>
+</tr>
+
+<tr valign="top">
 	<td class="label">{fieldLabel name="affiliation" key="user.affiliation"}</td>
 	<td class="value"><input type="text" id="affiliation" name="affiliation" value="{$affiliation|escape}" size="30" class="textField" /></td>
 </tr>
