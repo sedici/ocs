@@ -546,6 +546,7 @@
 	<message key="user.changeMyPassword">Change My Password</message>
 	<message key="user.myConferences">My Conferences</message>
 	<message key="user.myAccount">My Account</message>
+	<message key="user.document">Document</message>
 	<message key="user.noRoles.chooseConference">Your account is not currently associated with any conferences. Please choose a conference:</message>
 	<message key="user.noRoles.noRolesForConference">Your account does not currently have any roles for this conference. Please choose from the actions below:</message>
 	<message key="user.noRoles.submitProposal">Submit a Proposal</message>

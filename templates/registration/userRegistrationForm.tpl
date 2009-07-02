@@ -207,6 +207,10 @@
 </tr>
 
 <tr valign="top">
+	<td class="label">{fieldLabel name="document" key="user.document"}</td>
+	<td class="value"><input {$disableSnippet} type="text" id="document" name="document" value="{$document|escape}" size="30" maxlength="15" class="textField" />&nbsp;&nbsp;(DNI/LE/LC/Pasaporte)</td>
+</tr>
+<tr valign="top">
 	<td class="label">{fieldLabel name="email" required="true" key="user.email"}</td>
 	<td class="value"><input {$disableSnippet} type="text" id="email" name="email" value="{$email|escape}" size="30" maxlength="90" class="textField" /></td>
 </tr>
