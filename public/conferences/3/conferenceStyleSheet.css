@@ -1,0 +1,26 @@
+h2 {
+	line-height: 1.2em;
+}
+
+#content h2 {
+	font-size: 20px;
+}
+
+#homepageImage img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+#rev_menu {
+	width: 400px;
+}
+
+#rev_menu ul li a {
+	color: #990000;
+	background-color: #EAEAEA;
+}
+
+#rev_menu ul li a:hover {
+	background-color: #CC0000!important;
+}
