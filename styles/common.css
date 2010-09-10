@@ -1,0 +1,534 @@
+/**
+ * common.css
+ *
+ * Copyright (c) 2000-2008 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Site-wide shared stylesheet.
+ *
+ * $Id:
+ */
+
+/**
+ * Common HTML elements
+ */
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	color: #333;
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  	text-align: center;
+	font-size: 12px;
+}
+form {
+	margin: 0;
+}
+img {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+a:link, a:active, a:visited {
+	color: #5f753e;
+}
+a:hover {
+	color: #819267;
+	text-decoration: underline!important;
+}
+a.plain {
+	text-decoration: none;
+}
+ul {
+	padding: 0;
+	margin: 5px 0px 5px 15px;
+}
+ul li {
+	margin: 0;
+	padding: 0;
+}
+tt {
+	font-size: 12px;
+}
+label {
+}
+label.error {
+	color: #900;
+}
+input.textField, select.selectMenu, textarea.textArea, input.uploadField {
+	background-color: #fff;
+	color: #000;
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	border: 1px solid #EBE9ED;
+	font-size: 0.9em;
+	margin: 1px 0px;
+	padding: 1px;
+	width: 98%;
+}
+
+input.button {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	background-color: #E8E8E1;
+	font-size: 1em;
+}
+
+input.defaultButton {
+	background-color: #375;
+	color: #FBFBF3;
+	font-weight: bold;
+}
+
+
+/**
+ * Main layout elements
+ */
+
+#container {
+	text-align: left;
+	margin: 10px auto 0px auto;
+	width: 770px;
+	clear: both;
+}
+#rev_logo { 
+	float: left; 
+	width: 450px;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+	clear: none;
+}
+#rev_menu {
+	float: right;
+	width: 200px;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+	text-align: right;
+	clear: none;
+}
+#rev_menu ul {
+	margin: 0px;
+	padding: 10px;
+	list-style: none;
+	font-size: 11px;
+	color: #666;
+}
+#rev_menu ul li {
+	display: inline;
+	padding: 0px 2px;
+	margin: 0px;
+}
+#rev_menu ul li a {
+	padding: 3px;
+	margin: 0px;
+	background-color: #f3f5e9;
+	text-decoration: none;
+}
+#rev_menu ul li a:hover {
+	color: #ffffff!important;
+	text-decoration: none!important;
+	background-color: #AFBD6C!important;
+}
+#header {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+	clear: both;
+}
+#banner {
+	margin: 10px 0px 0px 0px;
+	padding: 0px;
+	clear: both;
+}
+#headerTitle {
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+	clear: both;
+}
+#header h1 {
+	margin: 10px auto;
+	padding: 10px 0px;
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 1.8em;
+	border-top: 1px solid #EAEAEA;
+	border-bottom: 1px solid #EAEAEA;
+	clear: both;
+}
+#body {
+	width: 770px;
+	margin: 0px;
+	padding: 0px 0px 15px 0px;
+	clear: both;
+}
+#footer {
+	clear: both;
+	text-align: center;
+	margin: 0px;
+	height: 45px;
+	padding: 40px 0px 5px 0px;
+	width: 100%;
+	font-size: 11px;
+	line-height: 13px;
+	color: #fff;
+	background: #000000 url(../templates/images/footer_bg.png) repeat-x center top;
+}
+#footer a {
+	color: #dde4bf;
+	text-decoration: none;
+}
+#footerContent {
+	width: 770px;
+	margin: 0 auto;
+	padding: 0px;
+}
+#main {
+	width: 553px;
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	overflow: inherit;
+	line-height: 18px;
+}
+#main h2 {
+	margin: 0px;
+	padding: 10px 0px 8px 0px;
+	font-weight: normal;
+	font-size: 1.4em;
+	letter-spacing: -1px;
+}
+#main h3 {
+	margin: 0.5em 0em;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 22px;
+	padding: 4px;
+	color: #333333;
+	background-color: #eef5eb;
+}
+#main img {
+	overflow: hidden!important;
+}
+#navbar {
+	background: url(../templates/images/menubar.png) no-repeat;
+	padding: 0px 10px;
+	height: 25px;
+	margin: 3px 0px;
+	clear: both;
+}
+#breadcrumb {
+	background: url(../templates/images/crumb.png) no-repeat center bottom;
+	padding:  10px 10px 15px 10px;
+	font-size: 10px;
+}
+#content {
+	margin: 0;
+	padding: 5px 0px;
+	border-top: 1px solid #f5f9f3;
+}
+#content h3 {
+	margin: 0.5em 0em;
+	font-weight: bold;
+	font-size: 1.3em;
+	line-height: 1.4em;
+	padding: 0.2em 0.4em;
+	color: #333333;
+	background-color: #f5f9f3;
+}
+#content h4 {
+	margin: 0.4em 0em;
+	font-weight: bold;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	margin: 0.4em 0em;
+	color: #333333;
+	padding: 3px 0px;
+	border-bottom: 1px solid #E1E1E1;
+	clear: both;
+}
+#content h4 a {
+	color: #333333;
+	text-decoration: none;
+}
+#content h5 {
+	margin: 0em 1em 0.25em 0em;
+	padding-top: 0.75em;
+	font-weight: bold;
+	font-size: 1em;
+}
+#content p {
+	margin: 5px 0px;
+	padding: 0px;
+}
+#content ul.menu {
+	padding: 4px 2px;
+	background-color: #F0EFEC;
+}
+
+/**
+ * Navigation bar
+ */
+
+#navbar a {
+	text-decoration: none;
+	font-size: 10px!important;
+	letter-spacing: 1px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+#navbar ul.menu li {
+	background: url(../templates/images/linkbg.png) no-repeat right center;
+	padding: 0px 15px 0px 5px!important;
+	margin: 0px;
+	line-height: 25px;
+}
+#navbar a:link, #navbar a:active, #navbar a:visited {
+	color: #FFFFFF;
+}
+#navbar a:hover {
+	color:#CED2B0;
+}
+
+
+/**
+ * Breadcrumbs
+ */
+
+#breadcrumb a {
+	text-decoration: none;
+}
+
+#breadcrumb a.current {
+	font-weight: bold;
+}
+
+
+/**
+ * Footer elements
+ */
+
+#footer div.debugStats {
+	font-size: 0.6em;
+}
+
+
+/**
+ * Additional text styles
+ */
+
+span.disabled, label.disabled {
+	color: #666;
+}
+
+a.action, a.file {
+	font-size: 0.85em;
+	text-transform: uppercase;
+}
+
+a.icon {
+	text-decoration: none;
+}
+
+a.icon img {
+	border: 0;
+}
+
+a.icon:hover {
+	background: none;
+}
+
+span.formRequired {
+	color: #333;
+	font-size: 0.9em;
+}
+
+span.instruct {
+}
+
+span.heading {
+	font-size: 0.85em;
+	text-transform: uppercase;
+}
+
+span.highlight {
+	border-bottom: 1px solid #000;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+pre {
+	background-color: #F0F0E8;
+	color: #000;
+	font-size: 1.25em;
+}
+
+/* Table styles */
+
+table.info {
+}
+table.info td {
+	padding: 0;
+	padding-bottom: 0.5em;
+	padding-right: 0.5em;
+}
+table.listing {
+}
+table.listing tr.highlight {
+	background: yellow;
+}
+table.listing td {
+	padding: 0.25em 0.5em 0.25em 0.5em;
+}
+table.listing tr.heading td, table.listing td.heading, table.info td.heading {
+	font-size: 0.85em;
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 120%;
+	padding: 0.75em 0.5em 1em 0.5em;
+}
+table.listing tr.fastTracked {
+}
+table.info td.heading {
+	padding-left: 0;
+}
+table.listing td.nodata, table.info td.nodata {
+	text-align: center;
+	font-style: italic;
+}
+table.listing td.headseparator {
+	border-top: 1px solid #000;
+	font-size: 0.1em;
+	line-height: 1%;
+}
+table.listing td.endseparator {
+	border-top: 1px solid #000;
+	font-size: 0.25em;
+	line-height: 10%;
+}
+table.listing td.separator, table.info td.separator {
+	border-top: 1px solid #DDDDD0;
+	font-size: 0.1em;
+	line-height: 1%;
+}
+table.data {
+}
+table.data img.titlebanner  {
+	width: 100%;
+	height: 100%;
+}
+table.data tr {
+}
+table.data td {
+	padding-bottom: 0.25em;
+}
+table.data td.label {
+	padding-right: 1em;
+}
+table.data td.value {
+}
+table.data td.separator {
+	padding: 0.5em;
+	font-size: 0.1em;
+	line-height: 1%;
+}
+table.data td.heading {
+	padding-left: 0;
+	padding-right: 0;
+}
+table.nested tr {
+	padding: 0;
+	margin: 0;
+}
+span.nested {
+	padding: 0 4px 0 0;
+	font-size: 1.2em;
+}
+
+/* Form-specific elements */
+
+span.formError {
+	color: #900;
+	font-weight: bold;
+	font-size: 1em;
+}
+ul.formErrorList {
+	color: #900;
+}
+
+/* Other organizational elements */
+
+ul.menu {
+	margin: 0;
+	padding: 0;
+}
+ul.menu li {
+	margin: 0;
+	padding: 0 5px;
+	display: inline;
+}
+ul.menu li.current {
+	font-weight: bold;
+}
+ul.steplist {
+	margin: 0;
+	padding: 5;
+	list-style-type: decimal;
+	background-color: #F4F4F4;
+}
+ul.steplist li {
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+	padding-right: 5px;
+	display: inline;
+	text-transform: uppercase;
+}
+ul.steplist li.current {
+	font-weight: bold;
+}
+
+ul.steplist a {
+	text-decoration: none;
+}
+ul.plain {
+	list-style-type: none;
+	padding-left: 1.5em;
+}
+div.separator {
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 0.25em;
+	padding: 0;
+	border-bottom: 1px solid #000;
+	font-size: 0.5em;
+	line-height: 25%;
+}
+div.progressbar {
+	background-image: url(../templates/images/progbg.gif);
+	background-repeat: no-repeat;
+	height: 27;
+	width: 505;
+	z-index:1;
+}
+#leftSidebar ul, #rightSidebar ul, #sidebar ul {
+	list-style: none;
+	margin: 0px 7px;
+	padding: 0px;
+}
+#leftSidebar ul li, #rightSidebar ul li, #sidebar ul li {
+	padding: 2px 6px;
+	margin: 1px 0px;
+	background-color: #f5f9f3;
+}
+#leftSidebar ul li:hover, #rightSidebar ul li:hover, #sidebar ul li:hover {
+	background-color: #e4efdf;
+}
+#leftSidebar a, #rightSidebar a, #sidebar a {
+	color: #333;
+	text-decoration: none;
+}
