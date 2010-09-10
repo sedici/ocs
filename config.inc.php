@@ -168,7 +168,7 @@ charset_normalization = On
 
 ; Complete path to directory to store uploaded files
 ; (This directory should not be directly web-accessible)
-files_dir = /home/ftp/www/ocs/files
+files_dir = /datos/workspaces/phpworkspace/OCS_UNLP/files
 
 ; Path to the directory to store public uploaded files
 ; (This directory should be web-accessible and the specified path

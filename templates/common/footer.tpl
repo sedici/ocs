@@ -1,32 +1,15 @@
 {**
  * footer.tpl
  *
- * Copyright (c) 2000-2008 John Willinsky
+ * Copyright (c) 2000-2010 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Common site footer.
  *
- * $Id: footer.tpl,v 1.8 2008/06/27 20:07:07 michael Exp $
  *}
-{if $pageFooter}
-<br /><br />
-{$pageFooter}
-{/if}
-
-{if $postCreativeCommons}
-	<br />
-	{translate key="common.ccLicense" ccLicenseImageUrl=`$baseUrl`/templates/images/ccLicense.png}
-{/if}
-
-{call_hook name="Templates::Common::Footer::PageFooter"}
-</div><!-- content -->
-</div><!-- main -->
-</div><!-- body -->
-
-</div><!-- container -->
-
-{get_debug_info}
-
+{strip}
+{include file="core:common/footer.tpl"}
+{/strip}
 <div id="footer">
 <p>Todos los derechos reservados &copy; 2008 - <a href="http://www.unlp.edu.ar" target="_blank">Universidad Nacional de La Plata</a> <br> Powered by <a href="http://pkp.sfu.ca/?q=ocs" target="_blank">Open Congress Systems</a> and <a href="http://www.prebi.unlp.edu.ar"> Proyecto de Enlace de Bibliotecas </a></p>
 {if $enableDebugStats}
@@ -45,6 +28,3 @@
 {/if}
 </div><!-- footer -->
 
-
-</body>
-</html>
