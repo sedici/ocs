@@ -69,7 +69,7 @@
 	<div id="rev_logo"><a href="http://www.unlp.edu.ar"><img src="{$baseUrl}/templates/images/unlp.jpg" border="0"/></a></div>
 	<div id="rev_menu">
 	<ul>
-		<li><<a href="{$baseUrl}">Portal de Congresos</a></li>
+		<li><a href="{$baseUrl}">Portal de Congresos</a></li>
 		<li><a href="javascript:openHelp('{if $helpTopicId}{get_help_id key="$helpTopicId" url="true"}{else}{url page="help"}{/if}')">{translate key="navigation.conferenceHelp"}</a></li>
 	</ul>
 	</div>
