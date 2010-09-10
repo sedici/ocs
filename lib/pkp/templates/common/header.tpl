@@ -65,7 +65,17 @@
 <div id="container">
 
 <div id="header">
+<!-- logo de la UNLP -->
+	<div id="rev_logo"><a href="http://www.unlp.edu.ar"><img src="{$baseUrl}/templates/images/unlp.jpg" border="0"/></a></div>
+	<div id="rev_menu">
+	<ul>
+		<li><<a href="{$baseUrl}">Portal de Congresos</a></li>
+		<li><a href="javascript:openHelp('{if $helpTopicId}{get_help_id key="$helpTopicId" url="true"}{else}{url page="help"}{/if}')">{translate key="navigation.conferenceHelp"}</a></li>
+	</ul>
+	</div>
+<!-- FIN LOGO UNLP -->
 <div id="headerTitle">
+<div id="banner">
 <h1>
 {if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
 	<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" width="{$displayPageHeaderLogo.width|escape}" height="{$displayPageHeaderLogo.height|escape}" {if $displayPageHeaderLogoAltText != ''}alt="{$displayPageHeaderLogoAltText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if} />
@@ -85,6 +95,7 @@
 {/if}
 </h1>
 </div>
+</div> <!-- BANNER -->
 </div>
 
 <div id="body">
