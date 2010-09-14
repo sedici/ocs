@@ -93,10 +93,14 @@
 {else}
 	{$applicationName}
 {/if}
+
 </h1>
+
 </div>
+{include file="common/navbar.tpl"}
 </div> <!-- BANNER -->
-</div>
+
+</div>  <!-- headerTitle -->
 
 <div id="body">
 
@@ -116,7 +120,7 @@
 {/if}
 
 <div id="main">
-{include file="common/navbar.tpl"}
+
 
 {include file="common/breadcrumbs.tpl"}
 

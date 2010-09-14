@@ -149,8 +149,8 @@ input.defaultButton {
 
 #navbar {
 	margin-right: 0;
-	padding-bottom: 0.5em;
-	border-bottom: 2px dotted #000;
+	padding-bottom: 2px !important;
+	border-bottom: 0px solid #000;
 }
 
 #breadcrumb {
