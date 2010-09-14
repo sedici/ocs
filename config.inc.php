@@ -139,7 +139,7 @@ memcache_port = 11211
 locale = es_ES
 
 ; Client output/input character set
-client_charset = utf-8
+client_charset = iso-8859-1
 
 ; Database connection character set
 ; Must be set to "Off" if not supported by the database server
