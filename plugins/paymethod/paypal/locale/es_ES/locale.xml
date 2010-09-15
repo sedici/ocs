@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
@@ -11,24 +11,24 @@
   *
  -->
  
-<locale name="es_ES" full_name="Espa√±a Castellano">
+<locale name="es_ES" full_name="EspaÒa Castellano">
 	<message key="plugins.paymethod.paypal.displayName">Pago online (PayPal)</message>
 
 	<!-- PayPal Settings Form -->
 	<message key="plugins.paymethod.paypal.settings.paypalenable">Permitir el pago online (PayPal)</message>
 	<message key="plugins.paymethod.paypal.settings.paypalurl">IPN URL</message>
-	<message key="plugins.paymethod.paypal.settings.paypalurl.description"><![CDATA[ Esta es la URL del servicio de notificaci√≥n instant√°neo de pago de PayPal (PayPal's Instant Payment Notification o IPN). Para pruebas use: <u>https://www.sandbox.paypal.com/cgi-bin/webscr</u>; para sistemas de pago autom√°ticos use: <u>https://www.paypal.com/cgi-bin/webscr</u>.]]></message>
+	<message key="plugins.paymethod.paypal.settings.paypalurl.description"><![CDATA[ Esta es la URL del servicio de notificaciÛn instant·neo de pago de PayPal (PayPal's Instant Payment Notification o IPN). Para pruebas use: <u>https://www.sandbox.paypal.com/cgi-bin/webscr</u>; para sistemas de pago autom·ticos use: <u>https://www.paypal.com/cgi-bin/webscr</u>.]]></message>
 	<message key="plugins.paymethod.paypal.settings.selleraccount">Cuenta bancaria</message>
-	<message key="plugins.paymethod.paypal.settings.selleraccount.description">Este es el nombre de usuario de la cuenta PayPal asociada al n√∫mero de cuenta que se usar√°, habitualmente un direcci√≥n e-mail.</message>
-	<message key="plugins.paymethod.paypal.settings.curlNotInstalled">Atenci√≥n: el soporte CURL para PHP no est√° instalado. El soporte del sistema de pagos Paypal requiere la biblioteca CURL. No funcionar√° hasta que esta est√© instalada.</message>
-	<message key="plugins.paymethod.paypal.settings">Configuraci√≥n PayPal</message>
+	<message key="plugins.paymethod.paypal.settings.selleraccount.description">Este es el nombre de usuario de la cuenta PayPal asociada al n˙mero de cuenta que se usar·, habitualmente un direcciÛn e-mail.</message>
+	<message key="plugins.paymethod.paypal.settings.curlNotInstalled">AtenciÛn: el soporte CURL para PHP no est· instalado. El soporte del sistema de pagos Paypal requiere la biblioteca CURL. No funcionar· hasta que esta estÈ instalada.</message>
+	<message key="plugins.paymethod.paypal.settings">ConfiguraciÛn PayPal</message>
 
 	<!-- PayPal -->
 	<message key="plugins.paymethod.paypal">Pago online (PayPal)</message>
-	<message key="plugins.paymethod.paypal.description"><![CDATA[Se acepta la mayoria de targetas de cr√©dito, as√≠ como tambien eChecks; no √©s necesrario que los participantes sean miembros de PayPal, pero si que requiere que los organizadores de las conferencias (#evento) creen una <a href="http://www.paypal.com" target="_new">cuenta de empresa PayPal</a>.]]></message>
-	<message key="plugins.paymethod.paypal.warning">Clicando en "Continuar" se le direccionar√° al sitio web de PayPal. Antes de realizar el pago mediante PayPal puede clicar en el bot√≥n "Return to Merchant" para volver a esta p√°gina.</message>
+	<message key="plugins.paymethod.paypal.description"><![CDATA[Se acepta la mayoria de targetas de crÈdito, asÌ como tambien eChecks; no Ès necesrario que los participantes sean miembros de PayPal, pero si que requiere que los organizadores de las conferencias (#evento) creen una <a href="http://www.paypal.com" target="_new">cuenta de empresa PayPal</a>.]]></message>
+	<message key="plugins.paymethod.paypal.warning">Clicando en "Continuar" se le direccionar· al sitio web de PayPal. Antes de realizar el pago mediante PayPal puede clicar en el botÛn "Return to Merchant" para volver a esta p·gina.</message>
 	<message key="plugins.paymethod.paypal.purchase.amount">Importe</message>
-	<message key="plugins.paymethod.paypal.purchase.description">Descripci√≥n</message>
-	<message key="plugins.paymethod.paypal.purchase.cancelled">Su operaci√≥n ha sido cancelada.</message>
-	<message key="plugins.paymethod.paypal.purchase.cancelled.title">Operaci√≥n cancelada</message>
+	<message key="plugins.paymethod.paypal.purchase.description">DescripciÛn</message>
+	<message key="plugins.paymethod.paypal.purchase.cancelled">Su operaciÛn ha sido cancelada.</message>
+	<message key="plugins.paymethod.paypal.purchase.cancelled.title">OperaciÛn cancelada</message>
 </locale>

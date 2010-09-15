@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
@@ -12,7 +12,7 @@
   * $Id$
   -->
  
-<locale name="es_ES" full_name="EspaÃ±ol (EspaÃ±a)">
-	<message key="plugins.block.role.displayName">Bloque especÃ­fico de Roles</message>
-	<message key="plugins.block.role.description">Este plugin provee de un bloque para la barra lateral que contiene informaciÃ³n especÃ­fica de roles como el nÃºmero de envÃ­os y accesos directos para Directores, Presentadores, etc.</message>
+<locale name="es_ES" full_name="Español (España)">
+	<message key="plugins.block.role.displayName">Bloque específico de Roles</message>
+	<message key="plugins.block.role.description">Este plugin provee de un bloque para la barra lateral que contiene información específica de roles como el número de envíos y accesos directos para Directores, Presentadores, etc.</message>
 </locale>

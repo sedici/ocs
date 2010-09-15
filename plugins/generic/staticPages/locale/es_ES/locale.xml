@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
@@ -11,10 +11,10 @@
   *
   -->
  
-<locale name="es_ES" full_name="EspaÃ±ol (EspaÃ±a)">
-	<message key="plugins.generic.staticPages.displayName">Plugin de PÃ¡ginas estÃ¡ticas</message>
-	<message key="plugins.generic.staticPages.description">Este plugin permite la GestiÃ³n de PÃ¡ginas EstÃ¡ticas.</message>
-	<message key="plugins.generic.staticPages.pageTitle">TÃ­tulo</message>
+<locale name="es_ES" full_name="Español (España)">
+	<message key="plugins.generic.staticPages.displayName">Plugin de Páginas estáticas</message>
+	<message key="plugins.generic.staticPages.description">Este plugin permite la Gestión de Páginas Estáticas.</message>
+	<message key="plugins.generic.staticPages.pageTitle">Título</message>
 	<message key="plugins.generic.staticPages.content">Contenido</message>
 
 	<message key="plugins.generic.staticPages.path">Ruta</message>
@@ -22,17 +22,17 @@
 
 	<message key="plugins.generic.staticPages.editAddContent">Editar/Agregar Contenido</message>
 
-	<message key="plugins.generic.staticPages.addStaticPage">Agregar PÃ¡gina EstÃ¡tica</message>
-	<message key="plugins.generic.staticPages.addNewPage">Agregar Nueva PÃ¡gina</message>
-	<message key="plugins.generic.staticPages.editStaticPage">Editar PÃ¡gina EstÃ¡tica</message>	
+	<message key="plugins.generic.staticPages.addStaticPage">Agregar Página Estática</message>
+	<message key="plugins.generic.staticPages.addNewPage">Agregar Nueva Página</message>
+	<message key="plugins.generic.staticPages.editStaticPage">Editar Página Estática</message>	
 
-	<message key="plugins.generic.staticPages.settingInstructions">El siguiente formulario le muestra todas las pÃ¡ginas estÃ¡ticas que ha creado. Puede editar o borrar las pÃ¡ginas utilizando los enlaces en el lado derecho.</message>
-	<message key="plugins.generic.staticPages.editInstructions">Utilizar el siguiente formulario para agregar o editar contenido a la pÃ¡gina.</message>
-	<message key="plugins.generic.staticPages.viewInstructions"><![CDATA[Puede acceder a las pÃ¡ginas desde: {$pagesPath}, donde %PATH% es un valor que usted escoge. <strong>Nota:</strong> Dos pÃ¡ginas no pueden tener el mismo path (ruta).]]></message>
-	<message key="plugins.generic.staticPages.duplicatePath">Este path (ruta) ya existe para otra pÃ¡gina estÃ¡tica.</message>
+	<message key="plugins.generic.staticPages.settingInstructions">El siguiente formulario le muestra todas las páginas estáticas que ha creado. Puede editar o borrar las páginas utilizando los enlaces en el lado derecho.</message>
+	<message key="plugins.generic.staticPages.editInstructions">Utilizar el siguiente formulario para agregar o editar contenido a la página.</message>
+	<message key="plugins.generic.staticPages.viewInstructions"><![CDATA[Puede acceder a las páginas desde: {$pagesPath}, donde %PATH% es un valor que usted escoge. <strong>Nota:</strong> Dos páginas no pueden tener el mismo path (ruta).]]></message>
+	<message key="plugins.generic.staticPages.duplicatePath">Este path (ruta) ya existe para otra página estática.</message>
 	
-	<message key="plugins.generic.staticPages.pageSaved">PÃ¡gina correctamente guardada.</message>
-	<message key="plugins.generic.staticPages.pageDeleted">PÃ¡gina correctamente borrada.</message>
+	<message key="plugins.generic.staticPages.pageSaved">Página correctamente guardada.</message>
+	<message key="plugins.generic.staticPages.pageDeleted">Página correctamente borrada.</message>
 	
-	<message key="plugins.generic.staticPages.noneExist">No se han creado pÃ¡ginas</message>
+	<message key="plugins.generic.staticPages.noneExist">No se han creado páginas</message>
 </locale>

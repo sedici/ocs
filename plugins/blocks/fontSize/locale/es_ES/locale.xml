@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
@@ -12,11 +12,11 @@
   * $Id$
   -->
  
-<locale name="es_ES" full_name="EspaÃ±ol (EspaÃ±a)">
-	<message key="plugins.block.fontSize.displayName">Bloque de tamaÃ±o de letra</message>
-	<message key="plugins.block.fontSize.description">Este plugin provee de un selector de tamaÃ±o de letra.</message>
-	<message key="plugins.block.fontSize.title">TamaÃ±o de letra</message>
-	<message key="plugins.block.fontSize.small">PequeÃ±o</message>
+<locale name="es_ES" full_name="Español (España)">
+	<message key="plugins.block.fontSize.displayName">Bloque de tamaño de letra</message>
+	<message key="plugins.block.fontSize.description">Este plugin provee de un selector de tamaño de letra.</message>
+	<message key="plugins.block.fontSize.title">Tamaño de letra</message>
+	<message key="plugins.block.fontSize.small">Pequeño</message>
 	<message key="plugins.block.fontSize.medium">Mediano</message>
 	<message key="plugins.block.fontSize.large">Grande</message>
 </locale>
