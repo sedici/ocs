@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
@@ -12,7 +12,7 @@
   * $Id$
   -->
  
-<locale name="es_ES" full_name="Español (España)">
-	<message key="plugins.block.languageToggle.displayName">Bloque de selección de Idioma</message>
+<locale name="es_ES" full_name="EspaÃ±ol (EspaÃ±a)">
+	<message key="plugins.block.languageToggle.displayName">Bloque de selecciÃ³n de Idioma</message>
 	<message key="plugins.block.languageToggle.description">Este plugin provee de un selector de idioma para la barra lateral.</message>
 </locale>

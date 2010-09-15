@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
@@ -12,7 +12,7 @@
   * $Id$
   -->
  
-<locale name="es_ES" full_name="Español (España)">
+<locale name="es_ES" full_name="EspaÃ±ol (EspaÃ±a)">
 	<message key="plugins.block.notification.displayName">Bloque de Notificaciones</message>
-	<message key="plugins.block.notification.description">Este plugin muestra información sobre notificaciones del sistema.</message>
+	<message key="plugins.block.notification.description">Este plugin muestra informaciÃ³n sobre notificaciones del sistema.</message>
 </locale>

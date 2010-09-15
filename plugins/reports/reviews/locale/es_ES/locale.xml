@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
@@ -12,7 +12,7 @@
   * $Id$
   -->
 
-<locale name="es_ES" full_name="Español (España)">
+<locale name="es_ES" full_name="EspaÃ±ol (EspaÃ±a)">
 	<message key="plugins.reports.reviews.displayName">Revisar informe</message>
 	<message key="plugins.reports.reviews.description">Este plugin implementa un informe CSV que contiene una lista de asignaciones de revisiones para una conferencia.</message>
 	<message key="plugins.reports.reviews.reviewerId">ID de revisor</message>

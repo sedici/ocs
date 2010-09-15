@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
@@ -12,17 +12,17 @@
   * $Id$
   -->
  
-<locale name="es_ES" full_name="Español (España)">
+<locale name="es_ES" full_name="EspaÃ±ol (EspaÃ±a)">
 	<message key="plugins.generic.announcementfeed.displayName">Plugin Agragedor de Anuncios</message>
 	<message key="plugins.generic.announcementfeed.description">Este plugin produce agregadores web RSS/Atom para los anuncios de la conferencia.</message>
 
-	<message key="plugins.generic.announcementfeed.settings">Configuración</message>
-	<message key="plugins.generic.announcementfeed.settings.all">Mostrar los enlaces a los feeds en todas las páginas de la conferencia.</message>
-	<message key="plugins.generic.announcementfeed.settings.homepage">Mostrar los enlaces a los feeds únicamente en la página de inicio y en la de anuncios.</message>
-	<message key="plugins.generic.announcementfeed.settings.announcement">Mostrar los enlaces a los feeds únicamente en la página de los anuncios de la conferencia.</message>
+	<message key="plugins.generic.announcementfeed.settings">ConfiguraciÃ³n</message>
+	<message key="plugins.generic.announcementfeed.settings.all">Mostrar los enlaces a los feeds en todas las pÃ¡ginas de la conferencia.</message>
+	<message key="plugins.generic.announcementfeed.settings.homepage">Mostrar los enlaces a los feeds Ãºnicamente en la pÃ¡gina de inicio y en la de anuncios.</message>
+	<message key="plugins.generic.announcementfeed.settings.announcement">Mostrar los enlaces a los feeds Ãºnicamente en la pÃ¡gina de los anuncios de la conferencia.</message>
 	<message key="plugins.generic.announcementfeed.settings.recentAnnouncements1">Limitar el feed a</message>
-	<message key="plugins.generic.announcementfeed.settings.recentAnnouncements2">anuncios más recientes.</message>
-	<message key="plugins.generic.announcementfeed.settings.recentItemsRequired">Escriba un número positivo para anuncios recientes.</message>
+	<message key="plugins.generic.announcementfeed.settings.recentAnnouncements2">anuncios mÃ¡s recientes.</message>
+	<message key="plugins.generic.announcementfeed.settings.recentItemsRequired">Escriba un nÃºmero positivo para anuncios recientes.</message>
 	<message key="plugins.generic.announcementfeed.atom.altText">Logotipo del Atom</message>
 	<message key="plugins.generic.announcementfeed.rss1.altText">Logotipo del RSS1</message>
 	<message key="plugins.generic.announcementfeed.rss2.altText">Logotipo del RSS2</message>	

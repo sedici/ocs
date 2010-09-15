@@ -414,7 +414,7 @@
 			<search_title>Statistical Resources on the Web</search_title>
 			<search_description>This site, created and maintained by University of Michigan Documents Center, is organized by broad subject area, such as Foreign or Statistics, in order to facilitate research.</search_description>
 			<url>http://www.lib.umich.edu/govdocs/statsnew.html</url>
-			<search_url>http://www.google.com/u/umlib?hl=en&amp;lr=&amp;ie=ISO-8859-1&amp;domains=www.lib.umich.edu&amp;sitesearch=www.lib.umich.edu&amp;q=inurl%3Agovdocs+-govdocs%2Fadnotes%2F+%0D%0A-govdocs%2Fgodort%2F&amp;q={$formKeywords}</search_url>
+			<search_url>http://www.google.com/u/umlib?hl=en&amp;lr=&amp;ie=utf-8&amp;domains=www.lib.umich.edu&amp;sitesearch=www.lib.umich.edu&amp;q=inurl%3Agovdocs+-govdocs%2Fadnotes%2F+%0D%0A-govdocs%2Fgodort%2F&amp;q={$formKeywords}</search_url>
 			
 		</search>
 	</context>
