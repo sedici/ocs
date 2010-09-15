@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
@@ -12,8 +12,8 @@
   * $Id$
   -->
 
-<locale name="es_ES" full_name="EspaÃ±ol (EspaÃ±a)">
-	<message key="plugins.reports.papers.displayName">Informe de artÃ­culos</message>
-	<message key="plugins.reports.papers.description">Este plugin implementa un informe CSV que contiene una lista de artÃ­culos y su informaciÃ³n.</message>
-	<message key="plugins.reports.papers.nodecision">Sin DecisiÃ³n</message>
+<locale name="es_ES" full_name="Español (España)">
+	<message key="plugins.reports.papers.displayName">Informe de artículos</message>
+	<message key="plugins.reports.papers.description">Este plugin implementa un informe CSV que contiene una lista de artículos y su información.</message>
+	<message key="plugins.reports.papers.nodecision">Sin Decisión</message>
 </locale>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
@@ -12,8 +12,8 @@
   * $Id$
   -->
  
-<locale name="es_ES" full_name="EspaÃ±ol (EspaÃ±a)">
-	<message key="plugins.block.navigation.displayName">Bloque de navegaciÃ³n</message>
-	<message key="plugins.block.navigation.description">Este plugin provee de enlaces de navegaciÃ³n para la barra lateral.</message>
+<locale name="es_ES" full_name="Español (España)">
+	<message key="plugins.block.navigation.displayName">Bloque de navegación</message>
+	<message key="plugins.block.navigation.description">Este plugin provee de enlaces de navegación para la barra lateral.</message>
 	<message key="plugins.block.navigation.conferenceContent">Contenido de la Conferencia</message>
 </locale>

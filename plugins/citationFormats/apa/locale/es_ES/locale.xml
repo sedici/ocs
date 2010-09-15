@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
@@ -12,7 +12,7 @@
   * $Id$
   -->
  
-<locale name="es_ES" full_name="EspaÃ±ol (EspaÃ±a)">
+<locale name="es_ES" full_name="Español (España)">
 	<message key="plugins.citationFormats.apa.displayName">Plugin de formato de cita APA</message>
 	<message key="plugins.citationFormats.apa.citationFormatName">APA</message>
 	<message key="plugins.citationFormats.apa.description">Este plugin implementa el formato de cita APA.</message>
