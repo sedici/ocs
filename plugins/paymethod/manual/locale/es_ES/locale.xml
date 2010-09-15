@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
@@ -11,16 +11,16 @@
   *
  -->
  
-<locale name="es_ES" full_name="España Castellano">
+<locale name="es_ES" full_name="EspaÃ±a Castellano">
 	<message key="plugins.paymethod.manual.displayName">Pago Manual</message>
-	<message key="plugins.paymethod.manual.description">El pago debe realizarse fuera del sistema OCS y requiere una validación por parte del responsable de las conferencias antes de que la inscripción sea efectiva. El contenido del campo "Información de la Inscripción" en el "Gestor de Políticas de Inscripción" se mostrará al equipo de inscripciones y debe ofrecer información sobre como se procederà en el envío manual de la misma.</message>
-	<message key="plugins.paymethod.manual">Pago de la inscripción</message>
-	<message key="plugins.paymethod.manual.settings">Configuración del Pago Manual</message>
+	<message key="plugins.paymethod.manual.description">El pago debe realizarse fuera del sistema OCS y requiere una validaciÃ³n por parte del responsable de las conferencias antes de que la inscripciÃ³n sea efectiva. El contenido del campo "InformaciÃ³n de la InscripciÃ³n" en el "Gestor de PolÃ­ticas de InscripciÃ³n" se mostrarÃ¡ al equipo de inscripciones y debe ofrecer informaciÃ³n sobre como se procederÃ  en el envÃ­o manual de la misma.</message>
+	<message key="plugins.paymethod.manual">Pago de la inscripciÃ³n</message>
+	<message key="plugins.paymethod.manual.settings">ConfiguraciÃ³n del Pago Manual</message>
 	<message key="plugins.paymethod.manual.settings.instructions">Instrucciones</message>
 	<message key="plugins.paymethod.manual.settings.manualInstructions">Instrucciones de pago para los usuarios que han seleccionado pago manual de la cuota.</message>
-	<message key="plugins.paymethod.manual.sendNotificationOfPayment">Enviar notificación de pago</message>
-	<message key="plugins.paymethod.manual.paymentNotification">Notificación de pago</message>
-	<message key="plugins.paymethod.manual.notificationSent">Notificación de pago enviada</message>
-	<message key="plugins.paymethod.manual.purchase.title">Título</message>
+	<message key="plugins.paymethod.manual.sendNotificationOfPayment">Enviar notificaciÃ³n de pago</message>
+	<message key="plugins.paymethod.manual.paymentNotification">NotificaciÃ³n de pago</message>
+	<message key="plugins.paymethod.manual.notificationSent">NotificaciÃ³n de pago enviada</message>
+	<message key="plugins.paymethod.manual.purchase.title">TÃ­tulo</message>
 	<message key="plugins.paymethod.manual.purchase.fee">Cuota</message>
 </locale>

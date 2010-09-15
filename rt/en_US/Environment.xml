@@ -80,7 +80,7 @@
 			<search_title>NAL Agricultural Thesaurus</search_title>
 			<search_description>NAL Agricultural Thesaurus was created to meet the needs of the United States Department of Agriculture (USDA), Agricultural Research Service (ARS), for an agricultural thesaurus. NAL Agricultural Thesaurus is for anyone describing, organizing and classifying agricultural resources such as: books, articles, catalogs, databases, patents, games, educational materials, pictures, slides, film, videotapes, software, other electronic media, or websites. It is organized into 17 subject categories.</search_description>
 			<url>http://agclass.nal.usda.gov/agt/agt.htm</url>
-			<search_url>http://search.nal.usda.gov/query.html?charset=iso-8859-1&amp;ht=0&amp;qp=&amp;qs=-url%3Atektran&amp;qc=-&amp;pw=100%25&amp;ws=0&amp;la=en&amp;qm=0&amp;st=1&amp;nh=10&amp;lk=1&amp;rf=0&amp;oq=&amp;rq=0&amp;si=1&amp;x=15&amp;y=8&amp;qt={$formKeywords}</search_url>
+			<search_url>http://search.nal.usda.gov/query.html?charset=utf-8&amp;ht=0&amp;qp=&amp;qs=-url%3Atektran&amp;qc=-&amp;pw=100%25&amp;ws=0&amp;la=en&amp;qm=0&amp;st=1&amp;nh=10&amp;lk=1&amp;rf=0&amp;oq=&amp;rq=0&amp;si=1&amp;x=15&amp;y=8&amp;qt={$formKeywords}</search_url>
 			
 		</search>
 		<search>

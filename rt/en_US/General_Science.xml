@@ -197,7 +197,7 @@
 			<search_title>SciCentral</search_title>
 			<search_description>A directory of links to &quot;today's breaking science news.&quot; Browsable by topic, including biosciences, health sciences, physics, chemistry, earth and space, and engineering. Also includes links to related journals, databases, job opportunities, and conferences.</search_description>
 			<url>http://scicentral.com/</url>
-			<search_url>http://www.google.com/custom?client=pub-2641291926759270&amp;forid=1&amp;channel=1291454416&amp;ie=ISO-8859-1&amp;oe=ISO-8859-1&amp;cof=GALT%3A%23008000%3BGL%3A1%3BDIV%3A%23FFFFFF%3BVLC%3A663399%3BAH%3Acenter%3BBGC%3AFFFFFF%3BLBGC%3AFFFFFF%3BALC%3A0000FF%3BLC%3A0000FF%3BT%3A000000%3BGFNT%3A9999FF%3BGIMP%3A9999FF%3BLH%3A50%3BLW%3A78%3BL%3Ahttp%3A%2F%2Fwww.scicentral.com%2Fimages%2Fscclogo_for_google.gif%3BS%3Ahttp%3A%2F%2Fwww.scicentral.com%3BFORID%3A1%3B&amp;hl=en&amp;q={$formKeywords}</search_url>
+			<search_url>http://www.google.com/custom?client=pub-2641291926759270&amp;forid=1&amp;channel=1291454416&amp;ie=utf-8&amp;oe=utf-8&amp;cof=GALT%3A%23008000%3BGL%3A1%3BDIV%3A%23FFFFFF%3BVLC%3A663399%3BAH%3Acenter%3BBGC%3AFFFFFF%3BLBGC%3AFFFFFF%3BALC%3A0000FF%3BLC%3A0000FF%3BT%3A000000%3BGFNT%3A9999FF%3BGIMP%3A9999FF%3BLH%3A50%3BLW%3A78%3BL%3Ahttp%3A%2F%2Fwww.scicentral.com%2Fimages%2Fscclogo_for_google.gif%3BS%3Ahttp%3A%2F%2Fwww.scicentral.com%3BFORID%3A1%3B&amp;hl=en&amp;q={$formKeywords}</search_url>
 			
 		</search>
 	</context>

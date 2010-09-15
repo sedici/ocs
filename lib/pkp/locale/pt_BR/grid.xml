@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE locale SYSTEM "../../dtd/locale.dtd">
 
 <!--
@@ -12,20 +12,20 @@
   * $Id$
   -->
 
-<locale name="pt_BR" full_name = "Português (Brasil)">
+<locale name="pt_BR" full_name = "PortuguÃªs (Brasil)">
 	<!-- Common -->
 	<message key="grid.noItems">Nenhum item</message>
-	<message key="grid.settings">Configurações</message>
+	<message key="grid.settings">ConfiguraÃ§Ãµes</message>
 
 	<message key="grid.action.sort">Ordenar</message>
 	<message key="grid.action.addItem">Incluir item</message>
 	<message key="grid.action.delete">Excluir</message>
 	<message key="grid.action.edit">Editar</message>
-	<message key="grid.action.restoreDefaults">Restaurar padrões</message>
+	<message key="grid.action.restoreDefaults">Restaurar padrÃµes</message>
 
 	<!-- Common Grid Column Titles -->
-	<message key="grid.columns.actions">Ações</message>
-	<message key="grid.columns.institution">Instituição</message>
+	<message key="grid.columns.actions">AÃ§Ãµes</message>
+	<message key="grid.columns.institution">InstituiÃ§Ã£o</message>
 	<message key="grid.columns.url">URL</message>
 
 	<!-- Sponsors Grid -->
@@ -39,40 +39,40 @@
 	<message key="grid.contributor.title">Contribuidor</message>
 
 	<!-- Review Forms Grid -->
-	<message key="grid.reviewForm.title">Formulários de avaliação</message>
+	<message key="grid.reviewForm.title">FormulÃ¡rios de avaliaÃ§Ã£o</message>
 
 	<!-- Book File Types Grid -->
-	<message key="grid.bookFileType.form.sortable">Permitir ordenação por componentes a documentos desta natureza (ex.: por capítulo)</message>
+	<message key="grid.bookFileType.form.sortable">Permitir ordenaÃ§Ã£o por componentes a documentos desta natureza (ex.: por capÃ­tulo)</message>
 
 	<!-- Artwork Files Grid -->
-	<message key="grid.artworkFile.title">Trabalho de arte com permissões</message>
+	<message key="grid.artworkFile.title">Trabalho de arte com permissÃµes</message>
 	<message key="grid.artworkFile.file">Documento</message>
-	<message key="grid.artworkFile.form.title">Incluir trabalho de arte com permissões</message>
+	<message key="grid.artworkFile.form.title">Incluir trabalho de arte com permissÃµes</message>
 	<message key="grid.artworkFile.form.metadata">Metadados do trabalho de arte</message>
 	<message key="grid.artworkFile.caption">Legenda</message>
-	<message key="grid.artworkFile.credit">Créditos</message>
-	<message key="grid.artworkFile.copyrightOwner">Proprietário dos direitos autorais</message>
-	<message key="grid.artworkFile.copyrightContact">Contato (caso não seja o autor/publicador)</message>
-	<message key="grid.artworkFile.permissionTerms">Termos da permissão</message>
-	<message key="grid.artworkFile.permissionForm">Formulários de permissão</message>
+	<message key="grid.artworkFile.credit">CrÃ©ditos</message>
+	<message key="grid.artworkFile.copyrightOwner">ProprietÃ¡rio dos direitos autorais</message>
+	<message key="grid.artworkFile.copyrightContact">Contato (caso nÃ£o seja o autor/publicador)</message>
+	<message key="grid.artworkFile.permissionTerms">Termos da permissÃ£o</message>
+	<message key="grid.artworkFile.permissionForm">FormulÃ¡rios de permissÃ£o</message>
 	<message key="grid.artworkFile.type">Tipo</message>
 	<message key="grid.artworkFile.type.table">Tabela</message>
 	<message key="grid.artworkFile.type.figure">Figura</message>
-	<message key="grid.artworkFile.placement">Localização no livro</message>
+	<message key="grid.artworkFile.placement">LocalizaÃ§Ã£o no livro</message>
 	<message key="grid.artworkFile.placementDetail">Tabela/Fig. #</message>
 	<message key="grid.artworkFile.contactAuthor">Contatar autor</message>
 
 	<!-- Library Files -->
 	<message key="grid.libraryFiles.column.files">Documentos</message>
-	<message key="grid.libraryFiles.submission.title">Biblioteca de submissão</message>
+	<message key="grid.libraryFiles.submission.title">Biblioteca de submissÃ£o</message>
 	<message key="grid.libraryFiles.editorial.title">Biblioteca Editorial</message>
-	<message key="grid.libraryFiles.review.title">Bilbioteca de revisão</message>
-	<message key="grid.libraryFiles.production.title">Biblioteca de produção</message>
-	<message key="grid.libraryFiles.productionTemplate.title">Biblioteca de modelos de produção</message>
+	<message key="grid.libraryFiles.review.title">Bilbioteca de revisÃ£o</message>
+	<message key="grid.libraryFiles.production.title">Biblioteca de produÃ§Ã£o</message>
+	<message key="grid.libraryFiles.productionTemplate.title">Biblioteca de modelos de produÃ§Ã£o</message>
 
 	<!-- SubmissionChecklist -->
-	<message key="grid.submissionChecklist.title">Diretrizes para submissão</message>
-	<message key="grid.submissionChecklist.column.checklistItem">Item de verificação</message>
+	<message key="grid.submissionChecklist.title">Diretrizes para submissÃ£o</message>
+	<message key="grid.submissionChecklist.column.checklistItem">Item de verificaÃ§Ã£o</message>
 
 	<!-- Submission Contributors -->
 	<message key="author.submit.contributor.name">Nome</message>

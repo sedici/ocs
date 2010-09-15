@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE countries SYSTEM "../../dtd/countries.dtd">
 <!--
   * locale/es_ES/countries.xml
@@ -11,49 +11,49 @@
   * $Id$
   -->
 <countries>
-	<country name="Afganistán" code="AF"/>
-	<country name="Islas Åland" code="AX"/>
+	<country name="AfganistÃ¡n" code="AF"/>
+	<country name="Islas Ãland" code="AX"/>
 	<country name="Albania" code="AL"/>
 	<country name="Alemania" code="DE"/>
 	<country name="Andorra" code="AD"/>
 	<country name="Angola" code="AO"/>
 	<country name="Anguilla" code="AI"/>
-	<country name="Antártida" code="AQ"/>
+	<country name="AntÃ¡rtida" code="AQ"/>
 	<country name="Antigua y Barbuda" code="AG"/>
 	<country name="Antillas Neerlandesas" code="AN"/>
-	<country name="Arabia Saudí" code="SA"/>
+	<country name="Arabia SaudÃ­" code="SA"/>
 	<country name="Argelia" code="DZ"/>
 	<country name="Argentina" code="AR"/>
 	<country name="Armenia" code="AM"/>
 	<country name="Aruba" code="AW"/>
 	<country name="Australia" code="AU"/>
 	<country name="Austria" code="AT"/>
-	<country name="Azerbaiyán" code="AZ"/>
+	<country name="AzerbaiyÃ¡n" code="AZ"/>
 	<country name="Bahamas" code="BS"/>
-	<country name="Bahréin" code="BH"/>
+	<country name="BahrÃ©in" code="BH"/>
 	<country name="Bangladesh" code="BD"/>
 	<country name="Barbados" code="BB"/>
 	<country name="Bielorrusia" code="BY"/>
-	<country name="Bélgica" code="BE"/>
+	<country name="BÃ©lgica" code="BE"/>
 	<country name="Belice" code="BZ"/>
 	<country name="Benin" code="BJ"/>
 	<country name="Bermudas" code="BM"/>
-	<country name="Bhután" code="BT"/>
+	<country name="BhutÃ¡n" code="BT"/>
 	<country name="Bolivia" code="BO"/>
 	<country name="Bosnia y Herzegovina" code="BA"/>
 	<country name="Botsuana" code="BW"/>
 	<country name="Isla Bouvet" code="BV"/>
 	<country name="Brasil" code="BR"/>
-	<country name="Brunéi" code="BN"/>
+	<country name="BrunÃ©i" code="BN"/>
 	<country name="Bulgaria" code="BG"/>
 	<country name="Burkina Faso" code="BF"/>
 	<country name="Burundi" code="BI"/>
 	<country name="Cabo Verde" code="CV"/>
-	<country name="Islas Caimán" code="KY"/>
+	<country name="Islas CaimÃ¡n" code="KY"/>
 	<country name="Camboya" code="KH"/>
-	<country name="Camerún" code="CM"/>
-	<country name="Canadá" code="CA"/>
-	<country name="República Centroafricana" code="CF"/>
+	<country name="CamerÃºn" code="CM"/>
+	<country name="CanadÃ¡" code="CA"/>
+	<country name="RepÃºblica Centroafricana" code="CF"/>
 	<country name="Chad" code="TD"/>
 	<country name="Chequia" code="CZ"/>
 	<country name="Chile" code="CL"/>
@@ -65,7 +65,7 @@
 	<country name="Islas Cocos" code="CC"/>
 	<country name="Colombia" code="CO"/>
 	<country name="Comoras" code="KM"/>
-	<country name="República Democrática del Congo" code="CD"/>
+	<country name="RepÃºblica DemocrÃ¡tica del Congo" code="CD"/>
 	<country name="Congo" code="CG"/>
 	<country name="Islas Cook" code="CK"/>
 	<country name="Corea del Norte" code="KP"/>
@@ -76,25 +76,25 @@
 	<country name="Cuba" code="CU"/>
 	<country name="Dinamarca" code="DK"/>
 	<country name="Dominica" code="DM"/>
-	<country name="República Dominicana" code="DO"/>
+	<country name="RepÃºblica Dominicana" code="DO"/>
 	<country name="Ecuador" code="EC"/>
 	<country name="Egipto" code="EG"/>
 	<country name="El Salvador" code="SV"/>
-	<country name="Emiratos Árabes Unidos" code="AE"/>
+	<country name="Emiratos Ãrabes Unidos" code="AE"/>
 	<country name="Eritrea" code="ER"/>
 	<country name="Eslovaquia" code="SK"/>
 	<country name="Eslovenia" code="SI"/>
-	<country name="España" code="ES"/>
+	<country name="EspaÃ±a" code="ES"/>
 	<country name="Islas ultramarinas de Estados Unidos" code="UM"/>
 	<country name="Estados Unidos" code="US"/>
 	<country name="Estonia" code="EE"/>
-	<country name="Etiopía" code="ET"/>
+	<country name="EtiopÃ­a" code="ET"/>
 	<country name="Islas Feroe" code="FO"/>
 	<country name="Filipinas" code="PH"/>
 	<country name="Finlandia" code="FI"/>
 	<country name="Fiyi" code="FJ"/>
 	<country name="Francia" code="FR"/>
-	<country name="Gabón" code="GA"/>
+	<country name="GabÃ³n" code="GA"/>
 	<country name="Gambia" code="GM"/>
 	<country name="Georgia" code="GE"/>
 	<country name="Georgia del Sur e Islas Sandwich del Sur" code="GS"/>
@@ -111,31 +111,31 @@
 	<country name="Guinea Ecuatorial" code="GQ"/>
 	<country name="Guinea-Bissau" code="GW"/>
 	<country name="Guyana" code="GY"/>
-	<country name="Haití" code="HT"/>
+	<country name="HaitÃ­" code="HT"/>
 	<country name="Islas Heard y McDonald" code="HM"/>
 	<country name="Honduras" code="HN"/>
 	<country name="Hong Kong" code="HK"/>
-	<country name="Hungría" code="HU"/>
+	<country name="HungrÃ­a" code="HU"/>
 	<country name="India" code="IN"/>
 	<country name="Indonesia" code="ID"/>
-	<country name="Irán" code="IR"/>
+	<country name="IrÃ¡n" code="IR"/>
 	<country name="Iraq" code="IQ"/>
 	<country name="Irlanda" code="IE"/>
 	<country name="Islandia" code="IS"/>
 	<country name="Israel" code="IL"/>
 	<country name="Italia" code="IT"/>
 	<country name="Jamaica" code="JM"/>
-	<country name="Japón" code="JP"/>
+	<country name="JapÃ³n" code="JP"/>
 	<country name="Jordania" code="JO"/>
-	<country name="Kazajstán" code="KZ"/>
+	<country name="KazajstÃ¡n" code="KZ"/>
 	<country name="Kenia" code="KE"/>
-	<country name="Kirguistán" code="KG"/>
+	<country name="KirguistÃ¡n" code="KG"/>
 	<country name="Kiribati" code="KI"/>
 	<country name="Kuwait" code="KW"/>
 	<country name="Laos" code="LA"/>
 	<country name="Lesotho" code="LS"/>
 	<country name="Letonia" code="LV"/>
-	<country name="Líbano" code="LB"/>
+	<country name="LÃ­bano" code="LB"/>
 	<country name="Liberia" code="LR"/>
 	<country name="Libia" code="LY"/>
 	<country name="Liechtenstein" code="LI"/>
@@ -147,7 +147,7 @@
 	<country name="Malasia" code="MY"/>
 	<country name="Malawi" code="MW"/>
 	<country name="Maldivas" code="MV"/>
-	<country name="Malí" code="ML"/>
+	<country name="MalÃ­" code="ML"/>
 	<country name="Malta" code="MT"/>
 	<country name="Islas Malvinas" code="FK"/>
 	<country name="Islas Marianas del Norte" code="MP"/>
@@ -157,10 +157,10 @@
 	<country name="Mauricio" code="MU"/>
 	<country name="Mauritania" code="MR"/>
 	<country name="Mayotte" code="YT"/>
-	<country name="México" code="MX"/>
+	<country name="MÃ©xico" code="MX"/>
 	<country name="Micronesia" code="FM"/>
 	<country name="Moldova" code="MD"/>
-	<country name="Mónaco" code="MC"/>
+	<country name="MÃ³naco" code="MC"/>
 	<country name="Mongolia" code="MN"/>
 	<country name="Montserrat" code="MS"/>
 	<country name="Mozambique" code="MZ"/>
@@ -169,21 +169,21 @@
 	<country name="Nauru" code="NR"/>
 	<country name="Nepal" code="NP"/>
 	<country name="Nicaragua" code="NI"/>
-	<country name="Níger" code="NE"/>
+	<country name="NÃ­ger" code="NE"/>
 	<country name="Nigeria" code="NG"/>
 	<country name="Niue" code="NU"/>
 	<country name="Isla Norfolk" code="NF"/>
 	<country name="Noruega" code="NO"/>
 	<country name="Nueva Caledonia" code="NC"/>
 	<country name="Nueva Zelanda" code="NZ"/>
-	<country name="Omán" code="OM"/>
-	<country name="Países Bajos" code="NL"/>
-	<country name="Pakistán" code="PK"/>
+	<country name="OmÃ¡n" code="OM"/>
+	<country name="PaÃ­ses Bajos" code="NL"/>
+	<country name="PakistÃ¡n" code="PK"/>
 	<country name="Palaos" code="PW"/>
-	<country name="Panamá" code="PA"/>
-	<country name="Papúa Nueva Guinea" code="PG"/>
+	<country name="PanamÃ¡" code="PA"/>
+	<country name="PapÃºa Nueva Guinea" code="PG"/>
 	<country name="Paraguay" code="PY"/>
-	<country name="Perú" code="PE"/>
+	<country name="PerÃº" code="PE"/>
 	<country name="Islas Pitcairn" code="PN"/>
 	<country name="Polinesia Francesa" code="PF"/>
 	<country name="Polonia" code="PL"/>
@@ -191,21 +191,21 @@
 	<country name="Puerto Rico" code="PR"/>
 	<country name="Qatar" code="QA"/>
 	<country name="Reino Unido" code="GB"/>
-	<country name="Reunión" code="RE"/>
+	<country name="ReuniÃ³n" code="RE"/>
 	<country name="Ruanda" code="RW"/>
-	<country name="Rumanía" code="RO"/>
+	<country name="RumanÃ­a" code="RO"/>
 	<country name="Rusia" code="RU"/>
-	<country name="Sáhara Occidental" code="EH"/>
-	<country name="Islas Salomón" code="SB"/>
+	<country name="SÃ¡hara Occidental" code="EH"/>
+	<country name="Islas SalomÃ³n" code="SB"/>
 	<country name="Samoa" code="WS"/>
 	<country name="Samoa Americana" code="AS"/>
-	<country name="San Cristóbal y Nieves" code="KN"/>
+	<country name="San CristÃ³bal y Nieves" code="KN"/>
 	<country name="San Marino" code="SM"/>
-	<country name="San Pedro y Miquelón" code="PM"/>
+	<country name="San Pedro y MiquelÃ³n" code="PM"/>
 	<country name="San Vicente y las Granadinas" code="VC"/>
 	<country name="Santa Helena" code="SH"/>
-	<country name="Santa Lucía" code="LC"/>
-	<country name="Santo Tomé y Príncipe" code="ST"/>
+	<country name="Santa LucÃ­a" code="LC"/>
+	<country name="Santo TomÃ© y PrÃ­ncipe" code="ST"/>
 	<country name="Senegal" code="SN"/>
 	<country name="Serbia y Montenegro" code="CS"/>
 	<country name="Seychelles" code="SC"/>
@@ -215,37 +215,37 @@
 	<country name="Somalia" code="SO"/>
 	<country name="Sri Lanka" code="LK"/>
 	<country name="Suazilandia" code="SZ"/>
-	<country name="Sudáfrica" code="ZA"/>
-	<country name="Sudán" code="SD"/>
+	<country name="SudÃ¡frica" code="ZA"/>
+	<country name="SudÃ¡n" code="SD"/>
 	<country name="Suecia" code="SE"/>
 	<country name="Suiza" code="CH"/>
 	<country name="Surinam" code="SR"/>
 	<country name="Svalbard y Jan Mayen" code="SJ"/>
 	<country name="Tailandia" code="TH"/>
-	<country name="Taiwán" code="TW"/>
+	<country name="TaiwÃ¡n" code="TW"/>
 	<country name="Tanzania" code="TZ"/>
-	<country name="Tayikistán" code="TJ"/>
-	<country name="Territorio Británico del Océano Índico" code="IO"/>
+	<country name="TayikistÃ¡n" code="TJ"/>
+	<country name="Territorio BritÃ¡nico del OcÃ©ano Ãndico" code="IO"/>
 	<country name="Territorios Australes Franceses" code="TF"/>
 	<country name="Timor Oriental" code="TL"/>
 	<country name="Togo" code="TG"/>
 	<country name="Tokelau" code="TK"/>
 	<country name="Tonga" code="TO"/>
 	<country name="Trinidad y Tobago" code="TT"/>
-	<country name="Túnez" code="TN"/>
+	<country name="TÃºnez" code="TN"/>
 	<country name="Islas Turcas y Caicos" code="TC"/>
-	<country name="Turkmenistán" code="TM"/>
-	<country name="Turquía" code="TR"/>
+	<country name="TurkmenistÃ¡n" code="TM"/>
+	<country name="TurquÃ­a" code="TR"/>
 	<country name="Tuvalu" code="TV"/>
 	<country name="Ucrania" code="UA"/>
 	<country name="Uganda" code="UG"/>
 	<country name="Uruguay" code="UY"/>
-	<country name="Uzbekistán" code="UZ"/>
+	<country name="UzbekistÃ¡n" code="UZ"/>
 	<country name="Vanuatu" code="VU"/>
 	<country name="Venezuela" code="VE"/>
 	<country name="Vietnam" code="VN"/>
-	<country name="Islas Vírgenes Británicas" code="VG"/>
-	<country name="Islas Vírgenes de los Estados Unidos" code="VI"/>
+	<country name="Islas VÃ­rgenes BritÃ¡nicas" code="VG"/>
+	<country name="Islas VÃ­rgenes de los Estados Unidos" code="VI"/>
 	<country name="Islas Wallis y Futuna" code="WF"/>
 	<country name="Yemen" code="YE"/>
 	<country name="Yibuti" code="DJ"/>

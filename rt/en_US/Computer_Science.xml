@@ -235,7 +235,7 @@ definition.</search_description>
 			<search_title>O'Reilly Search</search_title>
 			<search_description>Search for books, articles, weblogs, conferences, and other resources published or maintained by O'Reilly &amp; Associates, world-renowned publishers.</search_description>
 			<url>http://www.oreillynet.com/search/</url>
-			<search_url>http://catsearch.atomz.com/search/catsearch/?sp-a=sp1000a5a9&amp;sp-f=ISO-8859-1&amp;sp-t=cat_search&amp;sp-advanced=1&amp;sp-p=any&amp;sp-d=custom&amp;sp-date-range=-1&amp;sp-q-1=&amp;sp-x-1=collection&amp;sp-c=10&amp;sp-m=1&amp;sp-s=0&amp;sp-q={$formKeywords}</search_url>
+			<search_url>http://catsearch.atomz.com/search/catsearch/?sp-a=sp1000a5a9&amp;sp-f=utf-8&amp;sp-t=cat_search&amp;sp-advanced=1&amp;sp-p=any&amp;sp-d=custom&amp;sp-date-range=-1&amp;sp-q-1=&amp;sp-x-1=collection&amp;sp-c=10&amp;sp-m=1&amp;sp-s=0&amp;sp-q={$formKeywords}</search_url>
 			
 		</search>
 		<search>
@@ -377,7 +377,7 @@ definition.</search_description>
 			<search_title>XML.com</search_title>
 			<search_description>An exhaustive site on all things XML (Extensible Markup Language), from schemas and style to the Semantic Web. Largely oriented toward power users, but includes useful FAQs for newcomers. Searchable. From the O'Reilly &amp; Associates publishing house. </search_description>
 			<url>http://www.xml.com/</url>
-			<search_url>http://search.atomz.com/search/?sp-a=sp1000a5a9&amp;sp-f=ISO-8859-1&amp;sp-t=cat_search&amp;sp-x-1=collection&amp;sp-q-1=xml&amp;sp-q={$formKeywords}</search_url>
+			<search_url>http://search.atomz.com/search/?sp-a=sp1000a5a9&amp;sp-f=utf-8&amp;sp-t=cat_search&amp;sp-x-1=collection&amp;sp-q-1=xml&amp;sp-q={$formKeywords}</search_url>
 			
 		</search>
 	</context>

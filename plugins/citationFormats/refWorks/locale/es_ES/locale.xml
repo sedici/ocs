@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
@@ -12,7 +12,7 @@
   * $Id$
   -->
  
-<locale name="es_ES" full_name="Español (España)">
+<locale name="es_ES" full_name="EspaÃ±ol (EspaÃ±a)">
 	<message key="plugins.citationFormats.refWorks.displayName">Plugin de formato de cita RefWorks</message>
 	<message key="plugins.citationFormats.refWorks.citationFormatName">RefWorks</message>
 	<message key="plugins.citationFormats.refWorks.description">Este plugin implementa el format de cita RefWorks.</message>
