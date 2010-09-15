@@ -27,6 +27,7 @@
 	{$metaCustomHeaders}
 	{if $displayFavicon}<link rel="icon" href="{$faviconDir}/{$displayFavicon.uploadName|escape:"url"}" />{/if}
 	<link rel="stylesheet" href="{$baseUrl}/lib/pkp/styles/common.css" type="text/css" />
+	<link rel="stylesheet" href="{$baseUrl}/lib/pkp/styles/content.css" type="text/css" />
 	<link rel="stylesheet" href="{$baseUrl}/styles/common.css" type="text/css" />
 	
 	<!-- Base Jquery -->

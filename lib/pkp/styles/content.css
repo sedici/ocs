@@ -644,6 +644,9 @@ a.uploaded {
 /* @end */
 
 /* @group Font Sizer */
+#sizer {
+	padding: 0px 0px 4px 60px;
+}
 
 .smallFont {
 	outline: none; /*for making it look nice in FF */
@@ -675,6 +678,7 @@ a.uploaded {
 	width: 20px;
 	height: 23px;
 }
+
 
 .ldisabled,.sdisabled { /*Styles for disabled buttons*/
 	opacity: 0.3;
