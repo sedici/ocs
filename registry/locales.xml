@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!--
   * locales.xml
@@ -17,15 +17,15 @@
 <!DOCTYPE locales SYSTEM "../lib/pkp/dtd/locales.dtd">
 
 <locales>
-	<locale key="ca_ES" complete="false" name="CatalÃ  (Espanya)"/>
+	<locale key="ca_ES" complete="false" name="Català (Espanya)"/>
 	<locale key="de_DE" complete="false" name="Deutsch"/>
 	<locale key="en_US" name="English"/>	
-	<locale key="es_AR" complete="false" name="EspaÃ±ol (Argentina)"/>	
-	<locale key="es_ES" name="EspaÃ±ol (EspaÃ±a)"/>
+	<locale key="es_AR" complete="false" name="Español (Argentina)"/>	
+	<locale key="es_ES" name="Español (España)"/>
 	<locale key="eu_ES" complete="false" name="Basque" />
-	<locale key="fr_CA" name="FranÃ§ais (Canada)"/>
+	<locale key="fr_CA" name="Français (Canada)"/>
 	<locale key="it_IT" complete="false" name="Italiano"/>
-	<locale key="pt_BR" name="PortuguÃªs (Brasil)"/>
-	<locale key="pt_PT" complete="false" name="PortuguÃªs (Portugal)"/>
-	<locale key="zh_TW" complete="false" name="æ­£é«ä¸­æ"/>
+	<locale key="pt_BR" name="Português (Brasil)"/>
+	<locale key="pt_PT" complete="false" name="Português (Portugal)"/>
+	<locale key="zh_TW" complete="false" name="正體中文"/>
 </locales>
