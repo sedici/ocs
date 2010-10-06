@@ -707,8 +707,6 @@ input.uploadField {
 	z-index: 2; 
 	text-align:right;
 	-moz-opacity:2 ;
-	filter:alpha(opacity: 2);
-	opacity: 2;
 }
 
 .fakeFile {
