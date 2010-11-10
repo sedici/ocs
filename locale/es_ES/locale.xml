@@ -211,7 +211,7 @@
 	<message key="schedConf.schedConf">Relación de eventos programados</message>
 	<message key="schedConf.contents">Información del evento</message>
 	<message key="schedConf.overview">Descripción</message>
-	<message key="schedConf.trackPolicies">Track Políticas</message>
+	<message key="schedConf.trackPolicies">Políticas de secciones</message>
 	<message key="schedConf.program">Programa</message>
 	<message key="schedConf.cfp">Call for papers</message>
 	<message key="schedConf.discussion">Discusión</message>
@@ -259,7 +259,7 @@
 	<!-- Roles -->
 	<message key="user.role.manager">Gestor del evento</message>
 	<message key="user.role.director">Director</message>
-	<message key="user.role.trackDirector">Director de al sección</message>
+	<message key="user.role.trackDirector">Director de la sección</message>
 	<message key="user.role.author">Autor</message>
 
 	<message key="user.role.managers">Gestores del evento</message>
