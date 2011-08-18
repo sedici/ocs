@@ -71,6 +71,7 @@
 	<div id="rev_menu">
 	<ul>
 		<li><a href="{$baseUrl}">Portal de Congresos</a></li>
+		<li><a href="http://sedici.unlp.edu.ar">Servicio de Difusi&oacute;n de la Creaci&oacute;n Intelectual</a></li>
 		<li><a href="javascript:openHelp('{if $helpTopicId}{get_help_id key="$helpTopicId" url="true"}{else}{url page="help"}{/if}')">{translate key="navigation.conferenceHelp"}</a></li>
 	</ul>
 	</div>
