@@ -285,7 +285,7 @@
 	<message key="common.noComments">Sin comentarios</message>
 	<message key="form.startsWith">comienza con</message>
 	<message key="common.openConferenceSystems">Portal de Congresos</message>	
-	<message key="author.submit.authorRegistrationClosed">En envío de trabajos se encuentra cerrado</message>
+	<message key="author.submit.authorRegistrationClosed">En registro de autores se encuentra cerrado en este momento</message>
 	<message key="notification.allow">Permitir que este tipo de notificaciones aparezcan en mi área de notificaciones</message>
 	<message key="notification.confirmError">Ha habido un error confirmándo tu suscripción.</message>
 	<message key="notification.confirmSuccess">Ha sido correctamente suscrito.</message>

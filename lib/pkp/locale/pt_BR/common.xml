@@ -159,6 +159,8 @@
 	<message key="common.weeks">semanas</message>
 	<message key="common.width">Largura</message>
 	<message key="common.year">Ano</message>
+	<message key="common.openConferenceSystems">Portal de Congresos</message>	
+	<message key="author.submit.authorRegistrationClosed">A inscrição de autores está encerrada para esta conferência.</message>
 	<message key="common.yes">Sim</message>
 	<message key="debug.databaseQueries">Número de requisições à base de dados</message>
 	<message key="debug.executionTime">Página gerada em</message>
