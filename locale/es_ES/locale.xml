@@ -927,7 +927,7 @@ La validacion de URLs  puede fallar si requieren el envío de datos.]]></message
 	<message key="paper.fontSize.small.altText">Deshabilitar</message>
 	<message key="paper.fontSize.medium.altText">Habilitar</message>
 	<message key="paper.fontSize.large.altText">Tamaño de la fuente</message>
-	<message key="paper.sessionType">Tipo de Sesión</message>
+	<message key="paper.sessionType">Tipo de Envío</message>
 	<message key="schedConf.accommodation">Alojamiento</message>
 	<message key="schedConf.schedule.title">Planificación</message>
 	<message key="schedConf.accommodation.title">Alojamiento</message>
