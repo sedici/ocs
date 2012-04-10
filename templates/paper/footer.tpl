@@ -42,6 +42,6 @@
 {/literal}
 </script>
 {/if}
-
+{include file="../templates/common/footer.tpl"}
 </body>
 </html>
