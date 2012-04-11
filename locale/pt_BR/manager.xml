@@ -689,4 +689,5 @@
 	<message key="manager.setup.aboutConference.accessPolicy">Política de acesso</message>
 	<message key="manager.setup.aboutConference.archiveAccessPolicy.description">As configurações a seguir controlam o acesso aos documentos da conferência.</message>
 	<message key="manager.setup.additionalContent.accessPolicy.description">Esta política se aplica às apresentações publicadas na conferência atual.</message>
+	<message key="manager.tracks.downLoad">Descargar</message>
 </locale>
