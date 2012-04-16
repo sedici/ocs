@@ -701,4 +701,7 @@
 	<message key="manager.tracks.wordCount">Cantidad de Palabras</message>
 	<message key="manager.tracks.wordCountInstructions">Limintar la cantidad de palabras del abstract para esta sección (0 para ilimitada)</message>
 	<message key="manager.tracks.downLoad">Decargar</message>
+	<message key="manager.setup.aboutConference.accessPolicy">Politica de Acceso</message>
+	<message key="manager.setup.aboutConference.archiveAccessPolicy.description">La siguientes configuraciones controlan el acceso a los archivos de su congreso.</message>
+	<message key="manager.setup.additionalContent.accessPolicy.description">Esta politica es aplicada a las presentaciones de su congreso actual subidas al sitio.</message>
 </locale>

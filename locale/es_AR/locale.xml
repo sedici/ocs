@@ -1202,4 +1202,6 @@ La validacion de URLs  puede fallar si requieren el envío de datos.]]></message
 	<message key="notification.type.submissions">Eventos de Envio</message>
 	<message key="notification.type.suppFileModified">"{$param}" archivos suplementario(s) ha(n) sido modificado(s)</message>
 	<message key="notification.type.userComment">Un lector ha realizado un comentario en "{$param}"</message>
+	<message key="manager.reviewFormElements.included">Incluido en el mensaje para el autor</message>
+	<message key="schedConf.registration.landingPaid">Gracias por registrarse. Lo contactaremos nuevamente para darle mas información sobre su pago.</message>
 </locale>
