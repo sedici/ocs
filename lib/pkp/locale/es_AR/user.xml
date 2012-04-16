@@ -102,4 +102,7 @@
 	<message key="user.register">Registrar</message>
 	<message key="user.register.usernameRestriction">El nombre de usuario debe contener solo letras minúsculas, números y guiones/guiones bajos</message>
 	<message key="user.register.completeForm">Complete este formulario para registrarse a esta revista</message>
+	<message key="user.affiliation.description">(Su institución, por ejemplo: Universidad Nacional de La Plata")</message>
+	<message key="user.gossip">Notas privadas</message>
+	<message key="user.profile.form.affiliationRequired">Una afiliacion es requerida.</message>
 </locale>
