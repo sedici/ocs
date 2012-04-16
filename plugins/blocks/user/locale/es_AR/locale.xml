@@ -2,17 +2,17 @@
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
-  * plugins/blocks/user/locale/es_ES/locale.xml
+  * plugins/blocks/user/locale/es_AR/locale.xml
   *
   * Copyright (c) 2000-2011 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Localization strings for the es_ES locale.
+  * Localization strings for the es_AR (Español (Argentina)) locale.
   *
   * $Id$
   -->
  
-<locale name="es_ES" full_name="Español (España)">
+<locale name="es_AR" full_name="Español (Argentina)">
 	<message key="plugins.block.user.displayName">Bloque de usuario</message>
 	<message key="plugins.block.user.description">Este plugin provee de herramientas para cuentas de usuario en la barra lateral (ej. enlace de acceso, enlace de salir, enlace al perfil, etc).</message>
 	<message key="plugins.block.user.loggedInAs">Has entrado como...</message>

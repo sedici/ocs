@@ -311,7 +311,7 @@ class TinyMCEPlugin extends GenericPlugin {
 			<script language="javascript" type="text/javascript">
 				tinyMCE_GZ.init({
 					relative_urls : "false",
-					plugins : "paste,fullscreen",
+					plugins : "paste,fullscreen,jbimages",
 					themes : "advanced",
 					languages : "' . join(',', $localeList) . '",
 					disk_cache : true
@@ -319,7 +319,7 @@ class TinyMCEPlugin extends GenericPlugin {
 			</script>
 			<script language="javascript" type="text/javascript">
 				tinyMCE.init({
-					plugins : "paste,fullscreen",
+					plugins : "paste,fullscreen,jbimages",
 					mode : "exact",
 					language : "' . String::substr(Locale::getLocale(), 0, 2) . '",
 					elements : "' . $enableFields . '",

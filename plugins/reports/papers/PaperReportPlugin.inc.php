@@ -3,7 +3,7 @@
 /**
  * @file PaperReportPlugin.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2011 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  * 
  * @class PaperReportPlugin
@@ -57,7 +57,7 @@ class PaperReportPlugin extends ReportPlugin {
 		$schedConf =& Request::getSchedConf();
 		Locale::requireComponents(array(LOCALE_COMPONENT_APPLICATION_COMMON, LOCALE_COMPONENT_PKP_SUBMISSION, LOCALE_COMPONENT_PKP_USER, LOCALE_COMPONENT_OCS_MANAGER));
 
-		header('content-type: text/comma-separated-values');
+		header('content-type: text/comma-separated-values; charset=utf-8');
 		header('content-disposition: attachment; filename=report.csv');
 
 		$paperReportDao =& DAORegistry::getDAO('PaperReportDAO');
@@ -162,8 +162,8 @@ class PaperReportPlugin extends ReportPlugin {
 					}
 				} elseif ($index == 'status') {
 					$columns[$index] = Locale::translate($statusMap[$row[$index]]);
-				} elseif ($index == 'abstract') {
-					$columns[$index] = html_entity_decode(strip_tags($row[$index]));
+				} elseif ($index == 'abstract' || $index == 'title' || $index == 'affiliation') {
+					$columns[$index] = html_entity_decode(strip_tags($row[$index]), ENT_QUOTES, 'UTF-8');
 				} elseif ($index == 'start_time' || $index == 'end_time') {
 					$columns[$index] = $row[$index];
 				} elseif ($index == 'building') {
@@ -181,7 +181,7 @@ class PaperReportPlugin extends ReportPlugin {
 					unset($room);
 				} elseif (strstr($index, 'biography') !== false) {
 					// "Convert" HTML to text for export
-					$columns[$index] = isset($authors[$index])?html_entity_decode(strip_tags($authors[$index])):'';
+					$columns[$index] = isset($authors[$index])?html_entity_decode(strip_tags($authors[$index]), ENT_QUOTES, 'UTF-8'):'';
 				} else {
 					if (isset($row[$index])) {
 						$columns[$index] = $row[$index];
@@ -226,7 +226,7 @@ class PaperReportPlugin extends ReportPlugin {
 			$returner['mname' . $seq] = isset($author['mname']) ? $author['mname'] : '';
 			$returner['lname' . $seq] = isset($author['lname']) ? $author['lname'] : '';
 			$returner['email' . $seq] = isset($author['email']) ? $author['email'] : '';
-			$returner['affiliation'] = isset($author['affiliation']) ? $author['affiliation'] : '';
+			$returner['affiliation' . $seq] = isset($author['affiliation']) ? $author['affiliation'] : '';
 			$returner['country' . $seq] = isset($author['country']) ? $author['country'] : '';
 			$returner['url' . $seq] = isset($author['url']) ? $author['url'] : '';
 			$returner['biography' . $seq] = isset($author['biography']) ? $author['biography'] : '';
