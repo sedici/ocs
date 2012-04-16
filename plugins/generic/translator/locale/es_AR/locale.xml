@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2000-2010 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the en_US (U.S. English) locale.
+  *
+  * $Id$
+  -->
+ 
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.generic.translator.name">Plugin De Traduccion</message>
+	<message key="plugins.generic.translator.description">Este plugin permite mantener los archivos de traduccion mediante  la aplicación web.</message>
+	<message key="plugins.generic.translator.longdescription">Este sitio permite al Administrador del sitio crear, modificar y revisar las traducciones de OCS. Este área es equivalente para todos los congresos y no debe ser utilizado para personalizar un congreso en específico. Si ha corregido o creado una traducción, por favor considere enviarla a PKP para su distribución en actualizaciones posteriores del software.</message>
+	<message key="plugins.generic.translator.localeDescription">Esta pagina lista todos los componentes de una traducción de OCS y provee el traductor, con la oportunidad de editar cada uno. Una traducción completa del sitio debería contener todos los componentes de la lista traducidos.</message>
+	<message key="plugins.generic.translator.enabled">El Plugin de traducción ha sido habilitado.</message>
+	<message key="plugins.generic.translator.disabled">El Plugin de traducción ha sido deshabilidato.</message>
+	
+	<message key="plugins.generic.translator.tarMissing">La función de exportación de este Plugin ha sido desactivada debido a que el archivo de configuración Binario TAR no se encuentra en este sistema.</message>
+	
+	<message key="plugins.generic.translator.localeName">Nombre del Locale</message>
+	<message key="plugins.generic.translator.localeKey">Clave</message>
+	<message key="plugins.generic.translator.localeKey.description">Introduzca una clave entera para buscarla</message>
+	<message key="plugins.generic.translator.localeKeyValue">Valor</message>
+	<message key="plugins.generic.translator.translate">Traducción</message>
+	<message key="plugins.generic.translator.availableLocales">Locales Disponibles</message>
+	<message key="plugins.generic.translator.check">Revisar</message>
+
+	<message key="plugins.generic.translator.errors">Errores de Locales</message>
+
+	<message key="plugins.generic.translator.errors.LOCALE_ERROR_MISSING_KEY.title">Claves Ausentes</message>
+	<message key="plugins.generic.translator.errors.LOCALE_ERROR_EXTRA_KEY.title">Claves Extra</message>
+	<message key="plugins.generic.translator.errors.LOCALE_ERROR_DIFFERING_PARAMS.title">Listas de Parámetros Diferentes</message>
+	<message key="plugins.generic.translator.errors.LOCALE_ERROR_MISSING_FILE.title">Archivos de Locale Faltantes</message>
+	<message key="plugins.generic.translator.errors.EMAIL_ERROR_MISSING_EMAIL.title">Emails Faltantes</message>
+	<message key="plugins.generic.translator.errors.EMAIL_ERROR_EXTRA_EMAIL.title">Emails Extra</message>
+	<message key="plugins.generic.translator.errors.EMAIL_ERROR_DIFFERING_PARAMS.title">Listas de Parametros de Email Diferentes</message>
+
+	<message key="plugins.generic.translator.errors.LOCALE_ERROR_MISSING_KEY.message">La Clave "{$key}" no se encuentra en el siguiente archivo:"{$filename}". La versión en Ingles ha sido propuesta por defecto.</message>
+	<message key="plugins.generic.translator.errors.LOCALE_ERROR_EXTRA_KEY.message">La clave "{$key}" no se usa mas y puede ser removida del siguiente archivo: "{$filename}".</message>
+	<message key="plugins.generic.translator.errors.LOCALE_ERROR_DIFFERING_PARAMS.message">La clave local "{$key}" en "{$filename}" es diferente a el Locale de referencia en el uso de ciertos parámetros. Por favor vuelva a revisar la clave y verifique que contenga todos los parámetros necesarios. Los parámetros faltantes son:</message>
+	<message key="plugins.generic.translator.errors.LOCALE_ERROR_MISSING_FILE.message">The locale file "{$filename}" is missing or unreadable.</message>
+	<message key="plugins.generic.translator.errors.EMAIL_ERROR_MISSING_EMAIL.message">The email message "{$key}" is missing from the translation.</message>
+	<message key="plugins.generic.translator.errors.EMAIL_ERROR_EXTRA_EMAIL.message">The email message "{$key}" is no longer used and can be removed.</message>
+	<message key="plugins.generic.translator.errors.EMAIL_ERROR_DIFFERING_PARAMS.message">The email message "{$key}" differs from the reference locale in its use of parameters. Please double-check that it contains all relevant parameters. The mismatching parameter(s) are:</message>
+
+	<message key="plugins.generic.translator.locale">{$locale} Locale</message>
+	<message key="plugins.generic.translator.localeFiles">Locale Files</message>
+	<message key="plugins.generic.translator.miscFiles">Miscellaneous Files</message>
+	<message key="plugins.generic.translator.emails">Email Templates</message>
+	<message key="plugins.generic.translator.file.filename">Filename</message>
+	<message key="plugins.generic.translator.file.edit">Editing {$filename}</message>
+	<message key="plugins.generic.translator.email.edit">Editing {$emailKey}</message>
+	<message key="plugins.generic.translator.file.reference">Reference Version</message>
+	<message key="plugins.generic.translator.file.translation">Translation</message>
+	<message key="plugins.generic.translator.email.reference">Reference Version</message>
+	<message key="plugins.generic.translator.email.translation">Translation</message>
+	<message key="plugins.generic.translator.file.reset">Reset</message>
+	<message key="plugins.generic.translator.file.resetToReference">Reset To Reference</message>
+	<message key="plugins.generic.translator.email.reset">Reset</message>
+	<message key="plugins.generic.translator.email.resetToReference">Reset To Reference</message>
+	<message key="plugins.generic.translator.file.resetConfirm">Are you sure you wish to reset the file contents?</message>
+	<message key="plugins.generic.translator.email.resetConfirm">Are you sure you wish to reset the email contents?</message>
+	<message key="plugins.generic.translator.file.doesNotExistNote">* This file has not yet been translated.</message>
+	<message key="plugins.generic.translator.file.confirmCreate">The file "{$filename}" will be created using the English version; you will need to translate all strings in the file. Do you wish to continue?</message>
+	<message key="plugins.generic.translator.email.description">In the following fields, translate the email template's Title, Body, and Description. The Description is for the Conference Manager's reference only.</message>
+	<message key="plugins.generic.translator.confirmDelete">Are you sure you wish to delete this item? This action cannot be undone.</message>
+	<message key="plugins.generic.translator.deleteKey">Delete this key</message>
+	<message key="plugins.generic.translator.deleteEmail">Delete this email</message>
+	<message key="plugins.generic.translator.saveBeforeContinuing">Be sure to save any changes made on this page before continuing or they will be lost. Do you wish to continue? If so, any unsaved changes will be lost.</message>
+	<message key="plugins.generic.translator.fileNotWriteable">This locale file is not writeable by the server. Any changes you make will not be saved.</message>
+	<message key="plugins.generic.translator.filesNotWriteable">These locale files are not writeable by the server. Any changes you make to them will not be saved.</message>
+</locale>

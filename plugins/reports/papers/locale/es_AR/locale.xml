@@ -2,17 +2,17 @@
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
-  * plugins/reports/paper/locale/es_ES/locale.xml
+  * plugins/reports/paper/locale/es_AR/locale.xml
   *
   * Copyright (c) 2000-2011 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Localization strings for the es_ES locale.
+  * Localization strings for the es_AR (Español (Argentina)) locale.
   *
   * $Id$
   -->
 
-<locale name="es_ES" full_name="Español (España)">
+<locale name="es_AR" full_name="Español (Argentina)">
 	<message key="plugins.reports.papers.displayName">Informe de artículos</message>
 	<message key="plugins.reports.papers.description">Este plugin implementa un informe CSV que contiene una lista de artículos y su información.</message>
 	<message key="plugins.reports.papers.nodecision">Sin Decisión</message>
