@@ -12,7 +12,6 @@
 #body {
 	width: 95%;
 	margin: 0 auto;
-	font-size: 14px;
 }
 
 #container {
@@ -46,6 +45,9 @@
 
 #content {
 	border: none;
+}
+#content p{
+	font-size:1.2em;
 }
 
 #topBar {
