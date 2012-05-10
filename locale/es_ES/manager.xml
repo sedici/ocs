@@ -689,5 +689,5 @@
 	<message key="manager.tracks.disableComments">Deshabilitar los comentarios de los lectores para este envío.</message>
 	<message key="manager.tracks.wordCount">Contar palabras</message>
 	<message key="manager.tracks.wordCountInstructions">Limitar el número de palabras para los resúmenes de esta sección (0 sin límite):</message>
-	<message key="manager.tracks.downLoad">Decargar</message>
+	<message key="manager.tracks.downLoad">Descargar</message>
 </locale>
