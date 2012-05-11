@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the es_AR locale.
+  *
+ -->
+ 
+<locale name="es_AR" full_name="Español (Argentina)">
+	<message key="plugins.reports.MultiGeneratorPaperReport.displayName">Plugin Multi-Generador de Reportes de Papers</message>
+	<message key="plugins.reports.MultiGeneratorPaperReport.description">Este plugin permite generar varios tipos de reportes distintos con la informacion de los papers del congreso</message>
+	<message key="plugins.reports.MultiGeneratorPaperReport.title">Plugin Multi-Generador de Reportes de Papers</message>
+	<message key="plugins.reports.MultiGeneratorPaperReport.pluginReportSetting">Configuraciones del Plugin Multi-generador</message>
+	<message key="plugins.report.MultiGeneratorPaperReport.instruct1">Seleccione el tipo de reporte a generar</message>
+	<message key="plugins.report.MultiGeneratorPaperReport.locale.button">Seleccionar</message>
+	
+	<!-- PaperTypes -->
+	<message key="plugin.reports.MultiGeneratorPaperReport.csv.reportcsv">Exportación a csv</message>
+	<message key="plugin.reports.MultiGeneratorPaperReport.csv.reportcsvDescription">Se genera un reporte en formato csv, formato de tablas que puede ser abierto con Excell o programas similares</message>
+	<message key="plugin.reports.MultiGeneratorPaperReport.txt.reporttxt">Exportación a texto plano</message>
+	<message key="plugin.reports.MultiGeneratorPaperReport.txt.reportxtDescription">Se genera un reporte en texto plano, que puede ser abierto con cualquier editor de texto</message>
+</locale>
