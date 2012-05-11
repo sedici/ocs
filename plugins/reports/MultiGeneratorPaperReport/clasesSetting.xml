@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Handler>
+<Class>
+	<ClassName>
+  		ReportPaperCSV
+	</ClassName>
+	<Name>
+		plugin.reports.MultiGeneratorPaperReport.csv.reportcsv
+	</Name>
+	<Description>
+		plugin.reports.MultiGeneratorPaperReport.csv.reportcsvDescription
+	</Description>	
+</Class>
+<Class>
+	<ClassName>
+		ReportPaperTXT
+	</ClassName>
+	<Name>
+		plugin.reports.MultiGeneratorPaperReport.txt.reporttxt
+	</Name>
+	<Description>
+		plugin.reports.MultiGeneratorPaperReport.txt.reportxtDescription
+	</Description>
+</Class>	
+</Handler>
