@@ -71,9 +71,8 @@
 </h1>
 
 </div>
-{include file="common/navbar.tpl"}
 </div> <!-- BANNER -->
-
+{include file="common/navbar.tpl"}
 </div>  <!-- headerTitle -->
 
 <div id="body">
