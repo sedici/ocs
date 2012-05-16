@@ -19,7 +19,7 @@
 
 #sidebar div.block {
 	font-size: 10px;
-	padding: 0px;
+	padding: 5px !important;
 	margin: 0px 0px 6px 0px;
 	text-align: center;
 }
@@ -44,6 +44,10 @@
 #sidebar div.block span.box {
 
 }
+#sidebar div.block p{
+	padding: 0px!Important;
+	
+	}
 #sidebar div.block span.blockSubtitle {
 	display: block;
 	padding: 3px 8px;
