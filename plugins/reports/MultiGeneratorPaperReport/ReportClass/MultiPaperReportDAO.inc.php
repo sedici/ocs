@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @file ReportPaperDAO.inc.php
+ * @file MultiPaperReportDAO.inc.php
  *
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  * 
@@ -16,7 +16,7 @@
 
 import('submission.common.Action');
 
-class ReportPaperDAO extends DAO {
+class MultiPaperReportDAO extends DAO {
 	/**
 	 * Get the paper report data.
 	 * @param $conferenceId int

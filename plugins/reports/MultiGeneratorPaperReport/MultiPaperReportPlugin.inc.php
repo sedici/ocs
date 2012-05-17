@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @file ReportPaperPlugin.inc.php
+ * @file MultiPaperReportPlugin.inc.php
  *
  * Copyright (c) 2000-2011 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -16,10 +16,10 @@
 //$Id$
 
 import('classes.plugins.ReportPlugin');
-import ('plugins.reports.MultiGeneratorPaperReport.classReport.ReportPaperCSV');
-import ('plugins.reports.MultiGeneratorPaperReport.classReport.ReportPaperTXT');
+import ('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperReportCSV');
+import ('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperReportTXT');
 
-class ReportPaperPlugin extends ReportPlugin {
+class MultiPaperReportPlugin extends ReportPlugin {
 	/**
 	 * Called as a plugin is registered to the registry
 	 * @param $category String Name of category plugin was registered to
@@ -29,9 +29,9 @@ class ReportPaperPlugin extends ReportPlugin {
 	function register($category, $path) {
 		$success = parent::register($category, $path);
 		if ($success) {
-			$this->import('classReport.ReportPaperDAO');
-			$PaperReportDAO = new ReportPaperDAO();
-			DAORegistry::registerDAO('ReportPaperDAO', $PaperReportDAO);
+			$this->import('ReportClass.MultiPaperReportDAO');
+			$PaperReportDAO = new MultiPaperReportDAO();
+			DAORegistry::registerDAO('MultiPaperReportDAO', $PaperReportDAO);
 		}
 		$this->addLocaleData();
 		return $success;
@@ -43,7 +43,7 @@ class ReportPaperPlugin extends ReportPlugin {
 	 * @return String name of plugin
 	 */
 	function getName() {
-		return 'ReportPaper';
+		return 'MultiPaperReport';
 	}
 
 	function getDisplayName() {
@@ -62,7 +62,7 @@ class ReportPaperPlugin extends ReportPlugin {
 		$this->import('PaperFormSettings');
 					$form = new PaperFormSettings($this, $conference->getId());
 					if (Request::getUserVar('reportClass')) {
-						$ReportHandlerDAO =& DAORegistry::getDAO('ReportPaperDAO');
+						$ReportHandlerDAO =& DAORegistry::getDAO('MultiPaperReportDAO');
 						$iterator =& $ReportHandlerDAO->getPaperReport(
 							$conference->getId(),
 							$schedConf->getId()
@@ -71,9 +71,11 @@ class ReportPaperPlugin extends ReportPlugin {
 						if ($form->validate()) {
 							$form->execute();
 							$custom_Class= $form->getData('reportClass');
+							if(class_exists($custom_Class)){
 							$Report= new $custom_Class($iterator);	
 							$Report->makeReport();
 							Request::redirect(null, null, 'manager', 'plugin');
+							}
 						} else {
 							$form->display();
 						}

@@ -17,7 +17,7 @@
 	<message key="plugins.reports.MultiGeneratorPaperReport.pluginReportSetting">Multi-Generator Plugin Settings</message>
 	<message key="plugins.report.MultiGeneratorPaperReport.instruct1">Please, select the type of paper to generate</message>
 	<message key="plugins.report.MultiGeneratorPaperReport.locale.button">Select</message>
-	
+	<message key="plugins.reports.MultiGeneratorPaperReport.locale.ReportClassRequired">Please choose a valid report type</message>
 	<!-- PaperTypes -->
 	<message key="plugin.reports.MultiGeneratorPaperReport.csv.reportcsv">Export to csv</message>
 	<message key="plugin.reports.MultiGeneratorPaperReport.csv.reportcsvDescription">It generates a csv report, this report can be open with aplications like Excel</message>
