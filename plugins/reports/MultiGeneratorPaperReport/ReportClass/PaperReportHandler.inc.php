@@ -11,7 +11,7 @@
  */
 
 
-abstract class ReportPaperHandler{
+abstract class PaperReportHandler{
 	private $papersIterator;
 	public function __construct($aIterator){	
 		$this->setPapersIterator($aIterator);
@@ -25,7 +25,20 @@ abstract class ReportPaperHandler{
 	}	
 	protected abstract function beginReport();
 	public abstract function endReport();
-	public abstract function dataProcess();
+	
+	protected function dataProcess(){
+		$papersIterator=$this->getPapersIterator();
+		$locale=Locale::getLocale();
+		while($item =& $papersIterator->next()){ 
+			//make the output 
+			$paper= new PaperDecorator($item);
+			$record=null;
+			$record=$this->processRecord($paper,$locale); 
+			$this->appendRecord($record);
+			unset($paper);
+		}
+	}
+	
 	public final function 	makeReport(){
 		$this->beginReport();
 		$this->dataProcess();

@@ -7,18 +7,17 @@
 /**
  * @file index.php
  *
- * Copyright (c) 2000-2011 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @brief Wrapper for paper report plugin.
+ * @brief Plugin to generate a paper report with differents ext.
  *
  * @ingroup plugins_reports_paper
  */
 
 //$Id$
 
-require_once('ReportPaperPlugin.inc.php');
+require_once('MultiPaperReportPlugin.inc.php');
 
-return new ReportPaperPlugin();
+return new MultiPaperReportPlugin();
 
 ?>

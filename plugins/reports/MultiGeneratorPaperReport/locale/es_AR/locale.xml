@@ -17,6 +17,7 @@
 	<message key="plugins.reports.MultiGeneratorPaperReport.pluginReportSetting">Configuraciones del Plugin Multi-generador</message>
 	<message key="plugins.report.MultiGeneratorPaperReport.instruct1">Seleccione el tipo de reporte a generar</message>
 	<message key="plugins.report.MultiGeneratorPaperReport.locale.button">Seleccionar</message>
+	<message key="plugins.reports.MultiGeneratorPaperReport.locale.ReportClassRequired">Seleccione un tipo de reporte válido</message>
 	
 	<!-- PaperTypes -->
 	<message key="plugin.reports.MultiGeneratorPaperReport.csv.reportcsv">Exportación a csv</message>

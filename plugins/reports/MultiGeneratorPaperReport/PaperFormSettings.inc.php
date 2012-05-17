@@ -26,11 +26,9 @@ class PaperFormSettings extends Form {
 		$this->conferenceId = $conferenceId;
 		$this->plugin =& $plugin;
 		parent::Form($plugin->getTemplatePath().'PaperForm.tpl');
-		$this->xml = $plugin->getPluginPath().'/clasesSetting.xml';
-		//$this->addCheck(new FormValidator($this, 'paperType', 'required', 'plugins.reports.MultiGeneratorPaperReport.locale.paperTypeRequired'));
-
-		//$this->addCheck(new FormValidator($this, 'htmlEmbebed', 'required', 'plugins.reports.MultiGeneratorPaperReport.locale.htmlEmbebedRequired'));
-	}
+		$this->xml = $plugin->getPluginPath().'/classesSettings.xml';
+		//$this->addCheck(new FormValidator($this, 'custom_options', 'required', 'plugins.reports.MultiGeneratorPaperReport.locale.ReportClassRequired'));
+		}
 
 	/**
 	 * Initialize form data.
@@ -60,9 +58,6 @@ class PaperFormSettings extends Form {
 		$plugin =& $this->plugin;
 		$conferenceId = $this->conferenceId;
 		$custom_Values= $this->getData('reportClass');
-		if(($custom_Values != "ReportPaperCVS") && ($custom_Values != "ReportPaperTXT")){
-			$custom_Values="ReportPaperTXT";
-		}
 		$plugin->updateSetting($conferenceId, 0, 'custom_Value',$custom_Values, 'string');
 	}
 	

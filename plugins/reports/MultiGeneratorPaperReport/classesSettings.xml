@@ -2,7 +2,7 @@
 <Handler>
 <Class>
 	<ClassName>
-  		ReportPaperCSV
+  		PaperReportCSV
 	</ClassName>
 	<Name>
 		plugin.reports.MultiGeneratorPaperReport.csv.reportcsv
@@ -13,7 +13,7 @@
 </Class>
 <Class>
 	<ClassName>
-		ReportPaperTXT
+		PaperReportTXT
 	</ClassName>
 	<Name>
 		plugin.reports.MultiGeneratorPaperReport.txt.reporttxt
