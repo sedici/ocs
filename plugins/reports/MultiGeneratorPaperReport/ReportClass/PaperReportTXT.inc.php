@@ -11,8 +11,8 @@ import('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperDecorator');
 class PaperReportTXT extends PaperReportHandler{
 	var $fpointer= null;
 	
-	function __construct($aIterator){
-		parent::__construct($aIterator);
+	function __construct($aIterator,$plugin){
+		parent::__construct($aIterator,$plugin);
 		$this->beginReport();
 	}
 	protected function beginReport(){
