@@ -18,6 +18,7 @@
 import('classes.plugins.ReportPlugin');
 import ('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperReportCSV');
 import ('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperReportTXT');
+import ('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperReportHTML');
 
 class MultiPaperReportPlugin extends ReportPlugin {
 	/**
@@ -61,7 +62,7 @@ class MultiPaperReportPlugin extends ReportPlugin {
 		
 		$this->import('PaperFormSettings');
 					$form = new PaperFormSettings($this, $conference->getId());
-					if (Request::getUserVar('reportClass')) {
+					if (Request::getUserVar('reportClass')){
 						$ReportHandlerDAO =& DAORegistry::getDAO('MultiPaperReportDAO');
 						$iterator =& $ReportHandlerDAO->getPaperReport(
 							$conference->getId(),
@@ -72,10 +73,13 @@ class MultiPaperReportPlugin extends ReportPlugin {
 							$form->execute();
 							$custom_Class= $form->getData('reportClass');
 							if(class_exists($custom_Class)){
-							$Report= new $custom_Class($iterator);	
+							$Report= new $custom_Class($iterator, $this);	
 							$Report->makeReport();
 							Request::redirect(null, null, 'manager', 'plugin');
-							}
+							}else{
+								echo "la clase no existe";
+								$form->display();
+								}
 						} else {
 							$form->display();
 						}

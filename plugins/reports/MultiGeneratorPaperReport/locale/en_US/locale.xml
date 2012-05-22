@@ -23,4 +23,6 @@
 	<message key="plugin.reports.MultiGeneratorPaperReport.csv.reportcsvDescription">It generates a csv report, this report can be open with aplications like Excel</message>
 	<message key="plugin.reports.MultiGeneratorPaperReport.txt.reporttxt">Export to textplain</message>
 	<message key="plugin.reports.MultiGeneratorPaperReport.txt.reportxtDescription">It generates a textplain report, the most simple and popular report to be seen in a simple text-editor</message>
+	<message key="plugin.reports.MultiGeneratorPaperReport.html.reporthtml">Export to HTML</message>
+	<message key="plugin.reports.MultiGeneratorPaperReport.html.reporthtmlDescription">It generates a HTML report, this report has HTML code to make more human-friendly the report view.</message>
 </locale>

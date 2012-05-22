@@ -23,4 +23,6 @@
 	<message key="plugin.reports.MultiGeneratorPaperReport.csv.reportcsvDescription">Se genera un reporte en formato csv, formato de tablas que puede ser abierto con Excell o programas similares</message>
 	<message key="plugin.reports.MultiGeneratorPaperReport.txt.reporttxt">Exportación a texto plano</message>
 	<message key="plugin.reports.MultiGeneratorPaperReport.txt.reportxtDescription">Se genera un reporte en texto plano, que puede ser abierto con cualquier editor de texto</message>
+	<message key="plugin.reports.MultiGeneratorPaperReport.html.reporthtml">Exportar a HTML</message>
+	<message key="plugin.reports.MultiGeneratorPaperReport.html.reporthtmlDescription">Se genera un reporte que contiene código HTML, lo que le da formato al reporte y lo hace mas amigable</message>
 </locale>

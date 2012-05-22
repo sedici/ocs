@@ -1,0 +1,36 @@
+/**
+ * htmlReport.css
+ *
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * htmlReport stylesheet.
+ *
+ */
+ 
+ body {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	color: #333;
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  	text-align: left;
+	font-size: 12px;
+}
+h1 {
+	text-align: center;
+	padding:5 px;
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-decoration:underline;
+	font-size: 14 px;
+}
+#Abstract{
+	margin:10 px;
+	padding:0 px;
+	text-align : justify;
+}
+#Authort{
+	margin:10 px;
+	padding:0 px;
+	text-align : justify;
+}

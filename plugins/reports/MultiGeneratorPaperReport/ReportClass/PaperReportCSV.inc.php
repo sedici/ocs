@@ -13,8 +13,8 @@ class PaperReportCSV extends PaperReportHandler{
 	var $maxAuthors=-1;
 	var $data= array();
 	
-	function __construct($aiterator){
-		parent::__construct($aiterator);
+	function __construct($aiterator,$plugin){
+		parent::__construct($aiterator,$plugin);
 		$this->beginReport();
 	}
 	protected function beginReport(){

@@ -19,19 +19,31 @@ class PaperDecorator {
 	private function setPaperDec($anObject){
 			$this->paperDec=$anObject;
 	}
-	public function getTitle($locale){
+	public function getTitle($locale = "es_ES"){
 		 $paper= $this->getPaperDec();
 		 $info=$paper->getTitle();
 		 return $info[$locale];
 	}
-	public function getAbstract($locale){
+	public function getAbstract($locale = "es_ES"){
 		 $info= $this->getPaperDec()->getAbstract();
 		 return html_entity_decode(strip_tags($info[$locale]), ENT_QUOTES);
 	}
-	public function getAuthors($locale){
+	public function getAuthors($locale = "es_ES"){
 		$info= $this->getPaperDec()->getAuthors();
 		return $info;	
 }
+	public function setTitle($title,$locale = "es_ES"){
+		 $paper= $this->getPaperDec();
+		 $paper->setTitle($title,$locale);
+	}
+	public function setAbstract($abstract,$locale = "es_ES"){
+		 $paper= $this->getPaperDec();
+		 $paper->setAbstract($abstract,$locale);
+	}
+	public function setAuthors($authors, $locale = "es_ES"){
+		$paper=$this->getPaperDec();
+		$paper->setAuthors($authors);
+	}
 }
 
 ?>

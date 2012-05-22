@@ -38,7 +38,7 @@ class PaperFormSettings extends Form {
 		$plugin =& $this->plugin;
 		$values= array();
 		$names=array();
-		$custom_options=$this->ParseData();
+		$custom_options=$this->parseData();
 		$this->_data = array(
 			'custom_options' => $custom_options
 		);
@@ -61,7 +61,7 @@ class PaperFormSettings extends Form {
 		$plugin->updateSetting($conferenceId, 0, 'custom_Value',$custom_Values, 'string');
 	}
 	
-	function ParseData(){
+	function parseData(){
 		$values=array();
 		$names= array();
 		$returner= array();

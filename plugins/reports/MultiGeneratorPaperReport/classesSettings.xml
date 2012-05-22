@@ -21,5 +21,16 @@
 	<Description>
 		plugin.reports.MultiGeneratorPaperReport.txt.reportxtDescription
 	</Description>
+</Class>
+<Class>
+	<ClassName>
+		PaperReportHTML
+	</ClassName>
+	<Name>
+		plugin.reports.MultiGeneratorPaperReport.html.reporthtml
+	</Name>
+	<Description>
+		plugin.reports.MultiGeneratorPaperReport.html.reporthtmlDescription
+	</Description>
 </Class>	
 </Handler>
