@@ -10,7 +10,7 @@ import('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperDecorator');
 		
 class PaperReportTXT extends PaperReportHandler{
 	var $fpointer= null;
-	
+	var $oldTrackId=-1;
 	function __construct($aIterator,$plugin){
 		parent::__construct($aIterator,$plugin);
 		$this->beginReport();
@@ -72,6 +72,11 @@ class PaperReportTXT extends PaperReportHandler{
 	 */ 
 	function processRecord(&$paper,$locale){
 		$output= $this->newOutput();
+		if($paper->getTrackId() != $this->oldTrackId){
+			$this->oldTrackId = $paper->getTrackId();
+			$output= $this->addField($output,$paper->getTrackTitle());
+			
+		}
 		$output= $this->addField($output,$paper->getTitle($locale));
 		$output= $this->addField($output,$paper->getAbstract($locale));
 		$authors= $this->formatAuthors($paper->getAuthors($locale));
