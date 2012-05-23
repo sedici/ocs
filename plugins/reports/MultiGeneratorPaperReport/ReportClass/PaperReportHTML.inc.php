@@ -18,6 +18,11 @@
 		$this->plugin=& $plugin;
 		$this->beginReport();
 	}
+	/*TODO
+	 * Diferenciar los papers por seccion, a cada paper se le podria preguntar trackID y agrupar todos aquellos que posean los mismos ID,
+	 * luego mostrar aquellas seccciones con su titulo y todos sus papers debajo.
+	 */ 
+	
 	protected function beginReport(){
 		$this->fpointer=fopen('php://output', 'wt');	
 		header('content-type: text/html; charset=utf-8');
@@ -74,10 +79,9 @@
 	/**Append the record to the file
 	 * @params record 
 	 */
-	
 	function appendRecord($record){
 		$this->data[]=$record;
-		//fwrite($this->fpointer,$record);		
+		//fwrite($this->fpointer,$record);FIXME= ¿File use not necessary?	
 	}
 
  	

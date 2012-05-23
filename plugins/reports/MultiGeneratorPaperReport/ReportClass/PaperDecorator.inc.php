@@ -25,8 +25,8 @@ class PaperDecorator {
 		 return $info[$locale];
 	}
 	public function getAbstract($locale = "es_ES"){
-		 $info= $this->getPaperDec()->getAbstract();
-		 return html_entity_decode(strip_tags($info[$locale]), ENT_QUOTES);
+		 $info= $this->getPaperDec()->getAbstract($locale);
+		 return html_entity_decode(strip_tags($info), ENT_QUOTES);
 	}
 	public function getAuthors($locale = "es_ES"){
 		$info= $this->getPaperDec()->getAuthors();
@@ -44,6 +44,17 @@ class PaperDecorator {
 		$paper=$this->getPaperDec();
 		$paper->setAuthors($authors);
 	}
+
+	public function getTrackTitle(){
+		$info= $this->getPaperDec()->getTrackTitle();
+		return $info;	
+}
+	public function getTrackId(){
+		$info= $this->getPaperDec()->getTrackId();
+		return $info;	
+}
+
+
 }
 
 ?>

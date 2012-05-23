@@ -13,7 +13,6 @@
 
 abstract class PaperReportHandler{
 	private $papersIterator;
-	private $continue;
 	public function __construct($aIterator, $plugin){	
 		$this->setPapersIterator($aIterator);
 		$this->conti= true;
@@ -31,7 +30,7 @@ abstract class PaperReportHandler{
 	protected function dataProcess(){
 		$papersIterator=$this->getPapersIterator();
 		$locale=Locale::getLocale();
-		while(($item =& $papersIterator->next())&& ($this->conti)){ 
+		while($item =& $papersIterator->next()){ 
 			//make the output 
 			$paper= new PaperDecorator($item);
 			$record=null;

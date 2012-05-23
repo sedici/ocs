@@ -12,6 +12,7 @@ class PaperReportCSV extends PaperReportHandler{
 	var $fpointer= null;
 	var $maxAuthors=-1;
 	var $data= array();
+	var $oldTrackId= -1;
 	
 	function __construct($aiterator,$plugin){
 		parent::__construct($aiterator,$plugin);
@@ -37,6 +38,7 @@ class PaperReportCSV extends PaperReportHandler{
 	//@param array to put in csv
 	private function putHeaders(&$columns){
 		$columns = array(
+			'track' =>Locale::translate('track.title'),
 			'title' =>Locale::translate('paper.title'),
 			'abstract' => Locale::translate('paper.abstract'),
 		);
@@ -92,6 +94,7 @@ class PaperReportCSV extends PaperReportHandler{
 	 */ 
 	function processRecord(&$paper,&$locale){
 		$output= $this->newOutput();
+		$this->addField($output,'track',$paper->getTrackTitle());
 	    $this->addField($output,'title',$paper->getTitle($locale));
 	    $this->addField($output,'abstract',$paper->getAbstract($locale));
 		$this->maxAuthors=count($paper->getAuthors($locale))>$this->maxAuthors?count($paper->getAuthors($locale)):$this->maxAuthors;
