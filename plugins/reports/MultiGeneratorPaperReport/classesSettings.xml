@@ -19,7 +19,7 @@
 		plugin.reports.MultiGeneratorPaperReport.txt.reporttxt
 	</Name>
 	<Description>
-		plugin.reports.MultiGeneratorPaperReport.txt.reportxtDescription
+		plugin.reports.MultiGeneratorPaperReport.txt.reporttxtDescription
 	</Description>
 </Class>
 <Class>
@@ -31,6 +31,17 @@
 	</Name>
 	<Description>
 		plugin.reports.MultiGeneratorPaperReport.html.reporthtmlDescription
+	</Description>
+</Class>
+<Class>
+	<ClassName>
+		PaperReportDOC
+	</ClassName>
+	<Name>
+		plugin.reports.MultiGeneratorPaperReport.doc.reportdoc
+	</Name>
+	<Description>
+		plugin.reports.MultiGeneratorPaperReport.doc.reportdocDescription
 	</Description>
 </Class>	
 </Handler>
