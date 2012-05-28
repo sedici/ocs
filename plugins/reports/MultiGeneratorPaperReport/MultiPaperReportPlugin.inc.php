@@ -19,7 +19,7 @@ import('classes.plugins.ReportPlugin');
 import ('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperReportCSV');
 import ('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperReportTXT');
 import ('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperReportHTML');
-
+import ('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperReportDOC');
 class MultiPaperReportPlugin extends ReportPlugin {
 	/**
 	 * Called as a plugin is registered to the registry
