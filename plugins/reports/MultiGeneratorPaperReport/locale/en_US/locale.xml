@@ -10,22 +10,22 @@
   *
  -->
  
-<locale name="en_US" full_name="English  (EE.UU.)">
+<locale name="en_US" full_name="English(USA)">
 	<message key="plugins.reports.MultiGeneratorPaperReport.displayName">Multi-Generator Paper Report Plugin</message>
-	<message key="plugins.reports.MultiGeneratorPaperReport.description">This plugin avoid to generate several types of reports with the information of the conference papers.</message>
+	<message key="plugins.reports.MultiGeneratorPaperReport.description">This plugin allows to generate several types of reports with the information of the conference papers.</message>
 	<message key="plugins.reports.MultiGeneratorPaperReport.title">Multi-Generator Paper Report Plugin</message>
 	<message key="plugins.reports.MultiGeneratorPaperReport.pluginReportSetting">Multi-Generator Plugin Settings</message>
-	<message key="plugins.report.MultiGeneratorPaperReport.instruct1">Please, select the type of paper to generate</message>
+	<message key="plugins.report.MultiGeneratorPaperReport.instruct1">Please, select the type of report to generate</message>
 	<message key="plugins.report.MultiGeneratorPaperReport.locale.button">Select</message>
 	<message key="plugins.reports.MultiGeneratorPaperReport.locale.ReportClassRequired">Please choose a valid report type</message>
 	<!-- PaperTypes -->
 	<message key="plugin.reports.MultiGeneratorPaperReport.csv.reportcsv">Export to csv</message>
-	<message key="plugin.reports.MultiGeneratorPaperReport.csv.reportcsvDescription">It generates a csv report, this report can be open with aplications like Excel</message>
-	<message key="plugin.reports.MultiGeneratorPaperReport.txt.reporttxt">Export to textplain</message>
-	<message key="plugin.reports.MultiGeneratorPaperReport.txt.reporttxtDescription">It generates a textplain report, the most simple and popular report to be seen in a simple text-editor</message>
+	<message key="plugin.reports.MultiGeneratorPaperReport.csv.reportcsvDescription">Generates a report in a CSV file, which can be open with aplications like Excel</message>
+	<message key="plugin.reports.MultiGeneratorPaperReport.txt.reporttxt">Export to plain text</message>
+	<message key="plugin.reports.MultiGeneratorPaperReport.txt.reporttxtDescription">Generates a plain text report, which can be seen in a simple text-editor</message>
 	<message key="plugin.reports.MultiGeneratorPaperReport.html.reporthtml">Export to HTML</message>
-	<message key="plugin.reports.MultiGeneratorPaperReport.html.reporthtmlDescription">It generates a HTML report, this report has HTML code to make more human-friendly the report view.</message>
+	<message key="plugin.reports.MultiGeneratorPaperReport.html.reporthtmlDescription">Generates an HTML report, which can be open in any web browser</message>
 	<message key="plugin.reports.MultiGeneratorPaperReport.html.reportTitle">Paper Report</message>
 	<message key="plugin.reports.MultiGeneratorPaperReport.doc.reportdoc">Export to DOC</message>
-	<message key="plugin.reports.MultiGeneratorPaperReport.doc.reportdocDescription">It generates a DOC report, this report can be open withe aplications like Word</message>
+	<message key="plugin.reports.MultiGeneratorPaperReport.doc.reportdocDescription">Generates a .doc report, which can be open in most text editors like MS Word</message>
 </locale>
