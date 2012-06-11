@@ -96,7 +96,7 @@ class PaperReportCSV extends PaperReportHandler{
 		$output= $this->newOutput();
 		$this->addField($output,'track',$paper->getTrackTitle());
 	    $this->addField($output,'title',$paper->getTitle($locale));
-	    $this->addField($output,'abstract',$paper->getAbstract($locale));
+	    $this->addField($output,'abstract',utf8_encode($paper->getAbstract($locale)));
 		$this->maxAuthors=count($paper->getAuthors($locale))>$this->maxAuthors?count($paper->getAuthors($locale)):$this->maxAuthors;
 	    $this->putAuthors($paper->getAuthors($locale),$output);
 		$output= $this->endOutput($output);
