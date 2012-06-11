@@ -78,7 +78,7 @@ class PaperReportTXT extends PaperReportHandler{
 			
 		}
 		$output= $this->addField($output,$paper->getTitle($locale));
-		$output= $this->addField($output,$paper->getAbstract($locale));
+		$output= $this->addField($output,utf8_encode($paper->getAbstract($locale)));
 		$authors= $this->formatAuthors($paper->getAuthors($locale));
 		$output= $this->addField($output,$authors);
 		$output= $this->endOutput($output);

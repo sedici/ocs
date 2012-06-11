@@ -42,11 +42,11 @@
 	 public function formatAuthors(& $info) {
 		$returner=array();
 	for($i=0;$i<count($info);$i++){
-			$firstName=utf8_encode($info[$i]->getFirstName());
-			$middleName=utf8_encode($info[$i]->getMiddleName());
-			$lastName=utf8_encode($info[$i]->getLastName());
-			$affiliation=utf8_encode($info[$i]->getAffiliation());
-			$email=utf8_encode($info[$i]->getEmail());
+			$firstName=$info[$i]->getFirstName();
+			$middleName=$info[$i]->getMiddleName();
+			$lastName=$info[$i]->getLastName();
+			$affiliation=$info[$i]->getAffiliation();
+			$email=$info[$i]->getEmail();
 			$info[$i]->setFirstName($firstName);
 			$info[$i]->setMiddleName($middleName);
 			$info[$i]->setLastName($lastName);
@@ -62,7 +62,7 @@
 	 * @params locale specific locale
 	 */ 
 	function processRecord(&$paper,$locale){
-		$title= utf8_encode($paper->getTitle($locale));
+		$title=$paper->getTitle($locale);
 		$Abstract= utf8_encode($paper->getAbstract($locale));
 		$paper->setTitle($title,$locale );
 		$paper->setAbstract($Abstract,$locale);
