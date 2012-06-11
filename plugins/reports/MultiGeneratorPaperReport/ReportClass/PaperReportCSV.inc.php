@@ -58,7 +58,7 @@ class PaperReportCSV extends PaperReportHandler{
 	private function putAuthors($info,&$columns){
 		for($i=0;$i<count($info);$i++){
 		 	$columns['fname'.$i]=$info[$i]->getFirstName();
-			$columns['mname'.$i]=$info[$i]->getMiddleName());
+			$columns['mname'.$i]=$info[$i]->getMiddleName();
 			$columns['lname'.$i]=$info[$i]->getLastName();
 			$columns['affiliation'.$i]=html_entity_decode(strip_tags($info[$i]->getAffiliation()), ENT_QUOTES,"UTF-8");
 			$columns['email'.$i]=$info[$i]->getEmail();
