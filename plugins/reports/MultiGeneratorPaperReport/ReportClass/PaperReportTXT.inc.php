@@ -34,7 +34,7 @@ class PaperReportTXT extends PaperReportHandler{
 	 function formatAuthors($info) {
 		$returner='';
 	for($i=0;$i<count($info);$i++){
-			$completedName=utf8_encode($info[$i]->getFirstName().' '.$info[$i]->getMiddleName().' '.$info[$i]->getLastName());
+			$completedName=$info[$i]->getFirstName().' '.$info[$i]->getMiddleName().' '.$info[$i]->getLastName();
 			$affiliation=html_entity_decode(strip_tags($info[$i]->getAffiliation()), ENT_QUOTES);
 			$email=$info[$i]->getEmail();
 			$returner=$returner."\r\n".$completedName."\r\n".$affiliation."\r\n".$email."\r\n";
