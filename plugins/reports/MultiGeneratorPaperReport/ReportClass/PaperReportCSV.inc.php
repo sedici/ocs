@@ -57,9 +57,9 @@ class PaperReportCSV extends PaperReportHandler{
 	//@param array to put in csv
 	private function putAuthors($info,&$columns){
 		for($i=0;$i<count($info);$i++){
-		 	$columns['fname'.$i]=utf8_encode($info[$i]->getFirstName());
-			$columns['mname'.$i]=utf8_encode($info[$i]->getMiddleName());
-			$columns['lname'.$i]=utf8_encode($info[$i]->getLastName());
+		 	$columns['fname'.$i]=$info[$i]->getFirstName();
+			$columns['mname'.$i]=$info[$i]->getMiddleName());
+			$columns['lname'.$i]=$info[$i]->getLastName();
 			$columns['affiliation'.$i]=html_entity_decode(strip_tags($info[$i]->getAffiliation()), ENT_QUOTES,"UTF-8");
 			$columns['email'.$i]=$info[$i]->getEmail();
 		 }
@@ -85,7 +85,7 @@ class PaperReportCSV extends PaperReportHandler{
 	 * @return string
 	 */
 	function addField(&$output,$key,$field){
-		return $output[$key]=utf8_encode($field);
+		return $output[$key]=$field;
 	}
 	
 	/** Create an specific record to generate the report output.
