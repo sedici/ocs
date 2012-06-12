@@ -34,7 +34,7 @@ class PaperReportTXT extends PaperReportHandler{
 	 function formatAuthors($info) {
 		$returner='';
 	for($i=0;$i<count($info);$i++){
-			$completedName=$info[$i]->getFirstName().' '.$info[$i]->getMiddleName().' '.$info[$i]->getLastName();
+			$completedName=$info[$i]->getFirstName().' '.utf8_encode($info[$i]->getMiddleName()).' '.$info[$i]->getLastName();
 			$affiliation=html_entity_decode(strip_tags($info[$i]->getAffiliation()), ENT_QUOTES);
 			$email=$info[$i]->getEmail();
 			$returner=$returner."\r\n".$completedName."\r\n".$affiliation."\r\n".$email."\r\n";
@@ -74,10 +74,10 @@ class PaperReportTXT extends PaperReportHandler{
 		$output= $this->newOutput();
 		if($paper->getTrackId() != $this->oldTrackId){
 			$this->oldTrackId = $paper->getTrackId();
-			$output= utf8_encode($this->addField($output,$paper->getTrackTitle()));
+			$output= $this->addField($output,$paper->getTrackTitle());
 			
 		}
-		$output= $this->addField($output,html_entity_decode(strip_tags($paper->getTitle()), ENT_QUOTES,"UTF-8"));
+		$output= $this->addField($output,$paper->getTitle());
 		$output= $this->addField($output,$paper->getAbstract($locale));
 		$authors= $this->formatAuthors($paper->getAuthors($locale));
 		$output= $this->addField($output,$authors);
