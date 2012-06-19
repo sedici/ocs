@@ -39,7 +39,7 @@ class PaperReportTXT extends PaperReportHandler{
 			$email=$info[$i]->getEmail();
 			$returner=$returner."\r\n".$completedName."\r\n".$affiliation."\r\n".$email."\r\n";
 		}
-		return html_entity_decode(strip_tags($returner), ENT_QUOTES,"UTF-8");
+		return html_entity_decode(strip_tags($returner), ENT_QUOTES);
 	}
 	
 	/** Initialize the output to generate an specific output with the paper information.
@@ -77,12 +77,16 @@ class PaperReportTXT extends PaperReportHandler{
 			$output= $this->addField($output,$paper->getTrackTitle());
 			
 		}
-		$output= $this->addField($output,utf8_encode($paper->getTitle()));
+		$output= $this->addField($output, html_entity_decode(strip_tags($paper->getTitle()), ENT_QUOTES));
 		$output= $this->addField($output,$paper->getAbstract($locale));
 		$authors= $this->formatAuthors($paper->getAuthors($locale));
 		$output= $this->addField($output,$authors);
 		$output= $this->endOutput($output);
+		var_dump($output);
+		echo mb_detect_encoding($output);
+		die;
 		return $output;
+		
 	}
 	
 	/**Append the record to the file
