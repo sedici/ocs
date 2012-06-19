@@ -21,8 +21,8 @@ class PaperDecorator {
 	}
 	public function getTitle($locale = "es_ES"){
 		 $paper= $this->getPaperDec();
-		 $info=$paper->getTitle();
-		 return $info[$locale];
+		 $info=$paper->getTitle($locale);
+		 return $info;
 	}
 	public function getAbstract($locale = "es_ES"){
 		 $info= $this->getPaperDec()->getAbstract($locale);
