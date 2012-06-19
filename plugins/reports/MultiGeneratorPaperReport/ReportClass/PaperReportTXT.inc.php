@@ -16,9 +16,10 @@ class PaperReportTXT extends PaperReportHandler{
 		$this->beginReport();
 	}
 	protected function beginReport(){
-		$this->fpointer=fopen('php://output', 'wt');	
 		header('content-type: text/plain; charset=utf-8');
 		header('content-disposition: attachment; filename=report.txt');
+		$this->fpointer=fopen('php://output', 'wt');	
+		
 	}
 	
 	public function endReport(){
@@ -77,7 +78,7 @@ class PaperReportTXT extends PaperReportHandler{
 			$output= $this->addField($output,$paper->getTrackTitle());
 			
 		}
-		$output= $this->addField($output, html_entity_decode(strip_tags($paper->getTitle()), ENT_QUOTES));
+		$output= $this->addField($output, html_entity_decode(strip_tags($paper->getTitle($locale)), ENT_QUOTES));
 		$output= $this->addField($output,$paper->getAbstract($locale));
 		$authors= $this->formatAuthors($paper->getAuthors($locale));
 		$output= $this->addField($output,$authors);
