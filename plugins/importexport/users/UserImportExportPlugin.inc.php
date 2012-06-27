@@ -65,6 +65,7 @@ class UserImportExportPlugin extends ImportExportPlugin {
 		$roleDao =& DAORegistry::getDAO('RoleDAO');
 
 		$schedConf =& Request::getSchedConf();
+		$conference =& Request::getConference();
 
 		switch (array_shift($args)) {
 			case 'confirm':
@@ -179,7 +180,7 @@ class UserImportExportPlugin extends ImportExportPlugin {
 				$rolePaths = array();
 				foreach (Request::getUserVar('roles') as $rolePath) {
 					$roleId = $roleDao->getRoleIdFromPath($rolePath);
-					$thisRoleUsers =& $roleDao->getUsersByRoleId($roleId, $schedConf->getId());
+					$thisRoleUsers =& $roleDao->getUsersByRoleId($roleId, $conference->getId());//TODO: añadir subscriptos a la edicion
 					foreach ($thisRoleUsers->toArray() as $user) {
 						$users[$user->getId()] = $user;
 					}
