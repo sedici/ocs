@@ -1,0 +1,17 @@
+
+MultiGeneratorPaperReport plugin for OCS allows conference managers to generate full publications' reports (sched. conf. sections, articles, abstracts, and so on) in many output formats.  
+So far, the plugin supports CSV, HTML and DOC format, but it can be easily extended to other formats (ej. PDF, ODT, ODP...). To that end, an extensible class hierarchy has been
+set up, in which the report generation was based on the "template method" pattern. For example (to summarize this idea):
+
+- PaperReportHandler class defines all basic functions required to implement a new generator (begin report, process data and end report).
+- PaperReportHTML is a concrete implementation of PaperReportHandler
+- PaperReportDOC is a specification of PaperReportHTML (doc output is based on HTML output, and it's basically the same output with slight changes).
+
+
+This plugin has been designed, implemented and tested by Agustín Terruzzi and Gonzalo L. Villarreal, from PrEBi and Conferences Portal of National University of La Plata
+(http://prebi.unlp.edu.ar and http://congresos.unlp.edu.ar), and it's distributed under the GNU GPL v2. For full terms see the file docs/COPYING. Use under your own risk,
+no warranty provided.
+
+
+If you want to contribute to the development/translation or to report a bug, you may contact us at: info@congresos.unlp.edu.ar
+
