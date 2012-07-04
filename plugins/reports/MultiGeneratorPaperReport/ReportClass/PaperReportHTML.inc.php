@@ -19,10 +19,10 @@
 		$this->beginReport();
 	}
 	
-	protected function beginReport(){
-		$this->fpointer=fopen('php://output', 'wt');	
+	protected function beginReport(){	
 		header('content-type: text/html; charset=utf-8');
 		header('content-disposition: attachment; filename=report.html');
+		$this->fpointer=fopen('php://output', 'wt');
 	}
 	
 	public function endReport(){

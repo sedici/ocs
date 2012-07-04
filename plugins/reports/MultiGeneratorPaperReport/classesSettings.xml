@@ -13,17 +13,6 @@
 </Class>
 <Class>
 	<ClassName>
-		PaperReportTXT
-	</ClassName>
-	<Name>
-		plugin.reports.MultiGeneratorPaperReport.txt.reporttxt
-	</Name>
-	<Description>
-		plugin.reports.MultiGeneratorPaperReport.txt.reporttxtDescription
-	</Description>
-</Class>
-<Class>
-	<ClassName>
 		PaperReportHTML
 	</ClassName>
 	<Name>

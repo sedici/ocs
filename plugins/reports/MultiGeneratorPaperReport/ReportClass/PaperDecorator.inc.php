@@ -53,6 +53,10 @@ class PaperDecorator {
 		$info= $this->getPaperDec()->getTrackId();
 		return $info;	
 }
+	public function getId(){
+		$info=$this->getPaperDec()->getPaperId();
+		return $info;
+	}
 
 
 }

@@ -17,9 +17,9 @@
 
 import('classes.plugins.ReportPlugin');
 import ('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperReportCSV');
-import ('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperReportTXT');
 import ('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperReportHTML');
 import ('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperReportDOC');
+
 class MultiPaperReportPlugin extends ReportPlugin {
 	/**
 	 * Called as a plugin is registered to the registry
@@ -62,7 +62,7 @@ class MultiPaperReportPlugin extends ReportPlugin {
 		
 		$this->import('PaperFormSettings');
 					$form = new PaperFormSettings($this, $conference->getId());
-					if (Request::getUserVar('reportClass')){
+					if (Request::getUserVar('GenerateReport')){
 						$ReportHandlerDAO =& DAORegistry::getDAO('MultiPaperReportDAO');
 						$iterator =& $ReportHandlerDAO->getPaperReport(
 							$conference->getId(),
@@ -77,19 +77,22 @@ class MultiPaperReportPlugin extends ReportPlugin {
 							$Report->makeReport();
 							Request::redirect(null, null, 'manager', 'plugin');
 							}else{
-								echo "la clase no existe";
+								echo Locale::translate('plugins.reports.MultiGeneratorPaperReport.classNotFound');
 								$form->display();
 								}
 						} else {
+						    $this->setBreadCrumbs(true);
+						    $form->makeOptions();
 							$form->display();
 						}
 					}else{
+						$this->setBreadCrumbs(true);
 						$form->initData();
 						$form->display();
 					}
-					
+		}
+
 	
-	}
 }
 
 ?>

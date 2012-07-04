@@ -18,12 +18,11 @@
 	<message key="plugins.report.MultiGeneratorPaperReport.instruct1">Seleccione el tipo de reporte a generar</message>
 	<message key="plugins.report.MultiGeneratorPaperReport.locale.button">Seleccionar</message>
 	<message key="plugins.reports.MultiGeneratorPaperReport.locale.ReportClassRequired">Seleccione un tipo de reporte válido</message>
+	<message key="plugins.reports.MultiGeneratorPaperReport.classNotFound">La clase de reporte escogida no existe</message>	
 	
 	<!-- PaperTypes -->
 	<message key="plugin.reports.MultiGeneratorPaperReport.csv.reportcsv">Exportación a csv</message>
 	<message key="plugin.reports.MultiGeneratorPaperReport.csv.reportcsvDescription">Se genera un reporte en formato csv, formato de tablas que puede ser abierto con Excell o programas similares</message>
-	<message key="plugin.reports.MultiGeneratorPaperReport.txt.reporttxt">Exportación a texto plano</message>
-	<message key="plugin.reports.MultiGeneratorPaperReport.txt.reporttxtDescription">Se genera un reporte en texto plano, que puede ser abierto con cualquier editor de texto</message>
 	<message key="plugin.reports.MultiGeneratorPaperReport.html.reporthtml">Exportar a HTML</message>
 	<message key="plugin.reports.MultiGeneratorPaperReport.html.reporthtmlDescription">Se genera un reporte que contiene código HTML, lo que le da formato al reporte y lo hace mas amigable</message>
 	<message key="plugin.reports.MultiGeneratorPaperReport.html.reportTitle">Reporte de Papers</message>
