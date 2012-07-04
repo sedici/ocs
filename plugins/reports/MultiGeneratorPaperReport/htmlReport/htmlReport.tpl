@@ -10,21 +10,23 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head><title>{translate key="plugin.reports.MultiGeneratorPaperReport.html.reportTitle"}</title>
-<link rel="stylesheet" href="{$baseUrl}/plugins/reports/MultiGeneratorPaperReport/htmlReport/htmlReport.css" type="text/css" />
+{include file="../plugins/reports/MultiGeneratorPaperReport/htmlReport/templates/htmlstyle.tpl"}
 {assign var="oldTrack" value=""}
 </head>
  {foreach from=$paperIterator item=paper}
+<p class="paper" id="{$paper->getId()}">
 {if $paper->getTrackTitle() != $oldTrack}
 {assign var="oldTrack" value=$paper->getTrackTitle()}
-<h1>{$paper->getTrackTitle()}</h1>
+<h1 class="section" id="{$paper->getTrackId()}">{$paper->getTrackTitle()}</h1></br>
 {/if}
-<h2>{$paper->getTitle()}</h2></br>
-<div id="Abstract">{$paper->getAbstract()}</div></br>
+<h2 class="title">{$paper->getTitle()}</h2></br>
+<p class="Abstract">{$paper->getAbstract()}</p></br>
  	{foreach from=$paper->getAuthors() item=Author}
- 	<div id="Author">{$Author->getFirstName()} {$Author->getMiddleName()} {$Author->getLastName()}</br>
+ 	<p class="Author">{$Author->getFirstName()} {$Author->getMiddleName()} {$Author->getLastName()}</br>
  					{$Author->getEmail()}</br>
  					{$Author->getAffiliation()}</br>
- 	</div>
+ 	</p>
  {/foreach}
+ </p>
 {/foreach}
 	

@@ -27,7 +27,7 @@ class PaperFormSettings extends Form {
 		$this->plugin =& $plugin;
 		parent::Form($plugin->getTemplatePath().'PaperForm.tpl');
 		$this->xml = $plugin->getPluginPath().'/classesSettings.xml';
-		//$this->addCheck(new FormValidator($this, 'custom_options', 'required', 'plugins.reports.MultiGeneratorPaperReport.locale.ReportClassRequired'));
+		$this->addCheck(new FormValidator($this, 'reportClass', 'required', 'plugins.reports.MultiGeneratorPaperReport.locale.ReportClassRequired'));
 		}
 
 	/**
@@ -36,12 +36,7 @@ class PaperFormSettings extends Form {
 	function initData() {
 		$conferenceId = $this->conferenceId;
 		$plugin =& $this->plugin;
-		$values= array();
-		$names=array();
-		$custom_options=$this->parseData();
-		$this->_data = array(
-			'custom_options' => $custom_options
-		);
+		$this->makeOptions();
 	}
 
 	/**
@@ -61,7 +56,16 @@ class PaperFormSettings extends Form {
 		$plugin->updateSetting($conferenceId, 0, 'custom_Value',$custom_Values, 'string');
 	}
 	
-	function parseData(){
+	
+	function makeOptions(){
+		$custom_options=$this->parseData();
+		$this->_data = array(
+			'custom_options' => $custom_options,
+			'plugin'=> $this->plugin
+		);
+	}
+	
+	private function parseData(){
 		$values=array();
 		$names= array();
 		$returner= array();
