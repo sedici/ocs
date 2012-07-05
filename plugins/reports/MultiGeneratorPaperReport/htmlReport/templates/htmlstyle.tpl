@@ -43,7 +43,7 @@ p.Abstract {
 p.Author {
 	margin-left:10 px;
 	padding:0 px;
-	text-align : justify;
+	text-align : left;
 }
 </style>
 {/literal}
