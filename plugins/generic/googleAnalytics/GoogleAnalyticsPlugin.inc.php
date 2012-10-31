@@ -218,7 +218,7 @@ class GoogleAnalyticsPlugin extends GenericPlugin {
 						$form->readInputData();
 						if ($form->validate()) {
 							$form->execute();
-							Request::redirect(null, null, 'manager', 'plugin');
+							Request::redirect(null, null, 'manager','plugins');
 						} else {
 							$this->setBreadCrumbs(true);
 							$form->display();
