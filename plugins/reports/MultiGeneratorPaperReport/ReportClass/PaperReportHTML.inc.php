@@ -20,7 +20,6 @@
 	}
 	
 	protected function beginReport(){	
-		header('content-type: text/html; charset=utf-8');
 		header('content-disposition: attachment; filename=report.html');
 		$this->fpointer=fopen('php://output', 'wt');
 	}
@@ -62,7 +61,7 @@
 	 * @params locale specific locale
 	 */ 
 	function processRecord(&$paper,$locale){
-		$title=$paper->getTitle($locale);
+		$title=utf8_encode($paper->getTitle($locale));
 		$Abstract= utf8_encode($paper->getAbstract($locale));
 		$paper->setTitle($title,$locale );
 		$paper->setAbstract($Abstract,$locale);

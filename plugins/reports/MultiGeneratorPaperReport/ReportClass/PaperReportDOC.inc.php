@@ -17,7 +17,7 @@ class PaperReportDOC extends PaperReportHTML{
 	
 	protected function beginReport(){
 		$this->fpointer=fopen('php://output', 'wt');	
-		header('content-type:application/vnd.ms-word');
+		header('content-type:application/vnd.ms-word; charset=utf-8');
 		header('content-disposition: attachment; filename=report.doc');
 	}
 	/**
@@ -45,7 +45,7 @@ class PaperReportDOC extends PaperReportHTML{
 	 * @params specific locale $locale
 	 */ 
 	function processRecord(&$paper,$locale){
-		$title= ($paper->getTitle($locale));
+		$title= utf8_encode(($paper->getTitle($locale)));
 		$Abstract= utf8_encode(($paper->getAbstract($locale)));
 		$paper->setTitle($title,$locale );
 		$paper->setAbstract($Abstract,$locale);

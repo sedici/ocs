@@ -46,7 +46,7 @@ class PaperDecorator {
 	}
 
 	public function getTrackTitle(){
-		$info= $this->getPaperDec()->getTrackTitle();
+		$info= utf8_encode($this->getPaperDec()->getTrackTitle());
 		return $info;	
 }
 	public function getTrackId(){
