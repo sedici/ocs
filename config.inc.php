@@ -96,7 +96,7 @@ enable_cdn = On
 driver = mysql
 host = localhost
 username = root
-password = root
+password = 123456
 name = ocs
 
 ; Enable persistent connections (recommended)

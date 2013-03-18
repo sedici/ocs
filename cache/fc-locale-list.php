@@ -7,23 +7,23 @@
   'es_ES' => 
   array (
     'key' => 'es_ES',
-    'name' => 'EspaÃ±ol (EspaÃ±a)',
+    'name' => 'Español (España)',
   ),
   'fr_CA' => 
   array (
     'key' => 'fr_CA',
-    'name' => 'FranÃ§ais (Canada)',
+    'name' => 'Français (Canada)',
   ),
   'pt_BR' => 
   array (
     'key' => 'pt_BR',
-    'name' => 'PortuguÃªs (Brasil)',
+    'name' => 'Português (Brasil)',
   ),
   'ca_ES' => 
   array (
     'key' => 'ca_ES',
     'complete' => 'false',
-    'name' => 'CatalÃ  (Espanya)',
+    'name' => 'Català (Espanya)',
   ),
   'de_DE' => 
   array (
@@ -35,7 +35,7 @@
   array (
     'key' => 'es_AR',
     'complete' => 'false',
-    'name' => 'EspaÃ±ol (Argentina)',
+    'name' => 'Español (Argentina)',
   ),
   'eu_ES' => 
   array (
@@ -53,12 +53,12 @@
   array (
     'key' => 'pt_PT',
     'complete' => 'false',
-    'name' => 'PortuguÃªs (Portugal)',
+    'name' => 'Português (Portugal)',
   ),
   'zh_TW' => 
   array (
     'key' => 'zh_TW',
     'complete' => 'false',
-    'name' => 'æ­£é«”ä¸­æ–‡',
+    'name' => '????',
   ),
 ); ?>
