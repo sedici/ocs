@@ -1,0 +1,61 @@
+/**
+ * sidebar.css
+ *
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Site-wide shared elements for pages including sidebar(s).
+ *
+ * $Id: sidebar.css,v 1.2 2008/04/23 00:02:45 asmecher Exp $
+ */
+
+/**
+ * Sidebar
+ */
+
+#developedBy {
+	text-transform: uppercase;
+}
+
+#sidebar div.block {
+	font-size: 10px;
+	padding: 5px !important;
+	margin: 0px 0px 6px 0px;
+	text-align: center;
+}
+#sidebar table {
+	width: 95%;
+	padding: 0px;
+	margin: 0px auto;
+}
+#sidebar div.block span.blockTitle {
+	background: url(../templates/images/side_h2.png) no-repeat;
+	width: 188px;
+	height: 20px;
+	display: block;
+	padding: 5px;
+	color: #fff;
+	font-size: 9px;
+	letter-spacing: 1px;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 5px 0px;
+}
+#sidebar div.block span.box {
+
+}
+#sidebar div.block p{
+	padding: 0px!Important;
+	
+	}
+#sidebar div.block span.blockSubtitle {
+	display: block;
+	padding: 3px 8px;
+	margin: 3px 7px;
+	font-weight: bold;
+	border-top: 1px solid #bececc;
+	border-bottom: 1px solid #bececc;
+}
+
+#sidebar input.textField, #sidebar select.selectMenu, #sidebar input.button {
+	font-size: 10px;
+}
