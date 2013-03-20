@@ -3,7 +3,7 @@
 /**
  * @file classes/core/PKPHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @package core
@@ -233,12 +233,12 @@ class PKPHandler {
 	}
 
 	function setupTemplate() {
-		Locale::requireComponents(array(
+		AppLocale::requireComponents(array(
 			 LOCALE_COMPONENT_PKP_COMMON,
 			 LOCALE_COMPONENT_PKP_USER
 		));
 		if (defined('LOCALE_COMPONENT_APPLICATION_COMMON')) {
-			Locale::requireComponents(array(LOCALE_COMPONENT_APPLICATION_COMMON));
+			AppLocale::requireComponents(array(LOCALE_COMPONENT_APPLICATION_COMMON));
 		}
 	}
 

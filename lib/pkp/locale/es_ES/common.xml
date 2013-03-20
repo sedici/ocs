@@ -4,7 +4,7 @@
 <!--
   * locale/es_ES/common.xml
   *
-  * Copyright (c) 2000-2010 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the es_ES (Español (España)) locale.
@@ -284,8 +284,6 @@
 	<message key="common.manage">Administrar</message>
 	<message key="common.noComments">Sin comentarios</message>
 	<message key="form.startsWith">comienza con</message>
-	<message key="common.openConferenceSystems">Portal de Congresos</message>	
-	<message key="author.submit.authorRegistrationClosed">En registro de autores se encuentra cerrado en este momento</message>
 	<message key="notification.allow">Permitir que este tipo de notificaciones aparezcan en mi área de notificaciones</message>
 	<message key="notification.confirmError">Ha habido un error confirmándo tu suscripción.</message>
 	<message key="notification.confirmSuccess">Ha sido correctamente suscrito.</message>

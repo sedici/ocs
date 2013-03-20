@@ -1,7 +1,7 @@
 /**
  * common.css
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * PKP-wide shared stylesheet.
@@ -88,13 +88,13 @@ input.defaultButton {
 /**
  * Main layout elements
  */
-/*
+
 #container {
 	width: 100% !important;
 	min-width: 730px !important;
 	margin: 0px auto;
 	text-align: center;
-} */
+}
 
 #header {
 	width: 100%;
@@ -149,8 +149,8 @@ input.defaultButton {
 
 #navbar {
 	margin-right: 0;
-	padding-bottom: 2px !important;
-	border-bottom: 0px solid #000;
+	padding-bottom: 0.5em;
+	border-bottom: 2px dotted #000;
 }
 
 #breadcrumb {

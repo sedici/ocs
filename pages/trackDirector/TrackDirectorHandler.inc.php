@@ -3,7 +3,7 @@
 /**
  * @file TrackDirectorHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class TrackDirectorHandler
@@ -29,6 +29,15 @@ class TrackDirectorHandler extends Handler {
 	function TrackDirectorHandler() {
 		parent::Handler();
 	}
+
+	/**
+	 * Synonym for "index". WARNING: This is used by some of the requests
+	 * shared between Director and Track Director, i.e. completePaper,
+	 * which assumes the same URLs are used by both roles.
+	 */
+	function submissions($args, &$request) {
+		$this->index($args, $request);
+	}	
 
 	/**
 	 * Display track director index page.
@@ -57,7 +66,7 @@ class TrackDirectorHandler extends Handler {
 		$sortDirection = Request::getUserVar('sortDirection');
 
 		$filterTrackOptions = array(
-			FILTER_TRACK_ALL => Locale::Translate('director.allTracks')
+			FILTER_TRACK_ALL => AppLocale::Translate('director.allTracks')
 		) + $tracks;
 
 		switch($page) {
@@ -142,8 +151,8 @@ class TrackDirectorHandler extends Handler {
 			$templateMgr->assign($param, Request::getUserVar($param));
 
 		$templateMgr->assign('reviewType', Array(
-			REVIEW_STAGE_ABSTRACT => Locale::translate('submission.abstract'),
-			REVIEW_STAGE_PRESENTATION => Locale::translate('submission.paper')
+			REVIEW_STAGE_ABSTRACT => __('submission.abstract'),
+			REVIEW_STAGE_PRESENTATION => __('submission.paper')
 		));
 
 		$templateMgr->assign('fieldOptions', Array(
@@ -185,7 +194,7 @@ class TrackDirectorHandler extends Handler {
 	 */
 	function setupTemplate($subclass = false, $paperId = 0, $parentPage = null) {
 		parent::setupTemplate();
-		Locale::requireComponents(array(LOCALE_COMPONENT_OCS_DIRECTOR, LOCALE_COMPONENT_PKP_SUBMISSION, LOCALE_COMPONENT_OCS_AUTHOR));
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_OCS_DIRECTOR, LOCALE_COMPONENT_PKP_SUBMISSION, LOCALE_COMPONENT_OCS_AUTHOR));
 		$templateMgr =& TemplateManager::getManager();
 		$isDirector = Validation::isDirector();
 		$pageHierarchy = array();
@@ -193,28 +202,25 @@ class TrackDirectorHandler extends Handler {
 		$conference =& Request::getConference();
 		$schedConf =& Request::getSchedConf();
 
+		$templateMgr->assign('helpTopicId', $isDirector ? 'editorial.directorsRole' : 'editorial.trackDirectorsRole');
+
 		if ($schedConf) {
 			$pageHierarchy[] = array(Request::url(null, null, 'index'), $schedConf->getFullTitle(), true);
 		} elseif ($conference) {
 			$pageHierarchy[] = array(Request::url(null, 'index', 'index'), $conference->getConferenceTitle(), true);
 		}
 
-		if (Request::getRequestedPage() == 'director') {
-			$templateMgr->assign('helpTopicId', 'editorial.directorsRole');
+		$roleSymbolic = $isDirector ? 'director' : 'trackDirector';
+		$roleKey = $isDirector ? 'user.role.director' : 'user.role.trackDirector';
 
-		} else {
-			$templateMgr->assign('helpTopicId', 'editorial.trackDirectorsRole');
-		}
 		$pageHierarchy[] = array(Request::url(null, null, 'user'), 'navigation.user');
+		$pageHierarchy[] = array(Request::url(null, null, $roleSymbolic), $roleKey);
 		if ($subclass) {
-			$pageHierarchy[] = array(Request::url(null, null, $isDirector?'director':'trackDirector'), $isDirector?'user.role.director':'user.role.trackDirector');
-			$pageHierarchy[] = array(Request::url(null, null, 'trackDirector'), 'paper.submissions');
-		} else {
-			$pageHierarchy[] = array(Request::url(null, null, $isDirector?'director':'trackDirector'), $isDirector?'user.role.director':'user.role.trackDirector');
+			$pageHierarchy[] = array(Request::url(null, null, $roleSymbolic), 'paper.submissions');
 		}
 
 		import('submission.trackDirector.TrackDirectorAction');
-		$submissionCrumb = TrackDirectorAction::submissionBreadcrumb($paperId, $parentPage, 'trackDirector');
+		$submissionCrumb = TrackDirectorAction::submissionBreadcrumb($paperId, $parentPage, $roleSymbolic);
 		if (isset($submissionCrumb)) {
 			$pageHierarchy = array_merge($pageHierarchy, $submissionCrumb);
 		}

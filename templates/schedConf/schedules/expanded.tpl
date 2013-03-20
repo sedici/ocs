@@ -1,7 +1,7 @@
 {**
  * expanded.tpl
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Scheduled conference schedule page (expanded version).
@@ -59,8 +59,6 @@
 <div id="schedule">
 <h3>{translate key="schedConf.schedule"}</h3>
 
-{/if}{* !empty($buildingsAndRooms) *}
-
 {assign var=lastStartTime value=0}
 {assign var=needsUlClose value=0}
 {foreach from=$itemsByTime item=list key=startTime}
@@ -106,4 +104,6 @@
 	</ul>
 {/if}
 </div>
+{/if}{* !empty($buildingsAndRooms) *}
+
 {include file="common/footer.tpl"}

@@ -3,7 +3,7 @@
 /**
  * @file NativeImportDom.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class NativeImportDom
@@ -39,7 +39,7 @@ class NativeImportDom {
 
 	function importPaper(&$conference, &$schedConf, &$node, &$track, &$paper, &$errors, &$user, $isCommandLine) {
 		$dependentItems = array();
-		$result = NativeImportDom::handlePaperNode(&$conference, $schedConf, $node, $track, $paper, $publishedPaper, $errors, $user, $isCommandLine, $dependentItems);
+		$result = NativeImportDom::handlePaperNode($conference, $schedConf, $node, $track, $paper, $publishedPaper, $errors, $user, $isCommandLine, $dependentItems);
 		if (!$result) {
 			NativeImportDom::cleanupFailure ($dependentItems);
 		}
@@ -429,7 +429,7 @@ class NativeImportDom {
 		$hasErrors = false;
 		$galleyCount = 0;
 		for ($index=0; $index < count($paperNode->children); $index++) {
-			$node =& $paperNode->children[$index];
+			$node = $paperNode->children[$index];
 
 			if ($node->getName() == 'htmlgalley') $isHtml = true;
 			elseif ($node->getName() == 'galley') $isHtml = false;
@@ -719,13 +719,13 @@ class NativeImportDom {
 		}
 
 		switch (($suppType = $suppNode->getAttribute('type'))) {
-			case 'research_instrument': $suppFile->setType(Locale::translate('author.submit.suppFile.researchInstrument')); break;
-			case 'research_materials': $suppFile->setType(Locale::translate('author.submit.suppFile.researchMaterials')); break;
-			case 'research_results': $suppFile->setType(Locale::translate('author.submit.suppFile.researchResults')); break;
-			case 'transcripts': $suppFile->setType(Locale::translate('author.submit.suppFile.transcripts')); break;
-			case 'data_analysis': $suppFile->setType(Locale::translate('author.submit.suppFile.dataAnalysis')); break;
-			case 'data_set': $suppFile->setType(Locale::translate('author.submit.suppFile.dataSet')); break;
-			case 'source_text': $suppFile->setType(Locale::translate('author.submit.suppFile.sourceText')); break;
+			case 'research_instrument': $suppFile->setType(__('author.submit.suppFile.researchInstrument')); break;
+			case 'research_materials': $suppFile->setType(__('author.submit.suppFile.researchMaterials')); break;
+			case 'research_results': $suppFile->setType(__('author.submit.suppFile.researchResults')); break;
+			case 'transcripts': $suppFile->setType(__('author.submit.suppFile.transcripts')); break;
+			case 'data_analysis': $suppFile->setType(__('author.submit.suppFile.dataAnalysis')); break;
+			case 'data_set': $suppFile->setType(__('author.submit.suppFile.dataSet')); break;
+			case 'source_text': $suppFile->setType(__('author.submit.suppFile.sourceText')); break;
 			case 'other': $suppFile->setType(''); break;
 			default:
 				$errors[] = array('plugins.importexport.native.import.error.unknownSuppFileType', array('suppFileType' => $suppType));

@@ -1,12 +1,12 @@
 /**
  * articleView.css
  *
- * Copyright (c) 2000-2008 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Article view stylesheet.
  *
- * $Id: paperView.css,v 1.5 2008/07/01 00:06:47 michael Exp $
+ * $Id$
  */
 
 #body {
@@ -19,7 +19,7 @@
 }
 
 #main {
-	width: 95%;
+	width: 100%;
 	margin: 0;
 }
 
@@ -44,11 +44,7 @@
 }
 
 #content {
-	font-size: 1.2em;
 	border: none;
-}
-#content p{
-	font-size:1.2em;
 }
 
 #topBar {

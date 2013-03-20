@@ -1,7 +1,7 @@
 {**
  * compact.tpl
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Scheduled conference schedule page (compact version).
@@ -58,8 +58,6 @@
 <div id="schedule">
 <h3>{translate key="schedConf.schedule"}</h3>
 
-{/if}{* !empty($buildingsAndRooms) *}
-
 <table class="listing" width="100%">
 {assign var=lastStartTime value=0}
 {assign var=needsTdClose value=0}
@@ -106,6 +104,7 @@
 	</td>
 {/if}
 </table>
-
 </div>
+{/if}{* !empty($buildingsAndRooms) *}
+
 {include file="common/footer.tpl"}

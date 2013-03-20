@@ -7,7 +7,7 @@
 /**
  * @file classes/plugins/PKPPlugin.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class PKPPlugin
@@ -241,16 +241,13 @@ class PKPPlugin {
 		$installer =& $args[0];
 		$result =& $args[1];
 
-		// Settings are only installed during automated installs. FIXME!
-		if (!$installer->getParam('manualInstall')) {
-			// All contexts are set to zero for site-wide plug-in settings
-			$application =& PKPApplication::getApplication();
-			$arguments = array_fill(0, $application->getContextDepth(), 0);
-			$arguments[] = $this->getName();
-			$arguments[] = $this->getInstallSitePluginSettingsFile();
-			$pluginSettingsDao =& DAORegistry::getDAO('PluginSettingsDAO');
-			call_user_func_array(array(&$pluginSettingsDao, 'installSettings'), $arguments);
-		}
+		// All contexts are set to zero for site-wide plug-in settings
+		$application =& PKPApplication::getApplication();
+		$arguments = array_fill(0, $application->getContextDepth(), 0);
+		$arguments[] = $this->getName();
+		$arguments[] = $this->getInstallSitePluginSettingsFile();
+		$pluginSettingsDao =& DAORegistry::getDAO('PluginSettingsDAO');
+		call_user_func_array(array(&$pluginSettingsDao, 'installSettings'), $arguments);
 
 		return false;
 	}
@@ -261,10 +258,10 @@ class PKPPlugin {
 	 * @return boolean
 	 */
 	function addLocaleData($locale = null) {
-		if ($locale == '') $locale = Locale::getLocale();
+		if ($locale == '') $locale = AppLocale::getLocale();
 		$localeFilename = $this->getLocaleFilename($locale);
 		if ($localeFilename) {
-			Locale::registerLocaleFile($locale, $this->getLocaleFilename($locale));
+			AppLocale::registerLocaleFile($locale, $this->getLocaleFilename($locale));
 			return true;
 		}
 		return false;
@@ -285,7 +282,7 @@ class PKPPlugin {
 	 * @return boolean
 	 */
 	function addHelpData($locale = null) {
-		if ($locale == '') $locale = Locale::getLocale();
+		if ($locale == '') $locale = AppLocale::getLocale();
 		import('help.Help');
 		$help =& Help::getHelp();
 		import('help.PluginHelpMappingFile');
@@ -410,7 +407,7 @@ class PKPPlugin {
 		if ($sql) {
 			$result = $installer->executeSQL($sql);
 		} else {
-			$installer->setError(INSTALLER_ERROR_DB, str_replace('{$file}', $this->getInstallSchemaFile(), Locale::translate('installer.installParseDBFileError')));
+			$installer->setError(INSTALLER_ERROR_DB, str_replace('{$file}', $this->getInstallSchemaFile(), __('installer.installParseDBFileError')));
 			$result = false;
 		}
 		return false;
@@ -517,7 +514,7 @@ class PKPPlugin {
 		if ($sql) {
 			$result = $installer->executeSQL($sql);
 		} else {
-			$installer->setError(INSTALLER_ERROR_DB, str_replace('{$file}', $this->getInstallDataFile(), Locale::translate('installer.installParseEmailTemplatesFileError')));
+			$installer->setError(INSTALLER_ERROR_DB, str_replace('{$file}', $this->getInstallDataFile(), __('installer.installParseEmailTemplatesFileError')));
 			$result = false;
 		}
 		return false;
@@ -541,7 +538,7 @@ class PKPPlugin {
 			if ($sql) {
 				$result = $installer->executeSQL($sql);
 			} else {
-				$installer->setError(INSTALLER_ERROR_DB, str_replace('{$file}', $this->getInstallDataFile(), Locale::translate('installer.installParseEmailTemplatesFileError')));
+				$installer->setError(INSTALLER_ERROR_DB, str_replace('{$file}', $this->getInstallDataFile(), __('installer.installParseEmailTemplatesFileError')));
 				$result = false;
 			}
 		}
@@ -576,7 +573,7 @@ class PKPPlugin {
 		if ($sql) {
 			$result = $installer->executeSQL($sql);
 		} else {
-			$installer->setError(INSTALLER_ERROR_DB, str_replace('{$file}', $this->getInstallDataFile(), Locale::translate('installer.installParseDBFileError')));
+			$installer->setError(INSTALLER_ERROR_DB, str_replace('{$file}', $this->getInstallDataFile(), __('installer.installParseDBFileError')));
 			$result = false;
 		}
 		return false;

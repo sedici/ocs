@@ -3,7 +3,7 @@
 /**
  * @file StaticPagesHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @package plugins.generic.staticPages
@@ -22,7 +22,7 @@ class StaticPagesHandler extends Handler {
 	
 	function view ($args) {
 		if (count($args) > 0 ) {
-			Locale::requireComponents(array(LOCALE_COMPONENT_PKP_COMMON, LOCALE_COMPONENT_APPLICATION_COMMON));			
+			AppLocale::requireComponents(array(LOCALE_COMPONENT_PKP_COMMON, LOCALE_COMPONENT_APPLICATION_COMMON));			
 			$conference =& Request::getConference();
 			$conferenceId = $conference->getId();
 			$path = $args[0];

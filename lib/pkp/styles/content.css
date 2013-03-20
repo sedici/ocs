@@ -644,9 +644,6 @@ a.uploaded {
 /* @end */
 
 /* @group Font Sizer */
-#sizer {
-	padding: 0px 0px 4px 60px;
-}
 
 .smallFont {
 	outline: none; /*for making it look nice in FF */
@@ -679,7 +676,6 @@ a.uploaded {
 	height: 23px;
 }
 
-
 .ldisabled,.sdisabled { /*Styles for disabled buttons*/
 	opacity: 0.3;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
@@ -706,7 +702,9 @@ input.uploadField {
 	position: relative; 
 	z-index: 2; 
 	text-align:right;
-	-moz-opacity:2 ;
+	-moz-opacity:0 ;
+	filter:alpha(opacity: 0);
+	opacity: 0;
 }
 
 .fakeFile {

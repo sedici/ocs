@@ -3,7 +3,7 @@
 /**
  * @file classes/core/String.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class String
@@ -52,6 +52,8 @@ define('PCRE_EMAIL_ADDRESS',
 define ('CAMEL_CASE_HEAD_UP', 0x01);
 define ('CAMEL_CASE_HEAD_DOWN', 0x02);
 
+define('DEFAULT_ALLOWED_HTML', '<a> <em> <strong> <cite> <code> <ul> <ol> <li> <dl> <dt> <dd> <b> <i> <u> <img src|alt> <sup> <sub> <br> <p>');
+
 class String {
 	/**
 	 * Perform initialization required for the string wrapper library.
@@ -76,6 +78,10 @@ class String {
 			define('PCRE_UTF8', 'u');
 		} else {
 			define('PCRE_UTF8', '');
+		}
+
+		if (checkPhpVersion('5.0.5')) {
+			define('USE_HTML_PURIFIER', 1);
 		}
 	}
 
@@ -400,11 +406,41 @@ class String {
 	 * @return string
 	 */
 	function stripUnsafeHtml($input) {
+		// If possible, use the HTML purifier.
+		if (defined('USE_HTML_PURIFIER')) {
+			require_once('lib/pkp/lib/htmlpurifier/library/HTMLPurifier.path.php');
+			require_once('HTMLPurifier.includes.php');
+			static $purifier;
+			if (!isset($purifier)) {
+				$config = HTMLPurifier_Config::createDefault();
+				$config->set('Core.Encoding', Config::getVar('i18n', 'client_charset'));
+				$config->set('HTML.Doctype', 'XHTML 1.0 Transitional');
+				// Transform the old allowed_html setting into
+				// a form HTMLPurifier can use.
+				$config->set('HTML.Allowed', preg_replace(
+					'/<(\w+)[ ]?([^>]*)>[ ]?/',
+					'${1}[${2}],',
+					Config::getVar('security', 'allowed_html', DEFAULT_ALLOWED_HTML)
+				));
+				$config->set('Cache.SerializerPath', 'cache');
+				$purifier = new HTMLPurifier($config);
+			}
+			return $purifier->purify($input);
+		}
+
+		// Fall back on imperfect but PHP4-capable implementation.
+
 		// Parts of this implementation were taken from Horde:
 		// see http://cvs.horde.org/co.php/framework/MIME/MIME/Viewer/html.php.
 
-		$allowedHtml = Config::getVar('security', 'allowed_html');
-		if ($allowedHtml == '') $allowedHtml = '<a> <em> <strong> <cite> <code> <ul> <ol> <li> <dl> <dt> <dd> <b> <i> <u> <img> <sup> <sub> <br> <p>';
+		static $allowedHtml;
+		if (!isset($allowedHtml)) {
+			$allowedHtml = preg_replace(
+				'/<(\w+)( [^>]+)*>/', // Strip out attr specs
+				'<${1}> ',
+				Config::getVar('security', 'allowed_html', DEFAULT_ALLOWED_HTML)
+			);
+		}
 
 		$html = strip_tags($input, $allowedHtml);
 
@@ -452,6 +488,20 @@ class String {
 		$replace = array('<&{;}\3>', '<\1PKPCleaned:\2>', '<\1PKPCleaned:\2>');
 		$html = preg_replace($pattern, $replace, $html);
 
+		return $html;
+	}
+
+	/**
+	 * Convert limited HTML into a string.
+	 * @param $html string
+	 * @return string
+	 */
+	function html2text($html) {
+		$html = String::regexp_replace('/<[\/]?p>/', "\n", $html);
+		$html = String::regexp_replace('/<li>/', '&bull; ', $html);
+		$html = String::regexp_replace('/<\/li>/', "\n", $html);
+		$html = String::regexp_replace('/<br[ ]?[\/]?>/', "\n", $html);
+		$html = String::html2utf(strip_tags($html));
 		return $html;
 	}
 

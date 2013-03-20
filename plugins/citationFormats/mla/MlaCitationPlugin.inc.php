@@ -3,7 +3,7 @@
 /**
  * @file MlaCitationPlugin.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class MlaCitationPlugin
@@ -33,15 +33,15 @@ class MlaCitationPlugin extends CitationPlugin {
 	}
 
 	function getDisplayName() {
-		return Locale::translate('plugins.citationFormats.mla.displayName');
+		return __('plugins.citationFormats.mla.displayName');
 	}
 
 	function getCitationFormatName() {
-		return Locale::translate('plugins.citationFormats.mla.citationFormatName');
+		return __('plugins.citationFormats.mla.citationFormatName');
 	}
 
 	function getDescription() {
-		return Locale::translate('plugins.citationFormats.mla.description');
+		return __('plugins.citationFormats.mla.description');
 	}
 
 }

@@ -3,7 +3,7 @@
 /**
  * @file ProfileHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class ProfileHandler
@@ -57,7 +57,7 @@ class ProfileHandler extends UserHandler {
 
 		if (Request::getUserVar('uploadProfileImage')) {
 			if (!$profileForm->uploadProfileImage()) {
-				$profileForm->addError('profileImage', Locale::translate('user.profile.form.profileImageInvalid'));
+				$profileForm->addError('profileImage', __('user.profile.form.profileImageInvalid'));
 			}
 			$dataModified = true;
 		} else if (Request::getUserVar('deleteProfileImage')) {

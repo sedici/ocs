@@ -3,7 +3,7 @@
 /**
  * DevelopedByBlockPlugin.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class DevelopedByBlockPlugin
@@ -91,14 +91,14 @@ class DevelopedByBlockPlugin extends BlockPlugin {
 	 * @return String
 	 */
 	function getDisplayName() {
-		return Locale::translate('plugins.block.developedBy.displayName');
+		return __('plugins.block.developedBy.displayName');
 	}
 
 	/**
 	 * Get a description of the plugin.
 	 */
 	function getDescription() {
-		return Locale::translate('plugins.block.developedBy.description');
+		return __('plugins.block.developedBy.description');
 	}
 }
 

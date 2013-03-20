@@ -1,7 +1,7 @@
 {**
  * metadata.tpl
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Subtemplate defining the submission metadata table. Non-form implementation.
@@ -36,7 +36,7 @@
 	{/if}
 	<tr valign="top">
 		<td class="label">{translate key="user.affiliation"}</td>
-		<td class="value">{$author->getAffiliation()|escape|nl2br|default:"&mdash;"}</td>
+		<td class="value">{$author->getAffiliation()|strip_unsafe_html|nl2br|default:"&mdash;"}</td>
 	</tr>
 	<tr valign="top">
 		<td class="label">{translate key="common.country"}</td>

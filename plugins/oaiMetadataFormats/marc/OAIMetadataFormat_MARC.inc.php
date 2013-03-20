@@ -3,7 +3,7 @@
 /**
  * @file plugins/oaiMetadata/marc/OAIMetadataFormat_MARC.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class OAIMetadataFormat_MARC
@@ -60,8 +60,8 @@ class OAIMetadataFormat_MARC extends OAIMetadataFormat {
 		}
 
 		// Types
-		Locale::requireComponents(array(LOCALE_COMPONENT_APPLICATION_COMMON));
-		$type = Locale::translate('rt.metadata.pkp.peerReviewed');
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_APPLICATION_COMMON));
+		$type = __('rt.metadata.pkp.peerReviewed');
 
 		// Formats
 		$format = array();

@@ -3,7 +3,7 @@
 /**
  * @file SubmissionEditHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class SubmissionEditHandler
@@ -41,7 +41,7 @@ class SubmissionEditHandler extends TrackDirectorHandler {
 		$this->setupTemplate(true, $paperId);
 
 		// FIXME? For comments.readerComments under Status
-		Locale::requireComponents(array(LOCALE_COMPONENT_PKP_READER));
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_PKP_READER));
 
 		$user =& Request::getUser();
 
@@ -412,7 +412,7 @@ class SubmissionEditHandler extends TrackDirectorHandler {
 		$schedConf =& Request::getSchedConf();
 		$submission =& $this->submission;
 
-		Locale::requireComponents(array(LOCALE_COMPONENT_PKP_MANAGER)); // manager.people.noneEnrolled FIXME?
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_PKP_MANAGER)); // manager.people.noneEnrolled FIXME?
 
 		$sort = Request::getUserVar('sort');
 		$sort = isset($sort) ? $sort : 'name';
@@ -478,7 +478,7 @@ class SubmissionEditHandler extends TrackDirectorHandler {
 			$templateMgr->assign('averageQualityRatings', $reviewAssignmentDao->getAverageQualityRatings($schedConf->getId()));
 
 			$templateMgr->assign('helpTopicId', 'conference.roles.reviewers');
-			$templateMgr->assign('alphaList', explode(' ', Locale::translate('common.alphaList')));
+			$templateMgr->assign('alphaList', explode(' ', __('common.alphaList')));
 			$templateMgr->assign('sort', $sort);
 			$templateMgr->assign('sortDirection', $sortDirection);
 			$templateMgr->display('trackDirector/selectReviewer.tpl');
@@ -498,7 +498,7 @@ class SubmissionEditHandler extends TrackDirectorHandler {
 
 		import('trackDirector.form.CreateReviewerForm');
 		$createReviewerForm = new CreateReviewerForm($paperId);
-		Locale::requireComponents(array(LOCALE_COMPONENT_PKP_MANAGER));
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_PKP_MANAGER));
 		$this->setupTemplate(true, $paperId);
 
 		if (isset($args[1]) && $args[1] === 'create') {
@@ -541,7 +541,7 @@ class SubmissionEditHandler extends TrackDirectorHandler {
 	function enrollSearch($args) {
 		$paperId = isset($args[0]) ? (int) $args[0] : 0;
 		$this->validate($paperId, TRACK_DIRECTOR_ACCESS_REVIEW);
-		Locale::requireComponents(array(LOCALE_COMPONENT_PKP_MANAGER)); // manager.people.enrollment, manager.people.enroll
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_PKP_MANAGER)); // manager.people.enrollment, manager.people.enroll
 		$conference =& Request::getConference();
 		$schedConf =& Request::getSchedConf();
 		$submission =& $this->submission;
@@ -594,7 +594,7 @@ class SubmissionEditHandler extends TrackDirectorHandler {
 		));
 		$templateMgr->assign('roleId', $roleId);
 		$templateMgr->assign_by_ref('users', $users);
-		$templateMgr->assign('alphaList', explode(' ', Locale::translate('common.alphaList')));
+		$templateMgr->assign('alphaList', explode(' ', __('common.alphaList')));
 
 		$templateMgr->assign('helpTopicId', 'conference.roles.index');
 		$templateMgr->display('trackDirector/searchUsers.tpl');
@@ -803,7 +803,7 @@ class SubmissionEditHandler extends TrackDirectorHandler {
 
 			if ($schedConf->getSetting('reviewDeadlineType') == REVIEW_DEADLINE_TYPE_ABSOLUTE) {
 				// Get number of days from now until review deadline date
-				$reviewDeadlineDate = strtotime($schedConf->getSetting('numWeeksPerReviewAbsolute'));
+				$reviewDeadlineDate = $schedConf->getSetting('numWeeksPerReviewAbsolute');
 				$daysDiff = ($reviewDeadlineDate - strtotime(date("Y-m-d"))) / (60 * 60 * 24);
 				$numWeeksPerReview = round($daysDiff / 7);
 			} elseif ($schedConf->getSetting('reviewDeadlineType') == REVIEW_DEADLINE_TYPE_RELATIVE) {
@@ -887,7 +887,7 @@ class SubmissionEditHandler extends TrackDirectorHandler {
 			$templateMgr->assign('country', $country);
 
 			$templateMgr->assign_by_ref('user', $user);
-			$templateMgr->assign('localeNames', Locale::getAllLocales());
+			$templateMgr->assign('localeNames', AppLocale::getAllLocales());
 			$templateMgr->assign('helpTopicId', 'conference.roles.index');
 			$templateMgr->display('trackDirector/userProfile.tpl');
 		}
@@ -1489,7 +1489,7 @@ class SubmissionEditHandler extends TrackDirectorHandler {
 		import('submission.form.SuppFileForm');
 
 		$suppFileForm = new SuppFileForm($submission);
-		$suppFileForm->setData('title', Locale::translate('common.untitled'));
+		$suppFileForm->setData('title', array(AppLocale::getLocale() => __('common.untitled')));
 		$suppFileId = $suppFileForm->execute($fileName);
 
 		Request::redirect(null, null, null, 'editSuppFile', array($paperId, $suppFileId));

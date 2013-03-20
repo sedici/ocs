@@ -3,7 +3,7 @@
 /**
  * @file AuthorHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class AuthorHandler
@@ -94,11 +94,11 @@ class AuthorHandler extends Handler {
 		} elseif (!$submissionsOpenDate || !$submissionsCloseDate || time() < $submissionsOpenDate) {
 			// Too soon
 			$acceptingSubmissions = false;
-			$notAcceptingSubmissionsMessage = Locale::translate('author.submit.notAcceptingYet');
+			$notAcceptingSubmissionsMessage = __('author.submit.notAcceptingYet');
 		} elseif (time() > $submissionsCloseDate) {
 			// Too late
 			$acceptingSubmissions = false;
-			$notAcceptingSubmissionsMessage = Locale::translate('author.submit.submissionDeadlinePassed', array('closedDate' => strftime(Config::getVar('general', 'date_format_short'), $submissionsCloseDate)));
+			$notAcceptingSubmissionsMessage = __('author.submit.submissionDeadlinePassed', array('closedDate' => strftime(Config::getVar('general', 'date_format_short'), $submissionsCloseDate)));
 		} else {
 			$acceptingSubmissions = true;
 		}
@@ -118,7 +118,7 @@ class AuthorHandler extends Handler {
 	 */
 	function setupTemplate($subclass = false, $paperId = 0, $parentPage = null) {
 		parent::setupTemplate();
-		Locale::requireComponents(array(
+		AppLocale::requireComponents(array(
 			LOCALE_COMPONENT_OCS_AUTHOR,
 			LOCALE_COMPONENT_PKP_SUBMISSION,
 			LOCALE_COMPONENT_OCS_DIRECTOR, // FIXME?

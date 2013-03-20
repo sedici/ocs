@@ -3,7 +3,7 @@
 /**
  * @file classes/currency/CurrencyDAO.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class CurrencyDAO
@@ -26,7 +26,7 @@ class CurrencyDAO extends DAO {
 	}
 
 	function &_getCache() {
-		$locale = Locale::getLocale();
+		$locale = AppLocale::getLocale();
 		$cache =& Registry::get('currencyCache', true, null);
 		if ($cache === null) {
 			$cacheManager = CacheManager::getManager();
@@ -48,7 +48,7 @@ class CurrencyDAO extends DAO {
 		if ($allCurrencies === null) {
 			// Add a locale load to the debug notes.
 			$notes =& Registry::get('system.debug.notes');
-			$filename = $this->getCurrencyFilename(Locale::getLocale());
+			$filename = $this->getCurrencyFilename(AppLocale::getLocale());
 			$notes[] = array('debug.notes.currencyListLoad', array('filename' => $filename));
 
 			// Reload locale registry file

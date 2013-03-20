@@ -1,7 +1,7 @@
 {**
  * accommodation.tpl
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Scheduled conference accommodation page.
@@ -18,11 +18,11 @@
 {if !empty($accommodationFiles)}
 	<div class="separator"></div>
 {/if}
- <div id="accommodationFiles">
+<div id="accommodationFiles">
 {foreach from=$accommodationFiles item=accommodationFile}
 	<div>
 		<a class="file" href="{$publicSchedConfFilesDir}/{$accommodationFile.uploadName}" target="_blank">{$accommodationFile.title|default:$accommodationFile.name|escape}</a>
 	</div>
 {/foreach}
-<div>
+</div>
 {include file="common/footer.tpl"}

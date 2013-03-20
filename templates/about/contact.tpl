@@ -1,7 +1,7 @@
 {**
  * contact.tpl
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * About the Conference / Conference Contact.
@@ -30,8 +30,8 @@
 	{if !empty($conferenceSettings.contactTitle)}
 		{$conferenceSettings.contactTitle|escape}<br />
 	{/if}
-	{if !empty($conferenceSettings.contactAffiliation)}
-		{$conferenceSettings.contactAffiliation|escape}<br />
+	{if !empty($conferenceSettings.contactAffiliation.$currentLocale)}
+		{$conferenceSettings.contactAffiliation.$currentLocale|escape}<br />
 	{/if}
 	{if !empty($conferenceSettings.contactMailingAddress)}
 		{$conferenceSettings.contactMailingAddress|nl2br}<br />

@@ -7,7 +7,7 @@
 /**
  * @file classes/config/Config.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class Config
@@ -22,18 +22,19 @@
 /** The path to the default configuration file */
 define('CONFIG_FILE', Core::getBaseDir() . DIRECTORY_SEPARATOR . 'config.inc.php');
 
-import('config.ConfigParser');
+import('lib.pkp.classes.config.ConfigParser');
 
 class Config {
 	/**
 	 * Retrieve a specified configuration variable.
 	 * @param $section string
 	 * @param $key string
+	 * @param $default string optional
 	 * @return string
 	 */
-	function getVar($section, $key) {
+	function getVar($section, $key, $default = null) {
 		$configData =& Config::getData();
-		return isset($configData[$section][$key]) ? $configData[$section][$key] : null;
+		return isset($configData[$section][$key]) ? $configData[$section][$key] : $default;
 	}
 
 	/**

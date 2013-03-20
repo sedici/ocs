@@ -3,7 +3,7 @@
 /**
  * @file BibtexCitationPlugin.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class BibtexCitationPlugin
@@ -33,15 +33,15 @@ class BibtexCitationPlugin extends CitationPlugin {
 	}
 
 	function getDisplayName() {
-		return Locale::translate('plugins.citationFormats.bibtex.displayName');
+		return __('plugins.citationFormats.bibtex.displayName');
 	}
 
 	function getCitationFormatName() {
-		return Locale::translate('plugins.citationFormats.bibtex.citationFormatName');
+		return __('plugins.citationFormats.bibtex.citationFormatName');
 	}
 
 	function getDescription() {
-		return Locale::translate('plugins.citationFormats.bibtex.description');
+		return __('plugins.citationFormats.bibtex.description');
 	}
 
 }

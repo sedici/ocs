@@ -3,7 +3,7 @@
 /**
  * UserBlockPlugin.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class UserBlockPlugin
@@ -21,7 +21,7 @@ class UserBlockPlugin extends BlockPlugin {
 		$success = parent::register($category, $path);
 		if ($success) {
 			$this->addLocaleData();
-			Locale::requireComponents(array(LOCALE_COMPONENT_PKP_USER));
+			AppLocale::requireComponents(array(LOCALE_COMPONENT_PKP_USER));
 		}
 		return $success;
 	}
@@ -64,14 +64,14 @@ class UserBlockPlugin extends BlockPlugin {
 	 * @return String
 	 */
 	function getDisplayName() {
-		return Locale::translate('plugins.block.user.displayName');
+		return __('plugins.block.user.displayName');
 	}
 
 	/**
 	 * Get a description of the plugin.
 	 */
 	function getDescription() {
-		return Locale::translate('plugins.block.user.description');
+		return __('plugins.block.user.description');
 	}
 
 	function getContents(&$templateMgr) {

@@ -1,15 +1,17 @@
 {**
  * step4.tpl
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Step 4 of author paper submission.
  *
  * $Id$
  *}
-{if $showAbstractSteps}
-	{assign var="pageTitle" value="author.submit.supplementaryFilesAbstractOnly"}
+{if $showAbstractSteps && $currentSchedConf->getSetting('acceptSupplementaryReviewMaterials') && !$showPaperSteps}
+	{assign var="pageTitle" value="author.submit.step4AbstOnly"}
+{elseif $showAbstractSteps && $currentSchedConf->getSetting('acceptSupplementaryReviewMaterials')}
+	{assign var="pageTitle" value="author.submit.step4"}
 {else}
 	{assign var="pageTitle" value="author.submit.step4"}
 {/if}

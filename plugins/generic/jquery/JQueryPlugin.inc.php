@@ -3,7 +3,7 @@
 /**
  * @file plugins/generic/jquery/JQueryPlugin.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class JQueryPlugin
@@ -38,6 +38,7 @@ class JQueryPlugin extends GenericPlugin {
 				$templateMgr =& TemplateManager::getManager();
 				$templateMgr->addStyleSheet(Request::getBaseUrl() . '/lib/pkp/styles/jqueryUi.css');
 				$templateMgr->addStyleSheet(Request::getBaseUrl() . '/lib/pkp/styles/jquery.pnotify.default.css');
+				$templateMgr->addStyleSheet(Request::getBaseUrl() . '/lib/pkp/styles/themes/default/pnotify.css');
 			}
 			return true;
 		}
@@ -118,11 +119,13 @@ class JQueryPlugin extends GenericPlugin {
 		$notifications =& $notificationDao->getNotificationsByUserId($user->getId(), NOTIFICATION_LEVEL_TRIVIAL);
 		while ($notification =& $notifications->next()) {
 			$notificationTitle = $notification->getTitle();
-			if ($notification->getIsLocalized() && !empty($notificationTitle)) $notificationTitle = Locale::translate($notificationTitle);
-			if (empty($notificationTitle)) $notificationTitle = Locale::translate('notification.notification');
+			if ($notification->getIsLocalized() && !empty($notificationTitle)) $notificationTitle = __($notificationTitle);
+			if (empty($notificationTitle)) $notificationTitle = __('notification.notification');
 			$notificationsMarkup .= '$.pnotify({pnotify_title: \'' . $this->jsEscape($notificationTitle) . '\', pnotify_text: \'';
-			if ($notification->getIsLocalized()) $notificationsMarkup .= $this->jsEscape(Locale::translate($notification->getContents(), array('param' => $notification->getParam())));
+			if ($notification->getIsLocalized()) $notificationsMarkup .= $this->jsEscape(__($notification->getContents(), array('param' => $notification->getParam())));
 			else $notificationsMarkup .= $this->jsEscape($notification->getContents());
+			$notificationsMarkup .= '\', pnotify_addclass: \'' . $this->jsEscape($notification->getStyleClass());
+			$notificationsMarkup .= '\', pnotify_notice_icon: \'notifyIcon ' . $this->jsEscape($notification->getIconClass());
 			$notificationsMarkup .= '\'});';
 			$notificationDao->deleteNotificationById($notification->getId());
 			unset($notification);
@@ -165,7 +168,7 @@ class JQueryPlugin extends GenericPlugin {
 	 * @return string
 	 */
 	function getDisplayName() {
-		return Locale::translate('plugins.generic.jquery.name');
+		return __('plugins.generic.jquery.name');
 	}
 
 	/**
@@ -173,8 +176,8 @@ class JQueryPlugin extends GenericPlugin {
 	 * @return string
 	 */
 	function getDescription() {
-		if ($this->isJQueryInstalled()) return Locale::translate('plugins.generic.jquery.description');
-		return Locale::translate('plugins.generic.jquery.descriptionDisabled', array('jQueryPath' => JQUERY_INSTALL_PATH));
+		if ($this->isJQueryInstalled()) return __('plugins.generic.jquery.description');
+		return __('plugins.generic.jquery.descriptionDisabled', array('jQueryPath' => JQUERY_INSTALL_PATH));
 	}
 
 	/**

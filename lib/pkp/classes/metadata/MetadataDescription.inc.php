@@ -3,7 +3,7 @@
 /**
  * @file classes/metadata/MetadataDescription.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class MetadataDescription
@@ -204,7 +204,7 @@ class MetadataDescription extends DataObject {
 		if (isset($locale) && !$translated) return false;
 		if (!isset($locale) && $translated) {
 			// Retrieve the current locale
-			$locale = Locale::getLocale();
+			$locale = AppLocale::getLocale();
 		}
 
 		// Handle cardinality
@@ -285,7 +285,7 @@ class MetadataDescription extends DataObject {
 		if (!$translated) assert(is_null($locale));
 		if ($translated && !isset($locale)) {
 			// Retrieve the current locale
-			$locale = Locale::getLocale();
+			$locale = AppLocale::getLocale();
 		}
 
 		// Retrieve the value

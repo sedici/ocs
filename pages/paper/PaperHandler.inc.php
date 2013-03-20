@@ -3,7 +3,7 @@
 /**
  * @file PaperHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class PaperHandler
@@ -49,6 +49,9 @@ class PaperHandler extends Handler {
 		$conference =& $router->getContext($request, CONTEXT_CONFERENCE);
 		$paper =& $this->paper;
 		$this->setupTemplate();
+
+		// manager.scheduler.building / manager.scheduler.room
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_OCS_MANAGER));
 
 		$rtDao =& DAORegistry::getDAO('RTDAO');
 		$conferenceRt = $rtDao->getConferenceRTByConference($conference);
@@ -476,7 +479,7 @@ class PaperHandler extends Handler {
 
 	function setupTemplate() {
 		parent::setupTemplate();
-		Locale::requireComponents(array(LOCALE_COMPONENT_PKP_READER, LOCALE_COMPONENT_PKP_SUBMISSION));
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_PKP_READER, LOCALE_COMPONENT_PKP_SUBMISSION));
 	}
 }
 

@@ -4,7 +4,7 @@
 <!--
   * locale/nl_NL/admin.xml
   *
-  * Copyright (c) 2000-2010 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the nl_NL (Nederlands) locale.
@@ -39,7 +39,6 @@
 	<message key="admin.languages.reload">Taalbestanden opnieuw laden</message>
 	<message key="admin.languages.uninstall">De-installeer taal</message>
 	<message key="admin.phpInfo">Uitgebreide PHP informatie</message>
-	<message key="admin.saveSystemConfig">Bewaar instellingen</message>
 	<message key="admin.server.apacheVersion">Apache versie</message>
 	<message key="admin.server.dbDriver">Database driver</message>
 	<message key="admin.server.dbVersion">Database server versie</message>

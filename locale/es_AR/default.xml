@@ -4,7 +4,7 @@
 <!--
   * locale.xml
   *
-  * Copyright (c) 2000-2010 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the en_US (Español (Argentina)) locale.
@@ -47,5 +47,4 @@
 	<message key="default.schedConfSettings.checklist.bibliographicRequirements"><![CDATA[El texto adhiere a los requerimientos de estilo y bibliográficos indicados en las <a href="{$authorGuidelinesUrl}">Guías para Autores</a>, que se encuentran en la Sección Acerca de la Conferencia]]></message>
 	<message key="default.schedConfSettings.forReaders"><![CDATA[Alentamos a los lectores a registrarse para recibir notificaciones de papers enviados a esta conferencia. Utilice el enlace  <a href="{$accountUrl}">Cuenta</a> de la parte de arriba de la página principal de la conferencia. Esta lista permite a la conferencia contar con un cierto nivel de soporte o acceso a lectores. Vea las <a href="{$privacyStatementUrl}">Políticas de Privacidad</a> de la Conferencia, la cual asegura a los lectores que su nombre y su dirección de correo no serán utilizados para otros propósitos.]]></message>
 	<message key="default.schedConfSettings.forAuthors"><![CDATA[¿Está interesado en enviar un trabajo a esta conferencia? Recomendaos que revise la sección <a href="{$aboutUrl}">Acerca de la Conferencia</a>para conocer las políticas de las secciones, además de la  <a href="{$authorGuidelinesUrl}">Guía para Autores</a>. Los autores necesitan <a href="{$accountUrl}">crear una cuenta </a> en el sitio web de la conferencia antes de enviar un trabajo, o si la cuenta ya existe pueden simplemente <a href="{$loginUrl}">ingresar</a> y comenzar el proceso de envío.]]></message>
-	<message key="default.conferenceSettings.archiveAccessPolicy">Las presentaciones que forman parte de los congresos actuales y los que fueron llevados a cabo por este sitio, han sido categorizadas como de acceso abierto y están disponibles libremente para ser vistas, para el beneficio de los autores y lectores interesados.</message>
 </locale>

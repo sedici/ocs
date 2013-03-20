@@ -4,7 +4,7 @@
 /**
  * @file classes/controllers/grid/action/GridAction.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class GridAction
@@ -128,7 +128,7 @@ class GridAction {
 	 */
 	function getLocalizedTitle() {
 		if ( $this->_titleLocalized ) return $this->_titleLocalized;
-		return Locale::translate($this->_title);;
+		return __($this->_title);;
 	}
 
 	function setImage($image) {

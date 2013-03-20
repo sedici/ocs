@@ -7,7 +7,7 @@
 /**
  * @file plugins/oaiMetadata/dc/OAIMetadataFormat_DC.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class OAIMetadataFormat_DC
@@ -63,10 +63,10 @@ class OAIMetadataFormat_DC extends OAIMetadataFormat {
 		}
 
 		// Types
-		Locale::requireComponents(array(LOCALE_COMPONENT_APPLICATION_COMMON));
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_APPLICATION_COMMON));
 		$this->stripAssocArray((array) $track->getIdentifyType(null));
 		$types = array_merge_recursive(
-			empty($types)?array(Locale::getLocale() => Locale::translate('rt.metadata.pkp.peerReviewed')):$types,
+			empty($types)?array(AppLocale::getLocale() => __('rt.metadata.pkp.peerReviewed')):$types,
 			$this->stripAssocArray((array) $paper->getType(null))
 		);
 

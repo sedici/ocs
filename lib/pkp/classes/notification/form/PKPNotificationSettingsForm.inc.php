@@ -6,7 +6,7 @@
 /**
  * @file classes/notification/form/NotificationSettingsForm.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class PKPNotificationSettingsForm
@@ -45,8 +45,8 @@ class PKPNotificationSettingsForm extends Form {
 		$templateMgr =& TemplateManager::getManager();
 		$templateMgr->assign('notificationSettings', $notificationSettings);
 		$templateMgr->assign('emailSettings', $emailSettings);
-		$templateMgr->assign('titleVar', Locale::translate('common.title'));
-		$templateMgr->assign('userVar', Locale::translate('common.user'));
+		$templateMgr->assign('titleVar', __('common.title'));
+		$templateMgr->assign('userVar', __('common.user'));
 		return parent::display();
 	}
 }

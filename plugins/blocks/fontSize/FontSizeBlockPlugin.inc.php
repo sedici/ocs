@@ -3,7 +3,7 @@
 /**
  * FontSizeBlockPlugin.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class FontSizeBlockPlugin
@@ -100,14 +100,14 @@ class FontSizeBlockPlugin extends BlockPlugin {
 	 * @return String
 	 */
 	function getDisplayName() {
-		return Locale::translate('plugins.block.fontSize.displayName');
+		return __('plugins.block.fontSize.displayName');
 	}
 
 	/**
 	 * Get a description of the plugin.
 	 */
 	function getDescription() {
-		return Locale::translate('plugins.block.fontSize.description');
+		return __('plugins.block.fontSize.description');
 	}
 
 	/**

@@ -7,7 +7,7 @@
 /**
  * @file classes/site/Site.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class Site
@@ -38,7 +38,7 @@ class Site extends DataObject {
 
 		if ($supportedLocales === null) {
 			$supportedLocales = array();
-			$localeNames =& Locale::getAllLocales();
+			$localeNames =& AppLocale::getAllLocales();
 
 			$locales = $this->getSupportedLocales();
 			foreach ($locales as $localeKey) {
@@ -78,7 +78,7 @@ class Site extends DataObject {
 
 		$title = null;
 
-		foreach (array(Locale::getLocale(), Locale::getPrimaryLocale()) as $locale) {
+		foreach (array(AppLocale::getLocale(), AppLocale::getPrimaryLocale()) as $locale) {
 			if (isset($typeArray[$locale]) && $typeArray[$locale]) {
 				if (isset($imageArray[$locale])) $title = $imageArray[$locale];
 			}
@@ -273,10 +273,10 @@ class Site extends DataObject {
 	}
 
 	function getLocalizedSetting($name) {
-		$returner = $this->getSetting($name, Locale::getLocale());
+		$returner = $this->getSetting($name, AppLocale::getLocale());
 		if ($returner === null) {
 			unset($returner);
-			$returner = $this->getSetting($name, Locale::getPrimaryLocale());
+			$returner = $this->getSetting($name, AppLocale::getPrimaryLocale());
 		}
 		return $returner;
 	}

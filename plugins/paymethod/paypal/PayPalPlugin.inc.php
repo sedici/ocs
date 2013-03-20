@@ -23,15 +23,15 @@ class PayPalPlugin extends PaymethodPlugin {
 	}
 
 	function getDisplayName() {
-		return Locale::translate('plugins.paymethod.paypal.displayName');
+		return __('plugins.paymethod.paypal.displayName');
 	}
 
 	function getDescription() {
-		return Locale::translate('plugins.paymethod.paypal.description');
-	}   
+		return __('plugins.paymethod.paypal.description');
+	}
 
 	function register($category, $path) {
-		if (parent::register($category, $path)) {			
+		if (parent::register($category, $path)) {
 			$this->addLocaleData();
 			$this->import('PayPalDAO');
 			$payPalDao = new PayPalDAO();
@@ -75,6 +75,7 @@ class PayPalPlugin extends PaymethodPlugin {
 		$user =& Request::getUser();
 
 		$params = array(
+			'charset' => Config::getVar('i18n', 'client_charset'),
 			'business' => $this->getSetting($schedConf->getConferenceId(), $schedConf->getId(), 'selleraccount'),
 			'item_name' => $queuedPayment->getDescription(),
 			'amount' => $queuedPayment->getAmount(),
@@ -82,12 +83,12 @@ class PayPalPlugin extends PaymethodPlugin {
 			'no_note' => 1,
 			'no_shipping' => 1,
 			'currency_code' => $queuedPayment->getCurrencyCode(),
-			'lc' => String::substr(Locale::getLocale(), 3), 
+			'lc' => String::substr(AppLocale::getLocale(), 3),
 			'custom' => $queuedPaymentId,
-			'notify_url' => Request::url(null, null, 'payment', 'plugin', array($this->getName(), 'ipn')),  
+			'notify_url' => Request::url(null, null, 'payment', 'plugin', array($this->getName(), 'ipn')),
 			'return' => $queuedPayment->getRequestUrl(),
 			'cancel_return' => Request::url(null, null, 'payment', 'plugin', array($this->getName(), 'cancel')),
-			'first_name' => ($user)?$user->getFirstName():'',  
+			'first_name' => ($user)?$user->getFirstName():'',
 			'last_name' => ($user)?$user->getLastname():'',
 			'item_number' => 1,
 			'cmd' => '_xclick'
@@ -124,7 +125,7 @@ class PayPalPlugin extends PaymethodPlugin {
 				if (get_magic_quotes_gpc()) {
 					foreach ($_POST as $key => $value) $req .= '&' . urlencode(stripslashes($key)) . '=' . urlencode(stripslashes($value));
 				} else {
-					foreach ($_POST as $key => $value) $req .= '&' . urlencode($key) . '=' . urlencode($value);	
+					foreach ($_POST as $key => $value) $req .= '&' . urlencode($key) . '=' . urlencode($value);
 				}
 
 				// Create POST response
@@ -135,6 +136,7 @@ class PayPalPlugin extends PaymethodPlugin {
 				curl_setopt($ch, CURLOPT_HTTPHEADER, Array('Content-Type: application/x-www-form-urlencoded', 'Content-Length: ' . strlen($req)));
 				curl_setopt($ch, CURLOPT_POSTFIELDS, $req);
 				$ret = curl_exec ($ch);
+				$curlError = curl_error($ch);
 				curl_close ($ch);
 
 				// Check the confirmation response and handle as necessary.
@@ -209,33 +211,41 @@ class PayPalPlugin extends PaymethodPlugin {
 							if ($ocsPaymentManager->fulfillQueuedPayment($queuedPaymentId, $queuedPayment)) {
 								// Send the registrant a notification that their payment was received
 								$schedConfSettingsDao =& DAORegistry::getDAO('SchedConfSettingsDAO');
-		
+
+								// Get registrant name and email
+								$userDao =& DAORegistry::getDAO('UserDAO');
+								$user =& $userDao->getUser($queuedPayment->getuserId());
+								$registrantName = $user->getFullName();
+								$registrantEmail = $user->getEmail();
+
+								// Get conference contact details
+								$schedConfId = $schedConf->getId();
 								$registrationName = $schedConfSettingsDao->getSetting($schedConfId, 'registrationName');
 								$registrationEmail = $schedConfSettingsDao->getSetting($schedConfId, 'registrationEmail');
 								$registrationPhone = $schedConfSettingsDao->getSetting($schedConfId, 'registrationPhone');
 								$registrationFax = $schedConfSettingsDao->getSetting($schedConfId, 'registrationFax');
 								$registrationMailingAddress = $schedConfSettingsDao->getSetting($schedConfId, 'registrationMailingAddress');
 								$registrationContactSignature = $registrationName;
-						
+
 								if ($registrationMailingAddress != '') $registrationContactSignature .= "\n" . $registrationMailingAddress;
-								if ($registrationPhone != '') $registrationContactSignature .= "\n" . Locale::Translate('user.phone') . ': ' . $registrationPhone;
-								if ($registrationFax != '')	$registrationContactSignature .= "\n" . Locale::Translate('user.fax') . ': ' . $registrationFax;
-						
-								$registrationContactSignature .= "\n" . Locale::Translate('user.email') . ': ' . $registrationEmail;
+								if ($registrationPhone != '') $registrationContactSignature .= "\n" . AppLocale::Translate('user.phone') . ': ' . $registrationPhone;
+								if ($registrationFax != '')	$registrationContactSignature .= "\n" . AppLocale::Translate('user.fax') . ': ' . $registrationFax;
+
+								$registrationContactSignature .= "\n" . AppLocale::Translate('user.email') . ': ' . $registrationEmail;
 
 								$paramArray = array(
-									'registrantName' => $contactName,
-									'schedConfName' => $schedConfName,
-									'registrationContactSignature' => $registrationContactSignature 
+									'registrantName' => $registrantName,
+									'conferenceName' => $schedConf->getFullTitle(),
+									'registrationContactSignature' => $registrationContactSignature
 								);
-						
+
 								import('mail.MailTemplate');
 								$mail = new MailTemplate('MANUAL_PAYMENT_RECEIVED');
 								$mail->setFrom($registrationEmail, $registrationName);
 								$mail->assignParams($paramArray);
-								$mail->addRecipient($contactEmail, $contactName);
+								$mail->addRecipient($registrantEmail, $registrantName);
 								$mail->send();
-								
+
 								exit();
 							}
 
@@ -267,7 +277,7 @@ class PayPalPlugin extends PaymethodPlugin {
 					$mail->assignParams(array(
 						'schedConfName' => $schedConf->getFullTitle(),
 						'postInfo' => print_r($_POST, true),
-						'additionalInfo' => "Confirmation return: $ret",
+						'additionalInfo' => "Confirmation return: $ret\nCURL error: $curlError",
 						'serverVars' => print_r($_SERVER, true)
 					));
 					$mail->send();

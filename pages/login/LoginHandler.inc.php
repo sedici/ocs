@@ -3,7 +3,7 @@
 /**
  * @file LoginHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class LoginHandler
@@ -32,6 +32,7 @@ class LoginHandler extends PKPLoginHandler {
 			$conference =& Request::getConference();
 
 			if (!Validation::canAdminister($conference->getId(), $userId)) {
+				$this->setupTemplate();
 				// We don't have administrative rights
 				// over this user. Display an error.
 				$templateMgr =& TemplateManager::getManager();
@@ -86,6 +87,13 @@ class LoginHandler extends PKPLoginHandler {
 	}
 
 	/**
+	 * Get the log in URL.
+	 */
+	function _getLoginUrl() {
+		return Request::url(null, null, 'login', 'signIn');
+	}
+
+	/**
 	 * Helper Function - set mail from address
 	 * @param MailTemplate $mail 
 	 */
@@ -102,6 +110,14 @@ class LoginHandler extends PKPLoginHandler {
 		} else {
 			$mail->setFrom($site->getLocalizedContactEmail(), $site->getLocalizedContactName());
 		}
+	}
+
+	/**
+	 * Configure the template for display.
+	 */
+	function setupTemplate() {
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_OCS_MANAGER, LOCALE_COMPONENT_PKP_MANAGER));
+		parent::setupTemplate();
 	}
 }
 

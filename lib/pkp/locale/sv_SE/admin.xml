@@ -4,7 +4,7 @@
 <!--
   */locale/sv_SE/admin.xml
   *
-  * Copyright (c) 2000-2010 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the sv_SE (Swedish) locale.
@@ -39,7 +39,6 @@
 	<message key="admin.languages.reload">Uppdatera språk</message>
 	<message key="admin.languages.uninstall">Avinstallera språk</message>
 	<message key="admin.phpInfo">Utökad PHP-information</message>
-	<message key="admin.saveSystemConfig">Spara ändringar</message>
 	<message key="admin.server.apacheVersion">Apache-version</message>
 	<message key="admin.server.dbDriver">Databasdriver</message>
 	<message key="admin.server.dbVersion">Serverversion av databasen</message>

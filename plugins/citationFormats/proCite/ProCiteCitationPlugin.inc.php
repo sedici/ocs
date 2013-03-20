@@ -3,7 +3,7 @@
 /**
  * @file ProCiteCitationPlugin.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class ProCiteCitationPlugin
@@ -33,15 +33,15 @@ class ProCiteCitationPlugin extends CitationPlugin {
 	}
 
 	function getDisplayName() {
-		return Locale::translate('plugins.citationFormats.proCite.displayName');
+		return __('plugins.citationFormats.proCite.displayName');
 	}
 
 	function getCitationFormatName() {
-		return Locale::translate('plugins.citationFormats.proCite.citationFormatName');
+		return __('plugins.citationFormats.proCite.citationFormatName');
 	}
 
 	function getDescription() {
-		return Locale::translate('plugins.citationFormats.proCite.description');
+		return __('plugins.citationFormats.proCite.description');
 	}
 
 	/**

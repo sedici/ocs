@@ -4,7 +4,7 @@
 <!--
   * Agriculture.xml
   *
-  * Copyright (c) 2000-2010 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Reading Tools version: Agriculture (en_US)
@@ -180,7 +180,7 @@ definition.</search_description>
 			<search_title>CropSEARCH</search_title>
 			<search_description>Index to plant lists of hundreds of crop species.</search_description>
 			<url>http://www.hort.purdue.edu/newcrop/SearchEngine.html</url>
-			<search_url>http://index.cc.purdue.edu:8765/query.html?col=pumerge&amp;charset=utf-8&amp;ht=0&amp;qp=%2Bsite%3Ahort.purdue.edu&amp;qs=&amp;qc=&amp;pw=100%25&amp;ws=0&amp;la=en&amp;qm=0&amp;st=1&amp;nh=10&amp;lk=1&amp;rf=0&amp;rq=0&amp;si=0&amp;puhead=header.html&amp;pufoot=footer.html&amp;qt={$formKeywords}</search_url>
+			<search_url>http://index.cc.purdue.edu:8765/query.html?col=pumerge&amp;charset=iso-8859-1&amp;ht=0&amp;qp=%2Bsite%3Ahort.purdue.edu&amp;qs=&amp;qc=&amp;pw=100%25&amp;ws=0&amp;la=en&amp;qm=0&amp;st=1&amp;nh=10&amp;lk=1&amp;rf=0&amp;rq=0&amp;si=0&amp;puhead=header.html&amp;pufoot=footer.html&amp;qt={$formKeywords}</search_url>
 			
 		</search>
 		<search>

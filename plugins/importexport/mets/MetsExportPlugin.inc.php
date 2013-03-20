@@ -3,7 +3,7 @@
 /**
  * @file METSExportPlugin.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class PubMedExportPlugin
@@ -39,11 +39,11 @@ class METSExportPlugin extends ImportExportPlugin {
 	}
 
 	function getDisplayName() {
-		return Locale::translate('plugins.importexport.METSExport.displayName');
+		return __('plugins.importexport.METSExport.displayName');
 	}
 
 	function getDescription() {
-		return Locale::translate('plugins.importexport.METSExport.description');
+		return __('plugins.importexport.METSExport.description');
 	}
 
 	function display(&$args) {

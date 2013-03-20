@@ -7,7 +7,7 @@
 /**
  * @file classes/cliTool/CliTool.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class CommandLineTool
@@ -61,7 +61,7 @@ class CommandLineTool {
 		$request->setRouter($router);
 
 		// Initialize the locale and load generic plugins.
-		Locale::initialize();
+		AppLocale::initialize();
 		PluginRegistry::loadCategory('generic');
 
 		$this->argv = isset($argv) && is_array($argv) ? $argv : array();

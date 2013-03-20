@@ -3,7 +3,7 @@
 /**
  * @file NativeExportDom.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class NativeExportDom
@@ -257,25 +257,25 @@ class NativeExportDom {
 
 		// FIXME: These should be constants!
 		switch ($suppFile->getType()) {
-			case Locale::translate('author.submit.suppFile.researchInstrument'):
+			case __('author.submit.suppFile.researchInstrument'):
 				$suppFileType = 'research_instrument';
 				break;
-			case Locale::translate('author.submit.suppFile.researchMaterials'):
+			case __('author.submit.suppFile.researchMaterials'):
 				$suppFileType = 'research_materials';
 				break;
-			case Locale::translate('author.submit.suppFile.researchResults'):
+			case __('author.submit.suppFile.researchResults'):
 				$suppFileType = 'research_results';
 				break;
-			case Locale::translate('author.submit.suppFile.transcripts'):
+			case __('author.submit.suppFile.transcripts'):
 				$suppFileType = 'transcripts';
 				break;
-			case Locale::translate('author.submit.suppFile.dataAnalysis'):
+			case __('author.submit.suppFile.dataAnalysis'):
 				$suppFileType = 'data_analysis';
 				break;
-			case Locale::translate('author.submit.suppFile.dataSet'):
+			case __('author.submit.suppFile.dataSet'):
 				$suppFileType = 'data_set';
 				break;
-			case Locale::translate('author.submit.suppFile.sourceText'):
+			case __('author.submit.suppFile.sourceText'):
 				$suppFileType = 'source_text';
 				break;
 			default:

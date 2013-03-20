@@ -3,7 +3,7 @@
 /**
  * @file SearchHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class SearchHandler
@@ -55,7 +55,7 @@ class SearchHandler extends Handler {
 			$conferenceDao =& DAORegistry::getDAO('ConferenceDAO');
 			$conferences =& $conferenceDao->getEnabledConferenceTitles();  //Enabled added
 			$templateMgr->assign('siteSearch', true);
-			$templateMgr->assign('conferenceOptions', array('' => Locale::Translate('search.allConferences')) + $conferences);
+			$templateMgr->assign('conferenceOptions', array('' => AppLocale::Translate('search.allConferences')) + $conferences);
 			$yearRange = $publishedPaperDao->getPaperYearRange(null);
 		} else {
 			$conference =& Request::getConference();
@@ -161,7 +161,7 @@ class SearchHandler extends Handler {
 
 			$templateMgr =& TemplateManager::getManager();
 			$templateMgr->assign('searchInitial', Request::getUserVar('searchInitial'));
-			$templateMgr->assign('alphaList', explode(' ', Locale::translate('common.alphaList')));
+			$templateMgr->assign('alphaList', explode(' ', __('common.alphaList')));
 			$templateMgr->assign_by_ref('authors', $authors);
 			$templateMgr->display('search/authorIndex.tpl');
 		}
