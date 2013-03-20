@@ -3,7 +3,7 @@
 /**
  * @file AdminSettingsHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class AdminSettingsHandler
@@ -59,14 +59,14 @@ class AdminSettingsHandler extends AdminHandler {
 
 		if ($request->getUserVar('uploadSiteStyleSheet')) {
 			if (!$settingsForm->uploadSiteStyleSheet()) {
-				$settingsForm->addError('siteStyleSheet', Locale::translate('admin.settings.siteStyleSheetInvalid'));
+				$settingsForm->addError('siteStyleSheet', __('admin.settings.siteStyleSheetInvalid'));
 			}
 		} elseif ($request->getUserVar('deleteSiteStyleSheet')) {
 			$publicFileManager = new PublicFileManager();
 			$publicFileManager->removeSiteFile($site->getSiteStyleFilename());
 		} elseif ($request->getUserVar('uploadPageHeaderTitleImage')) {
 			if (!$settingsForm->uploadPageHeaderTitleImage($settingsForm->getFormLocale())) {
-				$settingsForm->addError('pageHeaderTitleImage', Locale::translate('admin.settings.homeHeaderImageInvalid'));
+				$settingsForm->addError('pageHeaderTitleImage', __('admin.settings.homeHeaderImageInvalid'));
 			}
 		} elseif ($request->getUserVar('deletePageHeaderTitleImage')) {
 			$publicFileManager = new PublicFileManager();

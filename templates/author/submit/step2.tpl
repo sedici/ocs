@@ -1,14 +1,19 @@
 {**
  * step2.tpl
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Step 2 of author paper submission.
  *
  * $Id$
  *}
-{assign var="pageTitle" value="author.submit.step2"}
+
+{if !$showAbstractSteps}
+	{assign var="pageTitle" value="author.submit.step2NoAbstracts"}
+{else}
+	{assign var="pageTitle" value="author.submit.step2"}
+{/if}
 {include file="author/submit/submitHeader.tpl"}
 
 <form method="post" action="{url op="saveSubmit" path=$submitStep}" enctype="multipart/form-data">

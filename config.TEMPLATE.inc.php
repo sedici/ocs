@@ -7,7 +7,7 @@
 ;
 ; config.TEMPLATE.inc.php
 ;
-; Copyright (c) 2000-2010 John Willinsky
+; Copyright (c) 2000-2012 John Willinsky
 ; Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
 ;
 ; OCS Configuration settings.
@@ -202,7 +202,11 @@ session_check_ip = On
 encryption = md5
 
 ; Allowed HTML tags for fields that permit restricted HTML.
-allowed_html = "<a> <em> <strong> <cite> <code> <ul> <ol> <li> <dl> <dt> <dd> <b> <i> <u> <img> <sup> <sub> <br> <p>"
+; For PHP 5.0.5 and greater, allowed attributes must be specified individually
+; e.g. <img src|alt> to allow "src" and "alt" attributes. Unspecified
+; attributes will be stripped. For PHP below 5.0.5 attributes may not be
+; specified in this way.
+allowed_html = "<a> <em> <strong> <cite> <code> <ul> <ol> <li> <dl> <dt> <dd> <b> <i> <u> <img src|alt> <sup> <sub> <br> <p>"
 
 ; Prevent VIM from attempting to highlight the rest of the config file
 ; with unclosed tags:
@@ -277,11 +281,11 @@ result_cache_hours = 1
 ; indexed.
 
 ; PDF
-; index[application/pdf] = "/usr/bin/pstotext %s -enc UTF-8 -nopgbrk %s - | /usr/bin/tr '[:cntrl:]' ' '"
-; index[application/pdf] = "/usr/bin/pdftotext %s -enc UTF-8 -nopgbrk %s - | /usr/bin/tr '[:cntrl:]' ' '"
+; index[application/pdf] = "/usr/bin/pstotext -enc UTF-8 -nopgbrk %s - | /usr/bin/tr '[:cntrl:]' ' '"
+; index[application/pdf] = "/usr/bin/pdftotext -enc UTF-8 -nopgbrk %s - | /usr/bin/tr '[:cntrl:]' ' '"
 
 ; PostScript
-; index[application/postscript] = "/usr/bin/pstotext %s -enc UTF-8 -nopgbrk %s - | /usr/bin/tr '[:cntrl:]' ' '"
+; index[application/postscript] = "/usr/bin/pstotext -enc UTF-8 -nopgbrk %s - | /usr/bin/tr '[:cntrl:]' ' '"
 ; index[application/postscript] = "/usr/bin/ps2ascii %s | /usr/bin/tr '[:cntrl:]' ' '"
 
 ; Microsoft Word

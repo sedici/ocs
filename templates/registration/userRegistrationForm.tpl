@@ -1,7 +1,7 @@
 {**
  * userRegistrationForm.tpl
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Attendee self-registration page.
@@ -171,6 +171,11 @@
 		</td>
 	</tr>
 {/if}
+
+<tr valign="top">
+	<td class="label">{fieldLabel name="salutation" key="user.salutation"}</td>
+	<td class="value"><input type="text" name="salutation" id="salutation" value="{$salutation|escape}" size="20" maxlength="40" class="textField" /></td>
+</tr>
 
 <tr valign="top">
 	<td class="label">{fieldLabel name="firstName" required="true" key="user.firstName"}</td>

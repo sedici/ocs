@@ -4,7 +4,7 @@
 <!--
   * locale/eu_ES/admin.xml
   *
-  * Copyright (c) 2000-2010 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the eu_ES (Basque (Euskara)) locale.
@@ -39,7 +39,6 @@
 	<message key="admin.languages.reload">Birkargatu hizkuntza</message>
 	<message key="admin.languages.uninstall">Desinstalatu hizkuntza</message>
 	<message key="admin.phpInfo">PHP informazio xehea</message>
-	<message key="admin.saveSystemConfig">Gorde konfigurazioa</message>
 	<message key="admin.server.apacheVersion">Apache bertsioa</message>
 	<message key="admin.server.dbDriver">Datu-basearen kontrolatzailea</message>
 	<message key="admin.server.dbVersion">Datu-base zerbitzariaren bertsioa</message>

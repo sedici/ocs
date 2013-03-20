@@ -3,7 +3,7 @@
 /**
  * @file RTAdminHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class RTAdminHandler
@@ -124,7 +124,7 @@ class RTAdminHandler extends Handler {
 	 */
 	function setupTemplate($subclass = false, $version = null, $context = null, $search = null) {
 		parent::setupTemplate();
-		Locale::requireComponents(array(LOCALE_COMPONENT_PKP_READER, LOCALE_COMPONENT_OCS_MANAGER));
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_PKP_READER, LOCALE_COMPONENT_OCS_MANAGER));
 
 		$conference =& Request::getConference();
 		$schedConf =& Request::getSchedConf();

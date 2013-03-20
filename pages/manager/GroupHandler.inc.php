@@ -3,7 +3,7 @@
 /**
  * @file GroupHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class GroupHandler
@@ -301,7 +301,7 @@ class GroupHandler extends ManagerHandler {
 				USER_FIELD_USERNAME => 'user.username',
 				USER_FIELD_EMAIL => 'user.email'
 			));
-			$templateMgr->assign('alphaList', explode(' ', Locale::translate('common.alphaList')));
+			$templateMgr->assign('alphaList', explode(' ', __('common.alphaList')));
 			$templateMgr->assign_by_ref('group', $group);
 
 			$templateMgr->display('manager/groups/selectUser.tpl');

@@ -3,7 +3,7 @@
 /**
  * @file classes/i18n/LocaleFile.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class LocaleFile
@@ -179,8 +179,8 @@ class LocaleFile {
 			}
 			$value = $localeContents[$key];
 
-			$referenceParams = Locale::getParameterNames($referenceValue);
-			$params = Locale::getParameterNames($value);
+			$referenceParams = AppLocale::getParameterNames($referenceValue);
+			$params = AppLocale::getParameterNames($value);
 			if (count(array_diff($referenceParams, $params)) > 0) {
 				$errors[LOCALE_ERROR_DIFFERING_PARAMS][] = array(
 					'key' => $key,

@@ -1,7 +1,7 @@
 {**
  * directors.tpl
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Subtemplate defining the submission directors table.
@@ -31,7 +31,7 @@
 			</td>
 			<td>{if $editAssignment->getDateNotified()}{$editAssignment->getDateNotified()|date_format:$dateFormatShort}{else}&mdash;{/if}</td>
 			{if $isDirector}
-				<td><a href="{url op="deleteEditAssignment" path=$editAssignment->getEditId()}" class="action">{translate key="common.delete"}</a></td>
+				<td><a href="{url page="director" op="deleteEditAssignment" path=$editAssignment->getEditId()}" class="action">{translate key="common.delete"}</a></td>
 			{/if}
 		</tr>
 	{foreachelse}
@@ -39,8 +39,8 @@
 	{/foreach}
 </table>
 {if $isDirector}
-	<a href="{url op="assignDirector" path="trackDirector" paperId=$submission->getPaperId()}" class="action">{translate key="director.paper.assignTrackDirector"}</a>
-	|&nbsp;<a href="{url op="assignDirector" path="director" paperId=$submission->getPaperId()}" class="action">{translate key="director.paper.assignDirector"}</a>
-	{if !$selfAssigned}|&nbsp;<a href="{url op="assignDirector" path="director" directorId=$userId paperId=$submission->getPaperId()}" class="action">{translate key="common.addSelf"}</a>{/if}
+	<a href="{url page="director" op="assignDirector" path="trackDirector" paperId=$submission->getPaperId()}" class="action">{translate key="director.paper.assignTrackDirector"}</a>
+	|&nbsp;<a href="{url page="director" op="assignDirector" path="director" paperId=$submission->getPaperId()}" class="action">{translate key="director.paper.assignDirector"}</a>
+	{if !$selfAssigned}|&nbsp;<a href="{url page="director" op="assignDirector" path="director" directorId=$userId paperId=$submission->getPaperId()}" class="action">{translate key="common.addSelf"}</a>{/if}
 {/if}
 </div>

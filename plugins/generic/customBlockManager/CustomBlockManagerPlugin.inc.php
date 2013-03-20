@@ -2,7 +2,7 @@
 /**
  * @file CustomBlockManagerPlugin.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @package plugins.generic.customBlockManager
@@ -21,11 +21,11 @@ class CustomBlockManagerPlugin extends GenericPlugin {
 	}
 
 	function getDisplayName() {
-		return Locale::translate('plugins.generic.customBlockManager.displayName');
+		return __('plugins.generic.customBlockManager.displayName');
 	}
 
 	function getDescription() {
-		return Locale::translate('plugins.generic.customBlockManager.description');
+		return __('plugins.generic.customBlockManager.description');
 	}   
 
 	function register($category, $path) {
@@ -74,6 +74,7 @@ class CustomBlockManagerPlugin extends GenericPlugin {
 					$plugins[$blockPlugin->getSeq()][$blockPlugin->getPluginPath() . $i] =& $blockPlugin;
 					
 					$i++;
+					unset($blockPlugin);
 				}
 				break;
 		}
@@ -106,16 +107,16 @@ class CustomBlockManagerPlugin extends GenericPlugin {
 		if ($this->getEnabled()) {
 			$verbs[] = array(
 				'disable',
-				Locale::translate('manager.plugins.disable')
+				__('manager.plugins.disable')
 			);
 			$verbs[] = array(
 				'settings',
-				Locale::translate('plugins.generic.customBlockManager.settings')
+				__('plugins.generic.customBlockManager.settings')
 			);			
 		} else {
 			$verbs[] = array(
 				'enable',
-				Locale::translate('manager.plugins.enable')
+				__('manager.plugins.enable')
 			);
 		}
 		return $verbs;
@@ -153,7 +154,7 @@ class CustomBlockManagerPlugin extends GenericPlugin {
 			case 'settings':
 				$pageCrumbs[] = array(
 					Request::url(null, null, 'manager', 'plugins'),
-					Locale::translate('manager.plugins'),
+					__('manager.plugins'),
 					true
 				);
 				$templateMgr->assign('pageHierarchy', $pageCrumbs);

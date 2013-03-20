@@ -3,7 +3,7 @@
 /**
  * @file TinyMCEPlugin.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class TinyMCEPlugin
@@ -300,7 +300,7 @@ class TinyMCEPlugin extends GenericPlugin {
 			$baseUrl = $templateManager->get_template_vars('baseUrl');
 			$additionalHeadData = $templateManager->get_template_vars('additionalHeadData');
 			$enableFields = join(',', $enableFields);
-			$allLocales = Locale::getAllLocales();
+			$allLocales = AppLocale::getAllLocales();
 			$localeList = array();
 			foreach ($allLocales as $key => $locale) {
 				$localeList[] = String::substr($key, 0, 2);
@@ -319,16 +319,17 @@ class TinyMCEPlugin extends GenericPlugin {
 			</script>
 			<script language="javascript" type="text/javascript">
 				tinyMCE.init({
+					entity_encoding : "raw",
 					plugins : "paste,fullscreen,jbimages",
 					mode : "exact",
-					language : "' . String::substr(Locale::getLocale(), 0, 2) . '",
+					language : "' . String::substr(AppLocale::getLocale(), 0, 2) . '",
 					elements : "' . $enableFields . '",
 					relative_urls : false,
 					forced_root_block : false,
 					paste_auto_cleanup_on_paste : true,
 					apply_source_formatting : false,
 					theme : "advanced",
-					theme_advanced_buttons1 : "cut,copy,paste,|,bold,italic,underline,bullist,numlist,|,link,unlink,help,code,fullscreen",
+					theme_advanced_buttons1 : "cut,copy,paste,|,bold,italic,underline,bullist,numlist,|,link,unlink,help,code,fullscreen,jbimages",
 					theme_advanced_buttons2 : "",
 					theme_advanced_buttons3 : ""
 				});
@@ -352,7 +353,7 @@ class TinyMCEPlugin extends GenericPlugin {
 	 * @return string
 	 */
 	function getDisplayName() {
-		return Locale::translate('plugins.generic.tinymce.name');
+		return __('plugins.generic.tinymce.name');
 	}
 
 	/**
@@ -360,8 +361,8 @@ class TinyMCEPlugin extends GenericPlugin {
 	 * @return string
 	 */
 	function getDescription() {
-		if ($this->isMCEInstalled()) return Locale::translate('plugins.generic.tinymce.description');
-		return Locale::translate('plugins.generic.tinymce.descriptionDisabled', array('tinyMcePath' => TINYMCE_INSTALL_PATH));
+		if ($this->isMCEInstalled()) return __('plugins.generic.tinymce.description');
+		return __('plugins.generic.tinymce.descriptionDisabled', array('tinyMcePath' => TINYMCE_INSTALL_PATH));
 	}
 
 	/**
@@ -390,7 +391,7 @@ class TinyMCEPlugin extends GenericPlugin {
 		$verbs = array();
 		if ($this->isMCEInstalled()) $verbs[] = array(
 			($this->getEnabled()?'disable':'enable'),
-			Locale::translate($this->getEnabled()?'manager.plugins.disable':'manager.plugins.enable')
+			__($this->getEnabled()?'manager.plugins.disable':'manager.plugins.enable')
 		);
 		return $verbs;
 	}
@@ -408,11 +409,11 @@ class TinyMCEPlugin extends GenericPlugin {
 		switch ($verb) {
 			case 'enable':
 				$this->updateSetting($conferenceId, 0, 'enabled', true);
-				$message = Locale::translate('plugins.generic.tinymce.enabled');
+				$message = __('plugins.generic.tinymce.enabled');
 				break;
 			case 'disable':
 				$this->updateSetting($conferenceId, 0, 'enabled', false);
-				$message = Locale::translate('plugins.generic.tinymce.disabled');
+				$message = __('plugins.generic.tinymce.disabled');
 				break;
 		}
 		return false;

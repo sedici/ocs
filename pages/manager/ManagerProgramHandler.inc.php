@@ -3,7 +3,7 @@
 /**
  * @file ManagerProgramHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class ManagerProgramHandler
@@ -66,7 +66,7 @@ class ManagerProgramHandler extends ManagerHandler {
 
 		if (Request::getUserVar('uploadProgramFile')) {
 			if (!$settingsForm->uploadProgram('programFile', $formLocale)) {
-				$settingsForm->addError('programFile', Locale::translate('common.uploadFailed'));
+				$settingsForm->addError('programFile', __('common.uploadFailed'));
 			}
 			$editData = true;
 		} elseif (Request::getUserVar('deleteProgramFile')) {

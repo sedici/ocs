@@ -1,7 +1,7 @@
 {**
  * schedConfs.tpl
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * List of conference papers to potentially export
@@ -128,7 +128,7 @@ function SubmitIfAnyIsChecked() {
 	{/if}
 </table>
 
-<p><input type="button" value="{translate key="common.export"}" class="button defaultButton" onclick="SubmitIfAnyIsChecked();return false;"/>&nbsp;<input type="button" id="selButton" value="Select All" class="button" onclick="javascript:selectAll();" /></p>
+<p><input type="button" value="{translate key="common.export"}" class="button defaultButton" onclick="SubmitIfAnyIsChecked();return false;"/>&nbsp;<input type="button" id="selButton" value="{translate key="common.selectAll"}" class="button" onclick="javascript:selectAll();" /></p>
 </form>
 
 {include file="common/footer.tpl"}

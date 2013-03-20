@@ -7,7 +7,7 @@
 /**
  * @file classes/help/PKPHelp.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class PKPHelp
@@ -59,7 +59,7 @@ class PKPHelp {
 	 * defaults to en_US.
 	 */
 	function getLocale() {
-		$locale = Locale::getLocale();
+		$locale = AppLocale::getLocale();
 		if (!file_exists("help/$locale/.")) {
 			return 'en_US';
 		}

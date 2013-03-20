@@ -3,7 +3,7 @@
 /**
  * @file EmailHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class EmailHandler
@@ -36,7 +36,7 @@ class EmailHandler extends ManagerHandler {
 
 		$emailTemplateDao =& DAORegistry::getDAO('EmailTemplateDAO');
 		$emailTemplatesArray =& $emailTemplateDao->getEmailTemplates(
-			Locale::getLocale(),
+			AppLocale::getLocale(),
 			$conference->getId()
 		);
 

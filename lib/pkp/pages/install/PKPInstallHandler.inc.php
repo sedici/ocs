@@ -3,7 +3,7 @@
 /**
  * @file PKPInstallHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class PKPInstallHandler
@@ -30,7 +30,7 @@ class PKPInstallHandler extends Handler {
 		$this->validate();
 		$this->setupTemplate();
 
-		if (($setLocale = PKPRequest::getUserVar('setLocale')) != null && Locale::isLocaleValid($setLocale)) {
+		if (($setLocale = PKPRequest::getUserVar('setLocale')) != null && AppLocale::isLocaleValid($setLocale)) {
 			Request::setCookieVar('currentLocale', $setLocale);
 		}
 
@@ -81,7 +81,7 @@ class PKPInstallHandler extends Handler {
 		$this->validate();
 		$this->setupTemplate();
 
-		if (($setLocale = PKPRequest::getUserVar('setLocale')) != null && Locale::isLocaleValid($setLocale)) {
+		if (($setLocale = PKPRequest::getUserVar('setLocale')) != null && AppLocale::isLocaleValid($setLocale)) {
 			PKPRequest::setCookieVar('currentLocale', $setLocale);
 		}
 
@@ -109,7 +109,7 @@ class PKPInstallHandler extends Handler {
 
 	function setupTemplate() {
 		parent::setupTemplate();
-		Locale::requireComponents(array(LOCALE_COMPONENT_PKP_INSTALLER));
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_PKP_INSTALLER));
 	}
 }
 

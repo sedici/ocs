@@ -3,7 +3,7 @@
 /**
  * @file NotificationHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class NotificationHandler
@@ -167,7 +167,7 @@ class NotificationHandler extends Handler {
 		$templateMgr =& TemplateManager::getManager();
 		$templateMgr->assign('version', $version->getVersionString());
 		$templateMgr->assign('selfUrl', Request::getCompleteUrl());
-		$templateMgr->assign('locale', Locale::getPrimaryLocale());
+		$templateMgr->assign('locale', AppLocale::getPrimaryLocale());
 		$templateMgr->assign('appName', $appName);
 		$templateMgr->assign('siteTitle', $siteTitle);
 		$templateMgr->assign_by_ref('notifications', $notifications->toArray());

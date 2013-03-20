@@ -3,7 +3,7 @@
 /**
  * @file ConferenceLanguagesHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class ConferenceLanguagesHandler
@@ -71,7 +71,7 @@ class ConferenceLanguagesHandler extends ManagerHandler {
 	function reloadLocalizedDefaultSettings($args, &$request) {
 		// make sure the locale is valid
 		$locale = $request->getUserVar('localeToLoad');
-		if ( !Locale::isLocaleValid($locale) ) {
+		if ( !AppLocale::isLocaleValid($locale) ) {
 			$request->redirect(null, null, null, 'languages');
 		}
 

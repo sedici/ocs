@@ -3,7 +3,7 @@
 /**
  * @file plugins/oaiMetadata/marc/OAIMetadataFormatPlugin_MARC.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class OAIMetadataFormatPlugin_MARC
@@ -29,10 +29,10 @@ class OAIMetadataFormatPlugin_MARC extends OAIMetadataFormatPlugin {
 		return 'OAIFormatPlugin_MARC';
 	}
 	function getDisplayName() {
-		return Locale::translate('plugins.OAIMetadata.marc.displayName');
+		return __('plugins.OAIMetadata.marc.displayName');
 	}
 	function getDescription() {
-		return Locale::translate('plugins.OAIMetadata.marc.description');
+		return __('plugins.OAIMetadata.marc.description');
 	}
 	function getFormatClass() {
 		return 'OAIMetadataFormat_MARC';

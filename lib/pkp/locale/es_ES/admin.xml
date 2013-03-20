@@ -4,7 +4,7 @@
 <!--
   * locale/es_ES/admin.xml
   *
-  * Copyright (c) 2000-2010 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the es_ES (Español (España)) locale.
@@ -39,7 +39,6 @@
 	<message key="admin.languages.reload">Recargar ficheros de idiomas</message>
 	<message key="admin.languages.uninstall">Desinstalar fichero de idiomas</message>
 	<message key="admin.phpInfo">Información PHP extendida</message>
-	<message key="admin.saveSystemConfig">Guardar configuración</message>
 	<message key="admin.server.apacheVersion">Versión Apache</message>
 	<message key="admin.server.dbDriver">Gestor de bases de datos</message>
 	<message key="admin.server.dbVersion">Versión del gestor de bases de datos</message>

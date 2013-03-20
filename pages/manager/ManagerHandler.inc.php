@@ -3,7 +3,7 @@
 /**
  * @file ManagerHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class ManagerHandler
@@ -105,7 +105,7 @@ class ManagerHandler extends Handler {
 	 */
 	function setupTemplate($subclass = false) {
 		parent::setupTemplate();
-		Locale::requireComponents(array(LOCALE_COMPONENT_PKP_MANAGER, LOCALE_COMPONENT_OCS_MANAGER, LOCALE_COMPONENT_PKP_ADMIN));
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_PKP_MANAGER, LOCALE_COMPONENT_OCS_MANAGER, LOCALE_COMPONENT_PKP_ADMIN));
 		$templateMgr =& TemplateManager::getManager();
 		$pageHierarchy = array();
 

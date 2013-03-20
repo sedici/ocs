@@ -4,7 +4,7 @@
 <!--
   * locale.xml
   *
-  * Copyright (c) 2000-2010 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the eu_ES (Basque (Euskara)) locale.
@@ -386,9 +386,6 @@ Kontuan izan OAI interfazea desgaitu daitekeela gune honetarako, OCS sistema-kon
 </ul>]]></message>
 
 	<!-- System Information -->
-	<message key="admin.editSystemConfigInstructions"><![CDATA[Erabili inprimaki hau zure sistema-konfigurazioa (<tt>config.inc.php fitxategia</tt>) aldatzeko. Sakatu 'Gorde' konfigurazio berria gordetzeko, edo 'Bistaratu' konfigurazio-fitxategi eguneratua bistaratzeko bakarrik, lehengo konfigurazioa aldatu gabe.
-<br /><br />
-<span class="formError">Kontuz: Ezarpen hauek aldatzen badituzu, zure gunea sarbiderik gabe utz dezakezu (konfigurazio-fitxategia eskuz konpondu beharrean). Ez ezazu aldaketarik egin, oso ondo ez baldin badakizu zertan zabiltzan.</span>]]></message>
 	<message key="admin.overwriteConfigFileInstructions"><![CDATA[<h4>ABISUA!</div>
 <p>Sistemak ezin izan du automatikoki gainidatzi konfigurazio-fitxategia. Konfigurazio-aldaketak aplikatzeko, testu-editore egoki batekin ireki beharko duzu <tt>config.inc.php</tt> eta bertako edukia aldatu beheko testu-eremuaren edukiarekin.</p>]]></message>
 	<!-- Registration Management -->
@@ -745,8 +742,6 @@ Zure zerbitzariak mbstring hau onartzen du: <strong>{$supportsMBString}</strong>
 	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<strong>Abisua:</strong> Datu-basea instalatzean huts egin badu instalazioak, zure OCS datu-basea edo datu-baseko taulak askatu beharko dituzu datu-basea instalatzen saiatu aurretik.]]></message>
 	<message key="installer.overwriteConfigFileInstructions"><![CDATA[<h4>GARRANTZITSUA!</h4>
 <p>Instalatzaileak ezin izan du automatikoki gainidatzi konfigurazio-fitxategia. Sistema erabiltzen saiatu aurretik, ireki <tt>config.inc.php</tt> testu-editore egoki batekin eta ordeztu bertako edukia beheko testu-eremuaren edukiarekin.</p>]]></message>
-	<message key="installer.manualSQLInstructions"><![CDATA[<h4>Eskuzko instalazioa</h4>
-<p>Behean erakusten dira OCS datu-basearen eskema eta hasierako datuak sortzeko SQL instrukzioak. Kontuan izan, sistema ezingo dela erabili instrukzio horiek eskuz exekutatu arte. <tt>config.inc.php</tt> konfigurazio-fitxategia ere eskuz konfiguratu beharko duzu.</p>]]></message>
 	<message key="installer.installationComplete"><![CDATA[<p>OCS ondo instalatu da.</p>
 <p>Sistema erabiltzen hasteko, <a href="{$loginUrl}">hasi saioa</a> aurreko orrian sartutako erabiltzaile-izenarekin eta pasahitzarekin.</p>
 <p>Albisteen eta eguneratzeen berri jakin nahi baduzu, <strong>erregistratu <a href="http://pkp.sfu.ca/ocs/register" target="_new">http://pkp.sfu.ca/ocs/register</a> helbidean.</strong> Galderarik edo oharrik egin nahi baduzu, bisitatu <a href="http://pkp.sfu.ca/support/forum" target="_new">laguntza teknikoko foroa</a>.</p>]]></message>

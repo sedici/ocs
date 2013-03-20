@@ -1,7 +1,7 @@
 {**
  * createReviewerForm.tpl
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Form for directors to create reviewers.
@@ -47,7 +47,7 @@
 	<tr valign="top">
 		<td width="20%" class="label">{fieldLabel name="formLocale" key="form.formLanguage"}</td>
 		<td width="80%" class="value">
-			{url|assign:"createReviewerUrl" op="createReviewer" escape=false}
+			{url|assign:"createReviewerUrl" op="createReviewer" path=$paperId escape=false}
 			{form_language_chooser form="reviewerForm" url=$createReviewerUrl}
 			<span class="instruct">{translate key="form.formLanguage.description"}</span>
 		</td>

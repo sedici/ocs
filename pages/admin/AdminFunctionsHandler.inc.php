@@ -3,7 +3,7 @@
 /**
  * @file AdminFunctionsHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class AdminFunctionsHandler
@@ -46,7 +46,7 @@ class AdminFunctionsHandler extends AdminHandler {
 		$serverInfo = array(
 			'admin.server.platform' => Core::serverPHPOS(),
 			'admin.server.phpVersion' => Core::serverPHPVersion(),
-			'admin.server.apacheVersion' => (function_exists('apache_get_version') ? apache_get_version() : Locale::translate('common.notAvailable')),
+			'admin.server.apacheVersion' => (function_exists('apache_get_version') ? apache_get_version() : __('common.notAvailable')),
 			'admin.server.dbDriver' => Config::getVar('database', 'driver'),
 			'admin.server.dbVersion' => (empty($dbServerInfo['description']) ? $dbServerInfo['version'] : $dbServerInfo['description'])
 		);
@@ -63,80 +63,6 @@ class AdminFunctionsHandler extends AdminHandler {
 		}
 		$templateMgr->assign('helpTopicId', 'site.administrativeFunctions');
 		$templateMgr->display('admin/systemInfo.tpl');
-	}
-
-	/**
-	 * Edit the system configuration settings.
-	 */
-	function editSystemConfig() {
-		$this->validate();
-		$this->setupTemplate(true);
-
-		$templateMgr =& TemplateManager::getManager();
-		$templateMgr->append('pageHierarchy', array(Request::url(null, null, null, ROLE_PATH_SITE_ADMIN, 'systemInfo'), 'admin.systemInformation'));
-
-		$configData =& Config::getData();
-
-		$templateMgr =& TemplateManager::getManager();
-		$templateMgr->assign_by_ref('configData', $configData);
-		$templateMgr->assign('helpTopicId', 'site.administrativeFunctions');
-		$templateMgr->display('admin/systemConfig.tpl');
-	}
-
-	/**
-	 * Save modified system configuration settings.
-	 */
-	function saveSystemConfig() {
-		$this->validate();
-		$this->setupTemplate(true);
-
-		$configData =& Config::getData();
-
-		// Update configuration based on user-supplied data
-		foreach ($configData as $sectionName => $sectionData) {
-			$newData = Request::getUserVar($sectionName);
-			foreach ($sectionData as $settingName => $settingValue) {
-				if (isset($newData[$settingName])) {
-					$newValue = $newData[$settingName];
-					if (strtolower($newValue) == "true" || strtolower($newValue) == "on") {
-						$newValue = "On";
-					} else if (strtolower($newValue) == "false" || strtolower($newValue) == "off") {
-						$newValue = "Off";
-					}
-					$configData[$sectionName][$settingName] = $newValue;
-				}
-			}
-		}
-
-		$templateMgr =& TemplateManager::getManager();
-
-		// Update contents of configuration file
-		$configParser = new ConfigParser();
-		if (!$configParser->updateConfig(Config::getConfigFileName(), $configData)) {
-			// Error reading config file (this should never happen)
-			$templateMgr->assign('errorMsg', 'admin.systemConfigFileReadError');
-			$templateMgr->assign('backLink', Request::url(null, null, null, null, 'systemInfo'));
-			$templateMgr->assign('backLinkLabel', 'admin.systemInformation');
-			$templateMgr->display('common/error.tpl');
-
-		} else {
-			$writeConfigFailed = false;
-			$displayConfigContents = Request::getUserVar('display') == null ? false : true;
-			$configFileContents = $configParser->getFileContents();
-
-			if (!$displayConfigContents) {
-				if (!$configParser->writeConfig(Config::getConfigFileName())) {
-					$writeConfigFailed = true;
-				}
-			}
-
-			// Display confirmation
-			$templateMgr->assign('writeConfigFailed', $writeConfigFailed);
-			$templateMgr->assign('displayConfigContents', $displayConfigContents);
-			$templateMgr->assign('configFileContents', $configFileContents);
-			$templateMgr->assign('helpTopicId', 'site.administrativeFunctions');
-			$templateMgr->display('admin/systemConfigUpdated.tpl');
-		}
 	}
 
 	/**

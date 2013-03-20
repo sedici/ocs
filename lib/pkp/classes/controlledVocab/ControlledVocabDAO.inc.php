@@ -3,7 +3,7 @@
 /**
  * @file ControlledVocabDAO.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class ControlledVocabDAO
@@ -206,8 +206,8 @@ class ControlledVocabDAO extends DAO {
 			WHERE	e.controlled_vocab_id = ?
 			ORDER BY e.seq',
 			array(
-				$settingName, Locale::getLocale(),		// Current locale
-				$settingName, Locale::getPrimaryLocale(),	// Primary locale
+				$settingName, AppLocale::getLocale(),		// Current locale
+				$settingName, AppLocale::getPrimaryLocale(),	// Primary locale
 				$settingName, '',				// No locale
 				(int) $controlledVocabId
 			)

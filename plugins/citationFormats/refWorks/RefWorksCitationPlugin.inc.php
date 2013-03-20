@@ -3,7 +3,7 @@
 /**
  * @file RefWorksCitationPlugin.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class RefWorksCitationPlugin
@@ -33,15 +33,15 @@ class RefWorksCitationPlugin extends CitationPlugin {
 	}
 
 	function getDisplayName() {
-		return Locale::translate('plugins.citationFormats.refWorks.displayName');
+		return __('plugins.citationFormats.refWorks.displayName');
 	}
 
 	function getCitationFormatName() {
-		return Locale::translate('plugins.citationFormats.refWorks.citationFormatName');
+		return __('plugins.citationFormats.refWorks.citationFormatName');
 	}
 
 	function getDescription() {
-		return Locale::translate('plugins.citationFormats.refWorks.description');
+		return __('plugins.citationFormats.refWorks.description');
 	}
 
 }

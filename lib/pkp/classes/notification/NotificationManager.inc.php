@@ -3,7 +3,7 @@
 /**
  * @file classes/notification/NotificationManager.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class NotificationManager
@@ -93,12 +93,12 @@ class NotificationManager {
 	function sendToMailingList($notification) {
 		$notificationSettingsDao =& DAORegistry::getDAO('NotificationSettingsDAO');
 		$mailList = $notificationSettingsDao->getMailList();
-		Locale::requireComponents(array(LOCALE_COMPONENT_APPLICATION_COMMON));
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_APPLICATION_COMMON));
 
 		foreach ($mailList as $email) {
 			if ($notification->getIsLocalized()) {
 				$params = array('param' => $notification->getParam());
-				$notificationContents = Locale::translate($notification->getContents(), $params);
+				$notificationContents = __($notification->getContents(), $params);
 			} else {
 				$notificationContents = $notification->getContents();
 			}

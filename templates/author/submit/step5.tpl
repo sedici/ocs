@@ -1,17 +1,19 @@
 {**
  * step5.tpl
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Step 5 of author paper submission.
  *
  * $Id$
  *}
-{if $currentSchedConf->getSetting('acceptSupplementaryReviewMaterials') && !$showAbstractSteps}
-{assign var="pageTitle" value="author.submit.step5"}
+{if $showAbstractSteps && $currentSchedConf->getSetting('acceptSupplementaryReviewMaterials') && !$showPaperSteps}
+	{assign var="pageTitle" value="author.submit.step5SkipSupp"}
+{elseif $currentSchedConf->getSetting('acceptSupplementaryReviewMaterials') && !$showAbstractSteps}
+	{assign var="pageTitle" value="author.submit.step5"}
 {else}
-{assign var="pageTitle" value="author.submit.step5SkipSupp"}
+	{assign var="pageTitle" value="author.submit.step5"}
 {/if}
 {include file="author/submit/submitHeader.tpl"}
 

@@ -4,7 +4,7 @@
 <!--
   * locale.xml
   *
-  * Copyright (c) 2000-2010 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the fr_FR locale.
@@ -328,9 +328,6 @@
 </ul>]]></message>
 
 	<!-- System Information -->
-	<message key="admin.editSystemConfigInstructions"><![CDATA[Utilisez ce formulaire pour modifier la configuration de votre système (le fichier <tt>config.inc.php</tt>). Cliquez sur "Sauvegarder" pour enregistrer votre nouvelle configuration, ou "Afficher" pour uniquement voir la mise à jour du fichier de configuration et ne pas modifier la configuration existante.
-<br /><br />
-<span class="formError">Avertissement: Modifier ces paramètres peut éventuellement rendre votre site inaccessible (vous obligeant à réparer manuellement votre fichier de configuration). Il est fortement déconseillé d'appliquer ces changements si vous ne savez pas exactement ce que vous faites.</span>]]></message>
 	<message key="admin.overwriteConfigFileInstructions"><![CDATA[<h4>NOTE!</div>
 		<p>Le système ne modifie pas automatiquement le fichier de configuration. Pour appliquer les modifications, vous devez ouvrir le <tt>config.inc.php</tt> dans un éditeur de texte adéquat et remplacer son contenu par le contenu de la zone texte ci-dessous.</p>]]></message>
 
@@ -840,8 +837,6 @@ Votre serveur soutient actuellement mbstring: <strong>{$supportsMBString}</stron
 	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<b>Avertissement:</b> Si l'installation de la base de données n'a pas réussi, vous devrez peut-être laisser tomber votre base de données OCS ou les tables de votre base de données avant de tenter de réinstaller la base de données.]]></message>
 	<message key="installer.overwriteConfigFileInstructions"><![CDATA[<h4>IMPORTANT!</h4>
 <p>L'installateur n'a pas pu écraser automatiquement le fichier de configuration. Avant de tenter d'utiliser le système, veuillez ouvrir <tt>config.inc.php</tt> dans le rédacteur de texte approprié et remplacer son contenu par le contenu de la zone de texte simple ci-dessous.</p>]]></message>
-	<message key="installer.manualSQLInstructions"><![CDATA[<h4>Installation manuelle</h4>
-<p>Les énoncés SQL pour créer le schéma de la base de données OCS et les données initiales sont affichés ci-dessous. Noter que le système sera inutilisable tant que ces énoncés n'auront pas été exécutés manuellement. Vous devrez aussi configurer manuellement la <tt>config.inc.php</tt> configuration file.</p>]]></message>
 	<message key="installer.installationComplete"><![CDATA[<p>Installation d'OCS réussie.</p>
 <p>Pour commencer à utiliser le système, <a href="{$loginUrl}">connectez-vous</a> avec le nom d'utilisateur et le mot de passe entrés à la page précédente.</p>
 <p>Si vous souhaitez recevoir des nouvelles et des mises à jour, <strong>veuillez vous inscrire sur <a href="http://pkp.sfu.ca/ocs/register" target="_new">http://pkp.sfu.ca/ocs/register</a>.</strong> Si vous avez des questions ou des commentaires, veuillez visiter le <a href="http://pkp.sfu.ca/support/forum" target="_new">forum de soutien</a>.</p>]]></message>

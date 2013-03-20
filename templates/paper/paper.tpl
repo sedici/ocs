@@ -1,7 +1,7 @@
 {**
  * paper.tpl
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Paper View.
@@ -14,7 +14,7 @@
 		<div id="paperFontSize">
 			{translate key="paper.fontSize"}:&nbsp;
 			<div id="sizer"></div>
-			</div>
+		</div>
 	</div>
 {if $galley}
 	{if $galley->isHTMLGalley()}
@@ -22,7 +22,7 @@
 	{/if}
 {else}
 
-	<div id="title">{$paper->getLocalizedTitle()|strip_unsafe_html}</h3></div>
+	<div id="title">{$paper->getLocalizedTitle()|strip_unsafe_html}</div>
 	<div id="author"><em>{$paper->getAuthorString()|escape}</em></div>
 	<br />
 
@@ -46,6 +46,15 @@
 	<div>{$paper->getLocalizedAbstract()|strip_unsafe_html|nl2br}</div>
 	<br />
 	</div>
+	{/if}
+
+	{if $paper->getLocalizedSubject()}
+		<div id="paperSubject">
+		<h4>{translate key="paper.subject"}</h4>
+		<br />
+		<div>{$paper->getLocalizedSubject()|escape}</div>
+		<br />
+		</div>
 	{/if}
 
 	{if $paper->getCitations()}

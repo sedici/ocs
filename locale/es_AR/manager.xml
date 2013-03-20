@@ -4,7 +4,7 @@
 <!--
   * ../ocs2-devel//locale/es_AR/manager.xml
   *
-  * Copyright (c) 2000-2011 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the es_AR (Español (Argentina)) locale.
@@ -13,12 +13,12 @@
   -->
 
 <locale name="es_AR" full_name = "Español (Argentina)">
-	<message key="manager.accommodation">Alojamiento</message>
+	<message key="manager.accommodation">Acomodaciones</message>
 	<message key="manager.accommodation.form.accommodationFiles">Archivos</message>
 	<message key="manager.accommodation.form.accommodationFiles.description">Use esta sección para subir uno o más archivos para los registrantes y registrantes potenciales, como mapas, formularios, etc. </message>
-	<message key="manager.accommodation.form.accommodationText">Descripción de las alternativas de alojamiento</message>
-	<message key="manager.accommodation.form.accommodationText.description">Ingrese un texto descriptivo para las distintas posibilidades de  alojamiento en el fomulario debajo.</message>
-	<message key="manager.accommodation.form.description">Ingrese información acerca de los alojamientos, transporte y otros temas relacionados a la logística aquí. Múltiples archivos, incluyendo información como direcciones y formularios pueden también ser subidos.</message>
+	<message key="manager.accommodation.form.accommodationText">Descripcción de las Acomodaciones</message>
+	<message key="manager.accommodation.form.accommodationText.description">Ingrese un texto descriptivo para las acomodaciones en el fomulario debajo.</message>
+	<message key="manager.accommodation.form.description">Ingrese información acerca de las acomodaciones, transporte y otros temas relacionados a la logística aquí. Múltiples archivos, incluyendo información como direcciones y formularios pueden también ser subidos.</message>
 	<message key="manager.announcements.form.schedConfId">Conferencia/Congreso Programada</message>
 	<message key="manager.announcements.schedConf">Conferencia/Congreso Programada</message>
 	<message key="manager.conferenceEventLog">Logs del Evento</message>
@@ -700,8 +700,4 @@
 	<message key="manager.timeline.scheduleEvents">Planificación de Eventos</message>
 	<message key="manager.tracks.wordCount">Cantidad de Palabras</message>
 	<message key="manager.tracks.wordCountInstructions">Limintar la cantidad de palabras del abstract para esta sección (0 para ilimitada)</message>
-	<message key="manager.tracks.downLoad">Decargar</message>
-	<message key="manager.setup.aboutConference.accessPolicy">Politica de Acceso</message>
-	<message key="manager.setup.aboutConference.archiveAccessPolicy.description">La siguientes configuraciones controlan el acceso a los archivos de su congreso.</message>
-	<message key="manager.setup.additionalContent.accessPolicy.description">Esta politica es aplicada a las presentaciones de su congreso actual subidas al sitio.</message>
 </locale>

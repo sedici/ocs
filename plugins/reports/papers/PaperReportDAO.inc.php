@@ -3,7 +3,7 @@
 /**
  * @file PaperReportDAO.inc.php
  *
- * Copyright (c) 2000-2011 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  * 
  * @class PaperReportDAO
@@ -28,8 +28,8 @@ class PaperReportDAO extends DAO {
 	 * @return array
 	 */
 	function getPaperReport($conferenceId, $schedConfId) {
-		$primaryLocale = Locale::getPrimaryLocale();
-		$locale = Locale::getLocale();
+		$primaryLocale = AppLocale::getPrimaryLocale();
+		$locale = AppLocale::getLocale();
 
 		$result =& $this->retrieve(
 			'SELECT	p.status AS status,

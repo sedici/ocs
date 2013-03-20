@@ -1,7 +1,7 @@
 {**
  * papers.tpl
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Issue
@@ -44,7 +44,7 @@
 				<td align="right" width="25%">
 					{if $mayViewPapers && $paper->getStatus() == $smarty.const.STATUS_PUBLISHED}
 						{foreach from=$paper->getGalleys() item=galley name=galleyList}
-							<a href="{url page="paper" op="view" path=$paper->getBestPaperId($currentConference)|to_array:$galley->getId()}" class="file">{translate key="manager.tracks.downLoad"}:{$galley->getGalleyLabel()|escape}</a>
+							<a href="{url page="paper" op="view" path=$paper->getBestPaperId($currentConference)|to_array:$galley->getId()}" class="file">{$galley->getGalleyLabel()|escape}</a>
 						{/foreach}
 					{/if}
 				</td>

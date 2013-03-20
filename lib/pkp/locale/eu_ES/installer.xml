@@ -4,7 +4,7 @@
 <!--
   * locale/eu_ES/installer.xml
   *
-  * Copyright (c) 2000-2010 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the eu_ES (Basque (Euskara)) locale.
@@ -60,8 +60,6 @@
 	<message key="installer.installParseDBFileError"><![CDATA[Errorea datu-basea instalatzeko <tt>{$file}</tt> fitxategia analizatzean.]]></message>
 	<message key="installer.locale">Localea</message>
 	<message key="installer.localeSettings">Localearen ezarpenak</message>
-	<message key="installer.manualInstall">Eskuzko instalazioa</message>
-	<message key="installer.manualUpgrade">Eskuzko bertsio-berritzea</message>
 	<message key="installer.miscSettings">Hainbat ezarpen</message>
 	<message key="installer.oaiRepositoryIdInstructions"><![CDATA[Metadatuak Biltzeko <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a> Protocol for Metadata Harvesting protokoloaren bidez gune honetan indexatutako metadatuen erregistroak identifikatzeko erabiltzen da identifikatzaile uniboko hau.]]></message>
 	<message key="installer.oaiRepositoryId">OAI gordailu-identifikatzailea</message>

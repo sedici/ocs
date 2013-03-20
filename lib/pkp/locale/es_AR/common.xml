@@ -4,7 +4,7 @@
 <!--
   * ../pkp//locale/es_AR/common.xml
   *
-  * Copyright (c) 2000-2010 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the es_AR (Español (Argentina)) locale.
@@ -318,7 +318,4 @@
 	<message key="common.false">Falso</message>
 	<message key="common.ok">OK</message>
 	<message key="common.true">Verdadero</message>
-	<message key="common.refresh">Actualizar</message>
-	<message key="common.openConferenceSystems">Portal de Congresos</message>
-	<message key="author.submit.authorRegistrationClosed">Se impidio el registro de nuevos autores para esta conferencia</message>
 </locale>

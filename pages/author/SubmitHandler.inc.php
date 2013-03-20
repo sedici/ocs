@@ -3,7 +3,7 @@
 /**
  * @file SubmitHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class SubmitHandler
@@ -51,7 +51,7 @@ class SubmitHandler extends AuthorHandler {
 		}
 
 		$step = isset($args[0]) ? (int) $args[0] : 1;
-		$paperId = Request::getUserVar('paperId');
+		$paperId = (int) Request::getUserVar('paperId');
 
 		$this->validate($paperId, $step);
 		$this->setupTemplate(true);
@@ -76,7 +76,7 @@ class SubmitHandler extends AuthorHandler {
 	 */
 	function saveSubmit($args) {
 		$step = isset($args[0]) ? (int) $args[0] : 0;
-		$paperId = Request::getUserVar('paperId');
+		$paperId = (int) Request::getUserVar('paperId');
 
 		$this->validate($paperId, $step);
 		$this->setupTemplate(true);
@@ -96,7 +96,7 @@ class SubmitHandler extends AuthorHandler {
 				case 2:
 					if (Request::getUserVar('uploadSubmissionFile')) {
 						if (!$submitForm->uploadSubmissionFile('submissionFile')) {
-							$submitForm->addError('uploadSubmissionFile', Locale::translate('common.uploadFailed'));
+							$submitForm->addError('uploadSubmissionFile', __('common.uploadFailed'));
 						}
 						$editData = true;
 					}
@@ -166,7 +166,7 @@ class SubmitHandler extends AuthorHandler {
 						if ($suppFileId = SubmitHandler::submitUploadSuppFile()) {
 							Request::redirect(null, null, null, 'submitSuppFile', $suppFileId, array('paperId' => $paperId));
 						} else {
-							$submitForm->addError('uploadSubmissionFile', Locale::translate('common.uploadFailed'));
+							$submitForm->addError('uploadSubmissionFile', __('common.uploadFailed'));
 						}
 					}
 					break;
@@ -190,9 +190,9 @@ class SubmitHandler extends AuthorHandler {
 				$notificationManager = new NotificationManager();
 				$roleDao =& DAORegistry::getDAO('RoleDAO');
 				$notificationUsers = array();
-				$conferenceManagers = $roleDao->getUsersByRoleId(ROLE_ID_CONFERENCE_MANAGER);
+				$conferenceManagers = $roleDao->getUsersByRoleId(ROLE_ID_CONFERENCE_MANAGER, $conference->getId());
 				$allUsers = $conferenceManagers->toArray();
-				$directors = $roleDao->getUsersByRoleId(ROLE_ID_DIRECTOR);
+				$directors = $roleDao->getUsersByRoleId(ROLE_ID_DIRECTOR, $conference->getId(), $schedConf->getId());
 				array_merge($allUsers, $directors->toArray());
 				foreach ($allUsers as $user) {
 					$notificationUsers[] = array('id' => $user->getId());
@@ -231,7 +231,7 @@ class SubmitHandler extends AuthorHandler {
 	 * Create new supplementary file with a uploaded file.
 	 */
 	function submitUploadSuppFile() {
-		$paperId = Request::getUserVar('paperId');
+		$paperId = (int) Request::getUserVar('paperId');
 		$this->validate($paperId, 4);
 		$paper =& $this->paper;
 		$this->setupTemplate(true);
@@ -245,7 +245,7 @@ class SubmitHandler extends AuthorHandler {
 
 		import('author.form.submit.AuthorSubmitSuppFileForm');
 		$submitForm = new AuthorSubmitSuppFileForm($paper);
-		$submitForm->setData('title', Locale::translate('common.untitled'));
+		$submitForm->setData('title', array(AppLocale::getLocale() => __('common.untitled')));
 		return $submitForm->execute();
 	}
 
@@ -254,7 +254,7 @@ class SubmitHandler extends AuthorHandler {
 	 * @param $args array optional, if set the first parameter is the supplementary file to edit
 	 */
 	function submitSuppFile($args) {
-		$paperId = Request::getUserVar('paperId');
+		$paperId = (int) Request::getUserVar('paperId');
 		$suppFileId = isset($args[0]) ? (int) $args[0] : 0;
 
 		$this->validate($paperId, 4);
@@ -281,7 +281,7 @@ class SubmitHandler extends AuthorHandler {
 	 * @param $args array optional, if set the first parameter is the supplementary file to update
 	 */
 	function saveSubmitSuppFile($args) {
-		$paperId = Request::getUserVar('paperId');
+		$paperId = (int) Request::getUserVar('paperId');
 		$suppFileId = isset($args[0]) ? (int) $args[0] : 0;
 
 		$this->validate($paperId, 4);
@@ -299,7 +299,7 @@ class SubmitHandler extends AuthorHandler {
 		import('file.FileManager');
 		$fileManager = new FileManager();
 		if ($fileManager->uploadError('uploadSuppFile') && $suppFileId == 0) {
-			$submitForm->addError('uploadSubmissionFile', Locale::translate('common.uploadFailed'));
+			$submitForm->addError('uploadSubmissionFile', __('common.uploadFailed'));
 		}
 
 		if ($submitForm->validate()) {
@@ -317,7 +317,7 @@ class SubmitHandler extends AuthorHandler {
 	function deleteSubmitSuppFile($args) {
 		import("file.PaperFileManager");
 
-		$paperId = Request::getUserVar('paperId');
+		$paperId = (int) Request::getUserVar('paperId');
 		$suppFileId = isset($args[0]) ? (int) $args[0] : 0;
 
 		$this->validate($paperId, 4);
@@ -355,13 +355,13 @@ class SubmitHandler extends AuthorHandler {
 		$paperDao =& DAORegistry::getDAO('PaperDAO');
 		$user =& Request::getUser();
 
-		if ($step !== false && ($step < 1 || $step > 5 || (!isset($paperId) && $step != 1))) {
+		if ($step !== false && ($step < 1 || $step > 5 || (!$paperId && $step != 1))) {
 			Request::redirect(null, null, null, 'submit', array(1));
 		}
 
 		$paper = null;
 
-		if (isset($paperId)) {
+		if ($paperId) {
 			// Check that paper exists for this conference and user and that submission is incomplete
 			$paper =& $paperDao->getPaper((int) $paperId);
 			if (!$paper || $paper->getUserId() !== $user->getId() || $paper->getSchedConfId() !== $schedConf->getId()) {

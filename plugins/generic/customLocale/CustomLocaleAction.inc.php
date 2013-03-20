@@ -3,7 +3,7 @@
 /**
  * @file CustomLocaleAction.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @package plugins.generic.customLocaleAction
@@ -17,9 +17,9 @@
 class CustomLocaleAction {
 
 	function getLocaleFiles($locale) {
-		if (!Locale::isLocaleValid($locale)) return null;
+		if (!AppLocale::isLocaleValid($locale)) return null;
 
-		$localeFiles =& Locale::makeComponentMap($locale);
+		$localeFiles =& AppLocale::makeComponentMap($locale);
 		$plugins =& PluginRegistry::loadAllPlugins();
 		foreach (array_keys($plugins) as $key) {
 			$plugin =& $plugins[$key];

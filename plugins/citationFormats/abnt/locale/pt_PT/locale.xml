@@ -4,7 +4,7 @@
 <!--
   * locale.xml
   *
-  * Copyright (c) 2000-2010 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for this citation plugin in pt_PT.
@@ -17,5 +17,5 @@
 	<message key="plugins.citationFormats.abnt.citationFormatName">ABNT</message>
 	<message key="plugins.citationFormats.abnt.description">Este plugin instala o formato de citação ABNT.</message>
 	<message key="plugins.citationFormat.abnt.location">Portugal</message>
-	<message key="plugins.citationFormats.abnt.retrieved"><![CDATA[Disponível em: <a href={$url}" target="_new!>{$url}</a>. Data de acesso:]]></message>
+	<message key="plugins.citationFormats.abnt.retrieved"><![CDATA[Disponível em: &lt;<a href="{$url}" target="_new">{$url}</a>&gt;. Data de acesso:]]></message>
 </locale>

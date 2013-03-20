@@ -3,7 +3,7 @@
 /**
  * @file plugins/oaiMetadata/dc/OAIMetadataFormatPlugin_DC.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class OAIMetadataFormatPlugin_DC
@@ -29,10 +29,10 @@ class OAIMetadataFormatPlugin_DC extends OAIMetadataFormatPlugin {
 		return 'OAIMetadataFormatPlugin_DC';
 	}
 	function getDisplayName() {
-		return Locale::translate('plugins.oaiMetadata.dc.displayName');
+		return __('plugins.oaiMetadata.dc.displayName');
 	}
 	function getDescription() {
-		return Locale::translate('plugins.oaiMetadata.dc.description');
+		return __('plugins.oaiMetadata.dc.description');
 	}
 	function getFormatClass() {
 		return 'OAIMetadataFormat_DC';

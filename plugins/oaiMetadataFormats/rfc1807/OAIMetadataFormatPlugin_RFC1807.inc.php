@@ -3,7 +3,7 @@
 /**
  * @file plugins/OAIMetadata/marc/OAIMetadataFormatPlugin_RFC1807.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class OAIMetadataFormatPlugin_RFC1807
@@ -29,10 +29,10 @@ class OAIMetadataFormatPlugin_RFC1807 extends OAIMetadataFormatPlugin {
 		return 'OAIFormatPlugin_RFC1807';
 	}
 	function getDisplayName() {
-		return Locale::translate('plugins.OAIMetadata.rfc1807.displayName');
+		return __('plugins.OAIMetadata.rfc1807.displayName');
 	}
 	function getDescription() {
-		return Locale::translate('plugins.OAIMetadata.rfc1807.description');
+		return __('plugins.OAIMetadata.rfc1807.description');
 	}
 	function getFormatClass() {
 		return 'OAIMetadataFormat_RFC1807';

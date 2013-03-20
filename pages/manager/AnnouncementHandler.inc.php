@@ -3,7 +3,7 @@
 /**
  * @file AnnouncementHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class AnnouncementHandler
@@ -33,7 +33,7 @@ class AnnouncementHandler extends PKPAnnouncementHandler {
 		if ( $conference ) {
 			$schedConfDao =& DAORegistry::getDAO('SchedConfDAO');
 			$schedConfs =& $schedConfDao->getSchedConfsByConferenceId($conference->getId());
-			$schedConfNames = array(0 => Locale::translate('common.all'));
+			$schedConfNames = array(0 => __('common.all'));
 			foreach($schedConfs->toArray() as $schedConf) {
 				$schedConfNames[$schedConf->getId()] = $schedConf->getSchedConfTitle();
 			}

@@ -4,7 +4,7 @@
 <!--
   * locale/de_DE/admin.xml
   *
-  * Copyright (c) 2000-2010 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the de_DE (Deutsch (Deutschland)) locale.
@@ -39,7 +39,6 @@
 	<message key="admin.languages.reload">Regionaleinstellung neu laden</message>
 	<message key="admin.languages.uninstall">Regionaleinstellung deinstallieren</message>
 	<message key="admin.phpInfo">Ausführliche Informationen zu PHP</message>
-	<message key="admin.saveSystemConfig">Konfiguration speichern</message>
 	<message key="admin.server.apacheVersion">Version von Apache</message>
 	<message key="admin.server.dbDriver">Datenbanktreiber</message>
 	<message key="admin.server.dbVersion">Version des Datenbankservers</message>

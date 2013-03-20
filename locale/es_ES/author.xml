@@ -4,7 +4,7 @@
 <!--
   * ocs2-devel/locale/es_ES/author.xml
   *
-  * Copyright (c) 2000-2010 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the es_ES (España Castellano) locale.
@@ -13,7 +13,7 @@
 
 <locale name="es_ES" full_name = "España Castellano">
 	<message key="author.submit">Nuevo envío</message>
-	<message key="author.track">Envíos activos</message>
+	<message key="author.track">Activar envíos</message>
 	<message key="author.submit.startHere">Empiece aquí a enviar su trabajo.</message>
 	<message key="author.submit.startHereLink">Primer paso del proceso de envío</message>
 	<message key="author.submit.step1">Paso 1. Comenzar el envío</message>

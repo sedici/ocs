@@ -3,7 +3,7 @@
 <!--
   * emailTemplateData.xml
   *
-  * Copyright (c) 2000-2010 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localized email templates XML file.
@@ -437,13 +437,5 @@ Su pago para {$conferenceName} ha sido recibido y registrado en su cuenta.
 Si posee alguna pregunta, por favor no dude en contactarme.
 Atentamente,
 {$registrationContactSignature}</body>
-	</email_text>
-	<email_text key="SUBMISSION_PAPER_INVITE">
-		<subject>Decision editorial sobre el Resumen</subject>
-		<body>{$authorName}:
-
-Felicitaciones, su resumen {$paperTitle} ha sido aceptado para su presentación en {$conferenceTitle}  la cual se realizara el dia {$conferenceDate} en {$locationCity}. Usted debería  enviar su trabajo completo  que sea revisado.
-
-Muchas Gracias y estaremos esperando su participación en este evento.</body>
 	</email_text>
 </email_texts>

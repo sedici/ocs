@@ -4,7 +4,7 @@
 <!--
   * locale.xml
   *
-  * Copyright (c) 2000-2010 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the pt_BR (Portuguese Brazilian) locale.
@@ -350,9 +350,6 @@ Note que a interface OAI pode ser desativada para este portal nas configuraçõe
 </ul>]]></message>
 
 	<!-- System Information -->
-	<message key="admin.editSystemConfigInstructions"><![CDATA[Use o formulário para modificar as configurações do sistema (o documento <tt>config.inc.php</tt>). Clique em "Salvar" para concluir as alterações de configuração, ou "Exibir" para apenas mostrar as configurações atualizadas sem realizar as modificações.
-<br /><br />
-<span class="formError">Advertência: Alterações nas configurações podem deixar o portal inacessível (obrigando a alterar manualmente o documento). É altamente recomendado que as alterações sejam realizadas por um especialista.</span>]]></message>
 	<message key="admin.overwriteConfigFileInstructions"><![CDATA[<h4>AVISO!</div>
 <p>O sistema não pôde alterar automaticamente o arquivo de configuração. Para aplicar as alterações é necessário editar o documento <tt>config.inc.php</tt> manualmente em algum editor de texto, substituindo-o com o conteúdo do campo a seguir.</p>]]></message>
 
@@ -421,11 +418,11 @@ Note que a interface OAI pode ser desativada para este portal nas configuraçõe
 	<!-- Conference setup page 5 -->
 
 	<!-- Conference setup page 6 -->
-	<message key="manager.setup.indexing.registerConferenceForIndexing.description"><![CDATA[Para indexar o conteúdo desta conferência em um sistema global de distribuição de bases de pesquisa, <a href="http://www.pkp.ubc.ca/harvester/add.php" target="_blank">cadastre</a> a URL da conferência no <a href="http://www.pkp.ubc.ca/harvester/" target="_blank">Coletador de Metadados</a> do Public Knowledge Project. Esta ferramenta coleta os metadados de cada item indexado, possibilitando buscas coletivas e precisas entre os sites de pesquisa que utilizam o protocolo de coleta de metadados do <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative, OAI-PMH</a>.
+	<message key="manager.setup.indexing.registerConferenceForIndexing.description"><![CDATA[Para indexar o conteúdo desta conferência em um sistema global de distribuição de bases de pesquisa, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">cadastre</a> a URL da conferência no <a href="http://pkp.sfu.ca/harvester/" target="_blank">Coletador de Metadados</a> do Public Knowledge Project. Esta ferramenta coleta os metadados de cada item indexado, possibilitando buscas coletivas e precisas entre os sites de pesquisa que utilizam o protocolo de coleta de metadados do <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative, OAI-PMH</a>.
 <br /><br />
 Caso o administrador do portal já tenha cadastrado o portal do Coletador do PKP, a conferência será automaticamente indexada, sem necessidade de registro individual.
 <br /><br />
-<a href="http://www.pkp.ubc.ca/harvester/add.php" target="_blank">Clique aqui</a> e digite <span class="highlight">{$siteUrl}</span> no campo <strong>Site URL</strong>, e <span class="highlight">{$oaiUrl}</span> no campo <strong>Base URL for OAI Archive</strong>.]]></message>
+<a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">Clique aqui</a> e digite <span class="highlight">{$siteUrl}</span> no campo <strong>Site URL</strong>, e <span class="highlight">{$oaiUrl}</span> no campo <strong>Base URL for OAI Archive</strong>.]]></message>
 
 	<!-- 
 	     ***
@@ -772,13 +769,7 @@ Ativo indica quantas avaliações estão em consideração ou em andamento.]]></
 </ul>
 </li>
 
-<li>Um diretório para armazenar os arquivos de submissão deve ser criado e com permissão de escrita (veja mais abaixo Configuração de Arquivos).</li></ol>
-
-
-
-<h4>Instalação Manual</h4>
-
-<p>Escolha a opção <strong>Instalação Manual</strong> para exibir os comandos SQL necessários para mostar o esquema de banco de dados do sistema e dados iniciais para permitir a instalação manual. Esta opção é útil para verificação de erros na instalação, particularmente para plataformas não suportadas. Note que o método manual não tentará criar os bancos ou tabelas, embora o documento de configuração possua as configurações necessárias para tal.</p>]]></message>
+<li>Um diretório para armazenar os arquivos de submissão deve ser criado e com permissão de escrita (veja mais abaixo Configuração de Arquivos).</li></ol>]]></message>
 	<message key="installer.upgradeInstructions"><![CDATA[<h4>Versão {$version}</h4>
 
 <p>Agradecemos seu interesse em utilizar o <strong>Sistema Online de Administração de Conferências</strong>, desenvolvido pelo Public Knowledge Project. Antes de continuar, leia o documento <a href="{$baseUrl}/docs/README_pt">README_pt</a> e o <a href="{$baseUrl}/docs/UPGRADE_pt">UPGRADE_pt</a>incluído com o pacote. Para maiores informações sobre o Public Knowledge Project e outros sistemas desenvolvidos, acesse o <a href="http://pkp.sfu.ca/" target="_blank">portal do PKP</a>. Para reportar erros, sugestões ou dúvidas sobre o Sistema Online de Administração de Conferências/Open Conference Systems visite <a href="pkp.sfu.ca/support/forum">PKP Support Forum</a>, ou <a href="http://pkp.sfu.ca/bugzilla/" target="_blank">Sistema de Controle de erros Bugzilla</a> do PKP. Embora os fóruns sejam a forma preferêncial de contato, também pode-se enviar e-mail para a <a href="mailto:pkp.contact@gmail.com">Equipe do PKP (pkp.contact@gmail.com)</a>.</p>
@@ -797,8 +788,6 @@ O servidor atualmente tem suporte a mbstring: <strong>{$supportsMBString}</stron
 	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<strong>AVISO:</strong> em caso de erro durante a instalação do banco de dados poder ser necessário eliminar o banco de dados ou as tabelas antes de executar novamente a instalação.]]></message>
 	<message key="installer.overwriteConfigFileInstructions"><![CDATA[<h4>IMPORTANTE!</h4>
 <p>A instalação não conseguiu sobrescrever o documento de configuração. Antes de usar o sistema, edite o documento <tt>config.inc.php</tt> em um editor de texto e substitua todo o conteúdo pelo texto no campo abaixo.</p>]]></message>
-	<message key="installer.manualSQLInstructions"><![CDATA[<h4>Instalação Manual</h4>
-<p>Seguem os comandos SQL para criar o esquema do banco de dados e inclusão de dados iniciais. Note que o sistema não poderá ser usado até a execução manual dos comandos. Será necessário também configurar manualmente o documento <tt>config.inc.php</tt>.</p>]]></message>
 	<message key="installer.installationComplete"><![CDATA[<p>Instalação do sistema concluída com sucesso.</p>
 <p>Para iniciar o uso do sistema, <a href="{$loginUrl}">acesse o sistema</a> com o login e a senha informadas durante a instalação.</p>]]></message>
 	<message key="installer.upgradeComplete"><![CDATA[<p>Atualização para a versão {$version} concluída com sucesso.</p>

@@ -4,7 +4,7 @@
 <!--
   * ocs2-devel/locale/es_ES/manager.xml
   *
-  * Copyright (c) 2000-2010 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the es_ES (España Castellano) locale.
@@ -431,15 +431,15 @@
 	<message key="manager.timeline.postPresentations">Presentaciones aceptadas</message>
 	<message key="manager.timeline.postTimeline">Calendario de la Conferencia/Congreso (incluido en la información sobre la conferencia)</message>
 	<message key="manager.timeline.reviews">Recensión</message>
-	<message key="manager.timeline.schedConfAppearsOn">Puesta en línea (como Congreso/Conferencia actual)</message>
-	<message key="manager.timeline.schedConfArchivedOn">Archivar conferencia</message>
+	<message key="manager.timeline.schedConfAppearsOn">Se creó (como Conferencia/Congreso)</message>
+	<message key="manager.timeline.schedConfArchivedOn">Cambió a la Conferencia/Congreso </message>
 	<message key="manager.timeline.schedConfEndsOn">Último día de la conferencia</message>
 	<message key="manager.timeline.schedConfStartsOn">Primer día de la conferencia</message>
-	<message key="manager.timeline.showCFP">Llamado a trabajos</message>
+	<message key="manager.timeline.showCFP">Call for papers</message>
 	<message key="manager.timeline.submissions">Envíos</message>
 	<message key="manager.timeline.submissionsClosed">Cierre del envío de originales</message>
 	<message key="manager.timeline.submissionsOpen">Trabajos aceptados</message>
-	<message key="manager.timeline.website">Sitio web</message>
+	<message key="manager.timeline.website">Website</message>
 	<message key="manager.timeline.websitePosting">Puesta en la Web</message>
 	<message key="manager.tracks.assignDirector">Asignar Director</message>
 	<message key="manager.tracks.assigned">Los Directores de esta sección</message>
@@ -689,5 +689,4 @@
 	<message key="manager.tracks.disableComments">Deshabilitar los comentarios de los lectores para este envío.</message>
 	<message key="manager.tracks.wordCount">Contar palabras</message>
 	<message key="manager.tracks.wordCountInstructions">Limitar el número de palabras para los resúmenes de esta sección (0 sin límite):</message>
-	<message key="manager.tracks.downLoad">Descargar</message>
 </locale>

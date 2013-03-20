@@ -3,7 +3,7 @@
 /**
  * InformationBlockPlugin.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class InformationBlockPlugin
@@ -47,14 +47,14 @@ class InformationBlockPlugin extends BlockPlugin {
 	 * @return String
 	 */
 	function getDisplayName() {
-		return Locale::translate('plugins.block.information.displayName');
+		return __('plugins.block.information.displayName');
 	}
 
 	/**
 	 * Get a description of the plugin.
 	 */
 	function getDescription() {
-		return Locale::translate('plugins.block.information.description');
+		return __('plugins.block.information.description');
 	}
 
 	/**

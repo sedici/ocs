@@ -3,7 +3,7 @@
 /**
  * @file RefManCitationPlugin.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class RefManCitationPlugin
@@ -33,15 +33,15 @@ class RefManCitationPlugin extends CitationPlugin {
 	}
 
 	function getDisplayName() {
-		return Locale::translate('plugins.citationFormats.refMan.displayName');
+		return __('plugins.citationFormats.refMan.displayName');
 	}
 
 	function getCitationFormatName() {
-		return Locale::translate('plugins.citationFormats.refMan.citationFormatName');
+		return __('plugins.citationFormats.refMan.citationFormatName');
 	}
 
 	function getDescription() {
-		return Locale::translate('plugins.citationFormats.refMan.description');
+		return __('plugins.citationFormats.refMan.description');
 	}
 
 	/**

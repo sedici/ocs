@@ -3,7 +3,7 @@
 /**
  * @file classes/controllers/grid/GridHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class GridHandler
@@ -201,7 +201,7 @@ class GridHandler extends PKPHandler {
 		parent::initialize($request);
 
 		// Load grid-specific translations
-		Locale::requireComponents(array(LOCALE_COMPONENT_PKP_GRID));
+		AppLocale::requireComponents(array(LOCALE_COMPONENT_PKP_GRID));
 	}
 
 	//

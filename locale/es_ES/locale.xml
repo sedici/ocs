@@ -4,7 +4,7 @@
 <!--
   * locale.xml
   *
-  * Copyright (c) 2000-2010 John Willinsky
+  * Copyright (c) 2000-2012 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the en_US (U.S. English) locale.
@@ -114,10 +114,10 @@
 	<message key="common.queue.short.submissionsAccepted">Presentaciones</message>
 	<message key="common.queue.long.submissionsArchives">Ficheros</message>
 	<message key="common.queue.short.submissionsArchives">ficheros</message>
-	<message key="common.queue.long.active">Envíos activos</message>
-	<message key="common.queue.short.active">Activos</message>
-	<message key="common.queue.long.completed">Archivados</message>
-	<message key="common.queue.short.completed">Archivados</message>
+	<message key="common.queue.long.active">Activar envíos</message>
+	<message key="common.queue.short.active">Activar</message>
+	<message key="common.queue.long.completed">Archivar</message>
+	<message key="common.queue.short.completed">Archivar</message>
 
 	<!--
 	 *
@@ -211,7 +211,7 @@
 	<message key="schedConf.schedConf">Relación de eventos programados</message>
 	<message key="schedConf.contents">Información del evento</message>
 	<message key="schedConf.overview">Descripción</message>
-	<message key="schedConf.trackPolicies">Políticas de secciones</message>
+	<message key="schedConf.trackPolicies">Track Políticas</message>
 	<message key="schedConf.program">Programa</message>
 	<message key="schedConf.cfp">Call for papers</message>
 	<message key="schedConf.discussion">Discusión</message>
@@ -226,11 +226,11 @@
 	<message key="schedConf.submission">Presentación</message>
 	<message key="schedConf.submissions">Presentaciones</message>
 
-	<message key="schedConf.cfp.title">Llamado a trabajos</message>
-	<message key="schedConf.overview.title"> Descripción</message>
-	<message key="schedConf.presentations.title">Presentaciones y Autores</message>
-	<message key="schedConf.program.title">Programa</message>
-	<message key="schedConf.trackPolicies.title">Políticas</message>
+	<message key="schedConf.cfp.title">{$schedConfAbbrev} Call for papers</message>
+	<message key="schedConf.overview.title">{$schedConfAbbrev} Descripción</message>
+	<message key="schedConf.presentations.title">{$schedConfAbbrev} Presentaciones y Autores</message>
+	<message key="schedConf.program.title">{$schedConfAbbrev} Programa</message>
+	<message key="schedConf.trackPolicies.title">{$schedConfAbbrev} Políticas</message>
 
 	<!-- User self-registration form -->
 	<message key="schedConf.registration.alreadyRegistered">Usted ya está inscrito, aunque el pago todavía no se ha recibido. Si hay algún error o desea cambiar su inscripción, póngase en contacto con la persona indicada en "Acerca de".</message>
@@ -259,7 +259,7 @@
 	<!-- Roles -->
 	<message key="user.role.manager">Gestor del evento</message>
 	<message key="user.role.director">Director</message>
-	<message key="user.role.trackDirector">Director de la sección</message>
+	<message key="user.role.trackDirector">Director de al sección</message>
 	<message key="user.role.author">Autor</message>
 
 	<message key="user.role.managers">Gestores del evento</message>
@@ -346,8 +346,6 @@ Tenga en cuenta que la interfaz OAI puede ser desactivada para este sitio al edi
 </ul>]]></message>
 
 	<!-- System Information -->
-	<message key="admin.editSystemConfigInstructions"><![CDATA[Use este formulario para modificar la configuración de su sistema (el fichero <tt>config.inc.php</tt>). Haga Clic en Guardar para guardar la nueva configuración, or "Visualizar"  simplemente para visualizar la configuración modificada y no modificar la configuración existente.<br /><br />
-<span class="formError">Atención: Modificando estos parámetros puede hacer que su web quede en un  estado inaccesible (que requiere modificar manualmente su fichero de configuración). Se recomienda encarecidamente que usted no haga cambios a menos que sepa exactamente lo que está haciendo.</span>]]></message>
 	<message key="admin.overwriteConfigFileInstructions"><![CDATA[<h4>NOTA!</div>
 <p>El sistema no puede sobrescribir automáticamente el fichero de configuración. Para aplicar los cambios de configuración debe abrir <tt>config.inc.php</ tt> con un editor de texto adecuado y sustituir los contenido de los siguientes campos de texto.</p>]]></message>
 
@@ -763,11 +761,7 @@ Para depositar un trabajo en esta conferencia, siga los siguientes pasos.
 	<li><tt>cache/_db</tt> permiso de escritura: {$writable_db_cache}</li>
 </ul>
 
-<p>2. Debe crearse un directorio con permisos de escritura para almacenar los ficheros de los trabajos (ver "Configuración de Ficheros" más abajo).</p>
-
-<h4>Manual de instalación</h4>
-
-<p>Seleccione <strong>Manual de Instalación</strong> para mostrar los pasos necesarios en SQL para crear el esquema de la base de datos del OCS y los valores iniciales para que la instalación de la base de datos  pueda hacerse manualmente. Esta opción es útil cuando se producen problemas durante la instalación, particularmente con plataformas que no la admiten. Tenga en cuenta que este método de instalación no creará la base de datos o ninguna otra tabla, aunque en el fichero de configuración todavía podrán escribirse las opciones indicadas para  la base de  base de datos.</p>]]></message>
+<p>2. Debe crearse un directorio con permisos de escritura para almacenar los ficheros de los trabajos (ver "Configuración de Ficheros" más abajo).</p>]]></message>
 	<message key="installer.upgradeInstructions"><![CDATA[<h4>OCS Version {$version}</h4>
 <p>Gracias por descargarse el  <strong>Open Conference Systems</strong> del Public Knowledge Project's. Antes de iniciar la instalación, por favor lea el fichero <a href="{$baseUrl}/docs/README">README</a> y <a href="{$baseUrl}/docs/UPGRADE">UPGRADE</a> incluidos en este paquete de software. Para mas información acerca del Public Knowledge Project y sus proyectos de software, por favor visite la web del <a href="http://pkp.sfu.ca/" target="_blank">PKP</a>. Si tiene alguna duda sobre el Open Conference Systems, diríjase al <a href="http://pkp.sfu.ca/support/forum">foro de discusión</a> o visite la web PKP's online <a href="http://pkp.sfu.ca/bugzilla/" target="_blank">incidencias del sistema</a>. A pesar de que el foro es el lugar recomendado para las consultas, también puede dirigirse al equipo desarrollador <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
 <p>Es <strong>altamente recomendable</strong> que haga una copia de seguridad de su base de datos, de los directorios, y del directorio de instalación del OCS antes de comenzar.</p>
@@ -783,8 +777,6 @@ Su servidor actualmente soporta mbstring: <strong>{$supportsMBString}</strong>]]
 	<message key="installer.reinstallAfterDatabaseError"><![CDATA[<strong>Atención:</strong> Si la instalación falla durante la instalación de la base de datos, necesitará retirar la base de datos del OCS o las tablas de la base antes de reinstalarla.]]></message>
 	<message key="installer.overwriteConfigFileInstructions"><![CDATA[<h4>¡IMPORTANTE!</h4>
 <p>El instalador no pudo sobrescribir automáticamente el fichero de configuración. Antes de usar el sistema, por favor abra el fichero <tt>config.inc.php</tt> con un editor de texto y reemplace su contenido con el del texto mencionado más abajo.</p>]]></message>
-	<message key="installer.manualSQLInstructions"><![CDATA[<h4>Manual de Instalación</h4>
-<p>Las órdenes SQL para crear el esquema de la base de datos del  OCS y los datos iniciales se dan más abajo. Tenga en cuenta que el sistema no podrá usarse hasta que esas órdenes no se hayan ejecutado manualmente. También tendrá que configurar manualmente <tt>config.inc.php</tt> el fichero de configuración.</p>]]></message>
 	<message key="installer.installationComplete"><![CDATA[<p>La instalación del OCS se ha realizado con éxito.</p>
 <p>Puede empezar a utilizar el sistema, <a href="{$loginUrl}">login</a> con el nombre de usuario y contraseña introducidos en la página anterior.</p>
 <p>Si desea recibir noticias y actualizaciones, <strong>por favor, regístrese en <a href="http://pkp.sfu.ca/ocs/register" target="_new">http://pkp.sfu.ca/ocs/register</a>.</strong> Si tiene alguna pregunta o comentarios, por favor vaya al <a href="http://pkp.sfu.ca/support/forum" target="_new">foro de discusión</a>.</p>]]></message>
@@ -927,11 +919,11 @@ La validacion de URLs  puede fallar si requieren el envío de datos.]]></message
 	<message key="paper.fontSize.small.altText">Deshabilitar</message>
 	<message key="paper.fontSize.medium.altText">Habilitar</message>
 	<message key="paper.fontSize.large.altText">Tamaño de la fuente</message>
-	<message key="paper.sessionType">Tipo de Envío</message>
-	<message key="schedConf.accommodation">Alojamiento</message>
-	<message key="schedConf.schedule.title">Planificación</message>
-	<message key="schedConf.accommodation.title">Alojamiento</message>
-	<message key="schedConf.scheduler.locations">Lugares</message>
+	<message key="paper.sessionType">Pequeño</message>
+	<message key="schedConf.accommodation">Mediano</message>
+	<message key="schedConf.schedule.title">Grande</message>
+	<message key="schedConf.accommodation.title">Tipo de Sesión</message>
+	<message key="schedConf.scheduler.locations">Alojamiento</message>
 	<message key="schedConf.registration.free">Planificación</message>
 	<message key="schedConf.registration.failed">Alojamiento</message>
 	<message key="schedConf.registrationOptions.noneAvailable">Lugares de la Conferencia</message>

@@ -3,7 +3,7 @@
 /**
  * @file classes/install/Installer.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class Installer
@@ -151,11 +151,11 @@ class Installer {
 		}
 
 		if (!isset($this->locale)) {
-			$this->locale = Locale::getLocale();
+			$this->locale = AppLocale::getLocale();
 		}
 
 		if (!isset($this->installedLocales)) {
-			$this->installedLocales = array_keys(Locale::getAllLocales());
+			$this->installedLocales = array_keys(AppLocale::getAllLocales());
 		}
 
 		if (!isset($this->dataXMLParser)) {
@@ -284,14 +284,9 @@ class Installer {
 	 */
 	function updateVersion() {
 		if ($this->newVersion->compare($this->currentVersion) > 0) {
-			if ($this->getParam('manualInstall')) {
-				// FIXME Would be better to have a mode where $dbconn->execute() saves the query
-				return $this->executeSQL(sprintf('INSERT INTO versions (major, minor, revision, build, date_installed, current, product_type, product) VALUES (%d, %d, %d, %d, NOW(), 1, %s,%s)', $this->newVersion->getMajor(), $this->newVersion->getMinor(), $this->newVersion->getRevision(), $this->newVersion->getBuild(), $this->dbconn->qstr($this->newVersion->getProductType()), $this->dbconn->qstr($this->newVersion->getProduct())));
-			} else {
-				$versionDao =& DAORegistry::getDAO('VersionDAO');
-				if (!$versionDao->insertVersion($this->newVersion)) {
-					return false;
-				}
+			$versionDao =& DAORegistry::getDAO('VersionDAO');
+			if (!$versionDao->insertVersion($this->newVersion)) {
+				return false;
 			}
 		}
 
@@ -384,7 +379,7 @@ class Installer {
 				if ($sql) {
 					return $this->executeSQL($sql);
 				} else {
-					$this->setError(INSTALLER_ERROR_DB, str_replace('{$file}', $fileName, Locale::translate('installer.installParseDBFileError')));
+					$this->setError(INSTALLER_ERROR_DB, str_replace('{$file}', $fileName, __('installer.installParseDBFileError')));
 					return false;
 				}
 				break;
@@ -395,13 +390,12 @@ class Installer {
 				if ($sql) {
 					return $this->executeSQL($sql);
 				} else {
-					$this->setError(INSTALLER_ERROR_DB, str_replace('{$file}', $fileName, Locale::translate('installer.installParseDBFileError')));
+					$this->setError(INSTALLER_ERROR_DB, str_replace('{$file}', $fileName, __('installer.installParseDBFileError')));
 					return false;
 				}
 				break;
 			case 'code':
 				$this->log(sprintf('code: %s %s::%s', isset($action['file']) ? $action['file'] : 'Installer', isset($action['attr']['class']) ? $action['attr']['class'] : 'Installer', $action['attr']['function']));
-				// FIXME Don't execute code with "manual install" ???
 				if (isset($action['file'])) {
 					require_once($action['file']);
 				}
@@ -433,15 +427,10 @@ class Installer {
 				}
 			}
 		} else {
-			if ($this->getParam('manualInstall')) {
-				$this->sql[] = $sql;
-
-			} else {
-				$this->dbconn->execute($sql);
-				if ($this->dbconn->errorNo() != 0) {
-					$this->setError(INSTALLER_ERROR_DB, $this->dbconn->errorMsg());
-					return false;
-				}
+			$this->dbconn->execute($sql);
+			if ($this->dbconn->errorNo() != 0) {
+				$this->setError(INSTALLER_ERROR_DB, $this->dbconn->errorMsg());
+				return false;
 			}
 		}
 
@@ -563,7 +552,7 @@ class Installer {
 			case INSTALLER_ERROR_DB:
 				return 'DB: ' . $this->getErrorMsg();
 			default:
-				return Locale::translate($this->getErrorMsg());
+				return __($this->getErrorMsg());
 		}
 	}
 

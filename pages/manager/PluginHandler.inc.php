@@ -3,7 +3,7 @@
 /**
  * @file PluginHandler.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class PluginHandler
@@ -88,7 +88,7 @@ class PluginHandler extends ManagerHandler {
 			if ($message) {
 				import('notification.NotificationManager');
 				$notificationManager = new NotificationManager();
-				$notificationManager->createTrivialNotification(Locale::translate('notification.notification'), $message, NOTIFICATION_TYPE_SUCCESS, null, 0);
+				$notificationManager->createTrivialNotification(__('notification.notification'), $message, NOTIFICATION_TYPE_SUCCESS, null, 0);
 			}
 			$request->redirect(null, null, null, 'plugins', array($category));
 		}

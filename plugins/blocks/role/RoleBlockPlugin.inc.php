@@ -3,7 +3,7 @@
 /**
  * @file RoleBlockPlugin.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class RoleBlockPlugin
@@ -47,14 +47,14 @@ class RoleBlockPlugin extends BlockPlugin {
 	 * @return String
 	 */
 	function getDisplayName() {
-		return Locale::translate('plugins.block.role.displayName');
+		return __('plugins.block.role.displayName');
 	}
 
 	/**
 	 * Get a description of the plugin.
 	 */
 	function getDescription() {
-		return Locale::translate('plugins.block.role.description');
+		return __('plugins.block.role.description');
 	}
 
 	/**

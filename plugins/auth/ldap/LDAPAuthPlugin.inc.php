@@ -3,7 +3,7 @@
 /**
  * @file LDAPAuthPlugin.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class LDAPAuthPlugin
@@ -55,7 +55,7 @@ class LDAPAuthPlugin extends AuthPlugin {
 	 * @return string
 	 */
 	function getDisplayName() {
-		return Locale::translate('plugins.auth.ldap.displayName');
+		return __('plugins.auth.ldap.displayName');
 	}
 
 	/**
@@ -63,7 +63,7 @@ class LDAPAuthPlugin extends AuthPlugin {
 	 * @return string
 	 */
 	function getDescription() {
-		return Locale::translate('plugins.auth.ldap.description');
+		return __('plugins.auth.ldap.description');
 	}
 
 
@@ -329,9 +329,9 @@ class LDAPAuthPlugin extends AuthPlugin {
 		if (isset($mailingAddress))
 			$user->setMailingAddress($mailingAddress);
 		if (isset($biography))
-			$user->setBiography($biography, Locale::getLocale());
+			$user->setBiography($biography, AppLocale::getLocale());
 		if (isset($interests))
-			$user->setInterests($interests, Locale::getLocale());
+			$user->setInterests($interests, AppLocale::getLocale());
 	}
 
 	/**

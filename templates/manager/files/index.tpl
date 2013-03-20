@@ -1,7 +1,7 @@
 {**
  * index.tpl
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Files browser.
@@ -37,7 +37,7 @@
 	</tr>
 	{foreach from=$files item=file name=files}
 	{if $currentDir}
-		{assign var=filePath value=$currentDir|to_array:"/":$file.name}
+		{assign var=filePath value=$currentDir|concat:"/":$file.name}
 	{else}
 		{assign var=filePath value=$file.name}
 	{/if}

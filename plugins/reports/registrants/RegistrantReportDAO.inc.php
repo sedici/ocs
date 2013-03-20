@@ -3,7 +3,7 @@
 /**
  * @file RegistrantReportDAO.inc.php
  *
- * Copyright (c) 2000-2010 John Willinsky
+ * Copyright (c) 2000-2012 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  * 
  * @class RegistrantReportDAO
@@ -27,8 +27,8 @@ class RegistrantReportDAO extends DAO {
 	 * @return array
 	 */
 	function getRegistrantReport($conferenceId, $schedConfId) {
-		$primaryLocale = Locale::getPrimaryLocale();
-		$locale = Locale::getLocale();
+		$primaryLocale = AppLocale::getPrimaryLocale();
+		$locale = AppLocale::getLocale();
 
 		$result =& $this->retrieve(
 			'SELECT
@@ -55,7 +55,7 @@ class RegistrantReportDAO extends DAO {
 					LEFT JOIN registration_type_settings rtsl ON (r.type_id=rtsl.type_id AND rtsl.locale=? AND rtsl.setting_name=?)
 					LEFT JOIN registration_type_settings rtspl ON (r.type_id=rtspl.type_id AND rtsl.locale=? AND rtspl.setting_name=?)
 			WHERE
-				r.sched_conf_id= ?
+				r.sched_conf_id = ?
 			ORDER BY
 				lname',
 			array(
@@ -63,7 +63,7 @@ class RegistrantReportDAO extends DAO {
 				'name',
 				$primaryLocale,
 				'name',
-				$schedConfId
+				(int) $schedConfId
 			)
 		);
 
@@ -78,8 +78,8 @@ class RegistrantReportDAO extends DAO {
 				registrations r 
 					LEFT JOIN registration_option_assoc roa ON (r.registration_id = roa.registration_id)
 			WHERE 
-				r.sched_conf_id= ?',
-			$schedConfId
+				r.sched_conf_id = ?',
+			(int) $schedConfId
 		);
 		
 		// Prepare an array of registration Options by registration Id
