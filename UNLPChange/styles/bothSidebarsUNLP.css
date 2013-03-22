@@ -13,12 +13,12 @@
 
 
 #container {
-	width: 950px;
+	width: 950px!important;
 }
 
 #main {
 	float: left;
-	width: 518px;
+	width: 518px!important;
 	height: 100%;
 	margin: 0px 10px;
 	display: inline;

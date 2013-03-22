@@ -28,7 +28,7 @@
 	clear: right;
 }
 #main {
-	width: 553px;
+	width: 553px!important;
 	float: left;
 	padding: 0px;
 }
