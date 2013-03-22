@@ -1,9 +1,11 @@
 <html>
 <link rel="stylesheet" href="{$baseUrl}/UNLPChange/styles/commonUNLP.css" type="text/css"/>
-<link rel="stylesheet" href="{$baseUrl}/UNLPChange/styles/bothSidebarsUNLP.css" type="text/css" />
-<link rel="stylesheet" href="{$baseUrl}/UNLPChange/styles/rightSidebarUNLP.css" type="text/css" />
-<link rel="stylesheet" href="{$baseUrl}/UNLPChange/styles/leftSidebarUNLP.css" type="text/css" />
-<link rel="stylesheet" href="{$baseUrl}/UNLPChange/styles/sidebarUNLP.css" type="text/css" />
+{if $leftSidebarCode || $rightSidebarCode}<link rel="stylesheet" href="{$baseUrl}/UNLPChange/styles/sidebarUNLP.css" type="text/css" />{/if}
+{if $leftSidebarCode}<link rel="stylesheet" href="{$baseUrl}/UNLPChange/styles/leftSidebarUNLP.css" type="text/css" />{/if}
+{if $rightSidebarCode}<link rel="stylesheet" href="{$baseUrl}/UNLPChange/styles/rightSidebarUNLP.css" type="text/css" />{/if}
+{if $leftSidebarCode && $rightSidebarCode}<link rel="stylesheet" href="{$baseUrl}/UNLPChange/styles/bothSidebarsUNLP.css" type="text/css" />{/if}
+
+
 <div id="UnlpHeader">
 <!-- logo de la UNLP -->
 	<div id="rev_logo"><a href="http://www.unlp.edu.ar"><img src="{$baseUrl}/templates/images/unlp.jpg" border="0"/></a></div>

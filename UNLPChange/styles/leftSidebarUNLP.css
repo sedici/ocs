@@ -20,7 +20,7 @@
 }	
 #leftSidebar {
 	float: left;
-	width: 194px;
+	width: 194px!important;
 	margin: 0px;
 	padding: 0px 10px 0px 0px;
 	font-size: 10px;
@@ -28,7 +28,7 @@
 	clear: left;
 }
 #main {
-	width: 533px;
+	width: 533px !important;
 	float: right;
 	padding: 0px;
 }
