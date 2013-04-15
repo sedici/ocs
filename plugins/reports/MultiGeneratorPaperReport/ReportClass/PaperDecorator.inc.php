@@ -57,6 +57,10 @@ class PaperDecorator {
 		$info=$this->getPaperDec()->getPaperId();
 		return $info;
 	}
+	public function getSchedConfId(){
+		$info = $this->getPaperDec()->getSchedConfId();
+		return $info;	
+	}
 
 
 }

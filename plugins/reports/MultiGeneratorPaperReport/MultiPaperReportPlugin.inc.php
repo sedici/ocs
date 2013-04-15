@@ -19,6 +19,7 @@ import('classes.plugins.ReportPlugin');
 import ('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperReportCSV');
 import ('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperReportHTML');
 import ('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperReportDOC');
+import ('plugins.reports.MultiGeneratorPaperReport.ReportClass.PaperReportZip');
 
 class MultiPaperReportPlugin extends ReportPlugin {
 	/**

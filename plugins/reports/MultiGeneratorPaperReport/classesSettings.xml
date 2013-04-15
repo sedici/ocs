@@ -32,5 +32,16 @@
 	<Description>
 		plugin.reports.MultiGeneratorPaperReport.doc.reportdocDescription
 	</Description>
+</Class>
+<Class>
+	<ClassName>
+		PaperReportZip
+	</ClassName>
+	<Name>
+		plugin.reports.MultiGeneratorPaperReport.zip.reportzip
+	</Name>
+	<Description>
+		plugin.reports.MultiGeneratorPaperReport.zip.reportzipDescription
+	</Description>
 </Class>	
 </Handler>

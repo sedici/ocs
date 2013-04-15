@@ -31,5 +31,8 @@
 	<message key="plugin.reports.MultiGeneratorPaperReport.html.reportTitle">Reporte de Papers</message>
 	<message key="plugin.reports.MultiGeneratorPaperReport.doc.reportdoc">Exportación a documento word</message>
 	<message key="plugin.reports.MultiGeneratorPaperReport.doc.reportdocDescription">Se genera un reporte en formato doc, que puede ser abierto con un procesador de texto del estilo de Microsoft Word</message>
+	<message key="plugin.reports.MultiGeneratorPaperReport.zip.reportzip">Exportación en un paquete zip</message>
+	<message key="plugin.reports.MultiGeneratorPaperReport.zip.reportzipDescription">Se genera un reporte en html que tambien tiene todos los pdf de las versiones galeradas de cada artículo, todo empaquetado en un zip</message>
+	
 
 </locale>
