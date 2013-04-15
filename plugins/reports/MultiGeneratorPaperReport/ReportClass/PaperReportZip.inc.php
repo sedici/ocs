@@ -109,40 +109,20 @@ import('classes.paper.PaperGalley');
 	 	//add file to the zip
 	 	if($this->res){
 		 	if(file_exists($filepath)){
-		 		$Humanfilename=$this->setPdfFilename($paper->getTitle(),$paper->getId());
-		 		$this->zip->addFile($filepath,$Humanfilename);
+		 		$Humanfilename=$this->setPdfFilename($paper->getTitle());
+		 		$this->zip->addFile($filepath,$Humanfilename); //put the pdf file with a human readable name
 		 	}	
 	 	}
  	} 
  }
  
- private function setPdfFilename($oldtitle,$id){
+ private function setPdfFilename($oldtitle){
  	 $oldtitle=  preg_replace('/<[^>]*>/', '', $oldtitle);
  	 for ($i=0;$i<strlen($oldtitle);$i++){
 	 	 if((ord($oldtitle[$i])>=65 && ord($oldtitle[$i])<=90) || (ord($oldtitle[$i])<=122 && ord($oldtitle[$i])>=97))
 		 	 $title=$title.$oldtitle[$i];	
  	 }//char to char handle for special chars
 	 $title = str_replace(' ', '_', $title).'.pdf';//make the pdfname human-readable
-	 //handle special-chars
-//	 $title = str_replace('"','',$title);
-//	 $title = str_replace('“',"",$title);
-//	 $title = str_replace(array('á','à','â','ã','ª','ä'),'a',$title);
-//	 $title = str_replace(array('Á','À','Â','Ã','Ä'),'A',$title);
-//	 $title = str_replace(array('Í','Ì','Î','Ï'),'I',$title);
-//	 $title = str_replace(array('í','ì','î','ï'),'i',$title);
-//	 $title = str_replace(array('é','è','ê','ë'),'e',$title);
-//	 $title = str_replace(array('É','È','Ê','Ë'),'E',$title);
-//	 $title = str_replace(array('ó','ò','ô','õ','ö','º'),'o',$title);
-//	 $title = str_replace(array('Ó','Ò','Ô','Õ','Ö'),'O',$title);
-//	 $title = str_replace(array('ú','ù','û','ü'),'u',$title);
-//	 $title = str_replace(array('Ú','Ù','Û','Ü'),'U',$title);
-//	 $title = str_replace(array('[','^','´','`','¨','~',']','?','¿'),"",$title);
-//	 $title = str_replace('ç','c',$title);
-//	 $title = str_replace('Ç','C',$title);
-//	 $title = str_replace('ñ','n',$title);
-//	 $title = str_replace('Ñ','N',$title);
-//	 $title = str_replace('Ý','Y',$title);
-//	 $title = str_replace('ý','y',$title);
 	 $title= utf8_decode($title); //use ISO to avoid php bug
 	 return $title;
  }
