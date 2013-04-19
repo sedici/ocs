@@ -17,61 +17,44 @@ import('classes.paper.PaperGalley');
  	var $plugin= null;
 	var $zip= null; //zipfile
 	var $res= null; //res of zip create function 
-	var $nombreArchivo;
+	var $tempFileName = null; //tempfile name
 	function __construct($aIterator, $plugin){
 		parent::__construct($aIterator, $plugin);
 		$this->plugin=& $plugin;
 		$this->beginReport();
 	}
-	
+	/**Start the report getting and opening the zipfile
+	 * 
+	 */
 	protected function beginReport(){	
-		$this->nombreArchivo = tempnam(sys_get_temp_dir(), "zip");
+		$this->tempFileName = tempnam(sys_get_temp_dir(), "zip");
 		$this->zip= new ZipArchive;
-		$this->res = $this->zip->open($this->nombreArchivo, ZipArchive::OVERWRITE);
+		$this->res = $this->zip->open($this->tempFileName, ZipArchive::OVERWRITE);
 	}
 	
+	/**Close the report and send the specific headers
+	 * 
+	 */
 	public function endReport(){
 		header('content-disposition: attachment; filename=report.zip');
 		header("Content-type: application/force-download");
 		header("Content-Transfer-Encoding: Binary");
 		header("Content-Type: application/zip"); 
 		$this->zip->close();
-		readfile($this->nombreArchivo);
-		unlink($this->nombreArchivo);
-	}
-	
-	
-	/**
-	 * Get the Authors information for a specific paper and return it with the appropriate format.
-	 * @param array $info
-	 * @return string
-	 */
-	 public function formatAuthors(& $info) {
-		$returner=array();
-	for($i=0;$i<count($info);$i++){
-			$firstName=$info[$i]->getFirstName();
-			$middleName=$info[$i]->getMiddleName();
-			$lastName=$info[$i]->getLastName();
-			$affiliation=$info[$i]->getAffiliation();
-			$email=$info[$i]->getEmail();
-			$info[$i]->setFirstName($firstName);
-			$info[$i]->setMiddleName($middleName);
-			$info[$i]->setLastName($lastName);
-			$info[$i]->setAffiliation($affiliation);
-			$info[$i]->setEmail($email);
-		}
+		readfile($this->tempFileName);
+		unlink($this->tempFileName);
 	}
 	
 	
 	
-	/** Create an specific record to generate the report output.
+/** Create an specific record to generate the report output.
 	 * @params paper object paperDecorator
 	 * @params locale specific locale
 	 */ 
 	function processRecord(&$paper,$locale){
 		$title=utf8_encode($paper->getTitle($locale));
 		$paper->setTitle($title,$locale );
-		$authors= $paper->getAuthors(); //TODO:use authors to order the zip
+		//$authors= $paper->getAuthors(); //TODO:use authors to order the zip
 		//Get all the paper galleys for this paper
 		$galleyDAO= new PaperGalleyDAO();
 		$galleys = $galleyDAO->getGalleysByPaper($paper->getId());
@@ -116,6 +99,10 @@ import('classes.paper.PaperGalley');
  	} 
  }
  
+ /**Set the name to the pdf in an human-readable way and do a char to char check, to avoid the special chars
+  *@param string $oldtitle
+  *@return string an human readable title 
+  */
  private function setPdfFilename($oldtitle){
  	 $oldtitle=  preg_replace('/<[^>]*>/', '', $oldtitle);
  	 for ($i=0;$i<strlen($oldtitle);$i++){
