@@ -9,7 +9,6 @@
  * $Id$
  *}
 {include file="paper/header.tpl"}
-
 	<div id="topBar">
 		<div id="paperFontSize">
 			{translate key="paper.fontSize"}:&nbsp;

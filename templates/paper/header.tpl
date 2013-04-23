@@ -42,7 +42,7 @@
 	<script type="text/javascript" src="{$baseUrl}/lib/pkp/js/fontController.js" ></script>
 	<script type="text/javascript">{literal}
 		$(function(){
-			fontSize("#sizer", "body", 9, 12, 32, "{/literal}{$baseUrl}{literal}"); // Initialize the font sizer
+			fontSize("#sizer", "body", 9, 12, 20, "{/literal}{$baseUrl}{literal}"); // Initialize the font sizer
 		});
 	{/literal}</script>
 
@@ -57,6 +57,8 @@
 
 <div id="container">
 
+{include file="../UNLPChange/templates/headerUNLP.tpl"}
+<link rel="stylesheet" href="{$baseUrl}/UNLPChange/styles/paperViewUNLP.css" type="text/css" />
 <div id="body">
 
 <div id="main">

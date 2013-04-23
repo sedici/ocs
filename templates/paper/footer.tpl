@@ -13,6 +13,7 @@
 
 </div>
 </div>
+{include file="../UNLPChange/templates/footerUNLP.tpl"}
 </div>
 
 {if $defineTermsContextId}
