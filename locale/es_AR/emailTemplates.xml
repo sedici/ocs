@@ -10,7 +10,7 @@
   *
   * $Id$
   -->
-<email_texts locale="es_ES">
+<email_texts locale="es_AR">
 	<email_text key="PASSWORD_RESET_CONFIRM">
 		<subject>Confirmación de restablecimiento de contraseña</subject>
 		<body>Hemos recibido la solicitud de restablecimiento de su contraseña para el sitio web {$siteTitle}.
@@ -47,12 +47,12 @@ Gracias,
 	</email_text>
 	<email_text key="SUBMISSION_ACK">
 		<subject>Agradecimiento de envío</subject>
-		<body>{$presenterName}:
+		<body>{$authorName}:
 
-Gracias por el envío de "{$paperTitle}" a {$conferenceName}. Mediante el sistema de gestión de las conferencias con el que trabajamos, podrá seguir su progreso a través del proceso editorial validándoseen la web de las conferencias.
+Gracias por el envío de "{$paperTitle}" a {$conferenceName}. Mediante el sistema de gestión de las conferencias con el que trabajamos, podrá seguir su progreso a través del proceso editorial validándose en la web de las conferencias.
 
 URL del original: {$submissionUrl}
-Nombre de usuario: {$presenterUsername}
+Nombre de usuario: {$authorUsername}
 
 Si tiene cualquier duda, por favor contáctenos. Gracias por considerar estas conferencias el espacio para su trabajo.
 
@@ -61,14 +61,14 @@ Si tiene cualquier duda, por favor contáctenos. Gracias por considerar estas co
 	</email_text>
 	<email_text key="SUBMISSION_UPLOAD_ACK">
 		<subject>Agradecimiento de envío de original</subject>
-		<body>{$presenterName}:
+		<body>{$authorName}:
 
 Gracias por envíar su [presentación], "{$paperTitle}" en {$conferenceName}. 
 
 Mediante el sistema de gestión de conferencias con el que trabajamos, podrá seguir su progreso a través del proceso editorial validándose en la web de las conferencias.
 
 URL del original: {$submissionUrl}
-Nombre de usuario: {$presenterUsername}
+Nombre de usuario: {$authorUsername}
 
 Si tiene cualquier duda, por favor contáctenos. Gracias por considerar estas conferencias el espacio para su trabajo.
 
@@ -77,11 +77,12 @@ Si tiene cualquier duda, por favor contáctenos. Gracias por considerar estas co
 	</email_text>
 	<email_text key="SUBMISSION_UNSUITABLE">
 		<subject>envío de original no apto</subject>
-		<body>{$presenterName}:
+		<body>{$authorName}:
 
 Una revisión inicial de "{$paperTitle}" indica claramente que este no se ajusta al enfoque y orientación de {$conferenceName}. Le recomendamos que consulte la descripción de las conferencias, así como otras ponencias ya propuestas en el programa, para conocer mas detalladamente el tipo de trabajos que se aceptan. Puede considerar el envío del original o resumen a otrass conferencia mas relativas a su ámbito.
 
 {$editorialContactSignature}</body>
+		<description></description>
 	</email_text>
 	<email_text key="SUBMISSION_COMMENT">
 		<subject>Comentario al envío del original </subject>
@@ -257,7 +258,7 @@ Le rogamos que nos confirme su disponibilidad para completar esta vital tarea pa
 	</email_text>
 	<email_text key="SUBMISSION_ABSTRACT_ACCEPT">
 		<subject>Decisión editorial sobre el original</subject>
-		<body>{$presenterName}:
+		<body>{$authorName}:
 
 Felicidades, su trabajo "{$paperTitle}" ha sido aceptado para ser presentado en {$conferenceTitle} que tendrá lugar el {$conferenceDate} en {$locationCity}.
 
@@ -268,7 +269,7 @@ Gracias por considerar su participación en este evento.
 	</email_text>
 	<email_text key="SUBMISSION_ABSTRACT_DECLINE">
 		<subject>Decisión editorial sobre el original</subject>
-		<body>{$presenterName}:
+		<body>{$authorName}:
 
 Hemos completado la revisión de su original "{$paperTitle}." Con el resultado...
 
@@ -277,7 +278,7 @@ Hemos completado la revisión de su original "{$paperTitle}." Con el resultado..
 	</email_text>
 	<email_text key="SUBMISSION_ABSTRACT_REVISE">
 		<subject>Decisión editorial sobre el original</subject>
-		<body>{$presenterName}:
+		<body>{$authorName}:
 
 Después de una detenida revisión de su original, "{$paperTitle}" ha sido considerada positivamente en {$conferenceTitle} si se realizan las siguientes revisiones.
 
@@ -288,19 +289,18 @@ Gracias por considerar su participación en este evento.
 	</email_text>
 	<email_text key="SUBMISSION_PAPER_ACCEPT">
 		<subject>Decisión editorial sobre el original</subject>
-		<body>{$presenterName}:
+		<body>{$authorName}:
 
 Felicidades, su trabajo "{$paperTitle}" ha sido aceptado para ser presentado en {$conferenceTitle} que tendrá lugar el {$conferenceDate} en {$locationCity}.
 
 Gracias por considerar su participación en este evento.
 
 {$editorialContactSignature}</body>
-		<description>
-			Este e-mail es enviado por el "Director de Seguimiento" al responsable/s de un original para notificarle que se ha alcanzado una decisión en relación a su envío de un original.</description>
+		<description>Este e-mail es enviado por el "Director de Seguimiento" al responsable/s de un original para notificarle que se ha alcanzado una decisión en relación a su envío de un original.</description>
 	</email_text>
 	<email_text key="SUBMISSION_PAPER_DECLINE">
 		<subject>Decisión editorial sobre el original</subject>
-		<body>{$presenterName}:
+		<body>{$authorName}:
 
 Hemos finalizado la revisión de su original recibido: "{$paperTitle}." Con el resultado...
 
@@ -309,7 +309,7 @@ Hemos finalizado la revisión de su original recibido: "{$paperTitle}." Con el r
 	</email_text>
 	<email_text key="SUBMISSION_PAPER_REVISE">
 		<subject>Decisión editorial sobre el original</subject>
-		<body>{$presenterName}:
+		<body>{$authorName}:
 
 Después de una detenida revisión de su original, "{$paperTitle}" ha sido considerada positivamente en {$conferenceTitle} si se realizan las siguientes revisiones.
 
@@ -437,5 +437,14 @@ Su pago para {$conferenceName} ha sido recibido y registrado en su cuenta.
 Si posee alguna pregunta, por favor no dude en contactarme.
 Atentamente,
 {$registrationContactSignature}</body>
+	</email_text>
+	<email_text key="SUBMISSION_PAPER_INVITE">
+		<subject>Decisión Editorial del Resumen</subject>
+		<body>{$authorName}:
+
+Felicitaciones, su resumen {$paperTitle} ha sido aceptado para presentarse en {$conferenceTitle} que se llevará a cabo en la fecha: {$conferenceDate} en {$locationCity}. Deberiá subir ahora el artículo para que sea revisado.
+
+Muchas gracias y estaremos esperando su participación en este evento.
+{$editorialContactSignature}</body>
 	</email_text>
 </email_texts>

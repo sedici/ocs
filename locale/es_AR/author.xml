@@ -123,4 +123,6 @@
 	<message key="author.submit.expedite"><![CDATA[If this submission is in a format that is ready to be published, without further review or editing work, it can be sent directly to the Proceedings page by <a href="{$expediteUrl}" class="action">Clicking here</a>. (Note: Only conference directors have this option for their submissions.)]]></message>
 	<message key="author.paper.uploadAuthorVersion">Upload Author Version</message>
 	<message key="presenter.submit.authorSubmitLoginMessage">A user account is required to submit materials to this conference. This allows our directors to track your submissions and contact you when the status of your submission changes, or if additional information is required from you.</message>
+	<message key="author.submit.step4AbstOnly">Paso3. Cargar Archivos Suplementarios</message>
+	<message key="author.submit.step2NoAbstracts">Cargar el trabajo</message>
 </locale>

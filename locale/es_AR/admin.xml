@@ -62,5 +62,5 @@
 	<message key="admin.mergeUsers.mergeUser">Combinar Usuario</message>
 	<message key="admin.mergeUsers.into.description">Selecciona un usuario para atribuirle los envíos, asignaciones etc.. del usuario previamente seleccionado</message>
 	<message key="admin.mergeUsers.from.description">Seleccionar un usuario para combinar con otra cuenta de usuario (por ej. alguien que posee dos cuentas). La cuenta seleccionada primero será eliminada y sus envíos, asignaciones etc... serán asignadas al segundo usuario</message>
-	<message key="admin.mergeUsers.confirm">¿Está seguro que deesa combinar la cuenta con el nombre  "{$oldUsername}" junto a la cuenta con el nombre "{$newUsername}"? La cuenta con el nombre "{$oldUsername}" no existirá más. Esta acción no puede deshacerse.</message>
+	<message key="admin.mergeUsers.confirm">¿Está seguro que deesa combinar las {$oldAccountCount} cuentas con el nombre  "{$oldUsername}" junto a la cuenta con el nombre "{$newUsername}"? La cuenta con el nombre "{$oldUsername}" no existirá más. Esta acción no puede deshacerse.</message>
 </locale>
