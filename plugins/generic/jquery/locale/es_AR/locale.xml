@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) Agustin Terruzzi - Gonzalo Villarreal
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the es_AR ( Español Argentina) locale.
+  *
+  * $Id$
+  -->
+ 
+<locale name="es_AR" full_name="Español (Argentina)">
+	<message key="plugins.generic.jquery.name">jQuery Plugin</message>
+	<message key="plugins.generic.jquery.description"><![CDATA[Este plugin permite interactuar y dar estilos al contenido de OCS mediante javascript usando el framework <a href="http://www.jquery.com" target="_new">jQuery.</a> ]]></message>
+	<message key="plugins.generic.jquery.descriptionDisabled"><![CDATA[Este plugin permite interactuar y dar estilos al contenido de OCS mediante javascript usando el framework <a href="http://www.jquery.com" target="_new">jQuery.</a> <strong>jQuery no está instalado; por favor instalelo en {$jQueryPath}.</strong>]]></message>
+	<message key="plugins.generic.jquery.disabled">El jQuery Plugin ha sido deshabilitado.</message>
+	<message key="plugins.generic.jquery.enabled">El jQuery Plugin ha sido habilitado.</message>
+	<message key="plugins.generic.jquery.settings">Configuración</message>
+</locale>
