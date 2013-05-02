@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2000-2012 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the en_US (U.S. English) locale.
+  *
+  * $Id$
+  -->
+ 
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.generic.customBlockManager.displayName">Gestor de Bloques Personalizados</message>
+	<message key="plugins.generic.customBlockManager.description">Este plugin permite gestionar los bloques de las barras de los lados. Se pueden editar los bloques en la configuración de cada plugin que se haya creado aquí.</message>	
+	<message key="plugin.generic.customBlockManager.introduction"><![CDATA[Puede utilizar este plugin para agregar o editar los plugins de bloques personalizados.Puede editar el contenido a través de la pagina de <a href="{$systemPluginsUrl}">System Plugins</a>  (en la sección de plugins de bloque).  Para ubicar el plugin en el lugar indicado debe ir a <a href="{$setupStep4}">Paso 4 de la configuración</a>]]></message>
+	<message key="plugins.generic.customBlockManager.settings">Configuración</message>
+	<message key="plugins.generic.customBlockManager.blockName">Nombre de Bloque</message>	
+	<message key="plugins.generic.customBlockManager.action">Acción</message>	
+	<message key="plugins.generic.customBlockManager.delete">Borrar</message>	
+	<message key="plugins.generic.customBlockManager.addBlock">Añadir Bloque</message>	
+
+	<message key="plugins.generic.customBlock.content">Contenido</message>
+	<message key="plugins.generic.customBlock.saved">El contenido del bloque ha sido salvado.</message>
+	<message key="plugins.generic.customBlock.nameSuffix">(Plugin de Bloques personalizados)</message>
+	<message key="plugins.generic.customBlock.description">Este es un bloque personalizado.</message>
+	<message key="plugins.generic.customBlock.editContent">Editar el contenido de la barra.</message>
+	<message key="plugins.generic.customBlock.contentRequired">Un contenido es requerido. Si desea borrar este bloque, puede hacerlo desde El plugin gestor de bloques o des-seleccionando  este bloque en el Paso 5 de la configuración.</message>
+	<message key="plugins.generic.customBlock.edit">Editar</message>
+</locale>

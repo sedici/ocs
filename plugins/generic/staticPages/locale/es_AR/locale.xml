@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2000-2012 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the en_US (U.S. English) locale.
+  *
+  -->
+ 
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.generic.staticPages.displayName">Plugin de Páginas Estáticas</message>
+	<message key="plugins.generic.staticPages.description">Este plugin permite la gestión de contenido Estático.</message>
+	<message key="plugins.generic.staticPages.pageTitle">Titulo</message>
+	<message key="plugins.generic.staticPages.content">Contenido</message>
+
+	<message key="plugins.generic.staticPages.path">Path</message>
+	<message key="plugins.generic.staticPages.requirement.tinymce"><![CDATA[<strong>El TinyMCE Plugin debe estar instalado y habilitado para poder editar el contenido</strong>]]></message>
+
+	<message key="plugins.generic.staticPages.editAddContent">Editar/Agregar Contenido</message>
+
+	<message key="plugins.generic.staticPages.addStaticPage">Añadir una Página Estática</message>
+	<message key="plugins.generic.staticPages.addNewPage">Añadir una nueva Página</message>
+	<message key="plugins.generic.staticPages.editStaticPage">Editar una Página estática</message>	
+
+	<message key="plugins.generic.staticPages.settingInstructions">El formulario de debajo muestra todas las páginas estáticas que ha creado. Puede editar o borrar las páginas usando los enlaces de la derecha.</message>
+	<message key="plugins.generic.staticPages.editInstructions">Use el formulario de debajo para añadir o editar contenido.</message>
+	<message key="plugins.generic.staticPages.viewInstructions"><![CDATA[Las páginas puede accederse desde: {$pagesPath}, donde %PATH% es un valor que debe escoger. <strong>Nota:</strong> Dos páginas no pueden tener el mismo path.]]></message>
+	<message key="plugins.generic.staticPages.duplicatePath">El path ya existe para otra página estática.</message>
+	
+	<message key="plugins.generic.staticPages.pageSaved">La página fue guardada con éxito.</message>
+	<message key="plugins.generic.staticPages.pageDeleted">La pagina fue borrada con éxito.</message>
+	
+	<message key="plugins.generic.staticPages.noneExist">No hay páginas creadas.</message>
+</locale>
