@@ -45,8 +45,8 @@ class PaperReportDOC extends PaperReportHTML{
 	 * @params specific locale $locale
 	 */ 
 	function processRecord(&$paper,$locale){
-		$title= utf8_encode(($paper->getTitle($locale)));
-		$Abstract= utf8_encode(($paper->getAbstract($locale)));
+		$title= ($paper->getTitle($locale));
+		$Abstract= ($paper->getAbstract($locale));
 		$paper->setTitle($title,$locale );
 		$paper->setAbstract($Abstract,$locale);
 		$authors= $paper->getAuthors();
