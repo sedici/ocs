@@ -226,11 +226,11 @@
 	<message key="schedConf.submission">Presentación</message>
 	<message key="schedConf.submissions">Presentaciones</message>
 
-	<message key="schedConf.cfp.title">{$schedConfAbbrev} Call for papers</message>
-	<message key="schedConf.overview.title">{$schedConfAbbrev} Descripción</message>
-	<message key="schedConf.presentations.title">{$schedConfAbbrev} Presentaciones y Autores</message>
-	<message key="schedConf.program.title">{$schedConfAbbrev} Programa</message>
-	<message key="schedConf.trackPolicies.title">{$schedConfAbbrev} Políticas</message>
+	<message key="schedConf.cfp.title">Call for papers</message>
+	<message key="schedConf.overview.title">Descripción</message>
+	<message key="schedConf.presentations.title"> Presentaciones y Autores</message>
+	<message key="schedConf.program.title">Programa</message>
+	<message key="schedConf.trackPolicies.title">Políticas</message>
 
 	<!-- User self-registration form -->
 	<message key="schedConf.registration.alreadyRegistered">Usted ya está inscrito, aunque el pago todavía no se ha recibido. Si hay algún error o desea cambiar su inscripción, póngase en contacto con la persona indicada en "Acerca de".</message>
