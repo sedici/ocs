@@ -65,7 +65,7 @@
 	<message key="author.submit.replaceSubmissionFile">Reemplazar el fichero de envío</message>
 	<message key="author.submit.noSubmissionFile">No se han depositado ficheros.</message>
 	<message key="author.submit.noSubmissionConfirm">¿Está seguro de que quiere continuar sin el depósito de ficheros?</message>
-	<message key="author.submit.supplementaryFilesInstructions">Este paso opcional en el proceso de envío permite a los autores añadir ficheros que mejoren la contribución del trabajo enviado. Los ficheros adicionales pueden incluir (a) instumentos de la investigación, (b) hojas de datos,(c) otros documentos que de otra manera los lectores no tendrían acceso, o (d) figuras o tablas que se puedan integrar en el texto. El autor indiza estos ficheros, identifica su realización con el envío, asi como su autoría. Los ficheros adicionales pueden depositarse en cualquier formato y estarán disponibles para los lectores en su formato original. Estos pueden compartirse con los recensores, si no comprometen la evaluación "a ciegas".</message>
+	<message key="author.submit.supplementaryFilesInstructions">Este paso opcional en el proceso de envío permite a los autores añadir ficheros que mejoren la contribución del trabajo enviado. Los ficheros adicionales pueden incluir (a) instrumentos de la investigación, (b) hojas de datos,(c) otros documentos que de otra manera los lectores no tendrían acceso, o (d) figuras o tablas que se puedan integrar en el texto. El autor indiza estos ficheros, identifica su realización con el envío, asi como su autoría. Los ficheros adicionales pueden depositarse en cualquier formato y estarán disponibles para los lectores en su formato original. Estos pueden compartirse con los recensores, si no comprometen la evaluación "a ciegas".</message>
 	<message key="author.submit.noSupplementaryFiles">No se han añadido ficheros adicionales a este envío.</message>
 	<message key="author.submit.backToSupplementaryFiles">Volver a los ficheros adicionales</message>
 	<message key="author.submit.confirmDeleteSuppFile">¿Está seguro de que quiere eliminar este fichero adicional?</message>
@@ -83,7 +83,7 @@
 	<message key="author.submit.suppFile.dataAnalysis">Análisis de datos</message>
 	<message key="author.submit.suppFile.dataSet">Hoja de datos</message>
 	<message key="author.submit.suppFile.sourceText">Texto</message>
-	<message key="author.submit.suppFile.briefDescription">Brebe descripción</message>
+	<message key="author.submit.suppFile.briefDescription">Breve descripción</message>
 	<message key="author.submit.suppFile.contributorOrSponsor">Patrocinador</message>
 	<message key="author.submit.suppFile.availableToPeers">Facilitar los ficheros a los recensores (sin metadatos), ya que no comprometen la evaluación.</message>
 	<message key="author.submit.suppFile.publisherDescription">Usar sólo con material publicado formalmente.</message>

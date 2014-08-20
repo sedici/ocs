@@ -12,7 +12,7 @@
   * $Id$
   -->
 
-<locale name="en_US" full_name="U.S. English">
+<locale name="es_AR" full_name="Español(Argentina)">
 	<message key="default.paperType.individual.name">Envío individual</message>
 	<message key="default.paperType.individual.description">Descripción</message>
 	<message key="default.paperType.panel.name">Envio de panel</message>
@@ -32,7 +32,7 @@
 	<message key="default.schedConfSettings.checklist.submissionAppearance">El texto posee espacios simples, utiliza una fuente de 12 puntos, emplea cursivas en vez de subrayados (a excepcion de direcciones web), y todas las ilustraciones, figuras y tablas están localizadas dentro del texto en los puntos apropiados y no al final</message>
 	<message key="default.schedConfSettings.checklist.anonymous">Si se envía a una sección revisada por pares, los nombres de los autores serán removidos del envío, con "Autor" y a;o utilizados en la bibliografía y notas al pie, en vez de nombres de los autores, titulo del paper, etc...</message>
 	<message key="default.schedConfSettings.checklist.personalInformationRemoved">Si se envía a revisión por pares, todos los documentos Microsoft Office (incluyendo archivos suplementarios) fueron guardados mediante Guardar Como; haciendo clic en Herramientas (o opciones en la Mac); haciendo clic en Seguridad; seleccionando Reliminar información personal del archivo y guardando.</message>
-	<message key="default.conferenceSettings.privacyStatement">Los nombre y las direcciones de email ingresadas en esta conferencia serán utilizadas exclusivamente para los propósitos de esta conferencia y no serán hechos disponibles para cualquier otro propósito o en otro lugar.</message>
+	<message key="default.conferenceSettings.privacyStatement">Los nombres y las direcciones de email ingresadas en esta conferencia serán utilizadas exclusivamente para los propósitos de esta conferencia y no serán hechos disponibles para cualquier otro propósito o en otro lugar.</message>
 	<message key="default.conferenceSettings.authorSelfArchivePolicy">A los autores se les permite enviar sus trabajos a sitios web personales o instotucionales antes y luego de la publicación en esta conferencia (mientras provean los detalles bibliográficos de la publicacion).</message>
 	<message key="default.conferenceSettings.emailSignature">________________________________________________________________________
 {$conferenceName}
