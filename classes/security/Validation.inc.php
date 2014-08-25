@@ -228,8 +228,12 @@ class Validation {
 	 * @return string
 	 */
 	function generatePassword($length = 8) {
-		$letters = 'abcdefghijkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ';
-		$numbers = '23456789';
+		//$letters = 'abcdefghijkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ';
+		//$numbers = '23456789';
+		//UNLP fix, to make captcha more usable
+		$letters = 'abdefghijkmnqrtyABDEFGHJKLMNQRTY';
+		$numbers = '26789';
+		
 
 		$password = "";
 		for ($i=0; $i<$length; $i++) {
