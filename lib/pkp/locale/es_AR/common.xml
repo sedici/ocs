@@ -48,7 +48,7 @@
 	<message key="common.cancelled">Cancelado</message>
 	<message key="common.captchaField.altText">Imagen de validación</message>
 	<message key="common.captchaField.badCaptcha">Los caracteres que ingresó no concuerdan con los caracteres en la imagen. Por favor revise los caracteres e intente de nuevo.</message>
-	<message key="common.captchaField.description">Por favor ingrese las letras como aparecen en la imagen superior.</message>
+	<message key="common.captchaField.description">Por favor, introduzca las letras tal como aparecen en la imagen superior. Tenga en cuenta que debe distinguirse mayúculas de minúsculas</message>
 	<message key="common.captchaField">Validación</message>
 	<message key="common.changesSaved">Sus cambios se han guardado.</message>
 	<message key="common.chooseOne">Elija uno</message>
