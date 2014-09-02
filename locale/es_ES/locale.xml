@@ -557,9 +557,7 @@ Para depositar un trabajo en esta conferencia, siga los siguientes pasos.
 <li>Pulse Abrir en la ventana de selección  de ficheros, que muestra el nombre del fichero.</li>
 <li>Pulse Depositar, lo que permite subir el fichero al servidor de la conferencia y  renombrarlo siguiendo los criterios de la conferencia.</li>
 <li>Cuando haya terminado, pulse Guardar y Continuar.</li>
-</ol>
-
- El fichero puede visualizarse pulsando sobre el nombre del fichero. Puede depositarse un fichero nuevo o revisado, así se borra el anterior. Los ficheros adicionales pueden depositarse usando la opción Ficheros Suplementarios (próximo paso). Si tiene problemas con el depósito, contacte por correo electrónico o por teléfono con <a href="mailto:{$supportEmail}">{$supportName}</a> {$supportPhone}. ]]></message>
+</ol>]]></message>
 
 	<!-- Paper Submission Step 4 -->
 
