@@ -71,7 +71,8 @@
 			{assign var="hasPriorAction" value=0}
 			{foreach from=$galleys item=galley name=galleyList}
 				{if $hasPriorAction}&nbsp;|&nbsp;{/if}
-				<a href="{url page="paper" op="view" path=$paperId|to_array:$galley->getId()}" class="action" target="_parent">{$galley->getGalleyLabel()|escape}</a>
+				{include file="../UNLPChange/templates/downloadPDF.tpl}
+				{* <a href="{url page="paper" op="view" path=$paperId|to_array:$galley->getId()}.pdf" class="action" target="_parent">{$galley->getGalleyLabel()|escape}</a> *}
 				{assign var="hasPriorAction" value=1}
 			{/foreach}
 		{/if}
