@@ -123,4 +123,6 @@
 	<message key="author.submit.supplementaryFiles.saveToUpload">Haga clic en Guardar para subir el fichero (después de lo cual podrá subir ficheros adicionales)</message>
 	<message key="author.submit.forgottenSubmitSuppFile">¿Está seguro que desea continuar sin subir el fichero suplementario que ha elegido?</message>
 	<message key="author.submit.howToSubmitNoPhone"><![CDATA[¿Tiene problemas? Póngase en contacto con <a href="mailto:{$supportEmail}">{$supportName}</a>.]]></message>
+	<message key="author.submit.step4AbstOnly">Paso 3. Cargando los archivos complementarios</message>
+	<message key="author.submit.step2NoAbstracts">Paso 2. Cargando el trabajo Completo</message>
 </locale>

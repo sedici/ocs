@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2000-2012 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the en_US (U.S. English) locale.
+  *
+  * $Id$
+  -->
+
+<locale name="en_US" full_name="U.S. English">
+	<message key="default.paperType.individual.name">Envío individual</message>
+	<message key="default.paperType.individual.description">Descripción</message>
+	<message key="default.paperType.panel.name">Envío de Panel</message>
+	<message key="default.paperType.panel.description">Descprición</message>
+	<message key="track.default.title">Trabajos Generales</message>
+	<message key="track.default.abbrev">GEN</message>
+	<message key="track.default.policy">Política</message>
+	<message key="default.conferenceSettings.copyrightNotice"><![CDATA[Los autores que realizan envíos a esta conferencia, deben estar de acuerdo con los siguientes términos:<br/>
+<strong>a)</strong>&nbsp;Los autores retienen los derechos  sobre su trabajo, mientras que permiten a la conferencia, publicar sus trabajos no publicados con una licencia <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a>, la cual permite a otros a acceder libremente, usar y compartir el trabajo, con el consentimiento de los autores del trabajo y su presentación inicial en esta conferencia<br/>
+<strong>b)</strong>&nbsp; Los autores tienen permitido renunciar a los términos de la licencia e ingresar por su cuenta, arreglos contractuales adicionales para la distribución no exclusiva y la publicación subsecuente de este trabajo.(EJ: publicar una versión revisada en una revista, depositarla en un repositorio institucional o publicarla en un libro) siempre que de la referencia de la presentación inicial en esta conferencia.<br/>
+<strong>c)</strong>&nbsp; Ademas de todo esto, los autores pueden publicar y compartir su trabajo en línea (EJ: en repositorios institucionales o en sitios web personales) en cualquier punto antes y después de la conferencia.]]></message>
+
+	<message key="default.schedConfSettings.checklist.notPreviouslyPublished">El envío no ha sido publicado previamente y no esta en consideración para otras conferencias ( o una correcta explicación ha sido proveída en los comentarios al director)</message>
+	<message key="default.schedConfSettings.checklist.fileFormat">El archivo fue cargado en formatos de documento OpenOffice, Microsoft Word, RTF, o WordPerfect</message>
+	<message key="default.schedConfSettings.checklist.addressesLinked"><![CDATA[Toda las url utilizadas en el texto  (ej., <a href="http://pkp.sfu.ca">http://pkp.sfu.ca</a>) estan activas y listas para clickear.]]></message>
+	<message key="default.schedConfSettings.checklist.submissionAppearance">El texto es espaciado simple; usa una fuente en tamaño 12; emplea cursivas y no subrayado (excepto en las URL); y todas las ilustraciones, figuras y tablas fueron puestas en los puntos correctos del texto y no en el final del mismo.</message>
+	<message key="default.schedConfSettings.checklist.anonymous">Si esta enviando en una sección que realiza revisión por pares, asegúrese de que los nombres de los autores no están en el archivo enviado, con "Autor" y año usados en la bibliografía y en las notas al pie, en vez de nombre de autor, título del artículo, etc.</message>
+	<message key="default.schedConfSettings.checklist.personalInformationRemoved">Si esta enviando en una sección con revisión por pares, todos los documentos de Microsoft Office (incluyendo los archivos suplementarios) han sido guardados yendo a Archivo y seleccionando Guardar como: ; haciendo click en herramientas (u Opciones en una Mac); haciendo click en seguridad; seleccionando "Remover información personal de las propiedades del archivo a guardar"; haciendo click en Guardar.</message>
+	<message key="default.conferenceSettings.privacyStatement">Los nombres y las direcciones de correo introducidas en este sitio de la conferencia serán utilizados exclusivamente para el propósito establecido de esta conferencia y no estarán disponibles para cualquier otro propósito o para cualquier otra parte.</message>
+	<message key="default.conferenceSettings.authorSelfArchivePolicy">Los autores tienen permitido publicar sus trabajos  en sitios web personales o de su institución antes y después de la publicación en esta conferencia ( mientras que siempre provean la bibliografía de esa publicación).</message>
+	<message key="default.conferenceSettings.emailSignature">________________________________________________________________________
+{$conferenceName}
+{$conferenceUrl}</message>
+	<message key="default.conferenceSettings.forReaders"><![CDATA[Invitamos a los lectores a que se registren para recibir notificaciones acerca de los trabajos publicados en esta conferencia. Recomendamos que se vea la página de ayuda: <a href="{$aboutUrl}">About the Conference</a> para la conocer las políticas de la misma, y visite <a href="{$conferenceUrl}">El sitio principal de la conferencia</a> para encontrar cuáles son las conferencias que están por venir.]]></message>
+	<message key="default.conferenceSettings.forAuthors"><![CDATA[¿Interesado en publicar en esta conferencia?. Le recomendamos que vea el sitio de ayuda de la conferencia:  <a href="{$aboutUrl}">About the Conference</a>, para conocer las políticas de la misma, y que visite la <a href="{$conferenceUrl}">página principal</a>, para saber que conferencias están por venir.]]></message>
+	<message key="default.conferenceSettings.lockssLicense"><![CDATA[Esta conferencia utiliza el sitema LOCKSS para crear un sistema de archivos distribuido entre las bibliotecas participantes y permitir a esas librerias crear archivos permamentes de la conferencia con propósitos de preservación y recuperación.  <a href="http://lockss.stanford.edu/">Ver más..</a>]]></message>
+
+	<message key="default.schedConfSettings.emailSignature">________________________________________________________________________
+{$conferenceName} {$schedConfName}
+{$schedConfUrl}</message>
+	<message key="default.conferenceSettings.archiveAccessPolicy">Las presentaciones que conforman las conferencias actuales y las archivadas en este sitio han sido publicadas en acceso abierto y están disponibles para ser vistas, para el beneficio de sus autores y de los lectores interesados.</message>
+	<message key="default.schedConfSettings.checklist.bibliographicRequirements"><![CDATA[El texto cumple con los requerimientos estilísticos y bibliográficos que se muestran en las <a href="{$authorGuidelinesUrl}">Instrucciones para los autores</a>, que se pueden encontrar en la sección "About" de la conferencia.]]></message>
+	<message key="default.schedConfSettings.forReaders"><![CDATA[Invitamos a los autores a suscribirse para recibir las notificaciones sobre los trabajos publicados en esta conferencia. Use el enlace a su <a href="{$accountUrl}">Cuenta</a> que se encuentra en la parte de arriba del home de la conferencia. Esta lista le permite a la conferencia contar con cierto nivel de soporte o número de lectores.Vea las <a href="{$privacyStatementUrl}">Declaraciones de Privacidad</a> que aseguran que la información de contacto de los lectores, no será utilizada para ningún otro propósito.]]></message>
+	<message key="default.schedConfSettings.forAuthors"><![CDATA[¿Interesado en publicar en esta conferencia? Le recomendamos que revise la sección <a href="{$aboutUrl}">About the Conference</a> para ver las políticas de publicación, y también las  <a href="{$authorGuidelinesUrl}">Instrucciones para los autores</a>. Los autores necesitan <a href="{$accountUrl}">crear una cuenta</a> para publicar en la conferencia, o si ya existe una cuenta, pueden simplemente <a href="{$loginUrl}">logearse</a> y comenzar con el proceso de envío.]]></message>
+</locale>

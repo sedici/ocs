@@ -79,4 +79,9 @@
 	<message key="author.submit.contributor.email">email</message>
 	<message key="author.submit.contributor.role">Rol</message>
 	<message key="author.submit.contributor.principalContact">Contacto principal</message>
+	<message key="author.users.contributor.name">Nombre</message>
+	<message key="author.users.contributor.email">Correo</message>
+	<message key="author.users.contributor.role">Rol</message>
+	<message key="author.users.contributor.principalContact">Contacto primario</message>
+	<message key="grid.chapters.title">Capítulos</message>
 </locale>

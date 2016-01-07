@@ -103,7 +103,7 @@
 	<message key="navigation.browseByAuthor">Por autor</message>
 	<message key="navigation.infoForAuthors">Para autores</message>
 	<message key="navigation.infoForReviewers">Para evaluadores</message>
-	<message key="navigation.infoForAuthors.long">Informació para autores</message>
+	<message key="navigation.infoForAuthors.long">Información para autores</message>
 	<message key="navigation.infoForReviewers.long">Información para los evaluadores</message>
 	<!-- Paper Queues -->
 	<message key="common.queue.long.submissionsUnassigned">Sin asignar</message>
@@ -228,7 +228,7 @@
 
 	<message key="schedConf.cfp.title">Call for papers</message>
 	<message key="schedConf.overview.title">Descripción</message>
-	<message key="schedConf.presentations.title"> Presentaciones y Autores</message>
+	<message key="schedConf.presentations.title">Presentaciones y Autores</message>
 	<message key="schedConf.program.title">Programa</message>
 	<message key="schedConf.trackPolicies.title">Políticas</message>
 

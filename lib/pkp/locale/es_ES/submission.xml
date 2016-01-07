@@ -225,4 +225,12 @@
 	<message key="submission.loadMessage">Por favor, espere mientras se almacena su fichero en el servidor.</message>
 	<message key="submission.fileDetails">Detalles del fichero</message>
 	<message key="submission.citations.form.filterError">La operación de búsqueda o análisis no ha obtenido ningún resultado. Tal vez usted puede tratar de modificar el texto de la cita de forma manual para mejorar los resultados.</message>
+	<message key="submission.citations.grid.fields">Nombre del Campo</message>
+	<message key="submission.citations.grid.values">Valor del Campo</message>
+	<message key="submission.citations.grid.editCheckCitation">Editar/Checkear</message>
+	<message key="submission.citations.grid.checkCitationAgain">Volver a Checkear</message>
+	<message key="submission.citations.grid.publicationTypeRequired">Por favor asegúrese escoger siempre un tipo de publicación. Los valores soportados actualmente son libro (para libros o capítulos de libros) y revista (para artículos de revistas). De otra forma, el formateo de las citas no funcionará correctamente.</message>
+	<message key="submission.citations.form.unsavedChanges">La cita contiene datos de bases de datos externas que no han sido guardados. Por favor revise y/o edite los campos de datos y haga click en "Ok" para guardarlos o "Cancelar" para eliminar los cambios.</message>
+	<message key="submission.uploadSuccessfulContinue">Su archivo ha sido cargado. Presione continuar para editar los metadatos del archivo</message>
+	<message key="submission.nameRequired">Un nombre es requerido para este item.</message>
 </locale>

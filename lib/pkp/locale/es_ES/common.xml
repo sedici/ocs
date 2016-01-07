@@ -318,4 +318,5 @@
 	<message key="common.false">Falso</message>
 	<message key="common.ok">OK</message>
 	<message key="common.true">Verdadero</message>
+	<message key="common.refresh">Actualizar</message>
 </locale>

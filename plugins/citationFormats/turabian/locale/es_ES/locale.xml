@@ -16,4 +16,5 @@
 	<message key="plugins.citationFormats.turabian.displayName">Plgin de formato de cita Turabian</message>
 	<message key="plugins.citationFormats.turabian.citationFormatName">Turabian</message>
 	<message key="plugins.citationFormats.turabian.description">Este plugin implementa el format de cita Turabian.</message>
+	<message key="plugins.citationFormats.turabian.retrieved"><![CDATA[Disponible en :  <a href="{$url}" target="_new">{$url}</a>.]]></message>
 </locale>

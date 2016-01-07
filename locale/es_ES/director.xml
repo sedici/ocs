@@ -32,7 +32,7 @@
 	<message key="director.notifyUsers.includeToc">Incluir en la conferencia las siguientes presentaciones:</message>
 	<message key="director.navigation.management">Gestión</message>
 	<message key="director.paper.sendToArchive">Guardar este envío</message>
-	<message key="director.paper.designateReviewVersion"> Designar al fichero original Versión Revisada</message>
+	<message key="director.paper.designateReviewVersion">Designar al fichero original Versión Revisada</message>
 	<message key="director.paper.uploadReviewVersion">Depositar la versión corregida que será la Versión Revisada</message>
 	<message key="director.paper.uploadDirectorVersion">Actualizar Director de la Versión</message>
 	<message key="director.paper.showSuppFile">mandar el fichero a los revisores</message>
