@@ -295,7 +295,7 @@ Le rogamos que nos confirme su disponibilidad para completar esta vital tarea pa
 		<subject>Decisión editorial sobre el original</subject>
 		<body>{$authorName}:
 
-Felicidades, su trabajo "{$paperTitle}" ha sido aceptado para ser presentado en {$conferenceTitle} que tendrá lugar el {$conferenceDate} en {$locationCity}.
+Felicidades, su resúmen "{$paperTitle}" ha sido aceptado para ser presentado en {$conferenceTitle} que tendrá lugar el {$conferenceDate} en {$locationCity}. Quedamos a la espera del trabajo completo.
 
 Gracias por considerar su participación en este evento.
 

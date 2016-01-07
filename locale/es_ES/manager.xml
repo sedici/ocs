@@ -574,7 +574,7 @@
 	<message key="manager.schedConfSetup.review.notifyAllAuthorsOnDecision">Al usar notificar al/a la autor/a, incluir las direcciones de todoas/as los/as autores/as para envíos con múltiple autoría, y no sólo al/a la usuario/a que hace el envío.</message>
 	<message key="manager.schedConfSetup.review.numWeeksPerReview1b">Permitir revisiones hasta</message>
 	<message key="manager.schedConfSetup.review.numWeeksPerReview2b">para revisar envíos.</message>
-	<message key="manager.schedConfSetup.submissions.previewAbstracts">Enviar resúmenes una vez la revisi</message>
+	<message key="manager.schedConfSetup.submissions.previewAbstracts">Publicar los resúmenes una vez que la revisión ha sido completada</message>
 	<message key="manager.schedConfSetup.submissions.typeOfSubmission.create">Crear tipo de envío</message>
 	<message key="manager.schedConfSetup.submissions.typeOfSubmission.nameMissing">Todos los tipos de envio deben ser incluídos al menos en el locale primario del congreso ({$primaryLocale}).</message>
 	<message key="manager.schedConfSetup.submissions.typeOfSubmission.abstractLengthInvalid">Si se indica el tamaño del resumen, este tiene que ser un númeo positivo (número máximo de palabras).</message>
