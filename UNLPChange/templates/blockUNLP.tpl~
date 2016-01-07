@@ -1,9 +1,12 @@
 {**
- * footerUNLP.tpl
+ * blockUNLP.tpl
  *
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- * Added by PREBI SEDICI team at UNLP; http://sedici.unlp.edu.ar
+ * Adapted by PREBI SEDICI team at UNLP; http://sedici.unlp.edu.ar
  *
+ * Common site sidebar menu -- font size selector.
+ *
+ * $Id$
  *}
 <div class="block" id="sidebarFontSize">
 	<span class="blockTitle">{translate key="plugins.block.fontSize.title"}</span>

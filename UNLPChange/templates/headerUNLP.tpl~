@@ -1,11 +1,3 @@
-{**
- * headerUNLP.tpl
- *
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- * Added by PREBI SEDICI team at UNLP; http://sedici.unlp.edu.ar
- *
- *}
-
 <html>
 <link rel="stylesheet" href="{$baseUrl}/UNLPChange/styles/commonUNLP.css" type="text/css"/>
 {if $leftSidebarCode || $rightSidebarCode}<link rel="stylesheet" href="{$baseUrl}/UNLPChange/styles/sidebarUNLP.css" type="text/css" />{/if}

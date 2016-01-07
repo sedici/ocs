@@ -1,13 +1,13 @@
 /**
  * bothSidebars.css
- * 
+ 
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- * Adapted by PREBI SEDICI team at UNLP; http://sedici.unlp.edu.ar
  *
  * Site-wide shared elements for pages including both a left-hand sidebar and a
  * right-hand sidebar.
  *
- *
+
+/**
  * Common HTML elements
  */
 

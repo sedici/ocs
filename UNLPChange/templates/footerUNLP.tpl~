@@ -4,6 +4,9 @@
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  * Added by PREBI SEDICI team at UNLP; http://sedici.unlp.edu.ar
  *
+ * Common site sidebar menu -- font size selector.
+ *
+ * $Id$
  *}
 
 <div id="footer">
