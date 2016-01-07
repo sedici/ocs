@@ -27,9 +27,8 @@ class MailTemplate extends PKPMailTemplate {
 	 * @param $conference object optional The conference this message relates to
 	 * @param $schedConf object optional The scheduled conference this message relates to
 	 * @param $includeSignature boolean optional
-	 * @param $ignorePostedData boolean optional
 	 */
-	function MailTemplate($emailKey = null, $locale = null, $enableAttachments = null, $conference = null, $schedConf = null, $includeSignature = true, $ignorePostedData = false) {
+	function MailTemplate($emailKey = null, $locale = null, $enableAttachments = null, $conference = null, $schedConf = null, $includeSignature = true) {
 		parent::PKPMailTemplate($emailKey, $locale, $enableAttachments, $includeSignature);
 
 		// If a conference wasn't specified, use the current request.
@@ -48,7 +47,7 @@ class MailTemplate extends PKPMailTemplate {
 			if (!empty($userSig)) $userSig = "\n" . $userSig;
 		}
 
-		if (isset($emailTemplate) && ($ignorePostedData || (Request::getUserVar('subject')==null && Request::getUserVar('body')==null))) {
+		if (isset($emailTemplate) && (Request::getUserVar('subject')==null || Request::getUserVar('body')==null)) {
 			$this->setSubject($emailTemplate->getSubject());
 			$this->setBody($emailTemplate->getBody() . $userSig);
 			$this->enabled = $emailTemplate->getEnabled();
