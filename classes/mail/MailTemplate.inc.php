@@ -48,11 +48,7 @@ class MailTemplate extends PKPMailTemplate {
 			if (!empty($userSig)) $userSig = "\n" . $userSig;
 		}
 
-<<<<<<< HEAD
-		if (isset($emailTemplate) && (Request::getUserVar('subject')==null || Request::getUserVar('body')==null)) {
-=======
 		if (isset($emailTemplate) && ($ignorePostedData || (Request::getUserVar('subject')==null && Request::getUserVar('body')==null))) {
->>>>>>> 5e69dec9183eef523a84184d372a27f928c3db3c
 			$this->setSubject($emailTemplate->getSubject());
 			$this->setBody($emailTemplate->getBody() . $userSig);
 			$this->enabled = $emailTemplate->getEnabled();
