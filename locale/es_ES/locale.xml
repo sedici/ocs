@@ -213,7 +213,7 @@
 	<message key="schedConf.overview">Descripción</message>
 	<message key="schedConf.trackPolicies">Políticas de secciones</message>
 	<message key="schedConf.program">Programa</message>
-	<message key="schedConf.cfp">Call for papers</message>
+	<message key="schedConf.cfp">Llamado a trabajos</message>
 	<message key="schedConf.discussion">Discusión</message>
 	<message key="schedConf.registration">Inscripción al evento</message>
 	<message key="schedConf.supporters">Organizadores y socios</message>
@@ -226,7 +226,7 @@
 	<message key="schedConf.submission">Presentación</message>
 	<message key="schedConf.submissions">Presentaciones</message>
 
-	<message key="schedConf.cfp.title">Call for papers</message>
+	<message key="schedConf.cfp.title">Llamado a trabajos</message>
 	<message key="schedConf.overview.title">Descripción</message>
 	<message key="schedConf.presentations.title">Presentaciones y Autores</message>
 	<message key="schedConf.program.title">Programa</message>
@@ -829,7 +829,7 @@ Su servidor actualmente soporta mbstring: <strong>{$supportsMBString}</strong>]]
 	<message key="log.timeline.regReviewerCloseDateChanged">la fecha de cierre de inscripción ha cambiado de {$oldRegReviewerCloseDate} a {$newRegReviewerCloseDate}.</message>
 	<message key="log.timeline.regAuthorOpenDateChanged">La fecha de inicio de inscripción para los autores ha cambiado de {$oldRegAuthorOpenDate} a {$newRegAuthorOpenDate}.</message>
 	<message key="log.timeline.regAuthorCloseDateChanged">La fecha de cierre de inscripción de los autores ha cambiado de {$oldRegAuthorCloseDate} a {$newRegAuthorCloseDate}.</message>
-	<message key="log.timeline.showCFPDateChanged">La fecha del "call for papers" ha cambiado de {$oldShowCFPDate} a {$newShowCFPDate}.</message>
+	<message key="log.timeline.showCFPDateChanged">La fecha del "llamado a trabajos" (call for papers) ha cambiado de {$oldShowCFPDate} a {$newShowCFPDate}.</message>
 	<message key="log.timeline.submissionsOpenDateChanged">La fecha de envío de trabajos ha cambiado de {$oldSubmissionsOpenDate} a {$newSubmissionsOpenDate}</message>
 	<message key="log.timeline.submissionsCloseDateChanged">La fecha de envío de trabajos ha cambiado de {$oldSubmissionsCloseDate} a {$newSubmissionsCloseDate}</message>
 	<message key="log.timeline.postAbstractsDateChanged">La fecha de envío de resúmenes ha cambiado de {$oldPostAbstractsDate} a {$newPostAbstractsDate}.</message>

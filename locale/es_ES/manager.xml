@@ -232,8 +232,8 @@
 	<message key="manager.schedConfSetup.submissions.acceptSupplementaryReviewMaterials">Los ficheros suplementarios pueden enviarse con los resúmenes y las presentaciones.</message>
 	<message key="manager.schedConfSetup.submissions.addChecklistItem">Añadir un elemento a la lista de requisitos</message>
 	<message key="manager.schedConfSetup.submissions.bothTogether">Resumen y trabajo juntos</message>
-	<message key="manager.schedConfSetup.submissions.callForPapers">Call for papers (CFP)</message>
-	<message key="manager.schedConfSetup.submissions.cfpMessage">Mensaje para Call for papers</message>
+	<message key="manager.schedConfSetup.submissions.callForPapers">Llamado a trabajos (CFP)</message>
+	<message key="manager.schedConfSetup.submissions.cfpMessage">Mensaje para el llamado a trabajos (call for papers)</message>
 	<message key="manager.schedConfSetup.submissions.cfpMessageDescription"><![CDATA[Esta información se encuentra en el enlace "call-for-papers" de la página de inicio de la conferencia.]]></message>
 	<message key="manager.schedConfSetup.submissions.coverage">Cobertura</message>
 	<message key="manager.schedConfSetup.submissions.coverageChronExamples">(p.e., El Renacimiento Europeo; Periodo Jurásico; Tercer Trimestre; etc.)</message>
@@ -422,7 +422,7 @@
 	<message key="manager.timeline.form.siteEndBeforeLastDay">La fecha de "Archivar la Conferencia" debe ser después del último día de la conferencia.</message>
 	<message key="manager.timeline.form.siteEndDateBeforeConferenceStart">La web de conferencia no debe archivarse antes de que empiece la conferencia.</message>
 	<message key="manager.timeline.form.siteEndDateBeforeSiteStart">La fecha que figura como "Puesta en la Web" debe ser antes de la fecha de  "Archivar la Conferencia".</message>
-	<message key="manager.timeline.form.submissionsCloseBeforeCFP">"Call for papers" debe hacerse antes de que se cierre el plazo de envío de originales.</message>
+	<message key="manager.timeline.form.submissionsCloseBeforeCFP">El "Llamado a trabajos" (Call for papers) debe hacerse antes de que se cierre el plazo de envío de originales.</message>
 	<message key="manager.timeline.openRegAuthor">Apertura del plazo de registro de autores</message>
 	<message key="manager.timeline.openRegReviewer">Apertura del plazo de registro de autores</message>
 	<message key="manager.timeline.overrideDates">Anular el mensaje(s) de error</message>
