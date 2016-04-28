@@ -242,8 +242,8 @@
 	<message key="manager.schedConfSetup.submissions.addChecklistItem">Añadir un elemento a la lista de requisitos</message>
 	<message key="manager.schedConfSetup.submissions.bothSequential">Resumen seguido de la presentación</message>
 	<message key="manager.schedConfSetup.submissions.bothTogether">Resumen y trabajo juntos</message>
-	<message key="manager.schedConfSetup.submissions.callForPapers">Call for papers (CFP)</message>
-	<message key="manager.schedConfSetup.submissions.cfpMessage">Mensaje para Call for papers</message>
+	<message key="manager.schedConfSetup.submissions.callForPapers">Llamado a trabajos (CFP)</message>
+	<message key="manager.schedConfSetup.submissions.cfpMessage">Mensaje para el llamado a trabajos</message>
 	<message key="manager.schedConfSetup.submissions.cfpMessageDescription"><![CDATA[Esta información se encuentra en el enlace "call-for-papers" de la página de inicio de la conferencia.]]></message>
 	<message key="manager.schedConfSetup.submissions.coverage">Cobertura</message>
 	<message key="manager.schedConfSetup.submissions.coverageChronExamples">(p.e., El Renacimiento Europeo; Periodo Jurásico; Tercer Trimestre; etc.)</message>
@@ -497,7 +497,7 @@
 	<message key="manager.timeline.form.siteEndBeforeLastDay">La fecha de "Archivar el Congreso" debe ser posterior al último día del Congreso.</message>
 	<message key="manager.timeline.form.siteEndDateBeforeConferenceStart">El sitio del Congreso no puede ser archivado antes de que comience el Congreso.</message>
 	<message key="manager.timeline.form.siteEndDateBeforeSiteStart">La fecha que figura como "Puesta en la Web" debe ser antes de la fecha de  "Archivar la Conferencia".</message>
-	<message key="manager.timeline.form.submissionsCloseBeforeCFP">El "Call for papers" debe ser publicado antes del cierre del plazo de envío de originales.</message>
+	<message key="manager.timeline.form.submissionsCloseBeforeCFP">El "Llamado a trabajos" (Call for papers) debe ser publicado antes del cierre del plazo de envío de originales.</message>
 	<message key="manager.timeline.openRegReviewer">Apertura de la inscripción de Revisores</message>
 	<message key="manager.timeline.overrideDates">Anular el mensaje(s) de error</message>
 	<message key="manager.timeline.postAbstracts">Resúmenes aceptados</message>
@@ -510,7 +510,7 @@
 	<message key="manager.timeline.schedConfArchivedOn">Mover al Archivo de Congresos</message>
 	<message key="manager.timeline.schedConfEndsOn">Último día del congreso</message>
 	<message key="manager.timeline.schedConfStartsOn">Primer día del congreso</message>
-	<message key="manager.timeline.showCFP">Call for papers</message>
+	<message key="manager.timeline.showCFP">Llamado a trabajos</message>
 	<message key="manager.timeline.submissions">Envíos</message>
 	<message key="manager.timeline.submissionsClosed">Cierre del envío de trabajos</message>
 	<message key="manager.timeline.submissionsOpen">Trabajos aceptados</message>
@@ -676,7 +676,7 @@
 	<message key="manager.timeline.openRegAuthor">Inscripción de Autores abierta</message>
 	<message key="manager.timeline.postDate">Fecha de Envío</message>
 	<message key="manager.timeline.postAccommodation">Incluir Alojamiento en la lista de Información de la Conferencia</message>
-	<message key="manager.timeline.postCFP">Incluir CFP (Call for Papers) en la lista de Información de la Conferencia</message>
+	<message key="manager.timeline.postCFP">Incluir CFP (llamado a trabajos) en la lista de Información de la Conferencia</message>
 	<message key="manager.timeline.postOverview">Incluir Vista Rápida en la lista de Información de la Conferencia</message>
 	<message key="manager.timeline.postProgram">Incluir el Programa en la lista de Información de la Conferencia</message>
 	<message key="manager.timeline.postProposalSubmission">Incluir la Propuesta de Envíos en la lista de Información de la Conferencia</message>
