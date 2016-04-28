@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
+
+<version>
+	<application>temaPortal</application>
+	<type>plugins.themes</type>
+	<release>1.0.0.0</release>
+	<date>2015-01-16</date>
+</version>
