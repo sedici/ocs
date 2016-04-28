@@ -265,6 +265,7 @@ input.defaultButton {
 #content p {
 	margin: 5px 0px;
 	padding: 0px;
+	text-align: justify;
 }
 #content ul.menu {
 	padding: 4px 2px;
