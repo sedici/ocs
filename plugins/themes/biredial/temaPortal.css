@@ -267,7 +267,7 @@ a:visited, a:active { color:#006186;}
 }
 #rightSidebar td, #leftSidebar td {padding-right:10px;}
 #rightSidebar #sidebarUser li, #sidebar li, #rightSidebar #sidebarNavigation.block li, #leftSidebar #sidebarUser li, #leftSidebar #sidebarNavigation.block li{ 
-	list-style:disc;
+	list-style:none;
 	color:#ccc;
 	list-style-position:inside;
 	margin-left:1em;
