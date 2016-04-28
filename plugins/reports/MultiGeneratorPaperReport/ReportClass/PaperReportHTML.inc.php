@@ -27,7 +27,7 @@
 	public function endReport(){
 		fclose($this->fpointer);
 		$templateMgr =& TemplateManager::getManager();
-		$templateMgr->assign_by_ref('paperIterator',& $this->data);
+		$templateMgr->assign_by_ref('paperIterator',$this->data);
 		$templateMgr->display($this->plugin->getTemplatePath().'htmlReport/htmlReport.tpl');
 		
 	}
