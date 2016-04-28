@@ -7,7 +7,11 @@
  *}
 
 <div id="footer">
-<p>Todos los derechos reservados &copy; 2008 - {$smarty.now|date_format:"%Y"}  <a href="http://www.unlp.edu.ar" target="_blank">Universidad Nacional de La Plata</a> <br> Powered by <a href="http://pkp.sfu.ca/?q=ocs" target="_blank">Open Congress Systems</a> and <a href="http://www.prebi.unlp.edu.ar"> Proyecto de Enlace de Bibliotecas </a></p>
+<p>Todos los derechos reservados &copy; 2008 - {$smarty.now|date_format:"%Y"}  
+<a href="http://www.unlp.edu.ar" target="_blank">Universidad Nacional de La Plata</a> 
+<br> Powered by <a href="http://pkp.sfu.ca/?q=ocs" target="_blank">Open Congress Systems</a> 
+and 
+<a href="http://www.prebi.unlp.edu.ar"> PREBI </a>-<a href="http://sedici.unlp.edu.ar"> SEDICI </a></p>
 {literal}
 <script type="text/javascript">
 
