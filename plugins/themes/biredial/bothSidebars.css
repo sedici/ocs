@@ -1,0 +1,61 @@
+/**
+ * styles/bothSidebars.css
+ * This css was developed by Meilyn Garro, Guillermo Murillo y Jairo Martínez, Universidad de Costa Rica - 2015. This theme is under constant development, please send us your contributions for sharing on later versions.
+ * Contact: revistas[at]ucr.ac.cr
+ * Site-wide shared elements for pages including both a left-hand sidebar and a right-hand sidebar.
+ */
+
+/**
+ * Common HTML elements
+ */
+#main {
+	position: relative;
+	float: left;
+	width: 514px !important;
+	margin-left: 0;
+	margin-right: 0;
+	display: inline;
+	overflow: hidden;
+}
+#body {
+	width: 100%;
+}
+@media (min-width: 100px){
+
+}
+@media (max-width: 859px){
+	#leftSidebar {display: none;}
+	#main {
+	float: left;
+	width: 90%;
+	margin-left: 3%;
+	display: inline;
+	overflow: hidden;
+}
+}
+@media (min-width: 860px){
+#main {
+	position: relative;
+	float: left;
+	width: 47%;
+	margin-left: 0;
+	margin-right: 0;
+	display: inline;
+	overflow: hidden;
+}
+}
+@media (min-width: 1281px) {
+#main {
+	width: 57%;
+}
+#leftSidebar {
+	width: 16%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+#rightSidebar {
+	width:16%;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+}

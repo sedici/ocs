@@ -1,0 +1,39 @@
+/**
+ * styles/rightSidebar.css
+ * This css was developed by Meilyn Garro, Universidad de Costa Rica - 2015. This theme is under constant development, please send us your contributions for sharing on later versions.
+ * Contact: revistas[at]ucr.ac.cr
+ * Site-wide shared elements for pages including a right-hand sidebar *
+ */
+#headerTitle {
+	text-align: center;
+	width: 100%;
+}
+#body {
+	width: 100%;
+}
+@media (max-width: 859px){
+#main {
+	float: left;
+	width: 90%;
+	margin-left: 3%;
+	display: inline;
+	overflow: hidden;
+}
+}
+@media (min-width: 860px){
+#rightSidebar {
+	float: right;
+	width: 20%;
+	padding: 1em 0em 1em 0em;
+	height: 100%;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+#main {
+	float: left;
+	width: 63%;
+	display: inline;
+	overflow: hidden;
+}
+}
+* html #rightSidebar { margin-right: 2%; }

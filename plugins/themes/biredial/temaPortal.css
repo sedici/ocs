@@ -1,0 +1,756 @@
+/**
+ * plugins/themes/temaPortal.css
+ *
+ * This css was developed by Meilyn Garro, Guillermo Murillo y Jairo Mart�nez, Universidad de Costa Rica - 2015. This theme is under constant development, please send us your contributions for sharing on later versions.
+ * Contact: revistas[at]ucr.ac.cr
+ * Tema Portal.
+ *             ________________
+              |                |_____    __
+              |    UCRIndex    |     |__|  |_________
+              |________________|     |::|  |        /
+ /\--/\       |                \.____|::|__|      <     
+( o_o  )_     |                      \::/  \._______\
+ (u--u   \_)  |
+  (||___   )==\
+,dP"/b/=( /P"/b\
+|8 || 8\=== || 8
+`b,  ,P  `b,  ,P
+  """`     """`
+ */
+ /*....Limpieza karmica ................................*/
+@import url("bothSidebars.css");
+@import url("leftSidebar.css");
+@import url("rightSidebar.css");
+@import url(sidebar.css);
+
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, a {
+	margin:0;
+	padding:0;
+}
+div {text-align:justify;}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img {	border:0;}
+address, caption, cite, code, dfn, th, var {
+	font-style:normal;
+	font-weight:normal;
+}
+li {list-style:none;}
+#content li {
+	list-style: disc;
+	margin-left: 15px; 
+}
+#managementPages li, #managerUsers li, #managerRoles li, #content .plain li  {
+	list-style: none;
+	margin-left: 0px; 
+}
+caption, th {text-align:left;}
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+	font-weight:normal;
+	text-align:left;
+}
+q:before,q:after {content:'';}
+abbr,acronym {
+	border:0;
+	font-variant:normal;
+}
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+input,textarea,select {
+	font-family:inherit;
+	font-size:100%;
+	font-size:inherit;
+	font-weight:inherit;
+}
+legend {color:#000;}
+html {background-color:#fff;}
+/*....Basic styles..................................*/
+body{
+	background:#fff;
+	font-family: Arial, Helvetica, sans-serif;
+	height:100%;
+	color: #111;
+}
+#container{
+	background:transparent;
+	display:block;
+	top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	height:100%;
+	min-width: 320px !important;
+}
+#body{
+	display:table; /*hay algo mal cerrado y eso lo parcha. Hay que revisar el tpl*/
+	width:100%;
+		word-wrap: break-word; 
+	-ms-word-break: break-all;
+
+     /* Be VERY careful with this, breaks normal words wh_erever 
+     word-break: break-all;*/
+
+     /* Non standard for webkit */
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+#header {
+
+	height:140px;
+}
+#header #headerTitle {
+
+	height:100%;
+}
+#header h1 {
+	min-height:50px;
+	color:white;
+	font-size:2em;
+	margin-top:10px;
+	padding-left:2%;
+	background:url(images/granos_cintillo.png) top right no-repeat;
+	height:100%;
+}
+#headerTitle h1 img:first-child {
+	left: 0;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	border:0px;
+}
+#main div#content{
+	width:100%;
+	margin-left:0px;
+	margin-right:0px;
+	float:none;
+	border-top: 1px solid #eee;
+}
+#topBar {
+	width: 100%;
+	padding-top: 1em;
+	padding-bottom: 0em;
+}
+#main{
+	display:table-cell;
+	min-width:300px;
+	padding: 0em 0em 1em 0em;
+	overflow: visible;
+}
+img, #homepageImage {
+	max-width: 100% !important;
+	height: auto;
+}
+/*fin layout*/
+/*....identity........................*/
+#identity {
+	background:#1A4160;
+	font-size:0.70em;
+	-moz-box-shadow: 0px 0px 10px 0px #616161;
+	-webkit-box-shadow: 0px 0px 10px 0px #616161;
+	box-shadow: 0px 0px 10px 0px #616161;
+}
+#identity .left{float:left;}
+#identity p{
+	margin:0px;
+	color:#eee;
+	padding:3px 20px;
+	text-align:right;
+}
+#identity span {margin: 0px 20px 0 0;}
+#identity span:last-child {margin: 0px;}
+/*....Navbar........................*/
+#navbar {
+	margin: 0;
+	padding: 5px 10px;
+	border-bottom: none;
+	background:#204c6f;
+	position:relative;
+	-moz-box-shadow:    0px 0px 10px 0px #616161;
+	-webkit-box-shadow: 0px 0px 10px 0px #616161;
+}
+
+#navbar ul.menu li{
+	background: none;
+}
+
+#navbar ul.menu lu{
+	background: none;
+}
+
+#navbar .menu li{
+	text-align: center;
+	padding:5px 7px;
+}
+#navbar .menu li:hover{	background: #1A4160;}
+#navbar .menu li a{
+	color: #fff;
+	margin: 0px;
+	padding: 5px 7px;
+	font-size: 0.85em;
+	text-transform: none;
+	font-weight: 700;
+}
+#navbar .menu li a:hover{
+	background: none;
+	color: #EBF1F2;
+}
+#breadcrumb {font-size: 0.72em;}
+/*....Texts..............................*/
+/*headings*/
+h1, h2, h3, h4 {
+	color:#DD6F00;
+	font-family: Arial, Helvetica, sans-serif !important;
+	letter-spacing: 0.2px;
+	font-weight: 800;
+	line-height: normal;
+	/*word-wrap: normal;*/
+	word-break: keep-all;
+	-ms-word-break: keep-all;
+	
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+    hyphens: none;
+}
+#header h1 {
+	margin: 0 auto;
+	padding: 0.7em 0 0.25em 36px;
+	font-weight: lighter;
+}
+#main h2 {
+	margin: 0em 1em 0.5em 0em;
+	padding-top: 0.5em;
+	font-family: inherit;
+	font-weight: bold;
+	color: #FDB727; 
+}
+#main h3 {
+	margin: 0em 1em 0.5em 0em;
+	padding-top: 1em;
+	font-family: inherit;
+	font-weight: bold;
+	color: #FDB727; 
+}
+/*general texts*/
+p {
+	margin-top: 0.3em;
+	text-align:justify;
+}
+#main div#content{
+	line-height: 1.3em;
+	font-size:0.85em;
+}
+/*links*/
+a, a:link {
+	text-decoration:none;
+	color:#204c6f; 
+}
+a:hover { 
+	color:#008EC2;
+	text-decoration:underline;
+	background:none;
+}
+a:visited, a:active { color:#006186;}
+/*....Submision.....................*/
+#submissionPreparationChecklist li li {
+	list-style: inside disc;
+	padding-bottom:0em;
+}
+#submissionPreparationChecklist li {padding-bottom:0.5em;}
+/*....Sidebar..................................*/
+#rightSidebar div, #leftSidebar div{text-align:left;
+		margin-left: 0em 0em 0em 5em;
+}
+#rightSidebar td, #leftSidebar td {padding-right:10px;}
+#rightSidebar #sidebarUser li, #sidebar li, #rightSidebar #sidebarNavigation.block li, #leftSidebar #sidebarUser li, #leftSidebar #sidebarNavigation.block li{ 
+	list-style:none;
+	color:#ccc;
+	list-style-position:inside;
+	margin-left:1em;
+}
+/*....Blocks........................*/
+#sidebar #sidebarBanner {
+	padding:0px;
+	border:none;
+	background:none;
+}
+#sidebarBanner li#banner {
+	background:url(images/home.png) no-repeat;
+	height:135px;
+	width:100%;
+	display:block;
+}
+#sidebarBanner li#banner a{
+	float: left;
+	height: 130px;
+	width: 100%;
+	display: block;
+	text-indent: -9999px;
+}
+#sidebarBanner li#banner a:hover{background:none;}
+#leftSidebar #sidebarUser ul, #rightSidebar #sidebarUser ul, #rightSidebar #sidebarNavigation.block ul{ 
+margin: 5px 0 10px 0;
+}
+/*....inputs and buttons........................*/
+#sidebar input.textField, #sidebar select.selectMenu, #sidebar input.button, #sidebar p {
+	font-size: 0.85em;
+	text-align: left;
+}
+input.textField, select.selectMenu, input.button, textarea {
+	font-size: 1em;
+	padding:2px;
+	margin:0.3em 0;
+}
+#sidebar select {
+	width: 60%;
+	margin:5px 5px 5px 0px;
+}
+#sidebar input[value="Buscar"], #sidebar input[value="Login"]{width: 50%;}
+#sidebar input[ type="checkbox"]{width: 10%;}
+input.textField, select.selectMenu, textarea.textArea, input.uploadField {
+	border-top: 1px solid #cbcbcb;
+	border-left:1px solid #cbcbcb  ;
+	border-bottom:1px solid #eee;
+	border-right:1px solid #eee;
+	border-radius:2px;
+}
+input.button, input.defaultButton, input[type="submit"]{
+	background-color:#E8E8E1;
+	color: #333;
+	font-weight: normal;
+	padding:2px 10px;
+	margin-top:0.5em;
+	border-radius: 2px;
+}
+#searchForm table.data td {display: block;}
+
+/*....UCR links............................................*/
+#ucrlinks {
+	padding-left: 2%;
+	height:55px;
+	background-color:#41ade7;
+	box-shadow: 0px -2px 20px 0px #06161E;
+	position: relative;
+}
+#ucrlinks ul {
+	padding:7px 5px 5px 5px;
+	margin:0px;
+}
+#ucrlinks ul li{display:inline-block; position: absolute;}
+#ucrlinks a {display:inline-block;}
+#ucrlinks span {display: none;}
+#ucrlinks .ucr a{
+	height:45px;
+	width:368px;
+	background: url(images/firma-ucr.svg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+#ucrlinks li.home {
+	left: 92%;
+	margin-right: 2%;
+	margin-top: 5px;
+}
+#ucrlinks .home a{
+	height:28px;
+	width:28px;
+	background: url(images/home_icon.svg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+/*.....border........................*/
+table.listing td.headseparator, table.listing td.endseparator, table.listing td.separator, table.info td.separator, table.announcements td.headseparator, table.announcements td.endseparator {
+border-top: 1px solid #ccc;}
+div.separator { border-bottom: 1px solid #ccc;}
+/*....Footer........................*/
+#commonfooter {
+	font-size:0.85em;
+	padding:20px 20px 50px 20px;
+	color:#333;
+	border-top: 10px solid #ddd; 
+	background: url(images/cintillo-ucr-75.svg) bottom right no-repeat;
+	background-color: #c8c8c8;
+}
+#commonfooter div{
+text-align: left;}
+#commonfooter #links ul{
+	padding:0 30px;
+	position: relative;
+	padding-top: 4px;
+	border-right: 1px solid #CCC;
+}
+#commonfooter #links > ul:last-child{border-right: none;}
+#commonfooter #links ul h2{
+	color:#666;
+	padding-bottom:1px;
+	border-bottom: 1px solid #e3e3e3;
+	margin-bottom:10px;
+}
+#commonfooter #links{
+	dposition: relative;
+	height: auto;
+	margin-top: -5px;
+	margin-bottom: 0px;
+}
+#commonfooter #license{
+	text-align:center;
+	margin-top:20px;
+}
+#commonfooter #license p{margin-top:5px;}
+/*....imagen de portada en home..................................*/
+#homepageImage img, #issueCoverImage img {
+	max-width: 590px !important; 
+	height: auto;
+	margin: 0px auto;
+	text-align: center;
+}
+/*....detalles de art�culos y tablas de contenido .......................*/
+/*Table of content*/
+.tocArticle {margin:10px 0;}
+.homepageImage img {
+	margin: 0px 0px 10px 0px;
+	float: left;
+	width: 100px;
+	text-align: center;
+	box-shadow: 3px 3px 10px #999999;
+}
+/* My journals*/
+#myJournals div:nth-child(odd) {
+	background-color: #F8F8F8;
+	border:#F8F8F8 solid 5px;
+}
+#myJournals div:nth-child(even) { border:#fff solid 5px;}
+/* Editor*/
+table.listing td {
+	padding: 0.2em 0.2em 0.2em 0.2em;
+	text-align: center;
+}
+table.listing tr.heading td, table.listing td.heading, table.info td.heading {
+	font-size: 0.85em;
+	text-transform: uppercase;
+	font-weight: normal;
+	padding: 0.5em 0.8em;
+}
+/* Table editorial boad .*/
+.consejo td {padding:5px;}
+/*....Formulario de registro...............................*/
+#pkp-user-register .registerButton{margin-top: 2em;}
+#pkp-user-register .registerButton a{
+	background: #83a01c;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b6d14c), color-stop(100%,#83a01c));
+	background: -moz-linear-gradient(center top, #b6d14c 0%, #83a01c 100%);
+	-webkit-box-shadow: 0px 1px 0px 0px #d1f25a inset, 0px -1px 0px 0px #99bc27 inset, 1px 2px 5px 0px #c9c9c9;
+	-moz-box-shadow: 0px 1px 0px 0px #d1f25a inset, 0px -1px 0px 0px #99bc27 inset, 1px 2px 5px 0px #c9c9c9;
+	box-shadow: 0px 1px 0px 0px #d1f25a inset, 0px -1px 0px 0px #99bc27 inset, 1px 2px 5px 0px #c9c9c9;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 10px 20px;
+	border-color: #97b134;
+	border-width: 1px;
+	border-style: solid;
+	font-size: 1em;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin-top: 20px;
+}
+/*....Slide images ..................................*/
+#gallery {
+	height:150px;
+	margin-top:5px;
+	margin-bottom: 20px;
+	width: 580px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#gallery a {
+	float:left;
+	position:absolute;
+}
+#gallery a img {border:none;}
+#gallery a.show {z-index:5;}
+#gallery .caption .content { margin:5px;}	
+#gallery .caption .content h3 {
+	margin:0;
+	padding:0;
+	color:#1DCCEF;
+}
+/*layout images and journals at site*/
+div.journal {
+	width: 110px;
+	height: 250px;
+	float: left;
+	margin: 4px;
+	background-color: #eee;
+	padding: 12px 10px;
+	border-radius: 5px;
+	font-size: 1.2em;
+}
+div.journal:hover { background-color: #e0e0e0;}
+div.journal-title { text-align:center;}
+div.journal-register { text-align:center;margin-top:5px;}
+div.journal-register > a{
+	text-transform:none;
+	color:#575757;
+	margin-top:5px;	
+}
+div.journal a {text-transform: none;}
+
+/*....Media Queries.........................*/
+/*@media (min-width: 100px){
+	#main div#content { font-size:0.9em !important;}
+	#commonfooter {font-size:0.9em;}
+	body {min-width: 100px;}
+	div.journal {
+	width: 90%;
+	height: auto;
+	float: left;
+	font-size: 1.2em;	
+	}
+}*/
+@media (max-width: 500px){
+	#ucrlinks .ucr a{
+		height:24px;
+		width:304px;
+		margin-top: 12px;
+		background: url(images/firma-ucr_sm.svg);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	#ucrlinks {	height:55px;}
+	.homepageImage {display: none;}
+	div.journal-title { text-align: left;}
+	div.journal-register {text-align: right;}
+	.journal-register a {
+		padding: 2px 10px; 
+		background-color: #b9b9b9;
+	}
+	#main, #main div, #main p {
+    	text-align: left;
+	}
+	#main .tocGalleys, #main .tocPages {text-align: right; margin-left: 10px;}
+}
+@media (min-width: 501px) {
+	div.journal {
+	height: 280px;
+	width: 110px;
+	}
+	.homepageImage img {margin: 0px 0px 10px 5px;}
+	#commonfooter #links ul{
+	display: table-cell;
+	width:33.2%;
+	padding:0 30px;
+	position: relative;
+	padding-top: 4px;
+	border-right: 1px solid #CCC;
+	}
+	.homepageImage {display: block;}
+}
+@media (min-width: 860px) {
+	body {min-width: 860px;}
+	#main div#content { font-size:0.72em;}
+	#sidebar { display: block; font-size: 0.72em; margin:0 2% 0 0;}
+	#sidebar input.textField, #sidebar select.selectMenu, #sidebar input.button { font-size: 0.90em;}
+	#leftSidebar, #rightSidebar {min-width: 150px;}
+	.homepageImage img {display: block;}
+	#commonfooter {font-size:0.72em;}
+}
+@media (min-width: 1001px) {
+	div.journal {
+		height: 250px;
+		width: 120px;
+		font-size: 1.1em;
+		line-height: normal;
+		}
+	#sidebar {font-size: 0.85em; margin:0 2% 0 0;}
+	.homepageImage img {margin: 0px 0px 10px 10px;}
+	#leftSidebar, #rightSidebar {min-width: 200px;}
+}
+@media (min-width: 1200px) {
+	#main div#content {font-size:0.9em; line-height: 1.5em;}
+	#sidebar {font-size: 0.85em;}
+	#navbar .menu li a{font-size: 0.9em;}
+	#commonfooter {font-size:0.9em;}
+	#identity {font-size:0.80em;}
+	#breadcrumb {font-size: 0.85em;}
+}
+@media (min-width: 1281px) {
+	#body{
+		max-width:1500px;
+		top:10px;
+		margin-right:auto;}
+	#identity {font-size:0.9em;}
+}
+.boton-menu {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	z-index: 1001;
+	top:5px;
+}
+#showLeftPush {
+	display: none;
+	left: -35px;
+	z-index: 1103;
+	background: url(images/menu.svg); 
+}
+#showRightPush {
+	display: none;
+	right: -35px;
+	z-index: 1102;
+	background: url(images/options.svg);
+}
+#identity {
+	width: 100%;
+}
+
+#botones {
+	display: none;
+}
+
+/** buttons mobile menu **/ 
+@media (max-width: 859px){
+/*new position menu bar*/
+	#buttontrick {
+		background:#1A4160;
+		z-index: 880;
+		position: fixed;
+		height: 45px;
+		top: 0px;
+		width: 100%;}
+	body {/*new menu position*/
+		margin-top: 45px;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		transition: all 0.3s ease;	
+	}
+	#identity {
+		background:#1A4160;
+		font-size:0.70em;
+		-moz-box-shadow: 0px 0px 10px 0px #616161;
+		-webkit-box-shadow: 0px 0px 10px 0px #616161;
+		box-shadow: 0px 0px 10px 0px #616161;
+		height: 45px;
+	}
+	#identity { display:none;}
+	#ucrlinks li.home {
+		position: fixed;
+		margin-top: -40px;
+		margin-right: 0px;
+		left: 50%;
+		z-index: 890;
+	}
+	#navbar {
+		width: 240px;
+		height: 100%;
+		padding-left:0px;
+		padding-right: 0px; 
+		top: 0;
+		z-index: 1101;
+		position: fixed;
+		left: -240px;
+	}
+	#navbar.opened {
+		left:0px;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+	#navbar {
+		left:-240px;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+	#navbar a {
+		display: block;
+	}
+	#showLeftPush {
+		display: inline;
+		left:4px;
+		position: fixed;
+		z-index: 1110;
+		height: 32px; /*prueba*/
+		width: 32px; /*prueba*/
+	}
+	#showRightPush {
+	display: inline;
+	}
+	#showRightPush.closed {
+		right:4px;
+		position: fixed;
+		z-index: 1110;
+		height: 32px; /*prueba*/
+		width: 32px; /*prueba*/
+	}
+	#showLeftPush.opened {
+		left:242px;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+		z-index: 1110;
+		background-color: #1A4160;
+		position: fixed;
+	}
+	#showRightPush.opened {
+		z-index: 1110;
+		right:244px;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+		background-color: #1A4160;
+		position: fixed;
+	}	
+	#rightSidebar {
+		width: 240px;
+		display: none;
+		position: absolute;
+		top:0px;
+		z-index: 1102;
+		background-color: #1A4160;
+		padding-left: 10px;
+		overflow: auto;
+	}
+	#sidebar div.block {
+		border-radius: 0px;
+	}
+	#rightSidebar.opened {
+		right:0px;
+		display: block;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		transition: all 0.3s ease;	
+	}
+	.inactive {
+		opacity: 0.65;
+		pointer-events: none;
+	}
+	#navbar .menu li{padding:0px;}
+	#navbar .menu li:hover{	background: none;}
+	#navbar .menu li a{ padding: 10px 0px;}
+	#navbar .menu li a:hover{ background-color: #1A4160;}
+/*site img resize*/
+	#header #headerTitle {
+		/*background: url(images/bg_mb.png) top left no-repeat;*/ /*hay que exportar de nuevo el bg_slide y el bg para activar este. No calzan*/
+	}
+/*b�squeda desde el men� principal*/
+	#searchForm #searchJournal, #searchForm .textField {
+		max-width: 60%;
+		overflow: scroll;
+		text-overflow: ellipsis;
+	}
+	#searchForm input.button {
+		display: block;
+	}
+/*issueCoverImage que pesan como un remordimiento*/
+#issueCoverImage {display: none;}
+}
+/*journal categories*/
+
+#main a[href="http://revistas.ucr.ac.cr/index.php/index/search/categories"]~#main h3 {
+	color: #666;
+}
