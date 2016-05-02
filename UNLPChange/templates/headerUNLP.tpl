@@ -16,7 +16,7 @@
 
 <div id="UnlpHeader">
 <!-- logo de la UNLP -->
-	<div id="rev_logo"><a href="http://www.unlp.edu.ar"><img src="{$baseUrl}/templates/images/unlp.jpg" border="0"/></a></div>
+	<div id="rev_logo"><a href="http://www.unlp.edu.ar"><img src="{$baseUrl}/templates/images/unlp.png" border="0"/></a></div>
 	<div id="rev_menu">
 	<ul>
 		<li><a href="{$baseUrl}">Portal de Congresos</a></li>
