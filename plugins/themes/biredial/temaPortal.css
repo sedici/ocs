@@ -18,9 +18,9 @@
   """`     """`
  */
  /*....Limpieza karmica ................................*/
-@import url("bothSidebars.css");
-@import url("leftSidebar.css");
-@import url("rightSidebar.css");
+@import url(bothSidebars.css);
+@import url(leftSidebar.css);
+@import url(rightSidebar.css);
 @import url(sidebar.css);
 
 div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, a {
@@ -113,7 +113,6 @@ body{
 	font-size:2em;
 	margin-top:10px;
 	padding-left:2%;
-	background:url(images/granos_cintillo.png) top right no-repeat;
 	height:100%;
 }
 #headerTitle h1 img:first-child {
@@ -708,7 +707,6 @@ div.journal a {text-transform: none;}
 	#rightSidebar {
 		width: 240px;
 		display: none;
-		position: absolute;
 		top:0px;
 		z-index: 1102;
 		background-color: #1A4160;
