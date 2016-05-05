@@ -11,7 +11,35 @@
 #body {
 	width: 100%;
 }
+@media (max-width: 481px){ 
+#main{
+	float: left;
+	width: 90%;
+	margin-left: 3%;
+	display: inline;
+	overflow: hidden;
+}
+#rightSidebar{
+	float: right;
+	width: 20%;
+	padding: 1em 0em 1em 0em;
+	height: 100%;
+	margin-right: 2%;
+	margin-left: 2%;	
+}
+#headerTitle{
+	width:50%; 
+}
+}1111
 @media (max-width: 859px){
+#rightSidebar {
+	float: right;
+	width: 20%;
+	padding: 1em 0em 1em 0em;
+	height: 100%;
+	margin-right: 2%;
+	margin-left: 2%;
+}
 #main {
 	float: left;
 	width: 90%;
