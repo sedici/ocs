@@ -90,7 +90,7 @@
 
 
 <div id="body">
-{include file="common/navbar.tpl"}
+{include file="../../../UNLPChange/templates/navbarUNLP.tpl"}
 {if $leftSidebarCode || $rightSidebarCode}
 	<div id="sidebar">
 		{if $leftSidebarCode}
