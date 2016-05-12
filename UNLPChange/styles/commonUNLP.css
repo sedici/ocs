@@ -214,11 +214,14 @@ input.defaultButton {
 	overflow: hidden!important;
 }
 #navbar {
-	background: url(../templates/images/menubar.png) no-repeat;
+	/*background: url(../templates/images/menubar.png) no-repeat;
 	padding: 0px 10px;
 	height: 25px;
 	margin: 3px 0px;
-	clear: both;
+	clear: both;*/
+}
+.navbar-nav>li {
+	width:auto !important;
 }
 #breadcrumb {
 	background: url(../templates/images/crumb.png) no-repeat center bottom;
@@ -282,7 +285,7 @@ input.defaultButton {
 	letter-spacing: 1px;
 	font-weight: normal;
 	text-transform: uppercase;
-	color: #FFFFFF;
+	color: #FFFFFF !important;
 }
 #navbar ul.menu li {
 	background: url(../templates/images/linkbg.png) no-repeat right center;
@@ -552,4 +555,85 @@ div.progressbar {
 	padding: 0.2em 0em 0.2em 0.8em;
 	font-size:1.2em;
 	line-height: 22px;
+}
+
+@media screen and (max-width: 1024px) {
+	body > #container {
+		width: auto !important;
+		min-width: inherit !important;
+
+	}
+	#navbar{
+		width:100% !important;
+		height:auto  !important;
+		width:100% !important;
+	}
+	#body {
+		width:auto !important;
+	}
+	#sidebar {
+		display: none;
+	}
+	#rightSidebar {
+		display: none;
+	}
+
+	#rev_menu ul li {
+		display:list-item !important;
+		padding-top:10px !important;
+	}
+
+	#header h1 {
+		width: inherit !important;
+		background-size: contain !important;
+	}
+	#main {
+		width: inherit !important;
+	}
+	#container > div {
+		min-width: inherit !important;
+		max-width: auto !important;
+		width: auto !important;
+	}
+
+	#body > #main  {
+		width:100% !important;
+		padding: 0 10px !important;
+	}
+	#body > img {
+		width: 100% !important;
+		height: auto !important;
+	}
+	#homepageImage img {
+		width: 100% !important;
+		height: auto !important;
+	}
+	input {
+		width:auto !important;
+	}
+
+	textarea {
+		width:auto !important;
+	}
+}
+@media screen and (max-width: 768px) {
+	#container {
+		min-width: inherit !important;
+		width: 100% !important;
+		min-width: inherit !important;
+	}
+
+
+	div#container {
+		min-width: inherit !important;
+		width: auto !important;
+	}
+
+	div#headerTitle {
+		height:auto !important;
+	}
+	#navbar {
+		height:auto  !important;
+		width:100% !important;
+	}
 }
