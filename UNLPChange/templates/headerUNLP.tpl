@@ -8,6 +8,7 @@
 
 <html>
 <link rel="stylesheet" href="{$baseUrl}/UNLPChange/styles/commonUNLP.css" type="text/css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 {if $leftSidebarCode || $rightSidebarCode}<link rel="stylesheet" href="{$baseUrl}/UNLPChange/styles/sidebarUNLP.css" type="text/css" />{/if}
 {if $leftSidebarCode}<link rel="stylesheet" href="{$baseUrl}/UNLPChange/styles/leftSidebarUNLP.css" type="text/css" />{/if}
 {if $rightSidebarCode}<link rel="stylesheet" href="{$baseUrl}/UNLPChange/styles/rightSidebarUNLP.css" type="text/css" />{/if}
