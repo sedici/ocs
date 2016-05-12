@@ -26,19 +26,6 @@ and
   })();
 
 </script>{/literal}
-
-{if $enableDebugStats}
-	<div id="footerContent">
-		<div class="debugStats">
-		{translate key="debug.executionTime"}: {$debugExecutionTime|string_format:"%.4f"}s<br />
-		{translate key="debug.databaseQueries"}: {$debugNumDatabaseQueries|escape}<br/>
-		{if $debugNotes}
-			<strong>{translate key="debug.notes"}</strong><br/>
-			{foreach from=$debugNotes item=note}
-				{translate key=$note[0] params=$note[1]}<br/>
-			{/foreach}
-		{/if}
-		</div>
-	</div><!-- footerContent -->
-{/if}
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </div><!-- footer -->
