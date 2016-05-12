@@ -28,9 +28,9 @@
 	margin-left: 2%;	
 }
 #headerTitle{
-	width:50%; 
+	width:100%;
 }
-}1111
+}
 @media (max-width: 859px){
 #rightSidebar {
 	float: right;
