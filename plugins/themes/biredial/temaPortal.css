@@ -22,7 +22,9 @@
 @import url(leftSidebar.css);
 @import url(rightSidebar.css);
 @import url(sidebar.css);
-
+nav{
+	position: static !important;
+}
 div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, a {
 	margin:0;
 	padding:0;
@@ -101,7 +103,7 @@ body{
 }
 #header {
 
-	height:140px;
+	/*height:140px;*/
 }
 #header #headerTitle {
 
@@ -366,6 +368,9 @@ table.listing td.headseparator, table.listing td.endseparator, table.listing td.
 border-top: 1px solid #ccc;}
 div.separator { border-bottom: 1px solid #ccc;}
 /*....Footer........................*/
+#footer{
+	padding: 0 !important;
+}
 #commonfooter {
 	font-size:0.85em;
 	padding:20px 20px 50px 20px;
@@ -512,11 +517,21 @@ div.journal a {text-transform: none;}
 	}
 }*/
 @media (max-width: 481px){
+
+	#content p{
+		text-align: justify;
+		font-size: 14px;
+	}
 #navbar {
 	position: fixed; !important
 }
 }
 @media (max-width: 500px){
+
+	#content p{
+		text-align: justify;
+		font-size: 14px;
+	}
 	#ucrlinks .ucr a{
 		height:24px;
 		width:304px;
@@ -619,6 +634,11 @@ div.journal a {text-transform: none;}
 /** buttons mobile menu **/ 
 @media (max-width: 859px){
 /*new position menu bar*/
+
+	#content p{
+		text-align: justify;
+		font-size: 14px;
+	}
 	#buttontrick {
 		background:#1A4160;
 		z-index: 880;
@@ -757,3 +777,47 @@ div.journal a {text-transform: none;}
 #main a[href="http://revistas.ucr.ac.cr/index.php/index/search/categories"]~#main h3 {
 	color: #666;
 }
+
+@media screen and (max-width: 380px) {
+	#content p{
+		text-align: justify;
+		font-size: 14px;
+	}
+	#headerTitle h1 img:first-child{
+		width: 180px;
+	}
+	#headerTitle h1 img{
+		width: 50px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	#rev_menu{
+		float: left;
+	}
+
+	#content p{
+		text-align: justify;
+		font-size: 14px;
+	}
+
+	#headerTitle h1 img:first-child{
+		width: 75%;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	#content p{
+		text-align: justify !important;
+		font-size: 14px !important;
+	}
+}
+
+@media screen and (min-width: 1280px){
+
+	#rightSidebar{
+		width: 20% !important;
+	}
+}
+
