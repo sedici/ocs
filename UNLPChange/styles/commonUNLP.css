@@ -87,6 +87,7 @@ input.defaultButton {
  */
 
 #container {
+	overflow: hidden;
 	text-align: left;
 	margin: 10px auto 0px auto;
 	width: 760px !important;
@@ -471,26 +472,26 @@ ul.formErrorList {
 /* Other organizational elements */
 
 ul.menu {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 }
 ul.menu li {
-	margin: 0;
-	padding: 0 5px;
+	margin: 0px;
+	padding: 0px 5px;
 	display: inline;
 }
 ul.menu li.current {
 	font-weight: bold;
 }
 ul.steplist {
-	margin: 0;
-	padding: 5;
+	margin: 0px;
+	padding: 5px;
 	list-style-type: decimal;
 	background-color: #F4F4F4;
 }
 ul.steplist li {
-	margin: 0;
-	padding: 0;
+/*	margin: 0;
+	padding: 0; */
 	font-size: 11px;
 	padding-right: 5px;
 	display: inline;
@@ -511,16 +512,16 @@ div.separator {
 	width: 100%;
 	margin-top: 1em;
 	margin-bottom: 0.25em;
-	padding: 0;
+	padding: 0px;
 	border-bottom: 1px solid #000;
 	font-size: 0.5em;
 	line-height: 25%;
 }
 div.progressbar {
-	background-image: url(../templates/images/progbg.gif);
+	/* background-image: url(../templates/images/progbg.gif); */
 	background-repeat: no-repeat;
-	height: 27;
-	width: 505;
+/*	height: 27;
+	width: 505; */
 	z-index:1;
 }
 #leftSidebar ul, #rightSidebar ul, #sidebar ul {
@@ -592,7 +593,7 @@ div.progressbar {
 	}
 	#container > div {
 		min-width: inherit !important;
-		max-width: auto !important;
+	/*	max-width: auto !important; */
 		width: auto !important;
 	}
 
@@ -635,5 +636,12 @@ div.progressbar {
 	#navbar {
 		height:auto  !important;
 		width:100% !important;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#navbar {
+		height: auto !important;
+		width: 100% !important;
 	}
 }
