@@ -21,7 +21,7 @@
 
 {get_debug_info}
 {if $enableDebugStats}{include file=$pqpTemplate}{/if}
-{include file="../UNLPChange/templates/footerUNLP.tpl"}
 </div><!-- container -->
+{include file="../UNLPChange/templates/footerUNLP.tpl"}
 </body>
 </html>
