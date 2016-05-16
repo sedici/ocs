@@ -778,7 +778,7 @@ div.journal a {text-transform: none;}
 	color: #666;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 381px) {
 	#content p{
 		text-align: justify;
 		font-size: 14px;
@@ -791,8 +791,10 @@ div.journal a {text-transform: none;}
 	}
 }
 
-@media screen and (max-width: 480px) {
-
+@media screen and (max-width: 500px) {
+	#rightSidebar{
+		display: none !important;
+	}
 	#rev_menu{
 		float: left;
 	}
