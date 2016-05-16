@@ -7,6 +7,7 @@
  *}
 
 <html>
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
 <link rel="stylesheet" href="{$baseUrl}/UNLPChange/styles/commonUNLP.css" type="text/css"/>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 {if $leftSidebarCode || $rightSidebarCode}<link rel="stylesheet" href="{$baseUrl}/UNLPChange/styles/sidebarUNLP.css" type="text/css" />{/if}
