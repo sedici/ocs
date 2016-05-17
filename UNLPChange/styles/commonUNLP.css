@@ -170,7 +170,7 @@ input.defaultButton {
 	clear: both;
 	text-align: center;
 	margin: 0px;
-	height: 45px;
+	height: 30%;
 	padding: 40px 0px 10px 0px;
 	width: 100%;
 	font-size: 11px;
@@ -621,9 +621,7 @@ div.progressbar {
 	#container {
 		min-width: inherit !important;
 		width: 100% !important;
-		min-width: inherit !important;
 	}
-
 
 	div#container {
 		min-width: inherit !important;
