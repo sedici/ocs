@@ -13,7 +13,7 @@
 
 <locale name="es_ES" full_name = "España Castellano">
 	<message key="author.submit">Nuevo envío</message>
-	<message key="author.track">Activar envíos</message>
+	<message key="author.track">Envíos activos</message>
 	<message key="author.submit.startHere">Empiece aquí a enviar su trabajo.</message>
 	<message key="author.submit.startHereLink">Primer paso del proceso de envío</message>
 	<message key="author.submit.step1">Paso 1. Comenzar el envío</message>
@@ -29,7 +29,7 @@
 	<message key="author.submit.supplementaryFiles">4. Depositar ficheros adicionales</message>
 	<message key="author.submit.confirmation">5. Confirmación</message>
 	<message key="author.submit.confirmationSkipSupp">4. Confirmación</message>
-	<message key="author.submit.cancelSubmission">Puede completar este envío más tarde seleccionando "Activar Envío" desde el menú Autor.</message>
+	<message key="author.submit.cancelSubmission">Puede completar este envío más tarde seleccionando "Envíos activos" desde el menú Autor.</message>
 	<message key="author.submit.notAcceptingYet">El envío de originales a esta conferencia todavía no se ha abierto.</message>
 	<message key="author.submit.submissionDeadlinePassed">El envío de originales se ha cerrado {$closedDate}.</message>
 	<message key="author.submissions.viewStatus">Ver estatus del trabajo</message>

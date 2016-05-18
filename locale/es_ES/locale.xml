@@ -114,8 +114,8 @@
 	<message key="common.queue.short.submissionsAccepted">Presentaciones</message>
 	<message key="common.queue.long.submissionsArchives">Ficheros</message>
 	<message key="common.queue.short.submissionsArchives">ficheros</message>
-	<message key="common.queue.long.active">Activar envíos</message>
-	<message key="common.queue.short.active">Activar</message>
+	<message key="common.queue.long.active">Envíos activos</message>
+	<message key="common.queue.short.active">Activos</message>
 	<message key="common.queue.long.completed">Archivar</message>
 	<message key="common.queue.short.completed">Archivar</message>
 
