@@ -22,6 +22,70 @@
 @import url(leftSidebar.css);
 @import url(rightSidebar.css);
 @import url(sidebar.css);
+
+@media screen and (min-width:381px) {
+	#content p{
+		text-align: justify;
+		font-size: 14px;
+	}
+	#headerTitle h1 img{
+		width: 180px;
+	}
+	#headerTitle h1 img{
+		width: 50px;
+	}
+	#headerTitle h1 img:first-child{
+		background: url(imagenes/Encabezados360.png);
+		background-repeat: no-repeat;
+		width: 360px;
+		height:70px;
+	}
+}
+@media screen and (min-width:481px) {
+	#headerTitle h1 img:first-child{
+		background: url(imagenes/Encabezados480.png);
+		background-repeat: no-repeat;
+		width: 480px;
+		height: 120px;
+	}
+}
+@media screen and (min-width:801px) {
+	#headerTitle h1 img:first-child{
+		background: url(imagenes/Encabezados800.png);
+		background-repeat: no-repeat;
+		width: 800px;
+		height: 120px;
+	}
+}
+@media screen and (min-width:1025px) {
+	#headerTitle h1 img:first-child{
+		background: url(imagenes/Encabezados1024.png);
+		background-repeat: no-repeat;
+		width: 1025px;
+		height: 120px;
+	}
+}
+@media screen and (min-width:1281px) {
+	#content p{
+		text-align: justify !important;
+		font-size: 14px !important;
+	}
+	#headerTitle h1 img:first-child{
+		background: url(imagenes/Encabezados1280.png);
+		background-repeat: no-repeat;
+		width: 1280px;
+		height: 120px;
+	}
+}
+
+@media screen and (min-width: 1280px){
+
+	#rightSidebar{
+		width: 20% !important;
+	}
+}
+
+
 nav{
 	position: static !important;
 }
@@ -95,7 +159,7 @@ body{
      word-break: break-all;*/
 
      /* Non standard for webkit */
-     word-break: break-word;
+ /*    word-break: break-word;*/
 
 -webkit-hyphens: auto;
    -moz-hyphens: auto;
@@ -536,7 +600,7 @@ div.journal a {text-transform: none;}
 		height:24px;
 		width:304px;
 		margin-top: 12px;
-		background: url(images/firma-ucr_sm.svg);
+	/*	background: url(images/firma-ucr_sm.svg);*/
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 	}
@@ -615,13 +679,13 @@ div.journal a {text-transform: none;}
 	display: none;
 	left: -35px;
 	z-index: 1103;
-	background: url(images/menu.svg); 
+	/* background: url(images/menu.svg); */
 }
 #showRightPush {
 	display: none;
 	right: -35px;
 	z-index: 1102;
-	background: url(images/options.svg);
+	/* background: url(images/options.svg); */
 }
 #identity {
 	width: 100%;
@@ -777,49 +841,6 @@ div.journal a {text-transform: none;}
 #main a[href="http://revistas.ucr.ac.cr/index.php/index/search/categories"]~#main h3 {
 	color: #666;
 }
-
-@media screen and (max-width: 381px) {
-	#content p{
-		text-align: justify;
-		font-size: 14px;
-	}
-	#headerTitle h1 img:first-child{
-		width: 180px;
-	}
-	#headerTitle h1 img{
-		width: 50px;
-	}
+#headerTitle h1{
+	font-size: 0px;
 }
-
-@media screen and (max-width: 500px) {
-	#rightSidebar{
-		display: none !important;
-	}
-	#rev_menu{
-		float: left;
-	}
-
-	#content p{
-		text-align: justify;
-		font-size: 14px;
-	}
-
-	#headerTitle h1 img:first-child{
-		width: 75%;
-	}
-}
-
-@media screen and (max-width: 1280px) {
-	#content p{
-		text-align: justify !important;
-		font-size: 14px !important;
-	}
-}
-
-@media screen and (min-width: 1280px){
-
-	#rightSidebar{
-		width: 20% !important;
-	}
-}
-
