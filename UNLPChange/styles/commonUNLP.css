@@ -28,6 +28,8 @@ body {
 }
 .label{
 	color:#000000 !important;
+}
+#conferenceSettings label{
 	display: table-cell !important;
 }
 form {
