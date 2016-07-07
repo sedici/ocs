@@ -110,8 +110,13 @@ class AuthorSubmitForm extends Form {
 			}
 			if($schedConf->getSetting('copySubmissionAckSpecified')) {
 				$copyAddress = $schedConf->getSetting('copySubmissionAckAddress');
-				if (!empty($copyAddress)) $mail->addBcc($copyAddress);
+				if (!empty($copyAddress)) {
+					array_walk(explode(",",$copyAddress), array($mail,'addBcc'));
+
+				}
+
 			}
+
 
 			$editAssignmentDao =& DAORegistry::getDAO('EditAssignmentDAO');
 			$editAssignments =& $editAssignmentDao->getEditAssignmentsByPaperId($paper->getId());
