@@ -23,25 +23,49 @@
 @import url(rightSidebar.css);
 @import url(sidebar.css);
 
-@media screen and (min-width:381px) {
+@media screen and (min-width:320px) {
 	#content p{
 		text-align: justify;
 		font-size: 14px;
 	}
+	#headerTitle h1{
+		height: 0;
+		width: 0;
+	}
+
 	#headerTitle h1 img{
+		background-position: center!important;
 		width: 180px;
+		height: 50px;
 	}
-	#headerTitle h1 img{
-		width: 50px;
-	}
+
 	#headerTitle h1 img:first-child{
-		background: url(imagenes/Encabezados360.png);
-		background-repeat: no-repeat;
-		width: 360px;
+		background: url(imagenes/Encabezados360.png) ;
+		background-repeat: no-repeat ;
+		width: 210px;
 		height:70px;
 	}
 }
-@media screen and (min-width:481px) {
+
+
+@media screen and (min-width:340px) {
+	#content p {
+		text-align: justify;
+		font-size: 14px;
+	}
+
+	#headerTitle h1 img {
+		background-position: center !important;
+	}
+
+	#headerTitle h1 img:first-child {
+		background: url(imagenes/Encabezados360.png);
+		background-repeat: no-repeat;
+		width: 380px;
+		height: 120px;
+	}
+}
+@media screen and (min-width:480px) {
 	#headerTitle h1 img:first-child{
 		background: url(imagenes/Encabezados480.png);
 		background-repeat: no-repeat;
@@ -49,7 +73,7 @@
 		height: 120px;
 	}
 }
-@media screen and (min-width:801px) {
+@media screen and (min-width:768px) {
 	#headerTitle h1 img:first-child{
 		background: url(imagenes/Encabezados800.png);
 		background-repeat: no-repeat;
@@ -57,7 +81,15 @@
 		height: 120px;
 	}
 }
-@media screen and (min-width:1025px) {
+@media screen and (min-width:800px) {
+	#headerTitle h1 img:first-child{
+		background: url(imagenes/Encabezados800.png);
+		background-repeat: no-repeat;
+		width: 800px;
+		height: 120px;
+	}
+}
+@media screen and (min-width:1024px) {
 	#headerTitle h1 img:first-child{
 		background: url(imagenes/Encabezados1024.png);
 		background-repeat: no-repeat;
@@ -65,10 +97,13 @@
 		height: 120px;
 	}
 }
-@media screen and (min-width:1281px) {
+@media screen and (min-width:1279px) {
 	#content p{
 		text-align: justify !important;
 		font-size: 14px !important;
+	}
+	#headerTitle h1{
+		width: 100% !important;
 	}
 	#headerTitle h1 img:first-child{
 		background: url(imagenes/Encabezados1280.png);
@@ -78,8 +113,7 @@
 	}
 }
 
-@media screen and (min-width: 1280px){
-
+@media screen and (min-width: 1279px){
 	#rightSidebar{
 		width: 20% !important;
 	}
@@ -174,11 +208,11 @@ body{
 	height:100%;
 }
 #header h1 {
+	padding-left: 1%;
+	padding-bottom:1% !important;
+	font-size: 0!important;
 	min-height:50px;
 	color:white;
-	font-size:2em;
-	margin-top:10px;
-	padding-left:2%;
 	height:100%;
 }
 #headerTitle h1 img:first-child {
@@ -192,6 +226,8 @@ body{
 	width:100%;
 	margin-left:0px;
 	margin-right:0px;
+	margin-top:10px;
+	padding-left:
 	float:none;
 	border-top: 1px solid #eee;
 }

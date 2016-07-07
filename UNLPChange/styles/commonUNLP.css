@@ -26,6 +26,12 @@ body {
   	text-align: center;
 	font-size: 12px;
 }
+.label{
+	color:#000000 !important;
+}
+#conferenceSettings label{
+	display: table-cell !important;
+}
 form {
 	margin: 0;
 }

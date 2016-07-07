@@ -30,7 +30,7 @@
 		{else}
 			<li id="login"><a href="{url page="login"}">{translate key="navigation.login"}</a></li>
 			{if !$hideRegisterLink}
-				<li id="register"><a href="{url page="user" op="register"}">{translate key="navigation.register"}</a></li>
+				<li id="register"><a href="{url page="user" op="account"}">{translate key="navigation.register"}</a></li>
 			{/if}
 		{/if}{* $isUserLoggedIn *}
 
