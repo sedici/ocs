@@ -40,7 +40,7 @@
 	}
 
 	#headerTitle h1 img:first-child{
-		background: url(imagenes/Encabezados360.png) ;
+		background: url(imagenes/biredial2017,371.png) ;
 		background-repeat: no-repeat ;
 		width: 210px;
 		height:70px;
@@ -59,7 +59,7 @@
 	}
 
 	#headerTitle h1 img:first-child {
-		background: url(imagenes/Encabezados360.png);
+		background: url(imagenes/biredial2017,371.png);
 		background-repeat: no-repeat;
 		width: 380px;
 		height: 120px;
@@ -67,7 +67,7 @@
 }
 @media screen and (min-width:480px) {
 	#headerTitle h1 img:first-child{
-		background: url(imagenes/Encabezados480.png);
+		background: url(imagenes/biredial2017,376.png);
 		background-repeat: no-repeat;
 		width: 480px;
 		height: 120px;
@@ -75,7 +75,7 @@
 }
 @media screen and (min-width:768px) {
 	#headerTitle h1 img:first-child{
-		background: url(imagenes/Encabezados800.png);
+		background: url(imagenes/biredial2017,671.png);
 		background-repeat: no-repeat;
 		width: 800px;
 		height: 120px;
@@ -83,7 +83,7 @@
 }
 @media screen and (min-width:800px) {
 	#headerTitle h1 img:first-child{
-		background: url(imagenes/Encabezados800.png);
+		background: url(imagenes/biredial2017,861.png);
 		background-repeat: no-repeat;
 		width: 800px;
 		height: 120px;
@@ -91,7 +91,7 @@
 }
 @media screen and (min-width:1024px) {
 	#headerTitle h1 img:first-child{
-		background: url(imagenes/Encabezados1024.png);
+		background: url(imagenes/biredial2017,950.png);
 		background-repeat: no-repeat;
 		width: 1025px;
 		height: 120px;
@@ -106,7 +106,7 @@
 		width: 100% !important;
 	}
 	#headerTitle h1 img:first-child{
-		background: url(imagenes/Encabezados1280.png);
+		background: url(imagenes/biredial2017,950.png);
 		background-repeat: no-repeat;
 		width: 1280px;
 		height: 120px;
