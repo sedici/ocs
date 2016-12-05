@@ -90,6 +90,9 @@
 	}
 }
 @media screen and (min-width:1024px) {
+	#headerTitle h1{
+		width: 100% !important;
+	}
 	#headerTitle h1 img:first-child{
 		background: url(imagenes/biredial2017,950.png);
 		background-repeat: no-repeat;
