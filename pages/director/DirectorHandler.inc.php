@@ -188,6 +188,10 @@ class DirectorHandler extends TrackDirectorHandler {
 		$templateMgr->assign('yearOffsetFuture', SCHED_CONF_DATE_YEAR_OFFSET_FUTURE);
 		$templateMgr->assign('durationOptions', TrackDirectorHandler::getDurationOptions());
 
+		$controlledVocabDao =& DAORegistry::getDAO('ControlledVocabDAO');
+		$templateMgr->assign('sessionTypes', $controlledVocabDao->enumerateBySymbolic('paperType', ASSOC_TYPE_SCHED_CONF, $schedConf->getId()));
+
+
 		// Set search parameters
 		$duplicateParameters = array(
 			'searchField', 'searchMatch', 'search'

@@ -41,7 +41,11 @@
 	<input type="hidden" name="paperIds[]" value="{$paperId|escape}" />
 	<tr valign="top">
 		<td>{$paperId|escape}</td>
-		<td>{$submission->getTrackAbbrev()|escape}</td>
+		<td>{$submission->getTrackAbbrev()|escape}
+		{assign var=sessionType value=$submission->getData('sessionType')}
+		{if is_array($sessionTypes) && !empty($sessionTypes) && !(count($sessionTypes) == 1 && !empty($sessionType) && isset($sessionTypes[$sessionType]))}
+                                ({$sessionTypes[$sessionType]})
+                 {/if}</td>
 		<td>{$submission->getAuthorString(true)|truncate:40:"..."|escape}</td>
 		<td><a href="{url op="submissionReview" path=$paperId}" class="action">{$submission->getLocalizedTitle()|strip_unsafe_html|truncate:60:"..."}</a></td>
 		<td>

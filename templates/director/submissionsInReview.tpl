@@ -41,7 +41,12 @@
 	<tr valign="top">
 		<td>{$submission->getPaperId()}</td>
 		<td>{$submission->getDateSubmitted()|date_format:$dateFormatTrunc}</td>
-		<td>{$submission->getTrackAbbrev()|escape}</td>
+		<td>{$submission->getTrackAbbrev()|escape}
+		
+		{assign var=sessionType value=$submission->getData('sessionType')}
+		{if is_array($sessionTypes) && !empty($sessionTypes) && !(count($sessionTypes) == 1 && !empty($sessionType) && isset($sessionTypes[$sessionType]))}
+                                ({$sessionTypes[$sessionType]})
+                 {/if}</td>
 		<td>{$submission->getAuthorString(true)|truncate:40:"..."|escape}</td>
 		<td><a href="{url op="submissionReview" path=$submission->getPaperId()|to_array:$submission->getCurrentStage()}" class="action">{$submission->getLocalizedTitle()|strip_unsafe_html|truncate:40:"..."}</a></td>
 		<td>
